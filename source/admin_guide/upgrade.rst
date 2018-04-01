@@ -1,5 +1,5 @@
-Upgrade Kanboard to a New Version
-=================================
+Upgrade to a New Version
+========================
 
 Most of the time, upgrading Kanboard to a newer version is seamless. The
 process could be summarized to simply copy your data folder to the new

@@ -1,5 +1,5 @@
-How to Build Assets (Javascript and CSS files)
-==============================================
+Building Assets (Javascript and CSS files)
+==========================================
 
 Stylesheet and Javascript files are merged together and minified.
 
