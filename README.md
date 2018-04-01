@@ -8,4 +8,5 @@ This documentation is generated with Sphinx and pushed automatically on [Read th
 How to generate the documentation locally?
 ------------------------------------------
 
-Run `make clean html` and open the file `build/html/index.html` in your browser.
+1. Install [Sphinx](http://www.sphinx-doc.org/) on your machine
+2. Run `make clean html` and open the file `build/html/index.html` in your browser.
