@@ -1,7 +1,7 @@
-Installation
-============
+Installation Instructions
+=========================
 
-First, check the requirements requirements before going further.
+Firstly, check the requirements before going further.
 
 From the archive (stable version)
 ---------------------------------
