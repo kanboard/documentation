@@ -4,7 +4,7 @@ Kanboard
 Kanboard is a free and open source Kanban project management software.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: User's Guide
 
     user_guide/introduction
@@ -26,7 +26,7 @@ Kanboard is a free and open source Kanban project management software.
     user_guide/keyboard_shortcuts
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: Administrator's Guide
 
     admin_guide/requirements
@@ -62,7 +62,7 @@ Kanboard is a free and open source Kanban project management software.
     admin_guide/faq
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: Developer's Guide
 
     developer_guide/contributing
@@ -74,7 +74,7 @@ Kanboard is a free and open source Kanban project management software.
     developer_guide/vagrant
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: Plugin Development
 
     plugins/registration.rst
@@ -98,7 +98,7 @@ Kanboard is a free and open source Kanban project management software.
     plugins/ldap_client.rst
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: API Reference
 
     api/introduction
