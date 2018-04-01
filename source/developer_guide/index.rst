@@ -13,3 +13,4 @@ Contributing to the open source project.
     tests
     webhooks
     vagrant
+    faq

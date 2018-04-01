@@ -6,25 +6,13 @@ How can I help?
 
 Kanboard is not perfect but there are many ways to help:
 
--  Give feedback
 -  Report bugs
 -  Add or update translations
 -  Improve the documentation
--  Writing code
--  Tell your friends that Kanboard is awesome :)
+-  Write code
 
 Before doing any large undertaking, open a new issue and explain your
 proposal.
-
-I want to give feedback
------------------------
-
--  You think something should be improved (user interface, feature
-   requests)
--  Check if your idea is not already proposed
--  Open a new issue
--  Describe your idea
--  You can also up-vote with +1 on existing proposals
 
 I want to report a bug
 ----------------------
@@ -66,17 +54,10 @@ follow those directives:
    software.
 -  The same apply for the user interface, **simplicity and efficiency**.
 -  Send only one pull-request per feature or bug fix.
--  A smaller pull-request is easier to review and faster it will be
-   merged.
+-  A smaller pull-request is easier to review and it will be merged faster.
 -  Make sure the unit tests pass.
 -  Respect the coding standards.
 -  Write maintainable code, avoid code duplication, use PHP good
    practices.
 
 In any case, if you are not sure about something open a new ticket.
-
-Tell your friends that Kanboard is awesome :)
----------------------------------------------
-
-If you use Kanboard, spread the word around you. Tell them that free and
-open source software are cool :)
