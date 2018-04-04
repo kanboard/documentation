@@ -16,6 +16,7 @@ Documentation of API endpoints.
     group_member_procedures
     project_procedures
     project_permission_procedures
+    project_metadata_procedures
     board_procedures
     column_procedures
     swimlane_procedures
