@@ -600,7 +600,8 @@ Request example:
             "project_id": 1,
             "task_id": 1,
             "column_id": 2,
-            "position": 1
+            "position": 1,
+            "swimlane_id": 1
         }
     }
 
