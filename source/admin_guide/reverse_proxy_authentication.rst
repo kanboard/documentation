@@ -70,6 +70,10 @@ Notes:
    will be ``REMOTE_USER``. By example, Apache add ``REMOTE_USER`` by
    default if ``Require valid-user`` is set.
 
+-  If you use a different header for ``REVERSE_PROXY_USER_HEADER``,
+   the value must be prefixed by ``HTTP_`` because it's fetched from
+   the ``$_SERVER`` array.
+
 -  If Apache is a reverse proxy to another Apache running Kanboard, the
    header ``REMOTE_USER`` is not set (same behavior with IIS and Nginx).
 

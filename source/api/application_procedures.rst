@@ -31,7 +31,7 @@ Response example:
 getTimezone
 -----------
 
--  Purpose: **Get the application timezone**
+-  Purpose: **Get the timezone of the connected user**
 -  Parameters: none
 -  Result on success: **Timezone** (Example: UTC, Europe/Paris)
 -  Result on failure: **Default timezone** (UTC)

@@ -27,7 +27,7 @@ Why did you close my question on the bug tracker?
 -------------------------------------------------
 
 - The bug tracker should be reserved only for bug reports.
-- Bug triage takes a lot of times.
+- Bug triage takes a lot of time.
 - If you have a question or if you need help, go to the `forum <https://github.com/kanboard/forum/issues>`_.
 
 How to make a bug report?

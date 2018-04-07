@@ -21,6 +21,7 @@ Documentation of API endpoints.
     column_procedures
     swimlane_procedures
     task_procedures
+    task_metadata_procedures
     subtask_procedures
     subtask_time_tracking_procedures
     comment_procedures

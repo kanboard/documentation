@@ -1,12 +1,69 @@
 Plugin Hooks
 ============
 
+Add new API methods
+-------------------
+
+Kanboard use this library
+`JSON-RPC <https://github.com/fguillot/JsonRPC>`__ to handle API calls.
+
+To add a new method you can do something like that from your plugin:
+
+.. code:: php
+
+    $this->api->getProcedureHandler()->withCallback('my_method', function() {
+        return 'foobar';
+    });
+
+``$this->container['api']`` or ``$this->api`` expose an instance of the
+object ``JsonRPC\Server``.
+
+Read the library documentation for more information.
+
+Add new console commands
+------------------------
+
+Kanboard use the library `Symfony
+Console <http://symfony.com/doc/current/components/console/introduction.html>`__
+to handle local command lines.
+
+Kanboard expose an instance of the object
+``Symfony\Component\Console\Application`` via ``$this->cli``. You can
+add new commands from your plugin:
+
+.. code:: php
+
+    $this->cli->add(new MyCommand());
+
+Read the library documentation for more information.
+
+Add new task filters
+--------------------
+
+Since the task lexer is a factory that returns a new instance each time,
+you have to extend the ``taskLexer`` container with the method
+``extend()`` of Pimple.
+
+Here is a example:
+
+.. code:: php
+
+    public function initialize()
+    {
+        $this->container->extend('taskLexer', function($taskLexer, $c) {
+            $taskLexer->withFilter(TaskBoardDateFilter::getInstance($c)->setDateParser($c['dateParser']));
+            return $taskLexer;
+        });
+    }
+
+For the filter class implementation, there are several examples in the
+source code under the namespace ``Kanboard\Filter``.
+
 Application Hooks
 -----------------
 
 Hooks can extend, replace, filter data or change the default behavior.
-Each hook is identified with a unique name, example:
-``controller:calendar:user:events``
+Each hook is identified with a unique name, example: ``controller:calendar:user:events``
 
 Listen on hook events
 ~~~~~~~~~~~~~~~~~~~~~
@@ -24,10 +81,7 @@ callable.
 Hooks executed only once
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Some hooks can have only one listener:
-
-model:subtask-time-tracking:calculate:time-spent
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Some hooks can have only one listener: ``model:subtask-time-tracking:calculate:time-spent``
 
 -  Override time spent calculation when sub-task timer is stopped
 -  Arguments:
@@ -37,7 +91,7 @@ model:subtask-time-tracking:calculate:time-spent
    -  ``$end`` (DateTime)
 
 Merge hooks
-~~~~~~~~~~~
+-----------
 
 “Merge hooks” act in the same way as the function ``array_merge``. The
 hook callback must return an array. This array will be merged with the
