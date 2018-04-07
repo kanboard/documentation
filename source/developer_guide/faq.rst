@@ -39,3 +39,8 @@ You should make sure that you give all information to be able to reproduce the p
 2. Describe the actual behavior: add screenshots, attach log files, avoid ambiguity, be explicit.
 3. List all the steps to reproduce the problem.
 4. Describe what you expect.
+
+How to add a new plugin to the website?
+---------------------------------------
+
+Follow these instructions: `<https://github.com/kanboard/website#how-to-add-a-new-plugin-to-the-list>`_
