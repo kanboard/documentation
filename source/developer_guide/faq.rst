@@ -44,3 +44,32 @@ How to add a new plugin to the website?
 ---------------------------------------
 
 Follow these instructions: `<https://github.com/kanboard/website#how-to-add-a-new-plugin-to-the-list>`_
+
+How to update this documentation?
+---------------------------------
+
+- The documentation source code is available here: `<https://github.com/kanboard/documentation>`_.
+- We use `Sphinx <http://www.sphinx-doc.org/>`_ and the `reStructuredText <https://en.wikipedia.org/wiki/ReStructuredText>`_  markup language to generate this documentation in multiple formats.
+- To update this documentation, send a pull-request to the project mentioned above.
+
+How to translate the documentation?
+-----------------------------------
+
+Each language has its own repository:
+
+- `Czech <https://github.com/kanboard/documentation-cz>`_
+- `French <https://github.com/kanboard/documentation-fr>`_
+- `Russian <https://github.com/kanboard/documentation-ru>`_
+- `Spanish <https://github.com/kanboard/documentation-es>`_
+- `Turkish <https://github.com/kanboard/documentation-tr>`_
+
+To update a translation, send a pull-request to the corresponding project.
+The directory layout and the file names must be the same as the english version.
+
+If you would like to create a new translation, follow these steps:
+
+- Create a new repository
+- Run ``sphinx-quickstart``
+- Translate the documents
+- Push your changes to GitHub
+- Contact the maintainers on the forum to add your translation to the list
