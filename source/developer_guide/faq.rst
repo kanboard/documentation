@@ -35,10 +35,22 @@ How to make a bug report?
 
 You should make sure that you give all information to be able to reproduce the problem.
 
-1. Describe your environment: Operating System, Browser, Database, version of PHP, Kanboard, etc.
-2. Describe the actual behavior: add screenshots, attach log files, avoid ambiguity, be explicit.
-3. List all the steps to reproduce the problem.
-4. Describe what you expect.
+1. Check for duplicates before creating a new issue.
+2. Write in English even if you don't speak English.
+3. Describe your environment:
+    - Operating System
+    - Browser
+    - Database
+    - Version of PHP
+    - Version of Kanboard
+4. Describe the actual behavior:
+    - Add screenshots
+    - Attach log files
+    - Avoid ambiguity, be explicit
+5. List all the steps to reproduce the problem.
+6. Describe what you expect.
+
+.. note::  Do not ask questions on the bug tracker, use the `forum <https://github.com/kanboard/forum/issues>`_.
 
 How to add a new plugin to the website?
 ---------------------------------------

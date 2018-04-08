@@ -101,12 +101,9 @@ Config files
 -  You must restart the container to take into account the new
    parameters of your custom config file.
 
-Notes
------
+.. note::
 
--  `Official Kanboard
-   images <https://hub.docker.com/r/kanboard/kanboard/>`__
--  `Docker documentation <https://docs.docker.com/>`__
--  Since Kanboard > v1.1.0, the tag “stable” is not used anymore
--  To send emails, you must use the SMTP method or a plugin like
-   Mailgun/Sendgrid/Postmark
+    -  `Official Kanboard images <https://hub.docker.com/r/kanboard/kanboard/>`__
+    -  `Docker documentation <https://docs.docker.com/>`__
+    -  Since Kanboard > v1.1.0, the tag “stable” is not used anymore
+    -  To send emails, you must use the SMTP method or a plugin like Mailgun/Sendgrid/Postmark

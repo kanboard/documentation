@@ -37,7 +37,4 @@ Metadata types
 -  UserMetadata: ``$this->userMetadataModel``
 -  Settings/Config: ``$this->configModel``
 
-Notes
------
-
--  Always prefix the metadata name with your plugin name
+.. note::  Always prefix the metadata name with your plugin name

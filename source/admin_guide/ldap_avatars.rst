@@ -23,11 +23,10 @@ To upload the image in the user profile, Active Directory administrators
 may use software like `AD Photo
 Edit <http://www.cjwdev.co.uk/Software/ADPhotoEdit/Info.html>`__.
 
-Notes
------
+.. note::
 
-The profile image is **downloaded at login time only if the user do not
-already have uploaded an image previously**.
+    The profile image is **downloaded at login time only if the user do not
+    already have uploaded an image previously**.
 
-To change the user photo, the previous one have to be removed manually
-in the user profile.
+    To change the user photo, the previous one have to be removed manually
+    in the user profile.

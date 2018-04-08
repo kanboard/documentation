@@ -98,6 +98,4 @@ Here is the list of available LDAP parameters:
 | E_NAME``              |          | name                             |
 +-----------------------+----------+----------------------------------+
 
-Notes:
-
--  LDAP attributes must be in lowercase
+.. note::  LDAP attributes must be in lowercase

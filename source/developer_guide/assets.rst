@@ -43,7 +43,4 @@ Build ``app.min.css``:
 
     gulp css
 
-Notes
------
-
-Building assets is not possible from the Kanboard’s archive, you have to clone the repository.
+.. note::  Building assets is not possible from the Kanboard’s archive, you have to clone the repository.

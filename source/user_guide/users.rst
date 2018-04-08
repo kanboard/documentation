@@ -164,7 +164,4 @@ Configuration
 
 A new secret key is generated each time you enable/disable this feature.
 
-Notes
-~~~~~
-
-- As of now, the Kanboard API does not support 2FA
+.. note::  As of now, the Kanboard API does not support 2FA

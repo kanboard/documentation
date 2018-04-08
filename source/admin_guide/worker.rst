@@ -42,10 +42,10 @@ that is more suitable for high-availability infrastructure.
 -  Start the worker with the Kanboard command line tool:
    ``./cli worker``
 
-Notes
-~~~~~
+.. note::
 
--  You should start the Kanboard worker with a process supervisor
-   (systemd, upstart or supervisord)
--  The process must have access to the data folder if you store files on
-   the local filesystem or use Sqlite
+    -  You should start the Kanboard worker with a process supervisor
+       (systemd, upstart or supervisord)
+
+    -  The process must have access to the data folder if you store files on
+       the local filesystem or use Sqlite

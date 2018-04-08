@@ -11,11 +11,7 @@ password and suppose you are already authenticated.
 Requirements
 ------------
 
--  A well-configured reverse proxy
-
-or
-
--  Apache Auth on the same server
+Apache Auth on the same server or a well-configured reverse proxy.
 
 How does this work?
 -------------------
@@ -63,21 +59,21 @@ file:
     // will be updated automatically as USER@mydomain.com
     define('REVERSE_PROXY_DEFAULT_DOMAIN', 'mydomain.com');
 
-Notes:
+.. note::
 
--  If the proxy is the same web server that runs Kanboard, according the
-   `CGI protocol <http://www.ietf.org/rfc/rfc3875>`__ the header name
-   will be ``REMOTE_USER``. By example, Apache add ``REMOTE_USER`` by
-   default if ``Require valid-user`` is set.
+    -  If the proxy is the same web server that runs Kanboard, according the
+       `CGI protocol <http://www.ietf.org/rfc/rfc3875>`__ the header name
+       will be ``REMOTE_USER``. By example, Apache add ``REMOTE_USER`` by
+       default if ``Require valid-user`` is set.
 
--  If you use a different header for ``REVERSE_PROXY_USER_HEADER``,
-   the value must be prefixed by ``HTTP_`` because it's fetched from
-   the ``$_SERVER`` array.
+    -  If you use a different header for ``REVERSE_PROXY_USER_HEADER``,
+       the value must be prefixed by ``HTTP_`` because it's fetched from
+       the ``$_SERVER`` array.
 
--  If Apache is a reverse proxy to another Apache running Kanboard, the
-   header ``REMOTE_USER`` is not set (same behavior with IIS and Nginx).
+    -  If Apache is a reverse proxy to another Apache running Kanboard, the
+       header ``REMOTE_USER`` is not set (same behavior with IIS and Nginx).
 
--  If you have a real reverse proxy, the `HTTP ICAP
-   draft <http://tools.ietf.org/html/draft-stecher-icap-subid-00#section-3.4>`__
-   proposes the header to be ``X-Authenticated-User``. This de facto
-   standard has been adopted by a number of tools.
+    -  If you have a real reverse proxy, the `HTTP ICAP
+       draft <http://tools.ietf.org/html/draft-stecher-icap-subid-00#section-3.4>`__
+       proposes the header to be ``X-Authenticated-User``. This de facto
+       standard has been adopted by a number of tools.

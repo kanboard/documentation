@@ -183,14 +183,13 @@ Do not forget to set the time zone:
 The list of supported time zones can be found in the `PHP
 documentation <http://php.net/manual/en/timezones.america.php>`__.
 
-Notes:
+.. note::
 
--  If you use PHP < 5.4, you have to enable the short tags in your
-   php.ini
--  Don’t forget to enable the required php extensions mentioned above
--  If you got an error about “the library MSVCP110.dll is missing”, you
-   probably need to download the Visual C++ Redistributable for Visual
-   Studio from the Microsoft website.
+    -  Don’t forget to enable the required php extensions mentioned above
+
+    -  If you got an error about “the library MSVCP110.dll is missing”, you
+       probably need to download the Visual C++ Redistributable for Visual
+       Studio from the Microsoft website.
 
 IIS Modules
 ~~~~~~~~~~~

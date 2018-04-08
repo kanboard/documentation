@@ -37,11 +37,10 @@ From the git repository (development version)
 Note: This method will install the **current development version**, use
 at your own risk.
 
-Security
---------
+.. warning::  **Security measures:**
 
--  Don’t forget to change the default user/password
--  Don’t allow everybody to access to the directory ``data`` from the
-   URL. A ``.htaccess`` file for Apache and a ``web.config`` file for
-   IIS is included but other web servers will have to be configured
-   manually.
+    -  Do not forget to change the default user/password
+    -  Do not allow everybody to access to the directory ``data`` from the
+       URL. A ``.htaccess`` file for Apache and a ``web.config`` file for
+       IIS is included but other web servers will have to be configured
+       manually.
