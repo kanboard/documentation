@@ -26,8 +26,9 @@ From the archive (stable version)
 3. Copy your custom ``config.php`` if you have one
 4. If you have installed some plugins, use the latest version
 5. Make sure the directory ``data`` is writeable by your web server user
-6. Test
-7. Remove your old Kanboard directory
+6. Modify ``.htaccess`` if needed (f.e. forcing SSL)
+7. Test
+8. Remove your old Kanboard directory
 
 From the repository (development version)
 -----------------------------------------
