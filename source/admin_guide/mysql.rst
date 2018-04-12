@@ -23,7 +23,9 @@ you can do that with the command line mysql client:
 
 .. code:: sql
 
-    CREATE DATABASE kanboard;
+    CREATE DATABASE kanboard CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;;
+
+.. note:: Since the version 1.2.3, Kanboard uses the utf8mb4 encoding instead of utf8.
 
 You can then assign the required permissions on the database:
 

@@ -13,6 +13,8 @@ To have the best performances, choose a provider with fast disk I/O
 because Kanboard use Sqlite by default. Avoid hosting providers that use
 a shared NFS mount point.
 
+.. note:: Using a shared hosting provider is not recommended. Use your own server.
+
 How to display a link to the task in notifications?
 ---------------------------------------------------
 

@@ -53,7 +53,7 @@ Which database to choose?
 Do not use Sqlite on NFS mounts, only when you have a disk with fast
 I/O.
 
-**The recommended database is Postgresql.**
+.. note:: The recommended database is Postgresql.
 
 Compatible Web Servers
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -72,8 +72,10 @@ Compatible Web Servers
 
 Kanboard is pre-configured to work with Apache (URL rewriting).
 
--  Kanboard is NOT compatible with Apache ``mod_security``.
--  If you use Apache, you must have the module ``mod_version``.
+.. note::
+
+    -  Kanboard is NOT compatible with Apache ``mod_security``.
+    -  If you use Apache, you must have the module ``mod_version``.
 
 PHP Versions
 ~~~~~~~~~~~~
@@ -84,7 +86,7 @@ PHP Versions
 | PHP >= 5.6.0 |
 +--------------+
 
-Since the version 1.2, Kanboard requires at least PHP 5.6.
+.. note:: Since the version 1.2, Kanboard requires at least PHP 5.6.
 
 PHP Extensions Required
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -127,7 +129,7 @@ Optional PHP extensions
 +---------------+---------------------------------------+
 | PHP Extension | Note                                  |
 +===============+=======================================+
-| zip           | Used to install plugins from Kanboard |
+| zip           | Used to install plugins from website  |
 +---------------+---------------------------------------+
 | ldap          | Only for LDAP authentication          |
 +---------------+---------------------------------------+
