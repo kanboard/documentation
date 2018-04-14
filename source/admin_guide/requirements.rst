@@ -10,7 +10,7 @@ Compatible Operating Systems
 +-------------------------------------+
 | Operating System                    |
 +=====================================+
-| Linux Ubuntu Xenial Xerus 16.04 LTS |
+| Linux Ubuntu >= 16.04               |
 +-------------------------------------+
 | Linux Centos 7.x                    |
 +-------------------------------------+
@@ -25,6 +25,8 @@ Compatible Operating Systems
 | Microsoft Windows 2012 R2           |
 +-------------------------------------+
 
+.. note:: The recommended operating system is GNU/Linux (Debian/Ubuntu/RHEL).
+
 Compatible Databases
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -33,7 +35,7 @@ Compatible Databases
 +===================+
 | Sqlite >= 3.7     |
 +-------------------+
-| Mysql >= 5.5      |
+| Mysql >= 5.6      |
 +-------------------+
 | MariaDB >= 10     |
 +-------------------+
@@ -86,7 +88,7 @@ PHP Versions
 | PHP >= 5.6.0 |
 +--------------+
 
-.. note:: Since the version 1.2, Kanboard requires at least PHP 5.6.
+.. note:: Since the version 1.2, Kanboard requires at least PHP 5.6. The latest version of PHP is recommended.
 
 PHP Extensions Required
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -163,6 +165,8 @@ Always use a modern browser with the latest version if possible:
 | Microsoft Edge                    |
 +-----------------------------------+
 
+.. note:: The recommended browsers are Mozilla Firefox or Google Chrome.
+
 Devices
 ~~~~~~~
 
@@ -173,3 +177,4 @@ Devices
 +-------------------+-------------------+
 | Tablet            | >= 1024 x 768     |
 +-------------------+-------------------+
+
