@@ -71,6 +71,7 @@ Each language has its own repository:
 
 - `Czech <https://github.com/kanboard/documentation-cz>`_
 - `French <https://github.com/kanboard/documentation-fr>`_
+- `Portuguese <https://github.com/kanboard/documentation-pt>`_
 - `Russian <https://github.com/kanboard/documentation-ru>`_
 - `Spanish <https://github.com/kanboard/documentation-es>`_
 - `Turkish <https://github.com/kanboard/documentation-tr>`_
