@@ -7,10 +7,8 @@ to use MySQL or MariaDB instead of Sqlite.
 Requirements
 ------------
 
--  MySQL or MariaDB server
+-  MySQL >= 5.6 or MariaDB >= 10
 -  The PHP extension ``pdo_mysql`` installed
-
-Note: Kanboard is tested with **MySQL >= 5.5 and MariaDB >= 10.0**
 
 MySQL configuration
 -------------------
