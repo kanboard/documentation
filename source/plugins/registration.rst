@@ -104,7 +104,7 @@ Available methods from ``Kanboard\Core\Plugin\Base``:
 -  ``getClasses()``: Return all classes that should be stored in the
    dependency injection container
 -  ``on($event, $callback)``: Listen on internal events
--  ``getPluginName()``: Should return plugin name
+-  ``getPluginName()``: Should return plugin name (must match plugins.json ``"title":`` entry for "Plugin Directory" version update notifications to work)
 -  ``getPluginAuthor()``: Should return plugin author
 -  ``getPluginVersion()``: Should return plugin version
 -  ``getPluginDescription()``: Should return plugin description
