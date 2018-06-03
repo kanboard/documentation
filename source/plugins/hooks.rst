@@ -341,6 +341,8 @@ List of template hooks:
 +-----------------------------------------------------------+--------------------------------+
 | ``template:dashboard:page-header:menu``                   | Dashboard submenu              |
 +-----------------------------------------------------------+--------------------------------+
+| ``template:dashboard:task:footer``                        | Task in dashboard: footer      |
++-----------------------------------------------------------+--------------------------------+
 | ``template:header:dropdown``                              | Page header dropdown menu      |
 |                                                           | (user avatar icon)             |
 +-----------------------------------------------------------+--------------------------------+
@@ -378,6 +380,8 @@ List of template hooks:
 |                                                           | description                    |
 +-----------------------------------------------------------+--------------------------------+
 | ``template:project-header:view-switcher``                 | Project view switcher          |
++-----------------------------------------------------------+--------------------------------+
+| ``template:search:task:footer``                           | Task in results: footer        |
 +-----------------------------------------------------------+--------------------------------+
 | ``template:task:layout:top``                              | Task layout top (after page    |
 |                                                           | header)                        |
