@@ -35,7 +35,7 @@ Examples to define a new policy from your plugin:
     // All methods of the class MyController:
     $this->projectAccessMap->add('MyController', '*', Role::PROJECT_MANAGER);
 
-    // All some methods:
+    // Specific methods:
     $this->projectAccessMap->add('MyOtherController', array('create', 'save'), Role::PROJECT_MEMBER);
 
 Roles are defined in the class ``Kanboard\Core\Security\Role``.
