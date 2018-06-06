@@ -40,7 +40,7 @@ Configuration on Microsoft Windows Server
 Before to configure the recurring task, create a batch file (*.bat
 or*.cmd) that run the Kanboard CLI script.
 
-Here an example (``C:\kanboard.bat``):
+Here is an example (``C:\kanboard.bat``):
 
 ::
 
