@@ -61,3 +61,13 @@ Configure the Windows Task Scheduler:
 6. Create a new “Trigger”, choose daily and a time, midnight for example
 7. Add a new action, choose “Start a program” and select the batch file
    created above
+
+Configuration by calling a URL
+------------------------------
+
+In case your hosting provider doesn't offer CLI access, you can run cron
+jobs by calling a URL. The URL is protected using the webhook token and
+should be called via HTTPS for added security.
+
+Cron job URL (with URL rewriting enabled):
+``https://domain.tld/cronjob?token=WEBHOOK_TOKEN_HERE``
