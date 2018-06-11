@@ -30,6 +30,8 @@ Why did you close my question on the bug tracker?
 - Bug triage takes a lot of time.
 - If you have a question or if you need help, go to the `forum <https://github.com/kanboard/forum/issues>`_.
 
+.. _bug-report:
+
 How to make a bug report?
 -------------------------
 
@@ -56,6 +58,8 @@ How to add a new plugin to the website?
 ---------------------------------------
 
 Follow these instructions: `<https://github.com/kanboard/website#how-to-add-a-new-plugin-to-the-list>`_
+
+.. _update-docs:
 
 How to update this documentation?
 ---------------------------------

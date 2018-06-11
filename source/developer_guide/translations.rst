@@ -1,6 +1,8 @@
 Translations
 ============
 
+.. _update-translations:
+
 How to translate Kanboard to a new language?
 --------------------------------------------
 
