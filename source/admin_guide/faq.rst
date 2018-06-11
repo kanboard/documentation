@@ -175,3 +175,45 @@ with underscores because it’s not valid.
 Reference:
 
 -  https://support.microsoft.com/en-us/kb/316112
+
+How to change attachment size limit?
+------------------------------------
+
+The file upload size is not defined by Kanboard itself but by PHP and your webserver.
+
+In your ``php.ini``, change the following lines:
+
+.. code:: 
+
+    # Set size limit to 20MB
+    upload_max_filesize = 20M
+    post_max_size = 20M
+
+If you use Nginx, define this value:
+
+.. code::
+
+    client_max_body_size 20M;
+
+See `<http://nginx.org/en/docs/http/ngx_http_core_module.html#client_max_body_size>`_.
+
+Is it possible to customize table names prefix?
+-----------------------------------------------
+
+Short answer: No.
+
+- Kanboard is designed to use its own database.
+- Changing existing code will require too many changes.
+- Mixing multiple software into the same database is a bad practice (shared hosting providers are not recommended).
+
+Why there is no official native mobile application?
+---------------------------------------------------
+
+The development of a native mobile application is let to the community.
+
+- Developing a native mobile application for each platform (iOS/Android) for each device type (Smartphone/Tablet) require a lot of work and money.
+- That require different skill set than developing a web application.
+- To develop a quality application, you have to use the official SDK of each platform. So, you end up developing twice the same application.
+- Publishing a mobile application on a store (App Store/Play Store) is not free, you have to pay, even if your software is free.
+- The web user interface is responsive, this is not prefect but that allows you to quickly check something.
+- This is not really practical to use the board on a tiny screen.

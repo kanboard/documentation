@@ -90,3 +90,17 @@ If you would like to create a new translation, follow these steps:
 - Translate the documents
 - Push your changes to GitHub
 - Contact the maintainers on the forum to add your translation to the list
+
+Why minified files are committed into the source tree?
+------------------------------------------------------
+
+- This is to simplify Kanboard release process.
+- People can download the archive directly from GitHub.
+- Occasional contributors can checkout the source code and work on a patch without having to worry about all Javascript dependencies.
+
+Why PHP vendor directory is committed into the source tree?
+-----------------------------------------------------------
+
+- This is to simplify Kanboard release process.
+- People can download the archive directly from GitHub.
+- Occasional contributors can checkout the source code and work on a patch without having to worry about all Composer dependencies.
