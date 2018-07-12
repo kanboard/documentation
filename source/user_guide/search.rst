@@ -120,7 +120,7 @@ Attribute: **createdRange**
 
 Date separator ``..`` (two dots)
 
-Example: ``createdRange:2018-01-21..2018-01-31``
+Example: ``createdRange:2018/01/21..2018/01/31``
 
 Search by start date
 ~~~~~~~~~~~~~~~~~~~~
