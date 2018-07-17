@@ -114,13 +114,13 @@ Attribute: **created**
 Works in the same way as the modification date queries.
 
 Search by creation date with range
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Attribute: **createdRange**
 
 Date separator ``..`` (two dots)
 
-Example: ``createdRange:2018/01/21..2018/01/31``
+Example: ``createdRange:2018/01/21..2018/01/31`` or ``createdRange:"2018-01-21..2018-01-31"``
 
 Search by start date
 ~~~~~~~~~~~~~~~~~~~~
