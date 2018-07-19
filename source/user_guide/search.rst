@@ -123,7 +123,7 @@ Date separator ``..`` (two dots)
 Example: ``createdRange:2018/01/21..2018/01/31`` or ``createdRange:"2018-01-21..2018-01-31"``
 
 Search by completion date with range
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Attribute: **completedRange**
 
@@ -132,7 +132,7 @@ Date separator ``..`` (two dots)
 Example: ``completedRange:2018/01/21..2018/01/31`` or ``completedRange:"2018-01-21..2018-01-31"``
 
 Search by modification date with range
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Attribute: **updatedRange**, **modifiedRange**
 
@@ -141,7 +141,7 @@ Date separator ``..`` (two dots)
 Example: ``updatedRange:2018/01/21..2018/01/31`` or ``updatedRange:"2018-01-21..2018-01-31"``
 
 Search by moved date with range
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Attribute: **movedRange**
 
