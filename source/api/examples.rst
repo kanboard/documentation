@@ -56,38 +56,6 @@ Here an example to create a project and a task:
 There are more examples on the `official
 website <https://github.com/kanboard/kanboard-api-python>`__.
 
-Example with a PHP client
--------------------------
-
-You can use this `Json-RPC Client/Server library for
-PHP <https://github.com/fguillot/JsonRPC>`__, here an example:
-
-.. code:: php
-
-    <?php
-
-    $client = new JsonRPC\Client('http://localhost:8000/jsonrpc.php');
-    $client->authentication('jsonrpc', '19ffd9709d03ce50675c3a43d1c49c1ac207f4bc45f06c5b2701fbdf8929');
-
-    print_r($client->getAllProjects());
-
-The response:
-
-::
-
-    Array
-    (
-        [0] => Array
-            (
-                [id] => 1
-                [name] => API test
-                [is_active] => 1
-                [token] => 6bd0932fe7f4b5e6e4bc3c72800bfdef36a2c5de2f38f756dfb5bd632ebf
-                [last_modified] => 1403392631
-            )
-
-    )
-
 Example with Ruby
 -----------------
 
