@@ -1,80 +1,22 @@
-Docker Container Usage
-======================
+Running Kanboard with Docker
+============================
 
-Kanboard can run easily with `Docker <https://www.docker.com>`__.
+Kanboard can run easily with `Docker <https://www.docker.com>`_.
 
-The image size is approximately **50MB** and contains:
+Docker Tags
+-----------
 
--  `Alpine Linux <http://alpinelinux.org/>`__
--  The `process manager S6 <http://skarnet.org/software/s6/>`__
--  Nginx
--  PHP 7
++--------------+-------------------------------------------------------+
+| Tag          | Description                                           |
++==============+=======================================================+
+| latest       | Latest stable release                                 |
++--------------+-------------------------------------------------------+
+| v1.2.x       | Specific version of Kanboard                          |
++--------------+-------------------------------------------------------+
+| master       | Latest development changes (master branch)            |
++--------------+-------------------------------------------------------+
 
-The Kanboard cronjob is also running everyday at midnight. URL rewriting
-is enabled in the included config file.
-
-When the container is running, the memory utilization is around
-**30MB**.
-
-Use the latest release version
-------------------------------
-
-From the list of tags on the `Docker
-Hub <https://hub.docker.com/r/kanboard/kanboard/>`__, choose the version
-that you would like to install.
-
-For example, to install the version 1.1.1:
-
-.. code:: bash
-
-    docker pull kanboard/kanboard:v1.1.1
-    docker run -d --name kanboard -p 80:80 -t kanboard/kanboard:v1.1.1
-
-Use the development version (automated build)
----------------------------------------------
-
-Every new commit on the repository trigger a new build on the `Docker
-Hub <https://hub.docker.com/r/kanboard/kanboard/>`__.
-
-.. code:: bash
-
-    docker pull kanboard/kanboard:latest
-    docker run -d --name kanboard -p 80:80 -t kanboard/kanboard:latest
-
-The tag **latest** is the **development version** of Kanboard and
-represents the master branch, use at your own risk.
-
-Build your own Docker image
----------------------------
-
-Clone the Kanboard repository and run the following command:
-
-.. code:: bash
-
-    make docker-image
-
-Volumes
--------
-
-You can attach 2 volumes to your container:
-
--  Data folder: ``/var/www/app/data``
--  Plugins folder: ``/var/www/app/plugins``
-
-Use the flag ``-v`` to mount a volume on the host machine like described
-in `official Docker
-documentation <https://docs.docker.com/storage/volumes/>`__.
-
-There is also a ``docker-compose.yml`` file in the repository.
-
-Upgrade your container
-----------------------
-
--  Pull the new image
--  Remove the old container
--  Restart a new container with the same volumes
-
-Environment variables
+Environment Variables
 ---------------------
 
 +-----------+----------------------------------------------------------+
@@ -84,26 +26,89 @@ Environment variables
 | URL       | [database name]``,                                       |
 |           | example: ``postgres://foo:foo@myserver:5432/kanboard``   |
 +-----------+----------------------------------------------------------+
-| DEBUG     | Enable/Disable debug mode: “true” or “false”             |
+| DEBUG     | Enable/Disable debug mode: ``true`` or ``false``         |
 +-----------+----------------------------------------------------------+
 | API_AUTHE | Custom API token                                         |
 | NTICATION |                                                          |
 | _TOKEN    |                                                          |
 +-----------+----------------------------------------------------------+
 
-Config files
-------------
+Volumes
+-------
 
--  The container already include a custom config file located at
-   ``/var/www/app/config.php``.
--  You can store your own config file on the data volume:
-   ``/var/www/app/data/config.php``.
--  You must restart the container to take into account the new
-   parameters of your custom config file.
++-------------------------+-------------------------------------------------------+
+| Path                    | Description                                           |
++=========================+=======================================================+
+| /var/www/app/data       | Application data (Sqlite database, attachments, etc.) |
++-------------------------+-------------------------------------------------------+
+| /var/www/app/plugins    | Plugins                                               |
++-------------------------+-------------------------------------------------------+
+| /etc/nginx/ssl          | SSL certificates                                      |
++-------------------------+-------------------------------------------------------+
+
+Custom Config File
+------------------
+
+- The container already include a custom config file located at ``/var/www/app/config.php``.
+- You can store your own config file on the data volume: ``/var/www/app/data/config.php``.
+- You must restart the container to take into account the new parameters of your custom config file.
+
+Running the Container
+---------------------
+
+Basic Usage
+~~~~~~~~~~~
+
+.. code:: bash
+
+    docker pull kanboard/kanboard:v1.2.5
+    docker run -d --name kanboard -p 80:80 -t kanboard/kanboard:v1.2.5
+
+Docker Compose
+~~~~~~~~~~~~~~
+
+There is a ``docker-compose.yml`` file in Kanboard repository. Here an example:
+
+.. code::
+
+    version: '2'
+    services:
+      kanboard:
+        image: kanboard/kanboard:latest
+        ports:
+          - "80:80"
+          - "443:443"
+        volumes:
+          - kanboard_data:/var/www/app/data
+          - kanboard_plugins:/var/www/app/plugins
+          - kanboard_ssl:/etc/nginx/ssl
+    volumes:
+      kanboard_data:
+        driver: local
+      kanboard_plugins:
+        driver: local
+      kanboard_ssl:
+        driver: local
+
+Starting the container with Docker Compose:
+
+.. code:: bash
+
+    docker-compose up
+
+Build Your Own Docker Image
+---------------------------
+
+Clone the Kanboard repository and run the following command:
+
+.. code:: bash
+
+    make docker-image
 
 .. note::
 
-    -  `Official Kanboard images <https://hub.docker.com/r/kanboard/kanboard/>`__
-    -  `Docker documentation <https://docs.docker.com/>`__
-    -  Since Kanboard > v1.1.0, the tag “stable” is not used anymore
-    -  To send emails, you must use the SMTP method or a plugin like Mailgun/Sendgrid/Postmark
+    - `Official Kanboard images <https://hub.docker.com/r/kanboard/kanboard/>`__
+    - `Docker documentation <https://docs.docker.com/>`__
+    - Since Kanboard > v1.1.0, the tag "stable" is not used anymore
+    - Since Kanboard > v1.2.5, the tag "latest" point to the latest stable release instead of the master branch
+    - To send emails, you must use the SMTP method or a plugin like Mailgun/Sendgrid/Postmark
