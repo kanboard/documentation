@@ -1,4 +1,4 @@
-FreeBSD 10 Installation
+FreeBSD Installation
 =======================
 
 Package Installation
@@ -6,15 +6,14 @@ Package Installation
 
 .. code:: bash
 
-    $ pkg update
-    $ pkg upgrade
-    $ pkg install apache24 mod_php56 kanboard
+    $ pkg upgrade -y
+    $ pkg install -y apache24 mod_php56 kanboard
 
 Enable Apache in your ``/etc/rc.conf``:
 
 .. code:: bash
 
-    $ echo apache24_enable="YES" >> /etc/rc.conf
+    $ sysrc apache24_enable=yes
 
 Set up PHP for Apache:
 
@@ -80,7 +79,7 @@ Enable Apache in your ``/etc/rc.conf``:
 
 .. code:: bash
 
-    $ echo apache24_enable="YES" >> /etc/rc.conf
+    $ sysrc apache24_enable=yes
 
 Install mod_php for Apache:
 
