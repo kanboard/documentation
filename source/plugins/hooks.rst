@@ -4,10 +4,10 @@ Plugin Hooks
 Add new API methods
 -------------------
 
-Kanboard use this library
+Kanboard uses this library
 `JSON-RPC <https://github.com/fguillot/JsonRPC>`__ to handle API calls.
 
-To add a new method you can do something like that from your plugin:
+To add a new method, you can do something like this from your plugin:
 
 .. code:: php
 
@@ -23,11 +23,11 @@ Read the library documentation for more information.
 Add new console commands
 ------------------------
 
-Kanboard use the library `Symfony
+Kanboard uses the library `Symfony
 Console <http://symfony.com/doc/current/components/console/introduction.html>`__
 to handle local command lines.
 
-Kanboard expose an instance of the object
+Kanboard exposes an instance of the object
 ``Symfony\Component\Console\Application`` via ``$this->cli``. You can
 add new commands from your plugin:
 
@@ -44,7 +44,7 @@ Since the task lexer is a factory that returns a new instance each time,
 you have to extend the ``taskLexer`` container with the method
 ``extend()`` of Pimple.
 
-Here is a example:
+Here is an example:
 
 .. code:: php
 
@@ -241,7 +241,7 @@ List of reference hooks:
 Template Hooks
 --------------
 
-Template hooks allow to add new content in existing templates.
+Template hooks allow additional content in existing templates.
 
 Example to add new content in the dashboard sidebar:
 
@@ -266,7 +266,7 @@ Example to attach a template with a callable:
     });
 
 This call is usually defined in the ``initialize()`` method. The first
-argument is name of the hook and the second argument is the template
+argument is the name of the hook and the second argument is the template
 name.
 
 Template names prefixed with the plugin name and colon indicate the
@@ -465,5 +465,5 @@ List of template hooks:
 | ``template:user:show:profile:info``                       | User profile information       |
 +-----------------------------------------------------------+--------------------------------+
 
-Another template hooks can be added if necessary, just ask on the issue
+More template hooks can be added if necessary, just ask on the issue
 tracker.
