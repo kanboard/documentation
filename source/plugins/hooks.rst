@@ -332,6 +332,8 @@ List of template hooks:
 +-----------------------------------------------------------+--------------------------------+
 | ``template:config:application``                           | Application settings form      |
 +-----------------------------------------------------------+--------------------------------+
+| ``template:config:board``                                 | Board settings form            |
++-----------------------------------------------------------+--------------------------------+
 | ``template:config:email``                                 | Email settings page            |
 +-----------------------------------------------------------+--------------------------------+
 | ``template:config:integrations``                          | Integration page in global     |
