@@ -28,7 +28,7 @@ Why did you close my question on the bug tracker?
 
 - The bug tracker should be reserved only for bug reports.
 - Bug triage takes a lot of time.
-- If you have a question or if you need help, go to the `forum <https://github.com/kanboard/forum/issues>`_.
+- If you have a question or if you need help, go to the `forum <https://kanboard.discourse.group/>`_.
 
 .. _bug-report:
 
@@ -52,7 +52,7 @@ You should make sure that you give all information to be able to reproduce the p
 5. List all the steps to reproduce the problem.
 6. Describe what you expect.
 
-.. note::  Do not ask questions on the bug tracker, use the `forum <https://github.com/kanboard/forum/issues>`_.
+.. note::  Do not ask questions on the bug tracker, use the `forum <https://kanboard.discourse.group/>`_.
 
 How to add a new plugin to the website?
 ---------------------------------------
