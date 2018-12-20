@@ -1,6 +1,9 @@
 Upgrade to a New Version
 ========================
 
+.. warning:: Please, do not update the software blindly without reading the `ChangeLog <https://github.com/kanboard/kanboard/blob/master/ChangeLog>`_.
+             Always check for breaking changes if any.
+
 Most of the time, upgrading Kanboard to a newer version is seamless. The
 process could be summarized to simply copy your data folder to the new
 Kanboard folder. Kanboard will run database migrations automatically for

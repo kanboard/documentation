@@ -105,6 +105,9 @@ Clone the Kanboard repository and run the following command:
 
     make docker-image
 
+.. warning:: Please, do not update the software blindly without reading the `ChangeLog <https://github.com/kanboard/kanboard/blob/master/ChangeLog>`_.
+             Always check for breaking changes if any.
+
 .. note::
 
     - `Official Kanboard images <https://hub.docker.com/r/kanboard/kanboard/>`__
