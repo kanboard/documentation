@@ -14,15 +14,14 @@ Interface
 The provider must implements the interface
 ``Kanboard\Core\User\Avatar\AvatarProviderInterface``:
 
-+----------------------+-----------------------------------------------+
-| Method               | Description                                   |
-+======================+===============================================+
-| ``render(array $user | Render HTML                                   |
-| , $size)``           |                                               |
-+----------------------+-----------------------------------------------+
-| ``isActive(array $us | Returns a boolean if the provider is able to  |
-| er)``                | render something                              |
-+----------------------+-----------------------------------------------+
++--------------------------------+-----------------------------------------------+
+| Method                         | Description                                   |
++================================+===============================================+
+| ``render(array $user, $size)`` | Render HTML                                   |
++--------------------------------+-----------------------------------------------+
+| ``isActive(array $user)``      | Returns a boolean if the provider is able to  |
+|                                | render something                              |
++--------------------------------+-----------------------------------------------+
 
 The ``$user`` argument is a dictionary that contains these keys:
 
