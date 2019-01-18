@@ -41,24 +41,23 @@ classes that implement those interfaces:
 ExternalLinkProviderInterface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+--------------------+-------------------------------------------------+
-| Method             | Usage                                           |
-+====================+=================================================+
-| ``getName()``      | Get provider name (label)                       |
-+--------------------+-------------------------------------------------+
-| ``getType()``      | Get link type (will be saved in the database)   |
-+--------------------+-------------------------------------------------+
-| ``getDependencies( | Get a dictionary of supported dependency types  |
-| )``                | by the provider                                 |
-+--------------------+-------------------------------------------------+
-| ``setUserTextInput | Set text entered by the user                    |
-| ($input)``         |                                                 |
-+--------------------+-------------------------------------------------+
-| ``match()``        | Return true if the provider can parse correctly |
-|                    | the user input                                  |
-+--------------------+-------------------------------------------------+
-| ``getLink()``      | Get the link found with the properties          |
-+--------------------+-------------------------------------------------+
++------------------------------+-------------------------------------------------+
+| Method                       | Usage                                           |
++==============================+=================================================+
+| ``getName()``                | Get provider name (label)                       |
++------------------------------+-------------------------------------------------+
+| ``getType()``                | Get link type (will be saved in the database)   |
++------------------------------+-------------------------------------------------+
+| ``getDependencies()``        | Get a dictionary of supported dependency types  |
+|                              | by the provider                                 |
++------------------------------+-------------------------------------------------+
+| ``setUserTextInput($input)`` | Set text entered by the user                    |
++------------------------------+-------------------------------------------------+
+| ``match()``                  | Return true if the provider can parse correctly |
+|                              | the user input                                  |
++------------------------------+-------------------------------------------------+
+| ``getLink()``                | Get the link found with the properties          |
++------------------------------+-------------------------------------------------+
 
 ExternalLinkInterface
 ~~~~~~~~~~~~~~~~~~~~~
