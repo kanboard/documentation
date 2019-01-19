@@ -20,29 +20,28 @@ Authentication Interfaces
 To have a pluggable system, authentication drivers must implement a set
 of interfaces:
 
-+---------------------------+-------------------------------------------+
-| Interface                 | Role                                      |
-+===========================+===========================================+
-| AuthenticationProviderInt | Base interface for other authentication   |
-| erface                    | interfaces                                |
-+---------------------------+-------------------------------------------+
-| PreAuthenticationProvider | The user is already authenticated when    |
-| Interface                 | reaching the application, web servers     |
-|                           | usually define some environment variables |
-+---------------------------+-------------------------------------------+
-| PasswordAuthenticationPro | Authentication methods that uses the      |
-| viderInterface            | username and password provided in the     |
-|                           | login form                                |
-+---------------------------+-------------------------------------------+
-| OAuthAuthenticationProvid | OAuth2 providers                          |
-| erInterface               |                                           |
-+---------------------------+-------------------------------------------+
-| PostAuthenticationProvide | Two-Factor auhentication drivers, ask for |
-| rInterface                | confirmation code                         |
-+---------------------------+-------------------------------------------+
-| SessionCheckProviderInter | Providers that are able to check if the   |
-| face                      | user session is valid                     |
-+---------------------------+-------------------------------------------+
++-----------------------------------------+-------------------------------------------+
+| Interface                               | Role                                      |
++=========================================+===========================================+
+| AuthenticationProviderInterface         | Base interface for other authentication   |
+|                                         | interfaces                                |
++-----------------------------------------+-------------------------------------------+
+| PreAuthenticationProviderInterface      | The user is already authenticated when    |
+|                                         | reaching the application, web servers     |
+|                                         | usually define some environment variables |
++-----------------------------------------+-------------------------------------------+
+| PasswordAuthenticationProviderInterface | Authentication methods that uses the      |
+|                                         | username and password provided in the     |
+|                                         | login form                                |
++-----------------------------------------+-------------------------------------------+
+| OAuthAuthenticationProviderInterface    | OAuth2 providers                          |
++-----------------------------------------+-------------------------------------------+
+| PostAuthenticationProviderInterface     | Two-Factor auhentication drivers, ask for |
+|                                         | confirmation code                         |
++-----------------------------------------+-------------------------------------------+
+| SessionCheckProviderInterface           | Providers that are able to check if the   |
+|                                         | user session is valid                     |
++-----------------------------------------+-------------------------------------------+
 
 Examples of authentication providers:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

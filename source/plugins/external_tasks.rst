@@ -40,29 +40,27 @@ External task providers must implements at least two interfaces:
 ExternalTaskProviderInterface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+-------------------------------+---------------------------------------+
-| Method                        | Usage                                 |
-+===============================+=======================================+
-| ``getName()``                 | Get provider name (label)             |
-+-------------------------------+---------------------------------------+
-| ``fetch()``                   | Retrieve task from external system or |
-|                               | cache                                 |
-+-------------------------------+---------------------------------------+
-| ``save($uri, array $formValue | Save external task to another system  |
-| s, array &$formErrors)``      |                                       |
-+-------------------------------+---------------------------------------+
-| ``getImportFormTemplate()``   | Get task import template name         |
-+-------------------------------+---------------------------------------+
-| ``getCreationFormTemplate()`` | Get creation form template            |
-+-------------------------------+---------------------------------------+
-| ``getModificationFormTemplate | Get modification form template        |
-| ()``                          |                                       |
-+-------------------------------+---------------------------------------+
-| ``getViewTemplate()``         | Get task view template name           |
-+-------------------------------+---------------------------------------+
-| ``buildTaskUri(array $formVal | Build external task URI based on      |
-| ues)``                        | import form values                    |
-+-------------------------------+---------------------------------------+
++-------------------------------------------------------+---------------------------------------+
+| Method                                                | Usage                                 |
++=======================================================+=======================================+
+| ``getName()``                                         | Get provider name (label)             |
++-------------------------------------------------------+---------------------------------------+
+| ``fetch()``                                           | Retrieve task from external system or |
+|                                                       | cache                                 |
++-------------------------------------------------------+---------------------------------------+
+| ``save($uri, array $formValues, array &$formErrors)`` | Save external task to another system  |
++-------------------------------------------------------+---------------------------------------+
+| ``getImportFormTemplate()``                           | Get task import template name         |
++-------------------------------------------------------+---------------------------------------+
+| ``getCreationFormTemplate()``                         | Get creation form template            |
++-------------------------------------------------------+---------------------------------------+
+| ``getModificationFormTemplate()``                     | Get modification form template        |
++-------------------------------------------------------+---------------------------------------+
+| ``getViewTemplate()``                                 | Get task view template name           |
++-------------------------------------------------------+---------------------------------------+
+| ``buildTaskUri(array $formValues)``                   | Build external task URI based on      |
+|                                                       | import form values                    |
++-------------------------------------------------------+---------------------------------------+
 
 ExternalTaskInterface
 ~~~~~~~~~~~~~~~~~~~~~
