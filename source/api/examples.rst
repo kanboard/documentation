@@ -4,7 +4,7 @@ API Examples
 Example with cURL
 -----------------
 
-From the command line:
+With the special user "jsonrpc":
 
 .. code:: bash
 
@@ -12,6 +12,16 @@ From the command line:
     -u "jsonrpc:19ffd9709d03ce50675c3a43d1c49c1ac207f4bc45f06c5b2701fbdf8929" \
     -d '{"jsonrpc": "2.0", "method": "getAllProjects", "id": 1}' \
     http://localhost/kanboard/jsonrpc.php
+
+With a normal user:
+
+.. code:: bash
+
+    curl \
+    -u "username:secret" \
+    -d '{"jsonrpc": "2.0", "method": "getMyProjects", "id": 1}' \
+    http://localhost/kanboard/jsonrpc.php
+
 
 Response from the server:
 

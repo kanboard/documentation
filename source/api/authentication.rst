@@ -30,7 +30,7 @@ Custom HTTP header
 You can use an alternative HTTP header for the authentication if your
 server have a very specific configuration.
 
--  The header name can be anything you want, by example ``X-API-Auth``.
+-  The header name can be anything, for example ``X-API-Auth``.
 -  The header value is the ``username:password`` encoded in Base64.
 
 Configuration:

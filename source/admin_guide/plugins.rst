@@ -8,11 +8,18 @@ have those requirements:
 -  The Zip extension must be available on your server
 -  The config parameter ``PLUGIN_INSTALLER`` must be set at ``true``
 
-To disable this feature, change the value of ``PLUGIN_INSTALLER`` to
-``false`` in your config file. You can also change the permissions of
+To enable this feature, change the value of ``PLUGIN_INSTALLER`` to
+``true`` in your config file. You can also change the permissions of
 the plugin folder on the filesystem.
 
 Only administrators are allowed to install plugins from the user
 interface.
 
 By default, only plugin listed on Kanboard’s website are available.
+You can change the directory URL in the config file.
+
+.. warning:: Since Kanboard v1.2.8, the plugin directory is disabled by default
+    for security reasons.
+
+- There is no code review or any approval process to submit a plugin.
+- This is up to the Kanboard instance owner to validate if a plugin is legit.

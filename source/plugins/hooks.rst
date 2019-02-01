@@ -243,16 +243,16 @@ Example to attach a template with local variables:
 
 .. code:: php
 
-    $this->template->hook->attach('template:dashboard:sidebar', 'myplugin:dashboard/sidebar', array(
+    $this->template->hook->attach('template:dashboard:sidebar', 'myplugin:dashboard/sidebar', [
         'variable' => 'foobar',
-    ));
+    ]);
 
 Example to attach a template with a callable:
 
 .. code:: php
 
-    $this->template->hook->attach('template:dashboard:sidebar', 'myplugin:dashboard/sidebar', function($hook_param1, $hook_param2) {
-        return array('new_template_variable' => 'foobar'); // Inject a new variable into the plugin template
+    $this->template->hook->attachCallable('template:dashboard:sidebar', 'myplugin:dashboard/sidebar', function($hook_param1, $hook_param2) {
+        return ['new_template_variable' => 'foobar']; // Inject a new variable into the plugin template
     });
 
 This call is usually defined in the ``initialize()`` method. The first
@@ -456,6 +456,3 @@ List of template hooks:
 +-----------------------------------------------------------+--------------------------------+
 | ``template:user:show:profile:info``                       | User profile information       |
 +-----------------------------------------------------------+--------------------------------+
-
-More template hooks can be added if necessary, just ask on the issue
-tracker.

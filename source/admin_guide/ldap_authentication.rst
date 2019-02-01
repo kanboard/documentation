@@ -246,7 +246,7 @@ server.
 
 -  You can switch SELinux to the permissive mode or disable it (not
    recommended)
--  You can allow all network connections, by example
+-  You can allow all network connections, for example
    ``setsebool -P httpd_can_network_connect=1`` or have a more
    restrictive rule
 

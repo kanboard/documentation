@@ -77,7 +77,7 @@ directory data:
     chcon -R -t httpd_sys_content_rw_t /var/www/html/kanboard/data
 
 Be sure to configure your server to allow Kanboard to send emails and
-make external network requests, by example with SELinux:
+make external network requests, for example with SELinux:
 
 .. code:: bash
 

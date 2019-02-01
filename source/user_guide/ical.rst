@@ -2,8 +2,8 @@ iCalendar Subscriptions
 =======================
 
 Kanboard supports iCal feeds for projects and users. This feature allows
-you to import Kanboard tasks in almost any calendar program (by example
-Microsoft Outlook, Apple Calendar, Mozilla Thunderbird and Google
+you to import Kanboard tasks in almost any calendar program (Microsoft 
+Outlook, Apple Calendar, Mozilla Thunderbird and Google
 Calendar).
 
 Calendar subscriptions are **read-only** access, you cannot create tasks

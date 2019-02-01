@@ -42,7 +42,7 @@ you can enable this feature in your config file:
 When this constant is at ``true``:
 
 -  URLs generated from command line tools will be also converted
--  If you use another web server than Apache, by example Nginx or
+-  If you use another web server than Apache, for example Nginx or
    Microsoft IIS, you have to configure yourself the URL rewriting
 
 Note: Kanboard always fallback to old school URLs when it’s not

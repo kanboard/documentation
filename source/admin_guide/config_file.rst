@@ -38,7 +38,7 @@ Enable/disable plugin installation from the user interface:
 
 .. code:: php
 
-    define('PLUGIN_INSTALLER', true); // Default is true
+    define('PLUGIN_INSTALLER', false); // Default is false since Kanboard v1.2.8
 
 Change default plugin directory URL:
 

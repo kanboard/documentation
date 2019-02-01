@@ -36,11 +36,12 @@ Security
 
 -  Always use HTTPS with a valid certificate (avoid clear text
    communication)
--  If you make a mobile application, it’s your responsability to store
+-  If you develop a mobile application, it's your responsability to store
    securely the user credentials on the device
--  After 3 authentication failure on the user api, the end-user have to
+-  After 3 authentication failures on the user api, the end-user have to
    unlock his account by using the login form
--  Two factor authentication is not yet available through the API
+
+.. warning:: Since Kanboard v1.2.8, people with two-factor authentication enabled must use API keys.
 
 Protocol
 --------

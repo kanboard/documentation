@@ -16,8 +16,8 @@ MySQL configuration
 Create a database
 ~~~~~~~~~~~~~~~~~
 
-The first step is to create a database on your MySQL server. By example,
-you can do that with the command line mysql client:
+The first step is to create a database on your MySQL server.
+For example, you can do that from MySQL client:
 
 .. code:: sql
 

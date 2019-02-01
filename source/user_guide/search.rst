@@ -169,11 +169,10 @@ Attribute: **completed**
 Search by external reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The task reference is an external id of your task, by example a ticket
+The task reference is an external ID of your task, for example a ticket
 number from another software.
 
--  Find tasks with a reference: ``ref:1234`` or
-   ``reference:TICKET-1234``
+-  Find tasks with a reference: ``ref:1234`` or ``reference:TICKET-1234``
 -  Wildcard search: ``ref:TICKET-*``
 
 Search by category
@@ -204,14 +203,13 @@ Attribute: **column**
 -  Find tasks by column name: ``column:"Work in progress"``
 -  Find tasks for several columns: ``column:"Backlog" column:ready``
 
-Search by swim-lane
-~~~~~~~~~~~~~~~~~~~
+Search by swimlane
+~~~~~~~~~~~~~~~~~~
 
 Attribute: **swimlane**
 
 -  Find tasks by swim-lane: ``swimlane:"Version 42"``
--  Find tasks into several swim-lanes:
-   ``swimlane:"Version 1.2" swimlane:"Version 1.3"``
+-  Find tasks into several swim-lanes: ``swimlane:"Version 1.2" swimlane:"Version 1.3"``
 
 Search by task link
 ~~~~~~~~~~~~~~~~~~~

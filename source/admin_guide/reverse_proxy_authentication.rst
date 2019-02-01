@@ -63,7 +63,7 @@ file:
 
     -  If the proxy is the same web server that runs Kanboard, according the
        `CGI protocol <http://www.ietf.org/rfc/rfc3875>`__ the header name
-       will be ``REMOTE_USER``. By example, Apache add ``REMOTE_USER`` by
+       will be ``REMOTE_USER``. For example, Apache add ``REMOTE_USER`` by
        default if ``Require valid-user`` is set.
 
     -  If you use a different header for ``REVERSE_PROXY_USER_HEADER``,

@@ -137,7 +137,7 @@ Kanboard installation
 ~~~~~~~~~~~~~~~~~~~~~
 
 -  Download the zip file
--  Decompress the archive in ``C:\Apache24\htdocs\kanboard`` by example
+-  Decompress the archive in ``C:\Apache24\htdocs\kanboard``
 -  Open your web browser to use Kanboard http://localhost/kanboard/
 -  The default credentials are **admin/admin**
 
@@ -207,7 +207,7 @@ Kanboard installation
 ~~~~~~~~~~~~~~~~~~~~~
 
 -  Download the zip file
--  Decompress the archive in ``C:\inetpub\wwwroot\kanboard`` by example
+-  Decompress the archive in ``C:\inetpub\wwwroot\kanboard``
 -  Make sure the directory ``data`` is writable by the IIS user
 -  Open your web browser to use Kanboard http://localhost/kanboard/
 -  The default credentials are **admin/admin**
