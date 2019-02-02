@@ -25,7 +25,7 @@ Install Kanboard:
     chown -R www-data:www-data kanboard-<version>/data
     rm kanboard-<version>.zip
 
--  You might need to enable PHP extensions with the command
-   ``phpenmod``.
--  Some features of Kanboard require that you run a daily background
-   job.
+.. note::
+
+    - You might need to enable PHP extensions with the command ``phpenmod``.
+    - Some features of Kanboard requires that you run a daily background job.

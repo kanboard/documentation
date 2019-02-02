@@ -1,7 +1,7 @@
 Background Workers
 ==================
 
-**This feature is experimental**.
+.. warning:: This feature is experimental. Use at your own risk.
 
 Depending on your configuration, some features can slow down the
 application if they are executed in the same process as the HTTP

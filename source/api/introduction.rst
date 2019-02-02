@@ -38,7 +38,7 @@ Security
    communication)
 -  If you develop a mobile application, it's your responsability to store
    securely the user credentials on the device
--  After 3 authentication failures on the user api, the end-user have to
+-  After 3 authentication failures on the user API, the end-user have to
    unlock his account by using the login form
 
 .. warning:: Since Kanboard v1.2.8, people with two-factor authentication enabled must use API keys.
@@ -46,7 +46,7 @@ Security
 Protocol
 --------
 
-Kanboard use the protocol Json-RPC to interact with external programs.
+Kanboard uses the protocol Json-RPC to interact with external programs.
 
 JSON-RPC is a remote procedure call protocol encoded in JSON. Almost the
 same thing as XML-RPC but with the JSON format.

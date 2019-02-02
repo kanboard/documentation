@@ -1,6 +1,8 @@
 API Authentication
 ==================
 
+.. warning:: Since Kanboard v1.2.8, people with two-factor authentication enabled must use API keys.
+
 API endpoint
 ------------
 

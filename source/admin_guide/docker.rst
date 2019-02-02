@@ -1,7 +1,9 @@
 Running Kanboard with Docker
 ============================
 
-Kanboard can run easily with `Docker <https://www.docker.com>`_.
+.. warning:: Please, do not update the software blindly without reading the `ChangeLog <https://github.com/kanboard/kanboard/blob/master/ChangeLog>`_.
+             Always check for breaking changes if any.
+
 
 Docker Tags
 -----------
@@ -101,9 +103,6 @@ Clone the Kanboard repository and run the following command:
 .. code:: bash
 
     make docker-image
-
-.. warning:: Please, do not update the software blindly without reading the `ChangeLog <https://github.com/kanboard/kanboard/blob/master/ChangeLog>`_.
-             Always check for breaking changes if any.
 
 .. note::
 

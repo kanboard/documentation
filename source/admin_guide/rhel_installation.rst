@@ -31,41 +31,6 @@ Install Kanboard:
     chown -R apache:apache kanboard-<version>/data
     rm kanboard-<version>.zip
 
-Centos 6.x
-----------
-
-Install PHP and Apache:
-
-.. code:: bash
-
-    yum install -y php php-xml php-mbstring php-pdo php-gd unzip wget
-
-By default, Centos 6.5 use PHP 5.3.3 and Apache 2.2.15.
-
-Enable short tags:
-
--  Edit the file ``/etc/php.ini``
--  Change the line ``short_open_tag = On``
-
-Restart Apache:
-
-.. code:: bash
-
-    service httpd restart
-
-Install Kanboard:
-
-.. code:: bash
-
-    cd /var/www/html
-
-    # Download the latest release from https://github.com/kanboard/kanboard/releases
-    wget https://github.com/kanboard/kanboard/archive/v<version>.zip
-
-    unzip kanboard-<version>.zip
-    chown -R apache:apache kanboard-<version>/data
-    rm kanboard-<version>.zip
-
 SELinux restrictions
 --------------------
 

@@ -4,7 +4,7 @@ API Examples
 Example with cURL
 -----------------
 
-With the special user "jsonrpc":
+With the special user ``jsonrpc``:
 
 .. code:: bash
 

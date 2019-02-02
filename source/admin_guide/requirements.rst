@@ -1,6 +1,8 @@
 Requirements
 ============
 
+.. _requirements:
+
 Server Side
 -----------
 
@@ -10,6 +12,8 @@ Compatible Operating Systems
 +-------------------------------------+
 | Operating System                    |
 +=====================================+
+| Alpine Linux >= 3.8                 |
++-------------------------------------+
 | Linux Ubuntu >= 16.04               |
 +-------------------------------------+
 | Linux Centos 7.x                    |
@@ -25,7 +29,7 @@ Compatible Operating Systems
 | Microsoft Windows 2012 R2           |
 +-------------------------------------+
 
-.. note:: The recommended operating system is GNU/Linux (Debian/Ubuntu/RHEL).
+.. note:: The recommended operating system is GNU/Linux (Debian/Ubuntu/RHEL/Alpine Linux).
 
 Compatible Databases
 ~~~~~~~~~~~~~~~~~~~~
@@ -52,10 +56,10 @@ Which database to choose?
 | Mysql/Postgres | Larger team, high-availability configuration      |
 +----------------+---------------------------------------------------+
 
-Do not use Sqlite on NFS mounts, only when you have a disk with fast
-I/O.
+.. note::
 
-.. note:: The recommended database is Postgresql.
+    - The recommended database is Postgresql.
+    - Do not use Sqlite over NFS, only when you have a disk with fast I/O.
 
 Compatible Web Servers
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -74,7 +78,7 @@ Compatible Web Servers
 
 Kanboard is pre-configured to work with Apache (URL rewriting).
 
-.. note::
+.. warning::
 
     -  Kanboard is NOT compatible with Apache ``mod_security``.
     -  If you use Apache, you must have the module ``mod_version``.
@@ -88,7 +92,10 @@ PHP Versions
 | PHP >= 5.6.0 |
 +--------------+
 
-.. note:: Since the version 1.2, Kanboard requires at least PHP 5.6. The latest version of PHP is recommended.
+.. note::
+
+    - Since the version 1.2, Kanboard requires at least PHP 5.6.
+    - The latest version of PHP is recommended.
 
 PHP Extensions Required
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -131,9 +138,9 @@ Optional PHP extensions
 +---------------+---------------------------------------+
 | PHP Extension | Note                                  |
 +===============+=======================================+
-| zip           | Used to install plugins from website  |
+| zip           | Used to install plugins from web ui   |
 +---------------+---------------------------------------+
-| ldap          | Only for LDAP authentication          |
+| ldap          | Only for LDAP integration             |
 +---------------+---------------------------------------+
 
 Recommendations

@@ -21,5 +21,7 @@ You can change the directory URL in the config file.
 .. warning:: Since Kanboard v1.2.8, the plugin directory is disabled by default
     for security reasons.
 
-- There is no code review or any approval process to submit a plugin.
-- This is up to the Kanboard instance owner to validate if a plugin is legit.
+.. note::
+
+    - There is no code review or any approval process to submit a plugin.
+    - This is up to the Kanboard instance owner to validate if a plugin is legit.

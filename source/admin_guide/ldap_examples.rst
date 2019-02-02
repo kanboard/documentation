@@ -1,6 +1,10 @@
 LDAP Configuration Examples
 ===========================
 
+.. note::
+
+    - Nested groups are not implemented, send a pull-request if you need this feature.
+
 Microsoft Active Directory
 --------------------------
 

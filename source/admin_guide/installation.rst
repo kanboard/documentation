@@ -1,7 +1,7 @@
 Installation Instructions
 =========================
 
-Firstly, check the requirements before going further.
+.. note:: Check the :ref:`requirements <requirements>` before going further.
 
 From the archive (stable version)
 ---------------------------------
@@ -23,8 +23,8 @@ The ``data`` folder is used to store:
 -  Uploaded files: ``files/*``
 -  Image thumbnails: ``files/thumbnails/*``
 
-People who are using a remote database (Mysql/Postgresql) and a remote
-object storage (Aws S3 or similar) don’t necessarily need to have a
+People who are using a remote database (Mysql/Postgresql) and object storage
+(AWS S3 or similar) don’t necessarily need to have a
 persistent local data folder or to change the permissions for the
 folder.
 
@@ -40,7 +40,7 @@ at your own risk.
 .. warning::  **Security measures:**
 
     -  Do not forget to change the default user/password
-    -  Do not allow everybody to access to the directory ``data`` from the
-       URL. A ``.htaccess`` file for Apache and a ``web.config`` file for
-       IIS is included but other web servers will have to be configured
+    -  Do not allow everybody to access the directory ``data`` from the
+       URL. A ``.htaccess`` file and a ``web.config`` file are included for
+       Apache/IIS but other web servers have to be configured
        manually.

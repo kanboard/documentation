@@ -1,7 +1,10 @@
 LDAP Configuration Parameters
 =============================
 
-Here is the list of available LDAP parameters:
+.. note::
+
+    - LDAP attributes must be lowercase.
+    - Nested groups are not implemented, send a pull-request if you need this feature.
 
 +----------------------------------+-----------+----------------------------------+
 | Parameter                        | Default   | Description                      |
@@ -96,5 +99,3 @@ Here is the list of available LDAP parameters:
 | ``LDAP_GROUP_ATTRIBUTE_NAME``    | cn        | LDAP attribute for the group     |
 |                                  |           | name                             |
 +----------------------------------+-----------+----------------------------------+
-
-.. note::  LDAP attributes must be in lowercase

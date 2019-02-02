@@ -38,7 +38,9 @@ Authentication Types
 | Anonymous  | No authentication is performed for LDAP browsing              |
 +------------+---------------------------------------------------------------+
 
-**The recommended authentication method is “Proxy”**.
+.. note::
+
+    The recommended authentication method is ``Proxy``.
 
 Anonymous Mode
 ~~~~~~~~~~~~~~
@@ -252,8 +254,8 @@ server.
 
 In any case, refer to the official Redhat/Centos documentation.
 
-Enable Debug Mode
-~~~~~~~~~~~~~~~~~
+Debug Mode
+~~~~~~~~~~
 
 If you are not able to setup correctly the LDAP authentication, you can
 enable the debug mode and watch log files.

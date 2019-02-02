@@ -1,5 +1,5 @@
-Upgrade to a New Version
-========================
+Upgrading to a New Version
+==========================
 
 .. warning:: Please, do not update the software blindly without reading the `ChangeLog <https://github.com/kanboard/kanboard/blob/master/ChangeLog>`_.
              Always check for breaking changes if any.
@@ -57,7 +57,7 @@ This method **is not perfect**.
 -  Put your Kanboard instance in “maintenance mode” to avoid people
    using the software while you are altering the database schema
 
-To disable this feature, set the parameter ``DB_RUN_MIGRATIONS`` at
+To run database migrations manually, set the parameter ``DB_RUN_MIGRATIONS`` at
 ``false`` in your config file.
 
 When you will have to upgrade Kanboard, run this command:
