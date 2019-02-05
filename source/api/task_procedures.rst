@@ -441,6 +441,7 @@ updateTask
    -  **recurrence_factor** (integer, optional)
    -  **recurrence_timeframe** (integer, optional)
    -  **recurrence_basedate** (integer, optional)
+   -  **reference** (string, optional)
    -  **tags** ([]string, optional)
    -  **date_started**: ISO8601 format (string, optional)
 
