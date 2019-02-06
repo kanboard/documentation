@@ -6,11 +6,7 @@ have those requirements:
 
 -  The plugin directory must be writeable by the web server user
 -  The Zip extension must be available on your server
--  The config parameter ``PLUGIN_INSTALLER`` must be set at ``true``
-
-To enable this feature, change the value of ``PLUGIN_INSTALLER`` to
-``true`` in your config file. You can also change the permissions of
-the plugin folder on the filesystem.
+-  The config parameter ``PLUGIN_INSTALLER`` must be set to ``true``
 
 Only administrators are allowed to install plugins from the user
 interface.

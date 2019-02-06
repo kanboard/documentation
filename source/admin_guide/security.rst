@@ -4,11 +4,17 @@ Security
 General Advices
 ---------------
 
--  Don’t forget to change the default user/password
--  Don’t allow everybody to access to the directory ``data`` from the
+-  Do not forget to change the default user/password.
+-  Do not allow everybody to access to the directory ``data`` from the
    URL. A ``.htaccess`` file for Apache and a ``web.config`` file for
-   IIS is included but other web servers will have to be configured
+   IIS is included but other web servers have to be configured
    manually.
+
+.. note::
+
+    - Plugins installation from the web user interface is disabled by default.
+    - There is no code review or any approval process to submit a plugin.
+    - This is up to the Kanboard instance owner to check if a plugin is legit.
 
 Installation Outside Document Root
 ----------------------------------
@@ -21,7 +27,6 @@ root, you need to create at least these symlinks:
     .
     ├── assets -> ../kanboard/assets
     ├── cli -> ../kanboard/cli
-    ├── doc -> ../kanboard/doc
     ├── favicon.ico -> ../kanboard/favicon.ico
     ├── index.php -> ../kanboard/index.php
     ├── jsonrpc.php -> ../kanboard/jsonrpc.php
@@ -33,6 +38,10 @@ directly in the Apache configuration.
 You can also define a custom location for the plugins and files folders
 by changing the config file.
 
+.. note::
+
+    Some plugins may requires to be installed into the document root.
+
 Brute Force Protection
 ----------------------
 
@@ -40,7 +49,7 @@ The brute force protection of Kanboard works at the user account level:
 
 -  After 3 authentication failure for the same username, the login form
    shows a captcha image to prevent automated bot tentatives.
--  After 6 authentication failure, the user account is locked down for a
+-  After 6 authentication failure, the user account is locked for a
    period of 15 minutes.
 
 This feature works only for authentication methods that use the login
