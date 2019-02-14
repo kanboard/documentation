@@ -15,8 +15,6 @@ Docker Tags
 +--------------+-------------------------------------------------------+
 | v1.2.x       | Specific version of Kanboard                          |
 +--------------+-------------------------------------------------------+
-| master       | Latest development changes (master branch)            |
-+--------------+-------------------------------------------------------+
 
 Environment Variables
 ---------------------
@@ -60,13 +58,13 @@ Basic Usage
 
 .. code:: bash
 
-    docker pull kanboard/kanboard:v1.2.5
-    docker run -d --name kanboard -p 80:80 -t kanboard/kanboard:v1.2.5
+    docker pull kanboard/kanboard:v1.2.8
+    docker run -d --name kanboard -p 80:80 -t kanboard/kanboard:v1.2.8
 
 Docker Compose
 ~~~~~~~~~~~~~~
 
-There is a ``docker-compose.yml`` file in Kanboard repository. Here an example:
+There is a ``docker-compose.yml`` file in Kanboard repository. Here an example with Sqlite:
 
 .. code::
 
@@ -88,6 +86,39 @@ There is a ``docker-compose.yml`` file in Kanboard repository. Here an example:
         driver: local
       kanboard_ssl:
         driver: local
+
+Another example with MariaDB:
+
+.. code::
+
+  version: '2'
+  services:
+    kanboard:
+      image: kanboard/kanboard:latest
+      ports:
+        - "80:80"
+        - "443:443"
+      volumes:
+        - kanboard_data:/var/www/app/data
+        - kanboard_plugins:/var/www/app/plugins
+        - kanboard_ssl:/etc/nginx/ssl
+      environment:
+        DATABASE_URL: mysql://kb:kb-secret@db/kanboard
+    db:
+      image: mariadb:latest
+      command: --default-authentication-plugin=mysql_native_password
+      environment:
+        MYSQL_ROOT_PASSWORD: secret
+        MYSQL_DATABASE: kanboard
+        MYSQL_USER: kb
+        MYSQL_PASSWORD: kb-secret
+  volumes:
+    kanboard_data:
+      driver: local
+    kanboard_plugins:
+      driver: local
+    kanboard_ssl:
+      driver: local
 
 Starting the container with Docker Compose:
 
