@@ -21,7 +21,7 @@ For example, you can do that from MySQL client:
 
 .. code:: sql
 
-    CREATE DATABASE kanboard CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;;
+    CREATE DATABASE kanboard CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 .. note:: Since the version 1.2.3, Kanboard uses the utf8mb4 encoding instead of utf8.
 
@@ -34,7 +34,7 @@ You can then assign the required permissions on the database:
 Create a config file
 ~~~~~~~~~~~~~~~~~~~~
 
-The file ``config.php`` should contains those values:
+The file ``config.php`` should contains these values:
 
 .. code:: php
 
