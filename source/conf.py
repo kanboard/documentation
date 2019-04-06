@@ -47,7 +47,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Kanboard'
-copyright = '2014-2018, The Kanboard Authors'
+copyright = '2014-2019, The Kanboard Authors'
 author = 'The Kanboard Authors'
 
 # The version info for the project you're documenting, acts as replacement for
