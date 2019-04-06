@@ -60,6 +60,7 @@ Here an example to create a project and a task:
     kb = Kanboard("http://localhost/jsonrpc.php", "jsonrpc", "your_api_token")
 
     project_id = kb.create_project(name="My project")
+    kb.add_project_user(project_id=project_id, user_id=123, role='project-manager');
 
     task_id = kb.create_task(project_id=project_id, title="My task title")
 

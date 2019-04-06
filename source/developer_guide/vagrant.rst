@@ -1,5 +1,5 @@
-Run Kanboard with Vagrant
-=========================
+Using Vagrant
+=============
 
 You can try Kanboard with Vagrant very easily:
 

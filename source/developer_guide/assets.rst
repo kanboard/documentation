@@ -16,7 +16,7 @@ Requirements
 Instructions
 ------------
 
-Kanboard use `Gulp <http://gulpjs.com/>`__ to build the assets and `Bower <http://bower.io/>`__ to manage dependencies.
+Kanboard use `Gulp <http://gulpjs.com/>`__ to build the assets.
 These tools are installed as NodeJS dependencies into the project.
 
 Run everything:

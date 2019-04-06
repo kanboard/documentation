@@ -1,5 +1,5 @@
-Background Job
-==============
+Cron Job
+========
 
 To work properly, Kanboard requires that a background job run on a daily
 basis. Usually on Unix platforms, this process is done by ``cron``.

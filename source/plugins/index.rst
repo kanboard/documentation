@@ -1,8 +1,6 @@
 Plugin Development
 ==================
 
-Creating plugins for Kanboard.
-
 .. toctree::
     :maxdepth: 1
 
