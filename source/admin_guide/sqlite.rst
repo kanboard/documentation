@@ -16,6 +16,14 @@ Command line
 Doing a backup is very easy, just copy the file ``data/db.sqlite``
 somewhere else when nobody use the software.
 
+If you want to do a backup while users are connected, you can use ``sqlite3``
+to create the backup.
+
+- You can dump the database to a text file of sql commands like this: ``sqlite3 db.sqlite .dump > kanboard.dump.sql``
+
+- Another option is to create a backup in sqlite format: ``sqlite3 db.sqlite ".backup kanboard.backup.sqlite"``
+
+
 User interface
 ~~~~~~~~~~~~~~
 
@@ -36,6 +44,8 @@ software.
    ``data/db.sqlite``.
 -  To uncompress a gzipped database, execute this command from a
    terminal ``gunzip db.sqlite.gz``.
+-  A backup in sql format, can be restored like this: ``sqlite3 db.sqlite < kanboard.dump.sql`` (db.sqlite must not exist)
+-  A backup in sqlite format, can be restored like this: ``sqlite3 db.sqlite ".restore kanboard.backup.sqlite"`` 
 
 Optimization
 ------------
