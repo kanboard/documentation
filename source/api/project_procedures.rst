@@ -10,7 +10,7 @@ createProject
    -  **name** (string, required)
    -  **description** (string, optional)
    -  **owner_id** (integer, optional)
-   -  **identifier** (string, optional)
+   -  **identifier** (alphanumeric string, optional)
 
 -  Result on success: **project_id**
 -  Result on failure: **false**
@@ -146,7 +146,7 @@ getProjectByIdentifier
 -  Purpose: **Get project information**
 -  Parameters:
 
-   -  **identifier** (string, required)
+   -  **identifier** (alphanumeric string, required)
 
 -  Result on success: **project properties**
 -  Result on failure: **null**
