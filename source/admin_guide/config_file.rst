@@ -305,7 +305,7 @@ Session
 HTTP Client
 -----------
 
-If external HTTP requests need to be sent through a proxy:
+HTTP proxy configuration:
 
 .. code:: php
 
@@ -313,6 +313,7 @@ If external HTTP requests need to be sent through a proxy:
     define('HTTP_PROXY_PORT', '3128');
     define('HTTP_PROXY_USERNAME', '');
     define('HTTP_PROXY_PASSWORD', '');
+    define('HTTP_PROXY_EXCLUDE', 'localhost'); // Only for cURL
 
 To allow self-signed certificates:
 
