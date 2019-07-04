@@ -32,7 +32,7 @@ values**.
 Kanboard records the time between each subtask status change in a
 separate table.
 
--  Changing subtask status from **todo** to **in pogress** logs the
+-  Changing subtask status from **todo** to **in progress** logs the
    start time
 -  Changing subtask status from **in progress** to **done** logs the end
    time but also update the time spent of the subtask and the task
