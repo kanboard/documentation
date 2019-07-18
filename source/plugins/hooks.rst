@@ -194,7 +194,7 @@ Example:
 
 .. code:: php
 
-    $this->hook->on('formatter:board:query', function (\PicoDb\Table &query) {
+    $this->hook->on('formatter:board:query', function (\PicoDb\Table $query) {
         $query->eq('color_id', 'red');
     });
 
