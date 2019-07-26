@@ -5,42 +5,29 @@ Stylesheet and Javascript files are merged together and minified.
 
 - Original CSS files are stored in the folder ``assets/css/src/*.css``
 - Original Javascript code is stored in the folder ``assets/js/src/*.js``
-- ``assets/*/vendor.min.*`` are external dependencies merged and minified
-- ``assets/*/app.min.*`` are application source code merged and minified
 
 Requirements
 ------------
 
-- `NodeJS <https://nodejs.org/>`__ with ``npm``
+- PHP
+- Local checkout of the Git repository
 
 Instructions
 ------------
 
-Kanboard use `Gulp <http://gulpjs.com/>`__ to build the assets.
-These tools are installed as NodeJS dependencies into the project.
-
-Run everything:
+Build Javascript:
 
 .. code:: bash
 
-    make static
+    ./cli js
 
-Build ``vendor.min.js`` and ``vendor.min.css``:
-
-.. code:: bash
-
-    gulp vendor
-
-Build ``app.min.js``:
+Build stylesheets:
 
 .. code:: bash
 
-    gulp js
+    ./cli css
 
-Build ``app.min.css``:
-
-.. code:: bash
-
-    gulp css
-
-.. note::  Building assets is not possible from the Kanboard’s archive, you have to clone the repository.
+.. note::
+	
+	- Building assets is not possible from the Kanboard’s archive, you have to clone the repository.
+	- Since Kanboard v1.2.11, the dependency on nodejs, Sass, and Gulp has been removed.
