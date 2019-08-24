@@ -16,7 +16,8 @@ Usage
 
 .. code:: bash
 
-    Kanboard version master
+    Kanboard v1.2.11
+
 
     Usage:
       command [options] [arguments]
@@ -32,8 +33,10 @@ Usage
 
     Available commands:
       cronjob                            Execute daily cronjob
+      css                                Minify CSS files
       help                               Displays help for a command
       job                                Execute individual job (read payload from stdin)
+      js                                 Minify Javascript files
       list                               Lists commands
       version                            Display Kanboard version
       worker                             Execute queue worker
@@ -243,6 +246,8 @@ Run Background worker
 .. code:: bash
 
     ./cli worker
+
+.. warning:: The background worker is not really maintained anymore.
 
 Execute individual job (mostly for debugging)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -169,12 +169,12 @@ Always use a modern browser with the latest version if possible:
 +-----------------------------------+
 | Mozilla Firefox                   |
 +-----------------------------------+
-| Microsoft Internet Explorer >= 11 |
-+-----------------------------------+
 | Microsoft Edge                    |
 +-----------------------------------+
 
 .. note:: The recommended browsers are Mozilla Firefox or Google Chrome.
+
+.. warning:: Microsoft Internet Explorer is not supported since version 1.2.11
 
 Devices
 ~~~~~~~

@@ -173,6 +173,7 @@ The task reference is an external ID of your task, for example a ticket
 number from another software.
 
 -  Find tasks with a reference: ``ref:1234`` or ``reference:TICKET-1234``
+-  Find tasks with no reference: ``reference:none``
 -  Wildcard search: ``ref:TICKET-*``
 
 Search by category
