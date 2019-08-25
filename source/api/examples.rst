@@ -44,8 +44,8 @@ Response from the server:
 Example with Python
 -------------------
 
-You can use the `official Python client for
-Kanboard <https://github.com/kanboard/kanboard-api-python>`__:
+There is an `official Python client for
+Kanboard <https://github.com/kanboard/python-api-client>`__:
 
 .. code:: bash
 
@@ -55,17 +55,14 @@ Here an example to create a project and a task:
 
 .. code:: python
 
-    from kanboard import Kanboard
+    import kanboard
 
-    kb = Kanboard("http://localhost/jsonrpc.php", "jsonrpc", "your_api_token")
+    kb = kanboard.Client('http://localhost/jsonrpc.php', 'jsonrpc', 'your_api_token')
 
-    project_id = kb.create_project(name="My project")
-    kb.add_project_user(project_id=project_id, user_id=123, role='project-manager');
+    project_id = kb.create_project(name='My project')
+    kb.add_project_user(project_id=project_id, user_id=123, role='project-manager')
 
-    task_id = kb.create_task(project_id=project_id, title="My task title")
-
-There are more examples on the `official
-website <https://github.com/kanboard/kanboard-api-python>`__.
+    task_id = kb.create_task(project_id=project_id, title='My task title')
 
 Example with Ruby
 -----------------
