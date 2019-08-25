@@ -12,7 +12,6 @@ Kanboard is a free and open source Kanban project management software.
 
 .. toctree::
     :maxdepth: 1
-    :caption: Table of Contents
 
     user_guide/index
     admin_guide/index
