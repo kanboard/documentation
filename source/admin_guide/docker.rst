@@ -58,7 +58,6 @@ Basic Usage
 
 .. code:: bash
 
-    docker pull kanboard/kanboard:v1.2.8
     docker run -d --name kanboard -p 80:80 -t kanboard/kanboard:v1.2.8
 
 Docker Compose
@@ -81,11 +80,8 @@ There is a ``docker-compose.yml`` file in Kanboard repository. Here an example w
           - kanboard_ssl:/etc/nginx/ssl
     volumes:
       kanboard_data:
-        driver: local
       kanboard_plugins:
-        driver: local
       kanboard_ssl:
-        driver: local
 
 Another example with MariaDB:
 
@@ -103,22 +99,19 @@ Another example with MariaDB:
         - kanboard_plugins:/var/www/app/plugins
         - kanboard_ssl:/etc/nginx/ssl
       environment:
-        DATABASE_URL: mysql://kb:kb-secret@db/kanboard
+        DATABASE_URL: mysql://kanboard:kanboard-secret@db/kanboard
     db:
       image: mariadb:latest
       command: --default-authentication-plugin=mysql_native_password
       environment:
         MYSQL_ROOT_PASSWORD: secret
         MYSQL_DATABASE: kanboard
-        MYSQL_USER: kb
-        MYSQL_PASSWORD: kb-secret
+        MYSQL_USER: kanboard
+        MYSQL_PASSWORD: kanboard-secret
   volumes:
     kanboard_data:
-      driver: local
     kanboard_plugins:
-      driver: local
     kanboard_ssl:
-      driver: local
 
 Starting the container with Docker Compose:
 
