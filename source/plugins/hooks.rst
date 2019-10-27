@@ -371,6 +371,8 @@ List of template hooks:
 | ``template:project-overview:before-description``          | Project overview: before       |
 |                                                           | description                    |
 +-----------------------------------------------------------+--------------------------------+
+|  ``template:project-permission:after-adduser``            | Project permission: after user |
++-----------------------------------------------------------+--------------------------------+
 | ``template:project-header:view-switcher``                 | Project view switcher          |
 +-----------------------------------------------------------+--------------------------------+
 | ``template:search:task:footer``                           | Task in results: footer        |

@@ -126,8 +126,7 @@ All event payloads are in the following format:
       "event_name": "model.event_name",
       "event_data": {
         "key1": "value1",
-        "key2": "value2",
-        ...
+        "key2": "value2"
       }
     }
 

@@ -35,8 +35,7 @@ Response example:
         "result": [
             {
                 "metaKey1": "metaValue1",
-                "metaKey2": "metaValue2",
-                ...
+                "metaKey2": "metaValue2"
             }
         ]
     }

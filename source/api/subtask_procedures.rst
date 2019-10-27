@@ -125,8 +125,7 @@ Response example:
                 "username": null,
                 "name": null,
                 "status_name": "Todo"
-            },
-            ...
+            }
         ]
     }
 

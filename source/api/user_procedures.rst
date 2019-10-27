@@ -208,8 +208,7 @@ Response example:
                 "notifications_enabled": "0",
                 "google_id": null,
                 "github_id": null
-            },
-            ...
+            }
         ]
     }
 

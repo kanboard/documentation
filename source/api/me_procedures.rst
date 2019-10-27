@@ -339,8 +339,7 @@ Response example:
                 "project_name": "Test",
                 "assignee_username":"admin",
                 "assignee_name": null
-            },
-            ...
+            }
         ]
     }
 

@@ -518,9 +518,9 @@ Request example:
         "jsonrpc": "2.0",
         "method": "getProjectActivity",
         "id": 942472945,
-        "params": [
+        "params": {
             "project_id": 1
-        ]
+        }
     }
 
 getProjectActivities
@@ -542,7 +542,7 @@ Request example:
         "jsonrpc": "2.0",
         "method": "getProjectActivities",
         "id": 942472945,
-        "params": [
+        "params": {
             "project_ids": [1,2]
-        ]
+        }
     }

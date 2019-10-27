@@ -121,8 +121,7 @@ Response example:
                 "comment": "Comment #1",
                 "username": "admin",
                 "name": null
-            },
-            ...
+            }
         ]
     }
 
