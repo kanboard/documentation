@@ -12,21 +12,19 @@ Compatible Operating Systems
 +-------------------------------------+
 | Operating System                    |
 +=====================================+
-| Alpine Linux >= 3.8                 |
+| Alpine Linux                        |
 +-------------------------------------+
-| Linux Ubuntu >= 16.04               |
+| Linux Ubuntu                        |
 +-------------------------------------+
-| Linux Centos 7.x                    |
+| Linux Centos                        |
 +-------------------------------------+
-| Linux Redhat 7.x                    |
+| Linux Redhat                        |
 +-------------------------------------+
-| Linux Debian 9                      |
+| Linux Debian                        |
 +-------------------------------------+
-| FreeBSD 10.x                        |
+| FreeBSD                             |
 +-------------------------------------+
-| Microsoft Windows 2016              |
-+-------------------------------------+
-| Microsoft Windows 2012 R2           |
+| Microsoft Windows                   |
 +-------------------------------------+
 
 .. note:: The recommended operating system is GNU/Linux (Debian/Ubuntu/RHEL/Alpine Linux).
@@ -89,12 +87,12 @@ PHP Versions
 +--------------+
 | PHP Version  |
 +==============+
-| PHP >= 5.6.0 |
+| PHP >= 7.2   |
 +--------------+
 
 .. note::
 
-    - Since the version 1.2, Kanboard requires at least PHP 5.6.
+    - Since the version 1.2.13, Kanboard requires at least PHP 7.2
     - The latest version of PHP is recommended.
 
 PHP Extensions Required
