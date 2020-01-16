@@ -84,7 +84,7 @@ saveTaskMetadata
 -  Parameters:
 
    -  **task_id** (integer, required)
-   -  **array(“name” => “value”)** (array, required)
+   -  **values** (array, required)
 
 -  Result on success: **true**
 -  Result on failure: **false**
