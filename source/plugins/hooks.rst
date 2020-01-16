@@ -194,8 +194,8 @@ Example:
 
 .. code:: php
 
-    $this->hook->on('formatter:board:query', function (\PicoDb\Table &query) {
-        $query->eq('color_id', 'red');
+    $this->hook->on('formatter:board:query', function (\PicoDb\Table &$query) {
+        $query->eq(TaskModel::TABLE.'color_id', 'red');
     });
 
 The code above will show only tasks in red on the board.
