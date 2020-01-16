@@ -100,7 +100,7 @@ updateExternalTaskLink
    -  **link_id** (integer, required)
    -  **title** (string, required)
    -  **url** (string, required)
-   -  **dependency** (string, required)
+   -  **dependency** (string, optional)
 
 -  Result on success: **true**
 -  Result on failure: **false**
