@@ -217,12 +217,12 @@ is found.
 You can disable this behavior if you prefer to create user accounts
 manually to restrict Kanboard to only some people.
 
-Just change the value of ``LDAP_ACCOUNT_CREATION`` to ``false``:
+Change the value of ``LDAP_USER_CREATION`` to ``false``:
 
 .. code:: php
 
     // Automatically create user account
-    define('LDAP_ACCOUNT_CREATION', false);
+    define('LDAP_USER_CREATION', false);
 
 Synchronization
 ---------------
