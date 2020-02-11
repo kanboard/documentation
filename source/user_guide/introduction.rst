@@ -25,7 +25,7 @@ Limit your work in progress
 -  Encourages focus by avoiding multitasking
 -  Each phase can have work-in-progress limits
 -  Limits help identify bottlenecks
--  Limits avoid working on too many tasks at the same time
+-  Limits help avoid working on too many tasks at the same time
 
 Performance Measurement
 ~~~~~~~~~~~~~~~~~~~~~~~
