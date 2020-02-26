@@ -1,7 +1,7 @@
 Installation on Ubuntu
 ======================
 
-Ubuntu Xenial 16.04 LTS
+Ubuntu Xenial 18.04 LTS
 -----------------------
 
 Install Apache and PHP:
