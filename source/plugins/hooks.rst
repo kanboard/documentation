@@ -274,187 +274,219 @@ Template names without prefix are core templates.
 
 List of template hooks:
 
-+-----------------------------------------------------------+--------------------------------+
-| Hook                                                      | Description                    |
-+===========================================================+================================+
-| ``template:analytic:sidebar``                             | Sidebar on analytic pages      |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:app:filters-helper:before``                    | Filter helper dropdown (top)   |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:app:filters-helper:after``                     | Filter helper dropdown (bottom)|
-+-----------------------------------------------------------+--------------------------------+
-| ``template:auth:login-form:before``                       | Login page (top)               |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:auth:login-form:after``                        | Login page (bottom)            |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:board:private:task:before-title``              | Task in private board: before  |
-|                                                           | title                          |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:board:private:task:after-title``               | Task in private board: after   |
-|                                                           | title                          |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:board:public:task:before-title``               | Task in public board: before   |
-|                                                           | title                          |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:board:public:task:after-title``                | Task in public board: after    |
-|                                                           | title                          |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:board:task:footer``                            | Task in board: footer          |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:board:task:icons``                             | Task in board: tooltip icon    |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:board:table:column:before-header-row``         | Row before board column header |
-|                                                           |                                |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:board:table:column:after-header-row``          | Row after board column header  |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:board:column:dropdown``                        | Dropdown menu in board columns |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:board:column:header``                          | Board column header            |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:board:tooltip:subtasks:header:before-assignee``| Header of Subtask table on     |
-|                                                           | tootip before Assignee         |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:board:tooltip:subtasks:rows``                  | Column on row of Subtask table |
-|                                                           | on tooltip                     |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:config:sidebar``                               | Sidebar on settings page       |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:config:application``                           | Application settings form      |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:config:board``                                 | Board settings form            |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:config:email``                                 | Email settings page            |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:config:integrations``                          | Integration page in global     |
-|                                                           | settings                       |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:dashboard:show``                               | Main page of the dashboard     |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:dashboard:page-header:menu``                   | Dashboard submenu              |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:dashboard:task:footer``                        | Task in dashboard: footer      |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:header:dropdown``                              | Page header dropdown menu      |
-|                                                           | (user avatar icon)             |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:header:creation-dropdown``                     | Page header dropdown menu      |
-|                                                           | (plus icon)                    |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:layout:head``                                  | Page layout ``<head/>`` tag    |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:layout:top``                                   | Page layout top header         |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:layout:bottom``                                | Page layout footer             |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:project:dropdown``                             | “Actions” menu on left in      |
-|                                                           | different project views        |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:project:header:before``                        | Project filters (before)       |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:project:header:after``                         | Project filters (after)        |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:project:integrations``                         | Integration page in projects   |
-|                                                           | settings                       |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:project:sidebar``                              | Sidebar in project settings    |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:project-user:sidebar``                         | Sidebar on project user        |
-|                                                           | overview page                  |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:project-list:menu:before``                     | Project list: before menu      |
-|                                                           | entries                        |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:project-list:menu:after``                      | Project list: after menu       |
-|                                                           | entries                        |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:project-overview:before-description``          | Project overview: before       |
-|                                                           | description                    |
-+-----------------------------------------------------------+--------------------------------+
-|  ``template:project-permission:after-adduser``            | Project permission: after user |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:project-header:view-switcher``                 | Project view switcher          |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:search:task:footer``                           | Task in results: footer        |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:layout:top``                              | Task layout top (after page    |
-|                                                           | header)                        |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:details:top``                             | Task summary top               |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:details:bottom``                          | Task summary bottom            |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:details:first-column``                    | Task summary first column      |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:details:second-column``                   | Task summary second column     |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:details:third-column``                    | Task summary third column      |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:details:fourth-column``                   | Task summary fourth column     |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:dropdown``                                | Task dropdown menu in listing  |
-|                                                           | pages                          |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:sidebar:actions``                         | Sidebar on task page (section  |
-|                                                           | actions)                       |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:sidebar:information``                     | Sidebar on task page (section  |
-|                                                           | information)                   |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:form:first-column``                       | 1st column in task form        |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:form:second-column``                      | 2nd column in task form        |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:form:third-column``                       | 3nd column in task form        |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:show:top``                                | Show task page: top            |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:show:bottom``                             | Show task page: bottom         |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:show:before-description``                 | Show task page: before         |
-|                                                           | description                    |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:show:before-tasklinks``                   | Show task page: before         |
-|                                                           | tasklinks                      |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:show:before-subtasks``                    | Show task page: before         |
-|                                                           | subtasks                       |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:show:before-timetracking``                | Show task page: before         |
-|                                                           | timetracking                   |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:show:before-attachments``                 | Show task page: before         |
-|                                                           | attachments                    |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:task:show:before-comments``                    | Show task page: before         |
-|                                                           | comments                       |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:subtask:form:create``                          | Create Subtask form            |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:subtask:form:edit``                            | Edit Subtask form              |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:subtask:table:header:before-timetracking``     | Subtask table header before    |
-|                                                           | Time Tracking                  |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:subtask:table:rows``                           | Column on row of subtasks      |
-|                                                           | table                          |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:user:authentication:form``                     | “Edit authentication” form in  |
-|                                                           | user profile                   |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:user:create-remote:form``                      | “Create remote user” form      |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:user:external``                                | “External authentication” page |
-|                                                           | in user profile                |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:user:integrations``                            | Integration page in user       |
-|                                                           | profile                        |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:user:sidebar:actions``                         | Sidebar in user profile        |
-|                                                           | (section actions)              |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:user:sidebar:information``                     | Sidebar in user profile        |
-|                                                           | (section information)          |
-+-----------------------------------------------------------+--------------------------------+
-| ``template:user:show:profile:info``                       | User profile information       |
-+-----------------------------------------------------------+--------------------------------+
++-------------------------------------------------------------------+---------------------------------------+
+| Hook                                                              | Description                           |
++===================================================================+=======================================+
+| ``template:analytic:sidebar``                                     | Sidebar on analytic pages             |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:app:filters-helper:before``                            | Filter helper dropdown (top)          |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:app:filters-helper:after``                             | Filter helper dropdown (bottom)       |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:auth:login-form:before``                               | Login page (top)                      |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:auth:login-form:after``                                | Login page (bottom)                   |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:board:private:task:before-title``                      | Task in private board: before         |
+|                                                                   | title                                 |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:board:private:task:after-title``                       | Task in private board: after          |
+|                                                                   | title                                 |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:board:public:task:before-title``                       | Task in public board: before          |
+|                                                                   | title                                 |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:board:public:task:after-title``                        | Task in public board: after           |
+|                                                                   | title                                 |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:board:task:footer``                                    | Task in board: footer                 |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:board:task:icons``                                     | Task in board: tooltip icon           |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:board:table:column:before-header-row``                 | Row before board column header        |
+|                                                                   |                                       |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:board:table:column:after-header-row``                  | Row after board column header         |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:board:column:dropdown``                                | Dropdown menu in board columns        |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:board:column:header``                                  | Board column header                   |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:board:tooltip:subtasks:header:before-assignee``        | Header of Subtask table on            |
+|                                                                   | tootip before Assignee                |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:board:tooltip:subtasks:rows``                          | Column on row of Subtask table        |
+|                                                                   | on tooltip                            |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:config:sidebar``                                       | Sidebar on settings page              |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:config:application``                                   | Application settings form             |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:config:board``                                         | Board settings form                   |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:config:email``                                         | Email settings page                   |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:config:integrations``                                  | Integration page in global            |
+|                                                                   | settings                              |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:dashboard:show``                                       | Main page of the dashboard            |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:dashboard:page-header:menu``                           | Dashboard submenu                     |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:dashboard:project:after-title``                        | Dashboard project after title         |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:dashboard:project:before-title``                       | Dashboard project before title        |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:dashboard:show:after-filter-box``                      | Dashboard after filter box            |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:dashboard:show:before-filter-box``                     | Dashboard before filter box           |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:dashboard:task:footer``                                | Task in dashboard: footer             |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:dashboard:sidebar``                                    | Dashboard sidebar                     |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:export:header``                                        | Export header                         |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:header:dropdown``                                      | Page header dropdown menu             |
+|                                                                   | (user avatar icon)                    |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:header:creation-dropdown``                             | Page header dropdown menu             |
+|                                                                   | (plus icon)                           |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:layout:head``                                          | Page layout ``<head/>`` tag           |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:layout:top``                                           | Page layout top header                |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:layout:bottom``                                        | Page layout footer                    |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:project:dropdown``                                     | “Actions” menu on left in             |
+|                                                                   | different project views               |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:project:header:before``                                | Project filters (before)              |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:project:header:after``                                 | Project filters (after)               |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:project:integrations``                                 | Integration page in projects          |
+|                                                                   | settings                              |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:project:sidebar``                                      | Sidebar in project settings           |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:project-user:sidebar``                                 | Sidebar on project user               |
+|                                                                   | overview page                         |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:project-list:menu:before``                             | Project list: before menu             |
+|                                                                   | entries                               |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:project-list:menu:after``                              | Project list: after menu              |
+|                                                                   | entries                               |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:project-overview:before-description``                  | Project overview: before              |
+|                                                                   | description                           |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:project-overview:images:dropdown``                     | Project overview: image dropdown      |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:project-permission:after-adduser``                     | Project permission: after user        |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:project-header:view-switcher``                         | Project view switcher                 |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:project-header:view-switcher-before-project-overview`` | Project view switcher before overview |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:project-header:view-switcher-before-board-view``       | Project view switcher before board    |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:project-header:view-switcher-before-task-list``        | Project view switcher before list     |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:search:task:footer``                                   | Task in results: footer               |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:layout:top``                                      | Task layout top (after page           |
+|                                                                   | header)                               |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:details:top``                                     | Task summary top                      |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:details:bottom``                                  | Task summary bottom                   |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:details:first-column``                            | Task summary first column             |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:details:second-column``                           | Task summary second column            |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:details:third-column``                            | Task summary third column             |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:details:fourth-column``                           | Task summary fourth column            |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:dropdown``                                        | Task dropdown menu in listing         |
+|                                                                   | pages                                 |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:sidebar:actions``                                 | Sidebar on task page (section         |
+|                                                                   | actions)                              |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:sidebar:information``                             | Sidebar on task page (section         |
+|                                                                   | information)                          |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task-file:images:dropdown``                            | Task image attachment dropdown        |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task-file:images:before-thumbnail-description``        | Task image attachment desciption      |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:form:first-column``                               | 1st column in task form               |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:form:second-column``                              | 2nd column in task form               |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:form:third-column``                               | 3nd column in task form               |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:form:bottom-before-buttons``                      | before form submit/cancel buttons     |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:show:top``                                        | Show task page: top                   |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:show:bottom``                                     | Show task page: bottom                |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:show:before-description``                         | Show task page: before                |
+|                                                                   | description                           |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:show:before-tasklinks``                           | Show task page: before                |
+|                                                                   | tasklinks                             |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:show:before-subtasks``                            | Show task page: before                |
+|                                                                   | subtasks                              |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:show:before-external-links``                      | Show task page: before                |
+|                                                                   | external links                        |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:show:before-internal-links``                      | Show task page: before                |
+|                                                                   | internal links                        |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:show:before-timetracking``                        | Show task page: before                |
+|                                                                   | timetracking                          |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:show:before-attachments``                         | Show task page: before                |
+|                                                                   | attachments                           |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:show:before-comments``                            | Show task page: before                |
+|                                                                   | comments                              |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:subtask:form:create``                                  | Create Subtask form                   |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:subtask:form:edit``                                    | Edit Subtask form                     |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:subtask:table:header:before-timetracking``             | Subtask table header before           |
+|                                                                   | Time Tracking                         |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:subtask:table:rows``                                   | Column on row of subtasks             |
+|                                                                   | table                                 |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:user:authentication:form``                             | “Edit authentication” form in         |
+|                                                                   | user profile                          |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:user:create-remote:form``                              | “Create remote user” form             |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:user:external``                                        | “External authentication” page        |
+|                                                                   | in user profile                       |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:user:integrations``                                    | Integration page in user              |
+|                                                                   | profile                               |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:user:sidebar:actions``                                 | Sidebar in user profile               |
+|                                                                   | (section actions)                     |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:user:sidebar:information``                             | Sidebar in user profile               |
+|                                                                   | (section information)                 |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:user:show:profile:info``                               | User profile information              |
++-------------------------------------------------------------------+---------------------------------------+
