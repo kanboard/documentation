@@ -161,8 +161,9 @@ Continuous Integration with Travis-CI
 After each commit pushed on the main repository, unit tests are executed
 across various versions of PHP:
 
--  PHP 7.0
--  PHP 5.6
+-  PHP 7.4
+-  PHP 7.3
+-  PHP 7.2
 
 Each version of PHP is tested against the 3 supported database: Sqlite,
 Mysql and Postgresql.
