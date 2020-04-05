@@ -1,6 +1,11 @@
 FreeBSD Installation
 =======================
 
+.. warning::
+
+    This page hasn't been updated for a while, and it's probably obsolete.
+
+
 Package Installation
 --------------------
 

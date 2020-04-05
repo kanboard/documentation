@@ -1,6 +1,11 @@
 Installation on RedHat/Centos/Oracle Linux Enterprise
 =====================================================
 
+.. warning::
+
+    This page hasn't been updated for a while, and it's probably obsolete.
+
+
 Centos 7
 --------
 

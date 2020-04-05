@@ -1,6 +1,10 @@
 Installation on OpenSuse
 ========================
 
+.. warning::
+
+    This page hasn't been updated for a while, and it's probably obsolete.
+
 OpenSuse Leap 42.3
 ------------------
 

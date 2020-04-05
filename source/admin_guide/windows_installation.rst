@@ -1,6 +1,10 @@
 Installation on Microsoft Windows Server
 ========================================
 
+.. warning::
+
+    This page hasn't been updated for a while, and it's probably obsolete.
+
 Windows Server and Apache
 -------------------------
 
