@@ -17,6 +17,7 @@ Installation, deployment and administration guides.
     freebsd_installation
     windows_installation
     heroku_installation
+    cloudron_installation
     config_file
     cli
     sqlite
