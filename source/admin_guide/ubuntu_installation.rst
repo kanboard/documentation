@@ -1,6 +1,44 @@
 Installation on Ubuntu
 ======================
 
+Ubuntu Focal Fossa 20.04 LTS
+-----------------------
+
+Install Apache and PHP:
+
+.. code:: bash
+
+    sudo apt update
+    sudo apt install -y apache2 libapache2-mod-php php-cli php-mbstring php-sqlite3 php-opcache php-json php-mysql php-pgsql php-ldap php-gd php-xml
+    
+(or) Install Nginx and PHP:
+
+.. code:: bash
+
+    sudo apt update
+    sudo apt install nginx php-fpm php-mysql php-pgsql php-gd php-mbstring php-sqlite3 php-xml
+
+Install Kanboard:
+
+.. code:: bash
+
+    cd /var/www/html
+
+    # Download the latest release from https://github.com/kanboard/kanboard/releases
+    wget https://github.com/kanboard/kanboard/archive/v<version>.tar.gz
+    tar xzvf v<version>.tar.gz
+    chown -R www-data:www-data kanboard-<version>/data
+    mv kanboard-<version> kanboard
+    
+    rm v<version>.tar.gz
+
+.. note::
+
+    - You might need to enable PHP extensions with the command ``phpenmod``.
+    - Some features of Kanboard requires that you run a daily background job.
+
+    
+
 Ubuntu Bionic 18.04 LTS
 -----------------------
 
