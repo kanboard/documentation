@@ -22,15 +22,15 @@ Install Kanboard:
 
 .. code:: bash
 
-    cd /var/www/html
+    #adapt version number
+    version=1.2.24
 
     # Download the latest release from https://github.com/kanboard/kanboard/releases
-    wget https://github.com/kanboard/kanboard/archive/v<version>.tar.gz
-    tar xzvf v<version>.tar.gz
-    chown -R www-data:www-data kanboard-<version>/data
-    mv kanboard-<version> kanboard
+    wget https://github.com/kanboard/kanboard/archive/v$version.tar.gz
+    tar xzvf v$version.tar.gz -C /var/www/html/
+    chown -R www-data:www-data /var/www/html/kanboard-$version/data
     
-    rm v<version>.tar.gz
+    rm v$version.tar.gz
 
 .. note::
 
