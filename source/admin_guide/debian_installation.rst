@@ -23,6 +23,8 @@ Install Kanboard:
     wget https://github.com/kanboard/kanboard/archive/v$version.tar.gz
     tar xzvf v$version.tar.gz -C /var/www/html/
     chown -R www-data:www-data /var/www/html/kanboard-$version/data
+    
+    rm v$version.tar.gz
 
 .. note::
 
