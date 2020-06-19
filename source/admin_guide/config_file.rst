@@ -176,6 +176,10 @@ LDAP settings
     // Example for OpenLDAP: 'uid=%s'
     define('LDAP_USER_FILTER', '');
 
+    // LDAP attribute for the user in the group filter
+    // 'username' or 'dn'
+    define('LDAP_GROUP_USER_ATTRIBUTE', 'username');
+
     // LDAP attribute for username
     // Example for ActiveDirectory: 'samaccountname'
     // Example for OpenLDAP: 'uid'

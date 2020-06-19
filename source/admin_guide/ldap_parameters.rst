@@ -99,3 +99,6 @@ LDAP Configuration Parameters
 | ``LDAP_GROUP_ATTRIBUTE_NAME``    | cn        | LDAP attribute for the group     |
 |                                  |           | name                             |
 +----------------------------------+-----------+----------------------------------+
+| ``LDAP_GROUP_USER_ATTRIBUTE``    | username  | LDAP attribute for the user in   |
+|                                  |           | the group filter                 |
++----------------------------------+-----------+----------------------------------+

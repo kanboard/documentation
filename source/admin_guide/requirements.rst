@@ -41,7 +41,7 @@ Compatible Databases
 +-------------------+
 | MariaDB >= 10     |
 +-------------------+
-| Postgresql >= 9.3 |
+| Postgresql >= 9.4 |
 +-------------------+
 
 Which database to choose?
@@ -57,7 +57,7 @@ Which database to choose?
 .. note::
 
     - The recommended database is Postgresql.
-    - Do not use Sqlite over NFS, only when you have a disk with fast I/O.
+    - Do not use Sqlite with NFS.
 
 Compatible Web Servers
 ~~~~~~~~~~~~~~~~~~~~~~

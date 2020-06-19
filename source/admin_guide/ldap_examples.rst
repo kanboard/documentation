@@ -28,7 +28,7 @@ Microsoft Active Directory
     define('LDAP_USER_BASE_DN', 'CN=Users,DC=kanboard,DC=local');
     define('LDAP_USER_FILTER', '(&(objectClass=user)(sAMAccountName=%s))');
 
-    define('LDAP_USER_ATTRIBUTE_USERNAME', 'samaccountname');
+    define('LDAP_USER_ATTRIBUTE_USERNAME', 'sAMAccountName');
     define('LDAP_USER_ATTRIBUTE_FULLNAME', 'displayname');
     define('LDAP_USER_ATTRIBUTE_PHOTO', 'jpegPhoto');
     define('LDAP_USER_ATTRIBUTE_LANGUAGE', 'preferredLanguage');

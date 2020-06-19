@@ -5,45 +5,6 @@ Kanboard use the `Markdown
 syntax <http://en.wikipedia.org/wiki/Markdown>`__ for comments or task
 descriptions.
 
-Line Breaks
------------
-
-Two spaces after the last world will render the text on a new line:
-
-::
-
-    Hello  (<-- two spaces)
-    World
-
-::
-
-    Hello
-    World
-
-A blank line will produces the same effect:
-
-::
-
-    Hello
-
-    World
-
-::
-
-    Hello
-    World
-
-Using no blank line or no spaces at the end will render the text on the same line:
-
-::
-
-    Hello
-    World
-
-::
-
-    HelloWorld
-
 Bold and italic
 ---------------
 

@@ -2,7 +2,7 @@ Installation on Ubuntu
 ======================
 
 Ubuntu Focal Fossa 20.04 LTS
------------------------
+----------------------------
 
 Install Apache and PHP:
 

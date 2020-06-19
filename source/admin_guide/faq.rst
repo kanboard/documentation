@@ -78,26 +78,6 @@ default. For this workaround to work, add these lines to your
     RewriteCond %{HTTP:Authorization} ^(.+)$
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-Known issues with eAccelerator
-------------------------------
-
-Kanboard doesn’t work very well with
-`eAccelerator <http://eaccelerator.net>`__. The issue caused can be a
-blank page or an Apache crash:
-
-::
-
-    [Wed Mar 05 21:36:56 2014] [notice] child pid 22630 exit signal Segmentation fault (11)
-
-The best way to avoid this issue is to disable eAccelerator or define
-manually which files you want to cache with the config parameter
-``eaccelerator.filter``.
-
-The project `eAccelerator seems dead and not updated since
-2012 <https://github.com/eaccelerator/eaccelerator/commits/master>`__.
-We recommend to switch to the last version of PHP because it’s bundled
-with `OPcache <http://php.net/manual/en/intro.opcache.php>`__.
-
 How to test Kanboard with the PHP built-in web server?
 ------------------------------------------------------
 
