@@ -306,6 +306,12 @@ Session
     // See http://php.net/manual/en/session.configuration.php#ini.session.cookie-lifetime
     define('SESSION_DURATION', 0);
 
+    // Session handler: db or php
+    //    db: session information is stored inside the database (default)
+    //    php: session information is stored by the internal PHP session handlers
+    // See https://www.php.net/manual/en/session.customhandler.php
+    define('SESSION_HANDLER', 'db');
+
 HTTP Client
 -----------
 
