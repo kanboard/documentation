@@ -90,6 +90,7 @@ Email configuration
     define('MAIL_SMTP_PORT', 25);
     define('MAIL_SMTP_USERNAME', '');
     define('MAIL_SMTP_PASSWORD', '');
+    define('MAIL_SMTP_HELO_NAME', null); // valid: null (default), or FQDN
     define('MAIL_SMTP_ENCRYPTION', null); // Valid values are "null", "ssl" or "tls"
 
     // Sendmail command to use when the transport is "sendmail"

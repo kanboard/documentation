@@ -59,6 +59,15 @@ It’s also possible to use a secure connection, TLS or SSL:
 
     define('MAIL_SMTP_ENCRYPTION', 'ssl'); // Valid values are "null", "ssl" or "tls"
 
+Some servers will reject emails based on the hostname transmitted with the HELO
+(EHLO) command (see RFC 5321). The (fully-qualified) hostname supplied in the
+HELO command can be set explicitly by:
+
+.. code:: php
+
+    define('MAIL_SMTP_HELO_NAME', null); // valid: null (default), or FQDN
+
+
 Sendmail Configuration
 ~~~~~~~~~~~~~~~~~~~~~~
 
