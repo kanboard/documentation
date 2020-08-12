@@ -7,7 +7,7 @@ From the archive (stable version)
 ---------------------------------
 
 1. You must have a web server with PHP installed
-2. Download the source code and copy the directory ``kanboard`` where
+2. Download the `source code <https://github.com/kanboard/kanboard/releases/latest>`_ and copy the directory ``kanboard`` where
    you want
 3. Check if the directory ``data`` is writeable by the web server user
 4. With your browser go to http://yourpersonalserver/kanboard
