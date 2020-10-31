@@ -29,7 +29,7 @@ You can then assign the required permissions on the database:
 
 .. code:: sql
 
-    GRANT ALTER, CREATE, DELETE, DROP, INDEX, INSERT, REFERENCES, SELECT, UPDATE ON kanboard.* TO 'USERNAME'@'HOST' IDENTIFIED BY 'PASSWORD';
+    GRANT ALTER, CREATE, DELETE, DROP, INDEX, INSERT, REFERENCES, SELECT, UPDATE, LOCK TABLES ON kanboard.* TO 'USERNAME'@'HOST' IDENTIFIED BY 'PASSWORD';
 
 Create a config file
 ~~~~~~~~~~~~~~~~~~~~
