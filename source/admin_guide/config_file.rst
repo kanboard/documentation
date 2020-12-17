@@ -207,6 +207,9 @@ LDAP settings
     // Allow automatic LDAP user creation
     define('LDAP_USER_CREATION', true);
 
+    // Set new user as Manager
+    define('LDAP_USER_DEFAULT_ROLE_MANAGER', false);
+
     // LDAP DN for administrators
     // Example: CN=Kanboard-Admins,CN=Users,DC=kanboard,DC=local
     define('LDAP_GROUP_ADMIN_DN', '');
@@ -244,6 +247,9 @@ Reverse-Proxy Authentication settings
 
     // Header name to use for the username
     define('REVERSE_PROXY_USER_HEADER', 'REMOTE_USER');
+
+    // Header name to use for the username
+    define('REVERSE_PROXY_EMAIL_HEADER', 'REMOTE_EMAIL');
 
     // Username of the admin, by default blank
     define('REVERSE_PROXY_DEFAULT_ADMIN', '');
