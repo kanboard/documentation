@@ -139,6 +139,31 @@ Another example with Kanboard in a subfolder:
 
 Adapt the example above according to your own configuration.
 
+Lighttpd Configuration Example
+------------------------------
+
+1. Enable "mod_rewrite"
+::
+    server.modules += (
+        "mod_rewrite",
+        ...
+        ...
+    )
+2. Add url rewrites to the relevant sections of your lighttpd.conf (in this case, for host example.com). Also keep the assets directory and the favicon static:
+::
+    $HTTP["host"] == "example.com" {
+      server.document-root = "/var/www/kanboard/"
+      url.rewrite-once = (
+        "^(/[^\?]*)(\?.*)?" => "/index.php$2",
+        "^/assets/.+" => "$0",
+        "^/favicon\.png$" => "$0",
+      )
+    }
+
+3. Reload the Lighttpd config: 
+::
+    /etc/init.d/lighttpd reload
+    
 IIS Configuration Example
 -------------------------
 
