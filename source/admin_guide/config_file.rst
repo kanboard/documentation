@@ -96,6 +96,9 @@ Email configuration
     // Sendmail command to use when the transport is "sendmail"
     define('MAIL_SENDMAIL_COMMAND', '/usr/sbin/sendmail -bs');
 
+    // E-mail address used for the "Bcc" header to send a copy of all notifications
+    define('MAIL_BCC', '');
+
 Database settings
 -----------------
 

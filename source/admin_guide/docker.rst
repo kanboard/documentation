@@ -1,9 +1,19 @@
-Running Kanboard with Docker
-============================
+Run Kanboard with Docker
+========================
 
 .. warning:: Please, do not update the software blindly without reading the `ChangeLog <https://github.com/kanboard/kanboard/blob/master/ChangeLog>`_.
              Always check for breaking changes if any.
 
+Docker Registries
+-----------------
+
++----------------------------+-----------------------------------------+
+| Registry                   | Description                             |
++============================+=========================================+
+| Docker Hub                 | ``docker.io/kanboard/kanboard``         |
++----------------------------+-----------------------------------------+
+| GitHub Container Registry  | ``ghcr.io/kanboard/kanboard``           |
++----------------------------+-----------------------------------------+
 
 Docker Tags
 -----------
@@ -123,8 +133,4 @@ Clone the Kanboard repository and run the following command:
 
 .. note::
 
-    - `Official Kanboard images <https://hub.docker.com/r/kanboard/kanboard/>`__
-    - `Docker documentation <https://docs.docker.com/>`__
-    - Since Kanboard > v1.1.0, the tag "stable" is not used anymore
-    - Since Kanboard > v1.2.5, the tag "latest" point to the latest stable release instead of the master branch
-    - To send emails, you must use the SMTP method or a plugin like Mailgun/Sendgrid/Postmark
+  You must use the SMTP method or a plugin like Mailgun/Sendgrid/Postmark to send emails.
