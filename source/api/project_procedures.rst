@@ -11,6 +11,8 @@ createProject
    -  **description** (string, optional)
    -  **owner_id** (integer, optional)
    -  **identifier** (alphanumeric string, optional)
+   -  **start_date** ISO8601 format (string, optional)
+   -  **end_date** ISO8601 format (string, optional)
 
 -  Result on success: **project_id**
 -  Result on failure: **false**
@@ -304,6 +306,8 @@ updateProject
    -  **description** (string, optional)
    -  **owner_id** (integer, optional)
    -  **identifier** (string, optional)
+   -  **start_date** ISO8601 format (string, optional)
+   -  **end_date** ISO8601 format (string, optional)
 
 -  Result on success: **true**
 -  Result on failure: **false**
