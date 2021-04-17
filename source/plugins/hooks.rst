@@ -219,6 +219,8 @@ List of reference hooks:
 +----------------------------------------+---------------------------------------------------------------+
 | ``model:task:modification:prepare``    | Alter form values before to edit a task                       |
 +----------------------------------------+---------------------------------------------------------------+
+| ``model:task:duplication:aftersave``   | After task duplication                                        |
++----------------------------------------+---------------------------------------------------------------+
 | ``model:color:get-list``               | Alter default_colors values                                   |
 +----------------------------------------+---------------------------------------------------------------+
 | ``model:subtask:modification:prepare`` | Alter form values before to save a subtask                    |
