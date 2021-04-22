@@ -90,7 +90,7 @@ object ``ExternalLinkManager``:
     {
         public function initialize()
         {
-            $this->externalLinkManager->register(new MyLinkProvider());
+            $this->externalLinkManager->register(new MyLinkProvider($this->container));
         }
     }
 
