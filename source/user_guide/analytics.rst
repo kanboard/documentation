@@ -1,7 +1,7 @@
 Project Analytics
 =================
 
-Each project have an analytics section. Depending on how you are using
+Each project has an analytics section. Depending on how you are using
 Kanboard, you can see those reports:
 
 User Repartition
