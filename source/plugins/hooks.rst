@@ -414,14 +414,39 @@ List of template hooks:
 +-------------------------------------------------------------------+---------------------------------------+
 | ``template:task:details:fourth-column``                           | Task summary fourth column            |
 +-------------------------------------------------------------------+---------------------------------------+
-| ``template:task:dropdown``                                        | Task dropdown menu in listing         |
-|                                                                   | pages                                 |
+| ``template:task:dropdown:before-actions``                         | Task dropdown: top of menu            |
 +-------------------------------------------------------------------+---------------------------------------+
-| ``template:task:sidebar:actions``                                 | Sidebar on task page (section         |
-|                                                                   | actions)                              |
+| ``template:task:dropdown:after-basic-actions``                    | Task dropdown: after "add subtask"    |
 +-------------------------------------------------------------------+---------------------------------------+
-| ``template:task:sidebar:information``                             | Sidebar on task page (section         |
-|                                                                   | information)                          |
+| ``template:task:dropdown:after-add-links``                        | Task dropdown: after "add ext. link"  |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:dropdown:after-add-comment``                      | Task dropdown: after "add comment"    |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:dropdown:after-add-attachments``                  | Task dropdown: after "add screenshot" |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:dropdown:after-duplicate-task``                   | Task dropdown: after "duplicate to .."|
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:dropdown:after-send-mail``                        | Task dropdown: after "send by mail"   |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:dropdown``                                        | Task dropdown: bottom of menu         |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:sidebar:information``                             | Task sidebar: [section] information   |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:sidebar:before-actions``                          | Task sidebar: [section] actions: top  |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:sidebar:after-basic-actions``                     | ... as above: after "add subtask"     |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:sidebar:after-add-links``                         | ... as above: after "add ext. link"   |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:sidebar:after-add-comment``                       | ... as above: after "add comment"     |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:sidebar:after-add-attachments``                   | ... as above: after "add screenshot"  |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:sidebar:after-duplicate-task``                    | ... as above: after "duplicate to .." |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:sidebar:after-send-mail``                         | ... as above: after "send by mail"    |
++-------------------------------------------------------------------+---------------------------------------+
+| ``template:task:sidebar:actions``                                 | ... as above: bottom                  |
 +-------------------------------------------------------------------+---------------------------------------+
 | ``template:task-file:images:dropdown``                            | Task image attachment dropdown        |
 +-------------------------------------------------------------------+---------------------------------------+
