@@ -37,7 +37,7 @@ Then the task creation form appears:
 -  **Time Spent**: Time spent working on the task.
 -  **Start Date**: This is a date time field.
 -  **Due Date**: Overdue tasks will have a red due date and upcoming due
-   dates will be black on the board. Several date format are accepted in
+   dates will be black on the board. Several date formats are accepted in
    addition to the date picker.
 
 With the preview link, you can see the task description converted from
@@ -64,9 +64,9 @@ Go to the task view and choose **Duplicate to another project**.
 .. figure:: /_static/task-duplication-another-project.png
    :alt: Task Duplication Another Project
 
-Only projects where you are members will be shown in the drop-down.
+Only projects where you are a member will be shown in the drop-down.
 
-Before to copy the tasks, Kanboard will ask you the destination
+Before copying the task, Kanboard will ask you the destination
 properties that are not common between the source and destination
 project.
 
@@ -82,7 +82,7 @@ Move a task to another project
 
 Go to the task view and choose **Move to another project**.
 
-Moving a task to another project work in the same way as the
+Moving a task to another project works in the same way as the
 duplication, you have to choose the new properties of the task.
 
 List of duplicated properties
