@@ -17,7 +17,7 @@ Board View
 -  With this view, you can drag and drop tasks between columns easily.
 -  You can also use the keyboard shortcut **"v b"** to switch to the
    board view.
--  Tasks with a shadow are recently modified.
+-  Tasks with a shadow have been modified recently.
 
 .. figure:: /_static/board-task-limit.png
    :alt: Board Task Limit

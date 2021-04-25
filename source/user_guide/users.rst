@@ -82,7 +82,7 @@ Each project manager can authorize the access to a set of groups from
 the project permissions page.
 
 The external id is mainly used for external group providers. Kanboard
-provides a LDAP group provider to sync automatically groups from LDAP
+provides an LDAP group provider to automatically sync groups from LDAP
 servers.
 
 Add a New User
@@ -120,7 +120,7 @@ Remove Users
 ------------
 
 From the **users** menu, click on the link **remove**. This link is
-visible only if you are administrators.
+visible only if you are an administrator.
 
 If you remove a specific user, **tasks assigned to this person will be
 unassigned** after the operation.
