@@ -11,13 +11,13 @@ There are two types of projects:
 +==============+=======================================================+
 | Team Project | Project with user and group management                |
 +--------------+-------------------------------------------------------+
-| Private      | Project that belongs to only one person, there is no  |
+| Personal     | Project that belongs to only one person, there is no  |
 | Project      | user management                                       |
 +--------------+-------------------------------------------------------+
 
 -  Only Administrators and Application Managers can create team
    projects.
--  Private projects can be created by anyone.
+-  Personal projects can be created by anyone.
 
 Creating Projects
 -----------------
@@ -39,14 +39,14 @@ From the dashboard, click on the link **New project**:
 
 It’s very easy: you just have to find a name for your project!
 
-Creating a Private Project
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Creating a Personal Project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  Anybody can create a private project
+-  Anybody can create a personal project
 -  There is **NO** user management
 -  Only the owner and administrators can access the project
 
-From the dashboard, click on the link **New private project**.
+From the dashboard, click on the link **New personal project**.
 
 Creating Projects from Another Project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -71,12 +71,12 @@ To rename a project, just click on the link entitled **"Edit project"** on the l
 
 -  The start date and end date are used to generate the project Gantt chart.
 -  The description is visible as a tooltip on the board and on the projects listing page.
--  Administrators and project administrators can convert a private
-   project to a multiple-user project by changing the checkbox "Private
+-  Administrators and project administrators can convert a personal
+   project to a multiple-user project by changing the checkbox "Personal
    project".
--  You can also convert a multiple-user project to a private project.
+-  You can also convert a multiple-user project to a personal project.
 
-Note: When you make a project private, all existing users will still
+Note: When you make a project personal, all existing users will still
 have access to the project. You must adjust the list of users according
 to your needs.
 
@@ -112,7 +112,7 @@ Role assignments are visible in **Project Settings > Permissions**:
 .. figure:: /_static/project-permissions.png
    :alt: Project Permissions
 
-Private projects cannot define permissions.
+Personal projects cannot define permissions.
 
 Custom Project Roles
 --------------------
