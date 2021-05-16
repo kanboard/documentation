@@ -3,6 +3,13 @@ Installation Instructions
 
 .. note:: Check the :ref:`requirements <requirements>` before going further.
 
+.. danger::  **Security**
+
+    - Do not forget to change the default username/password.
+    - Do not allow everybody to access the directory ``data`` from the URL.
+    - Enable ``.htaccess`` if you use Apache (Option ``AllowOverride All``).
+    - This is your responsability to configure your server correctly.
+
 From the archive (stable version)
 ---------------------------------
 
@@ -36,11 +43,3 @@ From the git repository (development version)
 
 Note: This method will install the **current development version**, use
 at your own risk.
-
-.. warning::  **Security measures:**
-
-    -  Do not forget to change the default user/password
-    -  Do not allow everybody to access the directory ``data`` from the
-       URL. A ``.htaccess`` file and a ``web.config`` file are included for
-       Apache/IIS but other web servers have to be configured
-       manually.

@@ -143,14 +143,17 @@ Lighttpd Configuration Example
 ------------------------------
 
 1. Enable "mod_rewrite"
-::
+.. code::
+    
     server.modules += (
         "mod_rewrite",
         ...
         ...
     )
-2. Add url rewrites to the relevant sections of your lighttpd.conf (in this case, for host example.com). Also keep the assets directory and the favicon static:
-::
+
+1. Add url rewrites to the relevant sections of your lighttpd.conf (in this case, for host example.com). Also keep the assets directory and the favicon static:
+.. code::
+    
     $HTTP["host"] == "example.com" {
       server.document-root = "/var/www/kanboard/"
       url.rewrite-once = (
@@ -160,8 +163,9 @@ Lighttpd Configuration Example
       )
     }
 
-3. Reload the Lighttpd config: 
-::
+1. Reload the Lighttpd config: 
+.. code::
+    
     /etc/init.d/lighttpd reload
     
 IIS Configuration Example

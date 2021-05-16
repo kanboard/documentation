@@ -1,6 +1,13 @@
 Installation on Debian
 ======================
 
+.. danger::  **Security**
+
+    - Do not forget to change the default username/password.
+    - Do not allow everybody to access the directory ``data`` from the URL.
+    - Enable ``.htaccess`` if you use Apache (Option ``AllowOverride All``).
+    - This is your responsability to configure your server correctly.
+
 Debian 10 (Buster)
 ------------------
 
