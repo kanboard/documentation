@@ -115,7 +115,7 @@ Request example:
         "method": "getCompatibleActionEvents",
         "id": 899370297,
         "params": [
-            "\Kanboard\Action\TaskClose"
+            "\\Kanboard\\Action\\TaskClose"
         ]
     }
 
@@ -206,7 +206,7 @@ Request example:
         "params": {
             "project_id" : "2",
             "event_name" : "task.move.column",
-            "action_name" : "\Kanboard\Action\TaskAssignSpecificUser",
+            "action_name" : "\\Kanboard\\Action\\TaskAssignSpecificUser",
             "params" : {
                 "column_id" : "3",
                 "user_id" : "2"

@@ -105,6 +105,7 @@ Request example:
         "params": {
             "task_id": 1
         }
+    }
 
 Response example:
 
