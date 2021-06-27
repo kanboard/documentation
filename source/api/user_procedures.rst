@@ -65,7 +65,7 @@ Request example:
         "method": "createLdapUser",
         "id": 1518863034,
         "params": {
-            "username": "my_ldap_user",
+            "username": "my_ldap_user"
         }
     }
 
