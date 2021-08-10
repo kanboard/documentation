@@ -6,9 +6,9 @@ Subtasks are useful to split the work of a task.
 Each subtask:
 
 -  Can be assigned to a project member
--  Have 3 different statuses: **Todo**, **In progress**, **Done**
--  Have time tracking information: **time spent** and **time estimated**
--  Be ordered by position
+-  Has 1 of 3 different statuses: **Todo**, **In progress**, **Done**
+-  Has time tracking information: **time spent** and **time estimated**
+-  Is ordered by position
 
 Creating Subtasks
 -----------------
