@@ -10,7 +10,7 @@ Docker Registries
 +----------------------------+-----------------------------------------+
 | Registry                   | Description                             |
 +============================+=========================================+
-| Docker Hub                 | ``docker.io/kanboard/kanboard``         |
+| Docker Hub                 | ``hub.docker.com/r/kanboard/kanboard``  |
 +----------------------------+-----------------------------------------+
 | GitHub Container Registry  | ``ghcr.io/kanboard/kanboard``           |
 +----------------------------+-----------------------------------------+
