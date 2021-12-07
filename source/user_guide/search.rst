@@ -13,7 +13,7 @@ tomorrow and a title that contains “my title”:
 
 ::
 
-    assigne:me due:tomorrow my title
+    assignee:me due:tomorrow my title
 
 Project Search
 --------------
