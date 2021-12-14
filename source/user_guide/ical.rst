@@ -51,21 +51,16 @@ Adding your Kanboard Calendar to Apple Calendar
 Adding your Kanboard Calendar to Mozilla Thunderbird
 ----------------------------------------------------
 
--  Install the Add-on **Lightning** to add calendar support to
-   Thunderbird
--  Click on **File > New Calendar**
+-  Click on **File > New > Calendar**
 -  In the dialog box, choose **On the Network**
 
 .. figure:: /_static/thunderbird-new-calendar-step1.png
    :alt: Thunderbird Step 1
 
--  Choose the format iCalendar
 -  Copy and paste the iCal feed URL from Kanboard
 
 .. figure:: /_static/thunderbird-new-calendar-step2.png
    :alt: Thunderbird Step 2
-
--  Choose the colors and other settings and finally save
 
 Adding your Kanboard calendar to Google Calendar
 ------------------------------------------------
