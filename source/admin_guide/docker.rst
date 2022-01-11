@@ -111,10 +111,13 @@ Another example with MariaDB:
         MYSQL_DATABASE: kanboard
         MYSQL_USER: kanboard
         MYSQL_PASSWORD: kanboard-secret
+      volumes:
+      - db:/var/lib/mysql
   volumes:
     kanboard_data:
     kanboard_plugins:
     kanboard_ssl:
+    db:
 
 Starting the container with Docker Compose:
 
