@@ -90,10 +90,6 @@ PHP Versions
 | PHP >= 7.2   |
 +--------------+
 
-.. warning::
-
-    Kanboard is not yet compatible with PHP 8.
-
 .. note::
 
     - Since the version 1.2.13, Kanboard requires at least PHP 7.2
