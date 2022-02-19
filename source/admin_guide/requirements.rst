@@ -87,12 +87,13 @@ PHP Versions
 +--------------+
 | PHP Version  |
 +==============+
-| PHP >= 7.2   |
+| PHP >= 7.4   |
 +--------------+
 
 .. note::
 
-    - Since the version 1.2.13, Kanboard requires at least PHP 7.2
+    - Since version 1.2.22, Kanboard requires at least PHP 7.4
+    - Since version 1.2.13, Kanboard requires at least PHP 7.2
     - The latest version of PHP is recommended.
 
 PHP Extensions Required
