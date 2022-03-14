@@ -177,23 +177,23 @@ If you use Nginx, define this value:
 
 See `<http://nginx.org/en/docs/http/ngx_http_core_module.html#client_max_body_size>`_.
 
-Is it possible to customize table names prefix?
+Is it possible to customize table name prefixes?
 -----------------------------------------------
 
 Short answer: No.
 
 - Kanboard is designed to use its own database.
 - Changing existing code will require too many changes.
-- Mixing multiple software into the same database is a bad practice (shared hosting providers are not recommended).
+- Mixing multiple software into the same database is bad practice (shared hosting providers are not recommended).
 
-Why there is no official native mobile application?
+Why is there no official native mobile application?
 ---------------------------------------------------
 
-The development of a native mobile application is let to the community.
+The development of a native mobile application is left to the community.
 
-- Developing a native mobile application for each platform (iOS/Android) for each device type (Smartphone/Tablet) require a lot of work and money.
-- That require different skill set than developing a web application.
-- To develop a quality application, you have to use the official SDK of each platform. So, you end up developing twice the same application.
+- Developing a native mobile application for each platform (iOS/Android) for each device type (Smartphone/Tablet) requires a lot of work and money.
+- This requires a different skill-set to developing a web application.
+- To develop a quality application, you have to use the official SDK of each platform. So, you end up developing the same application twice.
 - Publishing a mobile application on a store (App Store/Play Store) is not free, you have to pay, even if your software is free.
-- The web user interface is responsive, this is not prefect but that allows you to quickly check something.
-- This is not really practical to use the board on a tiny screen.
+- The web user interface is responsive, this is not perfect but that allows you to quickly check something.
+- It is not really practical to use the board on a tiny screen.
