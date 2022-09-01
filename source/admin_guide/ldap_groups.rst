@@ -3,7 +3,7 @@ LDAP Group Synchronization
 
 .. note::
 
-    - Nested groups are not implemented, send a pull-request if you need this feature.
+    - Nested groups are not implemented, send a pull-request if you need this feature. | (we need this feature)
 
 Requirements
 ------------
