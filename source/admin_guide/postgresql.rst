@@ -33,7 +33,7 @@ The file ``config.php`` should contain those values:
     // We choose to use Postgresql instead of Sqlite
     define('DB_DRIVER', 'postgres');
 
-    // Mysql parameters
+    // Postgresql parameters
     define('DB_USERNAME', 'REPLACE_ME');
     define('DB_PASSWORD', 'REPLACE_ME');
     define('DB_HOSTNAME', 'REPLACE_ME');
