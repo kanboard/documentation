@@ -67,8 +67,10 @@ file:
        default if ``Require valid-user`` is set.
 
     -  If you use a different header for ``REVERSE_PROXY_USER_HEADER``,
-       the value must be prefixed by ``HTTP_`` because it's fetched from
-       the ``$_SERVER`` array.
+       the value must be prefixed by ``HTTP_``, all hyphens must be replaced
+       by underscores, and the string must be in all capitals, because it's 
+       fetched from the ``$_SERVER`` array. For example, ``X-Proxy-Username``
+       becomes ``HTTP_X_PROXY_USERNAME``.
 
     -  If Apache is a reverse proxy to another Apache running Kanboard, the
        header ``REMOTE_USER`` is not set (same behavior with IIS and Nginx).
