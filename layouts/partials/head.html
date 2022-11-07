@@ -1,0 +1,12 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    {{ if .Description }}
+        <meta name="description" content="{{ .Description }}">
+    {{ end }}
+
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+</head>

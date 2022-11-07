@@ -1,0 +1,3 @@
+<div class="hint hint-{{ with .Get "type" }}{{.}}{{ else }}info{{ end }}">
+  {{ .Inner | markdownify }}
+</div>

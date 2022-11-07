@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ default .Site.Language.Lang .Site.LanguageCode  }}">
+{{ partial "head.html" . }}
+<body>
+    <main>
+        <h1>{{ .Title }}</h1>
+        {{ partial "breadcrumb.html" . }}
+        <article>
+            {{ .Content }}
+            {{ if .Params.sectionToc }}
+                <ul>
+                    {{ range .Pages.ByLinkTitle}}
+                    <li>
+                        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            {{ end }}
+        </article>
+    </main>
+</body>
+</html>

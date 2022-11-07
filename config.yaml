@@ -1,0 +1,26 @@
+baseURL: https://docs.kanboard.org/
+title: Kanboard Documentation
+disableKinds: ["RSS", "taxonomy", "term", "sitemap"]
+enableRobotsTXT: true
+
+author:
+  name: "The Kanboard Authors"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: false
+
+defaultContentLanguage: en
+languages:
+  en:
+    contentDir: content/en
+    languageName: English
+    weigth: 1
+  fr:
+    contentDir: content/fr
+    title: Documentation de Kanboard
+    languageName: Français
+    weigth: 2
