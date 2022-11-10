@@ -28,3 +28,7 @@ languages:
     contentDir: content/cs
     title: Dokumentace Kanboard
     languageName: čeština
+  es:
+    contentDir: content/es
+    title: Documentación de Kanboard
+    languageName: Español
