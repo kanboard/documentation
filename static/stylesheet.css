@@ -217,6 +217,12 @@ li a {
     overflow-wrap: break-word;
 }
 
+footer {
+    font-size: 0.85em;
+    text-align: center;
+    margin-top: 40px;
+}
+
 .breadcrumb ol {
     padding-left: 0;
 }
