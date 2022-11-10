@@ -24,3 +24,7 @@ languages:
     title: Documentation de Kanboard
     languageName: Français
     weigth: 2
+  cs:
+    contentDir: content/cs
+    title: Dokumentace Kanboard
+    languageName: čeština
