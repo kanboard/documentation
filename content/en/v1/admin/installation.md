@@ -5,7 +5,7 @@ aliases:
 ---
 
 {{< hint type="info" >}}
-Check the [requirements]({{< relref "requirements.md" >}})
+Check the list of [requirements]({{< relref "requirements.md" >}})
 before going further.
 {{</ hint >}}
 

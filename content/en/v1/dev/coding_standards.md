@@ -2,6 +2,7 @@
 title: Coding Standards
 aliases:
     - /en/latest/developer_guide/coding_standards.html
+    - /v1/dev/coding-standards/
 ---
 
 PHP code

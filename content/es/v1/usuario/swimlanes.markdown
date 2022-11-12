@@ -22,7 +22,6 @@ La gestión de swimlanes
 
 Para configurar swimlanes ir a la página de **configuración del proyecto ** y elija la sección **Swimlanes**.
 
-
 ![Configuración Swimlanes](/images/v1/swimlane-configuration.png)
 
 A partir de ahí, se puede añadir un nuevo swimlane o cambiar el nombre por defecto.
@@ -31,5 +30,3 @@ También puede desactivar y cambiar la posición de los diferentes swimlanes.
 - El swimlane por defecto es siempre en la parte superior, pero se puede ocultarlo.
 - Swimlanes inactivas no se muestran en el tablero.
 - **Extracción de una swimlane no elimina tareas **, esas tareas se moverán a la swimlane predeterminada.
-
-

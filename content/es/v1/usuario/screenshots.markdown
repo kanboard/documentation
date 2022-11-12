@@ -16,9 +16,9 @@ Para añadir una nueva imagen, coloque su captura de pantalla y pegar CTRL+V or 
 
 EEn Mac OS X, puede utilizar los atajos para tomar screenshots:
 
-- Command-Control-Shift-3: Tome una screenshot de la pantalla, y guardarlo en el portapapeles
-- Command-Control-Shift-4, a continuación, seleccione un área: Tome una captura de pantalla de la zona y la guarda en el portapapeles
-- Command-Control-Shift-4, entonces el espacio, a continuación, haga clic en una ventana : Tome una captura de pantalla de una ventana y guardarlo en el portapapeles
+- `Command-Control-Shift-3`: Tome una screenshot de la pantalla, y guardarlo en el portapapeles
+- `Command-Control-Shift-4`, a continuación, seleccione un área: Tome una captura de pantalla de la zona y la guarda en el portapapeles
+- `Command-Control-Shift-4`, entonces el espacio, a continuación, haga clic en una ventana : Tome una captura de pantalla de una ventana y guardarlo en el portapapeles
 
 También hay varias aplicaciones de terceros que pueden ser utilizados para tomar capturas de pantalla con anotaciones y formas.
 

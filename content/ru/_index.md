@@ -13,7 +13,7 @@ Kanboard — это бесплатное программное обеспече
 - [Новостная лента](https://github.com/kanboard/kanboard/releases.atom)
 - [Mastodon](https://mastodon.social/@kanboard)
 
-Эта документация также доступна в [чешский язык]({{< relref path="/_index.md" lang="cs" >}}), [Французский]({{< relref path="/_index.md" lang="fr" >}}), [испанский]({{< relref path="/_index.md" lang="es" >}}), [английский]({{< relref path="/_index.md" lang="en" >}}).
+Эта документация также доступна в [чешский язык]({{< relref path="/_index.md" lang="cs" >}}), [Французский]({{< relref path="/_index.md" lang="fr" >}}), [испанский]({{< relref path="/_index.md" lang="es" >}}), [английский]({{< relref path="/_index.md" lang="en" >}}), и [турецкий]({{< relref path="/_index.md" lang="tr" >}}).
 
 ## Оглавление
 

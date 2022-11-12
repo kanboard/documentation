@@ -36,3 +36,7 @@ languages:
     contentDir: content/ru
     title: Канборд Документация
     languageName: Русский
+  tr:
+    contentDir: content/tr
+    title: Kanboard Belgeleri
+    languageName: Türk

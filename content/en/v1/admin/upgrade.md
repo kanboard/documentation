@@ -19,7 +19,7 @@ Important things to do before updating
 --------------------------------------
 
 - **Always make a backup of your data before upgrading**
-- **Check that your backup is valid!**
+- **Check that your backup is working!**
 - Always read the
     [ChangeLog](https://github.com/kanboard/kanboard/blob/master/ChangeLog)
     and check for breaking changes

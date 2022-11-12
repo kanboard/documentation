@@ -111,7 +111,7 @@ The recommended browsers are Mozilla Firefox or Google Chrome.
 {{</ hint >}}
 
 {{< hint type="warning" >}}
-Microsoft Internet Explorer is not supported since version 1.2.11
+Microsoft Internet Explorer is not supported since Kanboard version 1.2.11.
 {{</ hint >}}
 
 ### Devices

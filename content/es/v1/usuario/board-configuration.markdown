@@ -20,7 +20,7 @@ Cuando tu compartes un tablero, la pagina se refresca cada 60 segundos automatic
 
 ### Refrescar el intervalo para un tablero privado
 
-Cuando su navegador est� abierto un tablero, Kanboard comprueba cada 10 segundos si algo ha sido cambiado por otra persona.
+Cuando su navegador está abierto en un tablero, Kanboard comprueba cada 10 segundos si algo ha cambiado por otra persona.
 
 Técnicamente este proceso se lleva a cabo por el Ajax.
 
