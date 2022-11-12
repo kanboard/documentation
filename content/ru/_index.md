@@ -2,7 +2,7 @@
 title: Kanboard
 linktitle: Оглавление
 aliases:
-    - /en/latest/
+    - /ru/latest/
 ---
 
 Kanboard — это бесплатное программное обеспечение для управления проектами Kanban с открытым исходным кодом.
