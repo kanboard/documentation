@@ -13,7 +13,7 @@ Kanboard est un logiciel libre et open source de gestion de projet Kanban.
 - [Flux RSS](https://github.com/kanboard/kanboard/releases.atom)
 - [Mastodon](https://mastodon.social/@kanboard)
 
-Cette documentation est également disponible en [espagnol]({{< relref path="/_index.md" lang="es" >}}), [tchèque]({{< relref path="/_index.md" lang="cs" >}}), [anglais]({{< relref path="/_index.md" lang="en" >}}).
+Cette documentation est également disponible en [anglais]({{< relref path="/_index.md" lang="en" >}}), [espagnol]({{< relref path="/_index.md" lang="es" >}}), [tchèque]({{< relref path="/_index.md" lang="cs" >}}), [russe]({{< relref path="/_index.md" lang="ru" >}}).
 
 ## Table des matières
 
