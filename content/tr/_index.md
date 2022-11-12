@@ -13,7 +13,7 @@ Kanboard, ücretsiz ve açık kaynaklı bir Kanban proje yönetimi yazılımıd�
 - [RSS beslemesi](https://github.com/kanboard/kanboard/releases.atom)
 - [Mastodon](https://mastodon.social/@kanboard)
 
-Bu belge ayrıca şurada da mevcuttur: [Çek]({{< relref path="/_index.md" lang="cs" >}}), [Fransızca]({{< relref path="/_index.md" lang="fr" >}}),[ingilizce]({{< relref path="/_index.md" lang="en" >}}), [İspanyol]({{< relref path="/_index.md" lang="es" >}}), ve [Rusça]({{< relref path="/_index.md" lang="ru" >}}).
+Bu belge ayrıca şurada da mevcuttur: [Çek]({{< relref path="/_index.md" lang="cs" >}}), [Fransızca]({{< relref path="/_index.md" lang="fr" >}}),[ingilizce]({{< relref path="/_index.md" lang="en" >}}), [İspanyol]({{< relref path="/_index.md" lang="es" >}}), [Portekizce]({{< relref path="/_index.md" lang="pt" >}}), ve [Rusça]({{< relref path="/_index.md" lang="ru" >}}).
 
 ## İçindekiler
 

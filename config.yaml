@@ -40,3 +40,7 @@ languages:
     contentDir: content/tr
     title: Kanboard Belgeleri
     languageName: Türk
+  pt:
+    contentDir: content/pt
+    title: Documentação do Kanboard
+    languageName: Português

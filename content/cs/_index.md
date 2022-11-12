@@ -13,7 +13,7 @@ Kanboard je bezplatný a otevřený software pro správu projektů Kanban.
 - [RSS kanál](https://github.com/kanboard/kanboard/releases.atom)
 - [Mastodon](https://mastodon.social/@kanboard)
 
-Tato dokumentace je k dispozici také v [angličtina]({{< relref path="/_index.md" lang="en" >}}), [francouzština]({{< relref path="/_index.md" lang="fr" >}}), [španělština]({{< relref path="/_index.md" lang="es" >}}), [ruština]({{< relref path="/_index.md" lang="ru" >}}), a [turečtina]({{< relref path="/_index.md" lang="tr" >}}).
+Tato dokumentace je k dispozici také v [angličtina]({{< relref path="/_index.md" lang="en" >}}), [francouzština]({{< relref path="/_index.md" lang="fr" >}}), [portugalština]({{< relref path="/_index.md" lang="pt" >}}), [španělština]({{< relref path="/_index.md" lang="es" >}}), [ruština]({{< relref path="/_index.md" lang="ru" >}}), a [turečtina]({{< relref path="/_index.md" lang="tr" >}}).
 
 ## Obsah
 
