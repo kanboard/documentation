@@ -2,6 +2,11 @@
 title: Installation Instructions
 aliases:
     - /en/latest/admin_guide/installation.html
+    - /en/1.2.24/admin_guide/installation.html
+    - /en/1.2.23/admin_guide/installation.html
+    - /en/1.2.22/admin_guide/installation.html
+    - /en/1.2.21/admin_guide/installation.html
+    - /en/1.2.20/admin_guide/installation.html
 ---
 
 {{< hint type="info" >}}

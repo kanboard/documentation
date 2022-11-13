@@ -2,6 +2,11 @@
 title: Docker Image Usage
 aliases:
   - /en/latest/admin_guide/docker.html
+  - /en/1.2.24/admin_guide/docker.html
+  - /en/1.2.23/admin_guide/docker.html
+  - /en/1.2.22/admin_guide/docker.html
+  - /en/1.2.21/admin_guide/docker.html
+  - /en/1.2.20/admin_guide/docker.html
 ---
 
 {{< hint type="warning" >}}

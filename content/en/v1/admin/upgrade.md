@@ -2,6 +2,11 @@
 title: Upgrading to a New Version
 aliases:
     - /en/latest/admin_guide/upgrade.html
+    - /en/1.2.24/admin_guide/upgrade.html
+    - /en/1.2.23/admin_guide/upgrade.html
+    - /en/1.2.22/admin_guide/upgrade.html
+    - /en/1.2.21/admin_guide/upgrade.html
+    - /en/1.2.20/admin_guide/upgrade.html
 ---
 
 {{< hint type="warning" >}}
