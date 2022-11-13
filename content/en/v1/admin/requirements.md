@@ -30,6 +30,7 @@ Linux).
 - Mysql >= 5.6
 - MariaDB >= 10
 - Postgresql >= 9.4
+- Microsoft SQL Server (experimental - available since v1.2.25)
 
 Which database to choose?
 
