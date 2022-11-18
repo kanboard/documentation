@@ -3,6 +3,11 @@ title: Requirements and Prerequisites
 toc: true
 aliases:
     - /en/latest/admin_guide/requirements.html
+    - /en/1.2.24/admin_guide/requirements.html
+    - /en/1.2.23/admin_guide/requirements.html
+    - /en/1.2.22/admin_guide/requirements.html
+    - /en/1.2.21/admin_guide/requirements.html
+    - /en/1.2.20/admin_guide/requirements.html
 ---
 
 Prerequisites to install and use Kanboard.

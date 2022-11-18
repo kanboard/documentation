@@ -1,6 +1,13 @@
 ---
 title: Tasks
 toc: true
+aliases:
+    - /en/latest/user_guide/tasks.html
+    - /en/1.2.24/user_guide/tasks.html
+    - /en/1.2.23/user_guide/tasks.html
+    - /en/1.2.22/user_guide/tasks.html
+    - /en/1.2.21/user_guide/tasks.html
+    - /en/1.2.20/user_guide/tasks.html
 ---
 
 Creating Tasks

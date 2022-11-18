@@ -1,5 +1,7 @@
 ---
 title: Building Javascript and CSS files
+aliases:
+    - /en/latest/developer_guide/assets.html
 ---
 
 Stylesheet and Javascript files are merged together and minified.

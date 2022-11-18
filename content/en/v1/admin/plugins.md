@@ -1,5 +1,13 @@
 ---
 title: Plugins Installation
+aliases:
+    - /en/latest/admin_guide/plugins.html
+    - /en/1.2.24/admin_guide/plugins.html
+    - /en/1.2.23/admin_guide/plugins.html
+    - /en/1.2.22/admin_guide/plugins.html
+    - /en/1.2.21/admin_guide/plugins.html
+    - /en/1.2.20/admin_guide/plugins.html
+    - /en/1.2.19/admin_guide/plugins.html
 ---
 
 To install, update and remove plugins from the user interface, you must have these requirements:
