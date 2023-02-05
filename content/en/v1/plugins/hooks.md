@@ -232,7 +232,7 @@ location of the template.
 
 Example with `myplugin:dashboard/sidebar`:
 
-- `myplugin` is the name of your plugin (lowercase)
+- `myplugin` is the name of your plugin (lowerCamelCase)
 - `dashboard/sidebar` is the template name
 - On the filesystem, the plugin will be located here:
     `plugins\Myplugin\Template\dashboard\sidebar.php`
