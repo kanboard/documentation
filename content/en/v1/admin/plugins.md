@@ -10,19 +10,22 @@ aliases:
     - /en/1.2.19/admin_guide/plugins.html
 ---
 
+{{< hint type="warning" >}}
+Since Kanboard v1.2.8, installing plugins from the web interface is disabled by default for security reasons.
+{{</ hint >}}
+
 To install, update and remove plugins from the user interface, you must have these requirements:
 
-- The plugin directory must be writeable by the web server user
-- The Zip extension must be available on your server
-- The config parameter `PLUGIN_INSTALLER` must be set to `true`
+- The plugin directory must be writeable by the web server user.
+- The PHP Zip extension must be available on your server.
+- The config parameter `PLUGIN_INSTALLER` must be set to `true`.
 
 Only administrators are allowed to install plugins from the user interface.
 
-By default, only plugin listed on Kanboard's website are available. You can change the directory URL in the config file.
+By default, only plugins listed on Kanboard's website are available.
+You can change the directory URL by using the config option `PLUGIN_API_URL`.
 
-{{< hint type="warning" >}}
-Since Kanboard v1.2.8, the plugin directory is disabled by default for security reasons.
-{{</ hint >}}
+If you are using the Docker image, you can refers to the [Kanboard Docker documentation for examples of configuration]({{< relref "docker.md" >}}).
 
 {{< hint type="info" >}}
 - There is no code review or any approval process to submit a plugin.

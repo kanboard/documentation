@@ -1,5 +1,6 @@
 ---
 title: Docker Image Usage
+toc: true
 aliases:
   - /en/latest/admin_guide/docker.html
   - /en/1.2.24/admin_guide/docker.html
@@ -123,7 +124,43 @@ volumes:
 Starting the container with Docker Compose:
 
 ```bash
-docker-compose up
+docker compose up
+```
+
+By default, [the installation of plugins is disabled for security reasons]({{< relref "plugins.md" >}}). 
+Here is an example to enable the installation of plugins:
+
+```bash
+docker run --rm \
+  --name=kanboard
+  -p 8080:80 \
+  -e PLUGIN_INSTALLER=true \
+  kanboard/kanboard:latest
+```
+
+Another example with Docker Compose and volumes:
+
+```yaml
+version: '2'
+services:
+  kanboard:
+    image: kanboard/kanboard:latest
+    ports:
+     - "8080:80"
+     - "443:443"
+    volumes:
+     - kanboard_data:/var/www/app/data
+     - kanboard_plugins:/var/www/app/plugins
+     - kanboard_ssl:/etc/nginx/ssl
+    environment:
+      - PLUGIN_INSTALLER=true
+volumes:
+  kanboard_data:
+    driver: local
+  kanboard_plugins:
+    driver: local
+  kanboard_ssl:
+    driver: local
 ```
 
 Build Your Own Docker Image
@@ -136,6 +173,5 @@ make docker-image
 ```
 
 {{< hint type="info" >}}
-You must use the SMTP method, or a plugin like Mailgun/Sendgrid/Postmark
-to send emails.
+You must use the SMTP method, or a plugin like Mailgun/Sendgrid/Postmark to send emails.
 {{</ hint >}}
