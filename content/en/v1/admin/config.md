@@ -115,6 +115,9 @@ define('DB_RUN_MIGRATIONS', true);
 // Database driver: sqlite, mysql or postgres (sqlite by default)
 define('DB_DRIVER', 'sqlite');
 
+// Enable or disable Sqlite WAL mode
+defined('DB_WAL_MODE', true);
+
 // Mysql/Postgres username
 define('DB_USERNAME', 'root');
 
@@ -254,8 +257,11 @@ define('REVERSE_PROXY_AUTH', false);
 // Header name to use for the username
 define('REVERSE_PROXY_USER_HEADER', 'REMOTE_USER');
 
-// Header name to use for the username
+// Header name to use for the user email
 define('REVERSE_PROXY_EMAIL_HEADER', 'REMOTE_EMAIL');
+
+// Header name to use for the user full name
+define('REVERSE_PROXY_FULLNAME_HEADER', 'REMOTE_NAME');
 
 // Username of the admin, by default blank
 define('REVERSE_PROXY_DEFAULT_ADMIN', '');

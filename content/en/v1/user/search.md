@@ -152,6 +152,7 @@ Attribute: **category**
 - Find tasks with a specific category: `category:"Feature Request"`
 - Find all tasks that have those categories: `category:"Bug" category:"Improvements"`
 - Find tasks with no category assigned: `category:none`
+- Find tasks by the category ID or category name: `category:1234`
 
 ### Search by project
 

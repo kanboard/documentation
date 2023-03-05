@@ -17,12 +17,10 @@ Apache Auth on the same server or a well-configured reverse proxy.
 How does this work?
 -------------------
 
-1.  Your reverse proxy authenticates the user and send the username
-    through a HTTP header.
-2.  Kanboard retrieve the username from the request
+1. Your reverse proxy authenticates the user and send the username through a HTTP header.
+2. Kanboard retrieve the username from the request
     - The user is created automatically if necessary
-    - Open a new Kanboard session without any prompt assuming it's
-        valid
+    - Open a new Kanboard session without any prompt assuming it's valid
 
 Installation instructions
 -------------------------
@@ -55,6 +53,12 @@ define('REVERSE_PROXY_DEFAULT_ADMIN', 'myadmin');
 // In case the username is not an email address, it
 // will be updated automatically as USER@mydomain.com
 define('REVERSE_PROXY_DEFAULT_DOMAIN', 'mydomain.com');
+
+// Header name to use for the user email (optional)
+define('REVERSE_PROXY_EMAIL_HEADER', 'REMOTE_EMAIL');
+
+// Header name to use for the user full name (optional)
+define('REVERSE_PROXY_FULLNAME_HEADER', 'REMOTE_NAME');
 ```
 
 {{< hint type="info" >}}
