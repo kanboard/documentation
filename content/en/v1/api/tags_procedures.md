@@ -9,7 +9,7 @@ getAllTags
 - Purpose: **Get all tags**
 - Parameters: none
 - Result on success: **List of tags**
-- Result on failure: **false\|null**
+- Result on failure: **false|null**
 
 Request example:
 
@@ -38,9 +38,9 @@ getTagsByProject
 
 - Purpose: **Get all tags for a given project**
 - Parameters:
-    - **project\_id** (integer)
+    - **project_id** (integer)
 - Result on success: **List of tags**
-- Result on failure: **false\|null**
+- Result on failure: **false|null**
 
 Request example:
 
@@ -69,9 +69,10 @@ createTag
 
 - Purpose: **Create a new tag**
 - Parameters:
-    - **project\_id** (integer)
+    - **project_id** (integer)
     - **tag** (string)
-- Result on success: **tag\_id**
+    - **color_id** (integer, optional)
+- Result on success: **tag_id**
 - Result on failure: **false**
 
 Request example:
@@ -95,8 +96,9 @@ updateTag
 
 - Purpose: **Rename a tag**
 - Parameters:
-    - **tag\_id** (integer)
+    - **tag_id** (integer)
     - **tag** (string)
+    - **color_id** (integer, optional)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -121,7 +123,7 @@ removeTag
 
 - Purpose: **removeTag**
 - Parameters:
-    - **tag\_id** (integer)
+    - **tag_id** (integer)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -146,8 +148,8 @@ setTaskTags
 
 - Purpose: **Assign/Create/Update tags for a task**
 - Parameters:
-    - **project\_id** (integer)
-    - **task\_id** (integer)
+    - **project_id** (integer)
+    - **task_id** (integer)
     - **tags** List of tags (\[\]string)
 - Result on success: **true**
 - Result on failure: **false**
@@ -173,9 +175,9 @@ getTaskTags
 
 - Purpose: **Get assigned tags to a task**
 - Parameters:
-    - **task\_id** (integer)
+    - **task_id** (integer)
 - Result on success: **Dictionary of tags**
-- Result on failure: **false\|null**
+- Result on failure: **false|null**
 
 Request example:
 
