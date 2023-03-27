@@ -9,9 +9,9 @@ Kanboard, ücretsiz ve açık kaynaklı bir Kanban proje yönetimi yazılımıd�
 
 - [Resmi site](https://kanboard.org)
 - [Hata işleyici](https://github.com/kanboard/kanboard/issues)
-- [Forum](https://kanboard.discourse.group/)
+- [Discourse Forum](https://kanboard.discourse.group/) - [GitHub Discussions](https://github.com/orgs/kanboard/discussions)
 - [RSS beslemesi](https://github.com/kanboard/kanboard/releases.atom)
-- [Mastodon](https://mastodon.social/@kanboard)
+- [Mastodon](https://mastodon.social/@kanboard) - [Twitter](https://twitter.com/kanboard)
 
 Bu belge ayrıca şurada da mevcuttur: [Çek]({{< relref path="/_index.md" lang="cs" >}}), [Fransızca]({{< relref path="/_index.md" lang="fr" >}}),[ingilizce]({{< relref path="/_index.md" lang="en" >}}), [İspanyol]({{< relref path="/_index.md" lang="es" >}}), [Portekizce]({{< relref path="/_index.md" lang="pt" >}}), ve [Rusça]({{< relref path="/_index.md" lang="ru" >}}).
 
