@@ -132,7 +132,7 @@ Here is an example to enable the installation of plugins:
 
 ```bash
 docker run --rm \
-  --name=kanboard
+  --name=kanboard \
   -p 8080:80 \
   -e PLUGIN_INSTALLER=true \
   kanboard/kanboard:latest
