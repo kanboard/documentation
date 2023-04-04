@@ -23,6 +23,7 @@ Registry Name               | Registry URL
 ----------------------------| -----------------------------------------
 [Docker Hub](https://hub.docker.com/r/kanboard/kanboard) | `docker.io/kanboard/kanboard`
 [GitHub Container Registry](https://github.com/orgs/kanboard/packages/container/package/kanboard) | `ghcr.io/kanboard/kanboard`
+[Quay.io](https://quay.io/repository/kanboard/kanboard) | `quay.io/kanboard/kanboard`
 
 Docker Tags
 -----------
@@ -172,6 +173,8 @@ Clone the Kanboard repository and run the following command:
 make docker-image
 ```
 
-{{< hint type="info" >}}
+Notes
+-----
+
 You must use the SMTP method, or a plugin like Mailgun/Sendgrid/Postmark to send emails.
-{{</ hint >}}
+The `mail` and `sendmail` transports won't work with the official Docker image.
