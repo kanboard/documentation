@@ -50,7 +50,8 @@ If SELinux is enabled, be sure that the Apache user can write to the
 directory data:
 
 ```bash
-chcon -R -t httpd_sys_content_rw_t /var/www/html/kanboard/data
+semanage fcontext -a -t httpd_sys_rw_content_t "/var/www/html/kanboard/data(/.*)?"
+restorecon -r -v /var/www/html/kanboard/data
 ```
 
 Be sure to configure your server to allow Kanboard to send emails and
