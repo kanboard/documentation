@@ -25,12 +25,10 @@ Important things to do before updating
 
 - **Always make a backup of your data before upgrading**
 - **Check that your backup is working!**
-- Always read the
-    [ChangeLog](https://github.com/kanboard/kanboard/blob/master/ChangeLog)
-    and check for breaking changes
+- Always read the [ChangeLog](https://github.com/kanboard/kanboard/blob/master/ChangeLog) and check for breaking changes
 - Stop the worker if you use it
-- Put the web server in maintenance mode to avoid people to use the
-    software while upgrading
+- Put the web server in maintenance mode to avoid people to use the software while upgrading
+- Flush all user sessions (truncate the `sessions` table in the database)
 
 From the archive (stable version)
 ---------------------------------
