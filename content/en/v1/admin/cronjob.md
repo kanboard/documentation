@@ -69,5 +69,8 @@ In case your hosting provider doesn\'t offer CLI access, you can run
 cron jobs by calling a URL. The URL is protected using the webhook token
 and should be called via HTTPS for added security.
 
-Cron job URL (with URL rewriting enabled):
+Cron job URL:
+`https://domain.tld/?controller=CronjobController&action=run&token==WEBHOOK_TOKEN_HERE`
+
+(with URL rewriting enabled):
 `https://domain.tld/cronjob?token=WEBHOOK_TOKEN_HERE`
