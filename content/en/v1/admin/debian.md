@@ -9,6 +9,19 @@ title: Debian Installation
 - This is your responsability to configure your server correctly.
 {{</ hint >}}
 
+Debian 12 (Bookworm)
+------------------
+
+Kanboard is now [packaged](https://packages.debian.org/bookworm/kanboard) for Debian and is part
+of the stable release of Debian 12. This means that for a basic installation just run as `root`:
+
+```bash
+apt install kanboard
+```
+
+You should then be able to go to <http://localhost/kanboard/> and access the application.
+
+
 Debian 10 (Buster)
 ------------------
 
