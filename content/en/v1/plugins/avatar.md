@@ -1,5 +1,6 @@
 ---
 title: Avatar Providers
+toc: true
 ---
 
 Registration

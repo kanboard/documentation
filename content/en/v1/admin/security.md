@@ -1,5 +1,6 @@
 ---
 title: Security
+toc: true
 ---
 
 General Advices

@@ -1,5 +1,6 @@
 ---
 title: Adding Automatic Actions
+toc: true
 ---
 
 Adding a new automatic action is pretty simple.

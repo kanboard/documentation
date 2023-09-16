@@ -1,5 +1,6 @@
 ---
 title: Custom Routes
+toc: true
 ---
 
 When URL rewriting is enabled, you can define custom routes from your plugins.

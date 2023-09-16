@@ -1,5 +1,6 @@
 ---
 title: LDAP Library
+toc: true
 ---
 
 To facilitate LDAP integration, Kanboard has its own LDAP library. This library can perform common operations.

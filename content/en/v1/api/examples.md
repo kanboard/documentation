@@ -1,5 +1,6 @@
 ---
 title: API Examples
+toc: true
 ---
 
 Example with cURL

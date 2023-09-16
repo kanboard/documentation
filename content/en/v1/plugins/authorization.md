@@ -1,5 +1,6 @@
 ---
 title: Authorization Architecture
+toc: true
 ---
 
 Kanboard supports multiple roles at the application level and at the project level.

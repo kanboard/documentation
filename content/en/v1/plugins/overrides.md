@@ -1,5 +1,6 @@
 ---
 title: Plugin Overrides
+toc: true
 ---
 
 Override HTTP Content Security Policy

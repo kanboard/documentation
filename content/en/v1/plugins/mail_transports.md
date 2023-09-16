@@ -1,5 +1,6 @@
 ---
 title: Mail Transport
+toc: true
 ---
 
 By default Kanboard supports 3 standards mail transports:

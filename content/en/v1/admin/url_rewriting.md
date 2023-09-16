@@ -1,6 +1,7 @@
 ---
 title: URL Rewriting
 slug: url-rewriting
+toc: true
 ---
 
 Kanboard is able to work indifferently with URL rewriting enabled or

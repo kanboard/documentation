@@ -1,5 +1,6 @@
 ---
 title: Installation on RedHat/Centos/Oracle Linux Enterprise
+toc: true
 ---
 
 {{< hint type="warning" >}}

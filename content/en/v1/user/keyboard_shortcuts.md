@@ -1,6 +1,7 @@
 ---
 title: Keyboard Shortcuts
 slug: keyboard-shortcuts
+toc: true
 ---
 
 Keyboard shortcuts availability depends on the current page.

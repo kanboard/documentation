@@ -1,5 +1,6 @@
 ---
 title: Installation on Microsoft Windows Server
+toc: true
 ---
 
 {{< hint type="warning" >}}

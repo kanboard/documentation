@@ -1,5 +1,6 @@
 ---
 title: Custom Group Providers
+toc: true
 ---
 
 Kanboard is able to load groups from an external system. This feature is mainly used for project permissions.

@@ -1,5 +1,6 @@
 ---
 title: Using Events
+toc: true
 ---
 
 Kanboard use internally the [Symfony EventDispatcher component](https://symfony.com/doc/2.3/components/event_dispatcher/index.html) to manage internal events.

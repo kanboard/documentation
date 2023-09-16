@@ -1,5 +1,6 @@
 ---
 title: Swimlanes
+toc: true
 ---
 
 Swimlanes are horizontal separations in your board. 

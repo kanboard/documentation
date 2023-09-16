@@ -1,5 +1,6 @@
 ---
 title: Email Configuration
+toc: true
 ---
 
 User Settings

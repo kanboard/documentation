@@ -1,5 +1,6 @@
 ---
 title: Authentication Providers
+toc: true
 ---
 
 New authentication backends can be written with very few lines of code.

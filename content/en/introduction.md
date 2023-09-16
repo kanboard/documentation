@@ -1,5 +1,6 @@
 ---
 title: What is Kanban?
+toc: true
 ---
 
 ## Introduction
@@ -46,9 +47,9 @@ For example, you may have a lead time of 100 days but only have to work 1 hour t
 - Multiple phases, each column represents a step
 - Bring focus and avoid multitasking by setting a work-in-progress limit per column
 
-### Kanban vs Scrum
+## Kanban vs Scrum
 
-## Scrum
+### Scrum
 
 - Sprints are time-boxed, usually 2 or 4 weeks
 - Do not allow changes during the iteration

@@ -1,5 +1,6 @@
 ---
 title: Subtasks
+toc: true
 ---
 
 Subtasks are useful to split the work of a task.

@@ -1,5 +1,6 @@
 ---
 title: Debian Installation
+toc: true
 ---
 
 {{< hint type="danger" >}}

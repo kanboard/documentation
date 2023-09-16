@@ -1,5 +1,6 @@
 ---
 title: Upgrading to a New Version
+toc: true
 aliases:
     - /en/latest/admin_guide/upgrade.html
     - /en/1.2.24/admin_guide/upgrade.html

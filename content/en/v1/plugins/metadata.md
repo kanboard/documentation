@@ -1,5 +1,6 @@
 ---
 title: Metadata
+toc: true
 ---
 
 You can attach metadata for each project, task, user or for the whole

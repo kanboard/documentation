@@ -5,6 +5,7 @@
     <main>
         <h1>{{ .Title }}</h1>
         {{ partial "breadcrumb.html" . }}
+        {{ partial "toc.html" . }}
         <article>
             {{ .Content }}
             {{ if .Params.sectionToc }}

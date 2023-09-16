@@ -1,5 +1,6 @@
 ---
 title: MySQL/MariaDB
+toc: true
 ---
 
 By default Kanboard use Sqlite to stores its data. However it's possible

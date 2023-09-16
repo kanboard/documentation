@@ -1,5 +1,6 @@
 ---
 title: Time Tracking
+toc: true
 ---
 
 Time tracking information can be defined at the task level or at the subtask level.

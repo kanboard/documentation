@@ -1,5 +1,6 @@
 ---
 title: Ubuntu Installation
+toc: true
 ---
 
 {{< hint type="danger" >}}

@@ -1,5 +1,6 @@
 ---
 title: External Link Providers
+toc: true
 ---
 
 This functionality allows you to link a task to additional items stored on another system.

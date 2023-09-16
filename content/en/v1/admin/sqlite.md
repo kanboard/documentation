@@ -1,5 +1,6 @@
 ---
 title: Sqlite
+toc: true
 ---
 
 Kanboard uses Sqlite by default to store its data.

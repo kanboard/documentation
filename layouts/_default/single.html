@@ -8,15 +8,10 @@
                 <h1>{{ .Title }}</h1>
                 {{ partial "breadcrumb.html" . }}
             </header>
-            {{ if .Params.toc }}
-            <aside class="table-of-contents">
-                <h2>Table of Contents</h2>
-                {{.TableOfContents}}
-            </aside>
-            {{ end }}
+            {{ partial "toc.html" . }}
             <section>{{ .Content }}</section>
         </article>
     </main>
+    {{ partial "footer.html" . }}
 </body>
-{{ partial "footer.html" . }}
 </html>

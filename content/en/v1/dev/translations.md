@@ -1,5 +1,6 @@
 ---
 title: Translations
+toc: true
 ---
 
 How to translate Kanboard to a new language?

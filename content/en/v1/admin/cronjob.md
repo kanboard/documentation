@@ -1,5 +1,6 @@
 ---
 title: Cronjob Configuration
+toc: true
 ---
 
 To work properly, Kanboard requires that a background job run on a daily

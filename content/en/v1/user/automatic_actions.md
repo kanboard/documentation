@@ -1,5 +1,6 @@
 ---
 title: Automatic Actions
+toc: true
 ---
 
 To minimize user interaction, Kanboard support automated actions.

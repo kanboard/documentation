@@ -3,6 +3,7 @@ title: API Reference
 linktitle: API
 description: JSON-RPC API Reference
 sectionToc: true
+toc: true
 aliases:
     - /en/latest/api/index.html
 ---

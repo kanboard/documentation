@@ -1,5 +1,6 @@
 ---
 title: Registering new helpers
+toc: true
 ---
 
 Helper skeleton:

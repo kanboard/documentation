@@ -1,5 +1,6 @@
 ---
 title: Postgresql
+toc: true
 ---
 
 By default, Kanboard use Sqlite to store its data but it's also possible

@@ -1,5 +1,6 @@
 ---
 title: Background Workers
+toc: true
 ---
 
 {{< hint type="warning" >}}

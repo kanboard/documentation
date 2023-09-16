@@ -1,5 +1,5 @@
 ---
-title: Running Kanboard
+title: Administration
 description: Installing and configuring Kanboard on your own server
 ---
 

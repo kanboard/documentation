@@ -1,5 +1,6 @@
 ---
 title: Performances
+toc: true
 ---
 
 According to your configuration, some features can slow down the usage

@@ -1,5 +1,6 @@
 ---
 title: Reverse Proxy Authentication
+toc: true
 ---
 
 This authentication method is often used for

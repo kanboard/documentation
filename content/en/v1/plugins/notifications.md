@@ -1,5 +1,6 @@
 ---
 title: Add Notification Types with Plugins
+toc: true
 ---
 
 You can send notifications to almost any system by adding a new type.

@@ -1,5 +1,6 @@
 ---
 title: External Task Providers
+toc: true
 ---
 
 Kanboard can be used to manage tasks stored in another system. For example, an external system can be a bug tracker or any kind of ticketing software. In this way, you can use Kanboard to manage external tasks in the same way as native tasks.

@@ -42,6 +42,8 @@
     --hint-info-background-color: #e7f2fa;
     --hint-info-border-color: #7d9bb1;
     --hint-info-color: #333;
+
+    --table-of-contents-border-color: #ccc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -89,6 +91,8 @@
         --hint-info-border-color: #444;
         --hint-info-background-color: #333;
         --hint-info-color: #efefef;
+
+        --table-of-contents-border-color: #aaa;
     }
 }
 
@@ -270,4 +274,10 @@ footer {
     background-color: var(--hint-info-background-color);
     border: 1px solid var(--hint-info-border-color);
     color: var(--hint-info-color);
+}
+
+.table-of-contents {
+    border: 3px dotted var(--table-of-contents-border-color);
+    padding-top: 10px;
+    margin-bottom: 20px;
 }

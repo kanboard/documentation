@@ -1,5 +1,6 @@
 ---
 title: Plugin Registration
+toc: true
 ---
 
 Project skeleton generator
