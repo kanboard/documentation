@@ -1,5 +1,9 @@
 ---
 title: Kullanıcı yönetimi
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Yeni kullanıcı ekle

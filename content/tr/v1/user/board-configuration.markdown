@@ -1,5 +1,9 @@
 ---
 title: Pano ayarları
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Sağ Üst menüden **Ayarlar** menüsüne gidin, ardından soldaki **Pano ayarları** seçimini yapın.

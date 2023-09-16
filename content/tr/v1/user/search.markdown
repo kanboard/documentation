@@ -1,5 +1,9 @@
 ---
 title: Gelişmiş Arama Sözdizimi(Kodları)
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Kanboard, gelişmiş arama için basit bir sorgu dili kullanıyor.

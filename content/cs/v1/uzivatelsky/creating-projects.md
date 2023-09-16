@@ -1,5 +1,8 @@
 ---
 title: Vytváření projektů
+menu:
+    main:
+        parent: Používání Kanboard
 ---
 
 Kanboard dokáže zpracovat více projektů. Existují dva druhy projektů:

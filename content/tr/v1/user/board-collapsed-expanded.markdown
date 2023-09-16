@@ -1,5 +1,9 @@
 ---
 title: Daraltılmış ve Genişletilmiş mod
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Tahtadaki görevler daraltılmış veya genişletilmiş modda görüntülenebilir.

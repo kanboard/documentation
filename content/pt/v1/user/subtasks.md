@@ -1,5 +1,8 @@
 ---
 title: Subtarefas
+menu:
+    main:
+        parent: Guia do Usuário
 ---
 
 As subtarefas são úteis para dividir o trabalho de uma tarefa.

@@ -1,6 +1,9 @@
 ---
 title: Upgrading to a New Version
 toc: true
+menu:
+    main:
+        parent: Administration
 aliases:
     - /en/latest/admin_guide/upgrade.html
     - /en/1.2.24/admin_guide/upgrade.html

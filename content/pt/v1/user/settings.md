@@ -1,5 +1,8 @@
 ---
 title: Configurações
+menu:
+    main:
+        parent: Guia do Usuário
 ---
 
 Alguns parâmetros para o aplicativo podem ser alterados na página de

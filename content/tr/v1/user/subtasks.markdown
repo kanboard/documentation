@@ -1,5 +1,9 @@
 ---
 title: Alt Görevler
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Alt görevler bir görevin işini bölmek için yararlıdır.

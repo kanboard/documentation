@@ -1,6 +1,9 @@
 ---
 title: Project Permission API Procedures
 toc: true
+menu:
+    main:
+        parent: API Reference
 ---
 
 getProjectUsers

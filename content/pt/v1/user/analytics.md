@@ -1,5 +1,8 @@
 ---
 title: Estatísticas do Projeto
+menu:
+    main:
+        parent: Guia do Usuário
 ---
 
 Cada projeto tem uma seção de estatísticas. Dependendo de como você está

@@ -1,6 +1,9 @@
 ---
 title: Configuration File
 toc: true
+menu:
+    main:
+        parent: Administration
 ---
 
 You can customize the default settings of Kanboard by adding a file

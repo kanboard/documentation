@@ -1,6 +1,9 @@
 ---
 title: Adding Automatic Actions
 toc: true
+menu:
+    main:
+        parent: Developing Plugins
 ---
 
 Adding a new automatic action is pretty simple.

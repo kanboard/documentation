@@ -1,6 +1,9 @@
 ---
 title: Email Configuration
 toc: true
+menu:
+    main:
+        parent: Administration
 ---
 
 User Settings

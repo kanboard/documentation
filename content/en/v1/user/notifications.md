@@ -1,6 +1,9 @@
 ---
 title: Notifications
 toc: true
+menu:
+    main:
+        parent: Using Kanboard
 ---
 
 Kanboard is able to send notifications through several channels:

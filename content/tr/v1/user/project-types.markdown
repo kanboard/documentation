@@ -1,5 +1,9 @@
 ---
 title: Proje Tipleri
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 İki tür proje vardır:

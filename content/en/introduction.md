@@ -1,6 +1,7 @@
 ---
 title: What is Kanban?
 toc: true
+menu: main
 ---
 
 ## Introduction

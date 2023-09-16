@@ -1,5 +1,9 @@
 ---
 title: Sous-tâches
+toc: true
+menu:
+    main:
+        parent: Guide utilisateur
 ---
 
 Les sous-tâches sont utiles pour se partager le travail que représente une tâche.

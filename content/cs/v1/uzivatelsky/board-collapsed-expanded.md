@@ -1,5 +1,8 @@
 ---
 title: Sbalený a rozbalený režim
+menu:
+    main:
+        parent: Používání Kanboard
 ---
 
 Úkoly na desce mohou být zobrazeny ve sbaleném nebo v rozbaleném režimu.

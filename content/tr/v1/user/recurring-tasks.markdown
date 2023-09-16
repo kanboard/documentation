@@ -1,5 +1,9 @@
 ---
 title: Tekrar eden görevler
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Kanban metodolojisine uymak için, tekrar eden görevler bir tarih tabanında değil, panoda olaylara dayanır.

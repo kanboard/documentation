@@ -1,5 +1,8 @@
 ---
 title: RSS/Atom Subscriptions
+menu:
+    main:
+        parent: Using Kanboard
 ---
 
 Kanboard supports RSS feeds for projects and users.

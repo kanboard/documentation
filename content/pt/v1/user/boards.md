@@ -1,5 +1,8 @@
 ---
 title: Quadros
+menu:
+    main:
+        parent: Guia do Usuário
 ---
 
 Visões do Projeto

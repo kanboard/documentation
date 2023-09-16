@@ -1,5 +1,9 @@
 ---
 title: Görevleri çoğaltmak ve taşımak
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Bir görevi aynı projeye çoğalt

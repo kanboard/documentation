@@ -1,6 +1,9 @@
 ---
 title: Webhooks
 toc: true
+menu:
+    main:
+        parent: Contributing to Kanboard
 ---
 
 Webhooks are useful to perform actions with external applications.

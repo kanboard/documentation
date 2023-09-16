@@ -1,6 +1,9 @@
 ---
 title: Command Line Interface
 toc: true
+menu:
+    main:
+        parent: Administration
 ---
 
 Kanboard provides a simple command line interface that can be used from

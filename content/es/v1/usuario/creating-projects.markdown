@@ -1,5 +1,8 @@
 ---
 title: Creación de proyectos
+menu:
+    main:
+        parent: Guía del usuario
 ---
 
 Kanboard puede manejar múltiples proyectos. Hay dos tipos de proyectos

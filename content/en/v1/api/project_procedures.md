@@ -1,6 +1,9 @@
 ---
 title: Project API Procedures
 toc: true
+menu:
+    main:
+        parent: API Reference
 ---
 
 createProject

@@ -1,5 +1,9 @@
 ---
 title: Zaman izleme
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Zaman izleme bilgileri, görev seviyesinde veya alt görev seviyesinde tanımlanabilir.

@@ -1,6 +1,9 @@
 ---
 title: Plugin Hooks
 toc: true
+menu:
+    main:
+        parent: Developing Plugins
 ---
 
 Add new API methods

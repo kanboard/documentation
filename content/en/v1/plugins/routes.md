@@ -1,6 +1,9 @@
 ---
 title: Custom Routes
 toc: true
+menu:
+    main:
+        parent: Developing Plugins
 ---
 
 When URL rewriting is enabled, you can define custom routes from your plugins.

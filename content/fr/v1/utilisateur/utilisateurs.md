@@ -1,5 +1,9 @@
 ---
 title: Utilisateurs
+toc: true
+menu:
+    main:
+        parent: Guide utilisateur
 ---
 
 Rôles des utilisateurs

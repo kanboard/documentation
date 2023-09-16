@@ -1,6 +1,9 @@
 ---
 title: Comment API Procedures
 toc: true
+menu:
+    main:
+        parent: API Reference
 ---
 
 createComment

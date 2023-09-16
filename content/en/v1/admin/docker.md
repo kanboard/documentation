@@ -1,6 +1,9 @@
 ---
 title: Docker Image Usage
 toc: true
+menu:
+    main:
+        parent: Administration
 aliases:
   - /en/latest/admin_guide/docker.html
   - /en/1.2.24/admin_guide/docker.html

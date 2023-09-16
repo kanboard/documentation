@@ -1,5 +1,9 @@
 ---
 title: Suivi du temps
+toc: true
+menu:
+    main:
+        parent: Guide utilisateur
 ---
 
 Les informations de la feuille de suivi du temps peuvent être définies au niveau des tâches ou des sous-tâches

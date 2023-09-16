@@ -1,5 +1,9 @@
 ---
 title: Projets
+toc: true
+menu:
+    main:
+        parent: Guide utilisateur
 ---
 
 Types de projets

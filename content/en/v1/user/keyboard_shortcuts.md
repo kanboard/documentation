@@ -2,6 +2,9 @@
 title: Keyboard Shortcuts
 slug: keyboard-shortcuts
 toc: true
+menu:
+    main:
+        parent: Using Kanboard
 ---
 
 Keyboard shortcuts availability depends on the current page.

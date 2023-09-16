@@ -1,6 +1,9 @@
 ---
 title: Ubuntu Installation
 toc: true
+menu:
+    main:
+        parent: Administration
 ---
 
 {{< hint type="danger" >}}

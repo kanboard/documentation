@@ -1,5 +1,9 @@
 ---
 title: Çift-Kademeli Kimlik Doğrulama
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Her kullanıcı [Çift-Kademeli Kimlik Doğrulama two-factor authentication](http://en.wikipedia.org/wiki/Two_factor_authentication) yı aktyif edebilir.

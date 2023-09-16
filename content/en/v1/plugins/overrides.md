@@ -1,6 +1,9 @@
 ---
 title: Plugin Overrides
 toc: true
+menu:
+    main:
+        parent: Developing Plugins
 ---
 
 Override HTTP Content Security Policy

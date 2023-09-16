@@ -1,6 +1,9 @@
 ---
 title: Task Metadata API Procedures
 toc: true
+menu:
+    main:
+        parent: API Reference
 ---
 
 getTaskMetadata

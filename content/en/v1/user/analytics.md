@@ -1,6 +1,9 @@
 ---
 title: Project Analytics
 toc: true
+menu:
+    main:
+        parent: Using Kanboard
 ---
 
 Each project has an analytics section. Depending on how you are using Kanboard, you can see those reports:

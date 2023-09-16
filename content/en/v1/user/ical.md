@@ -1,6 +1,9 @@
 ---
 title: iCalendar Subscriptions
 toc: true
+menu:
+    main:
+        parent: Using Kanboard
 ---
 
 Kanboard supports iCal feeds for projects and users.

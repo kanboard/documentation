@@ -1,6 +1,9 @@
 ---
 title: Automated Tests
 toc: true
+menu:
+    main:
+        parent: Contributing to Kanboard
 ---
 
 [PHPUnit](https://phpunit.de/) is used to run automated tests on Kanboard.

@@ -1,5 +1,9 @@
 ---
 title: Görevleri kapatma
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Bir görev kapatıldığında, panodan gizlenir.

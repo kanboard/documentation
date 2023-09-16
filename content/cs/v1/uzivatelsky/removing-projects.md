@@ -1,5 +1,8 @@
 ---
 title: Odstranění projektů
+menu:
+    main:
+        parent: Používání Kanboard
 ---
 
 Chcete-li projekt odebrat, musíte být správcem projektu nebo správcem.

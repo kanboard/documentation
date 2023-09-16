@@ -1,5 +1,9 @@
 ---
 title: Özel Filtreler
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Özel filtreler, herhangi bir arama sorgusunu kaydetmenize izin verir.

@@ -1,6 +1,9 @@
 ---
 title: LDAP Configuration Parameters
 toc: true
+menu:
+    main:
+        parent: Administration
 ---
 
 Requirements

@@ -1,6 +1,9 @@
 ---
 title: Performances
 toc: true
+menu:
+    main:
+        parent: Administration
 ---
 
 According to your configuration, some features can slow down the usage

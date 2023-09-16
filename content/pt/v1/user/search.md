@@ -1,5 +1,8 @@
 ---
 title: Sintaxe para Pesquisa Avançada
+menu:
+    main:
+        parent: Guia do Usuário
 ---
 
 O Kanboard usa uma linguagem de consulta simples para pesquisa avançada.

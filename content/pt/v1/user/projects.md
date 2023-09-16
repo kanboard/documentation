@@ -1,5 +1,8 @@
 ---
 title: Projetos
+menu:
+    main:
+        parent: Guia do Usuário
 ---
 
 Tipos de Projeto

@@ -1,6 +1,9 @@
 ---
 title: Markdown Syntax
 toc: true
+menu:
+    main:
+        parent: Using Kanboard
 ---
 
 Kanboard use the [Markdown syntax](http://en.wikipedia.org/wiki/Markdown) for comments or task descriptions.

@@ -1,5 +1,9 @@
 ---
 title: Pano, Takvim ve Liste Görünümleri
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Her bir proje için, görevler birkaç görünümle görselleştirilebilir: **Pano, Takvim ve Liste ve Gantt**.

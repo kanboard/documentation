@@ -1,5 +1,8 @@
 ---
 title: Assinaturas do iCalendar
+menu:
+    main:
+        parent: Guia do Usuário
 ---
 
 Kanboard suporta feeds do iCal para projetos e usuários. Esse recurso

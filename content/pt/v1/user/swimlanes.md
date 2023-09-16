@@ -1,5 +1,8 @@
 ---
 title: Raias
+menu:
+    main:
+        parent: Guia do Usuário
 ---
 
 Raias são separações horizontais no seu quadro. Por exemplo, é útil para

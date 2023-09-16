@@ -3,6 +3,7 @@ title: Kanboard
 linktitle: Table of Contents
 aliases:
     - /en/latest/
+menu: main
 ---
 
 Kanboard is a free and open source Kanban project management software.

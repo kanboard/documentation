@@ -1,5 +1,9 @@
 ---
 title: Proje İzinleri
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Her proje birbirinden izole edilmiş ve birbirinden ayrılmıştır.

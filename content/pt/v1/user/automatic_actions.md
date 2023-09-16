@@ -1,5 +1,8 @@
 ---
 title: Ações Automáticas
+menu:
+    main:
+        parent: Guia do Usuário
 ---
 
 Para minimizar a interação do usuário, o Kanboard suporta ações

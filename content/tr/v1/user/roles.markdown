@@ -1,5 +1,9 @@
 ---
 title: Kullanıcı Rolleri
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Uygulama Rolleri

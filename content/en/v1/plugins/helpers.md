@@ -1,6 +1,9 @@
 ---
 title: Registering new helpers
 toc: true
+menu:
+    main:
+        parent: Developing Plugins
 ---
 
 Helper skeleton:

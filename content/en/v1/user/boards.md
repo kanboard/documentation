@@ -1,6 +1,9 @@
 ---
 title: Boards
 toc: true
+menu:
+    main:
+        parent: Using Kanboard
 ---
 
 Project Views

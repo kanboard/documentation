@@ -1,5 +1,9 @@
 ---
 title: Analizler
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Her projenin bir analiz bölümü vardır. Kanboard'u nasıl kullandığınıza bağlı olarak, şu raporları görebilirsiniz:

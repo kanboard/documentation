@@ -1,5 +1,9 @@
 ---
 title: Görevler için analiz
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Her görev, görev görünümünde sol menüden erişilebilen bir analiz bölümüne sahiptir.

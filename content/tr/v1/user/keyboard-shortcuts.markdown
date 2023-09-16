@@ -1,5 +1,9 @@
 ---
 title: Klavye kısayolları
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Klavye kısayollarının kullanılabilirliği, bulunduğunuz sayfaya bağlıdır.

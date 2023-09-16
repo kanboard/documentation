@@ -1,5 +1,8 @@
 ---
 title: Rastreamento de tempo
+menu:
+    main:
+        parent: Guia do Usuário
 ---
 
 As informações de rastreamento de tempo podem ser definidas no nível da

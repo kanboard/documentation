@@ -1,6 +1,9 @@
 ---
 title: Background Workers
 toc: true
+menu:
+    main:
+        parent: Administration
 ---
 
 {{< hint type="warning" >}}

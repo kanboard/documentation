@@ -1,6 +1,9 @@
 ---
 title: Projects
 toc: true
+menu:
+    main:
+        parent: Using Kanboard
 aliases:
     - /en/latest/user_guide/projects.html
     - /en/1.2.24/user_guide/projects.html

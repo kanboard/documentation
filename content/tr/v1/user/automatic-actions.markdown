@@ -1,5 +1,9 @@
 ---
 title: Otomatik İşlemler
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Kullanıcı etkileşimini en aza indirgemek için, Kanboard otomatik işlemleri desteklemektedir.

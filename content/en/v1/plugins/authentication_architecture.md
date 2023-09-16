@@ -1,6 +1,9 @@
 ---
 title: Authentication Architecture
 toc: true
+menu:
+    main:
+        parent: Developing Plugins
 ---
 
 Kanboard provides a flexible and pluggable authentication architecture.

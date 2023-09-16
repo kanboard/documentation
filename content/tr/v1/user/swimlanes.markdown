@@ -1,5 +1,9 @@
 ---
 title: Kulvarlar
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Kulvarlar tahtada yatay ayrımlardır.

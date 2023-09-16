@@ -1,5 +1,9 @@
 ---
 title: Proje Ayarları
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Sağ üstte bulunan **Ayarlar** menüsüne gidin, ardından soldaki **Proje ayarları** seçeneğini seçin.

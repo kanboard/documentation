@@ -2,6 +2,9 @@
 title: URL Rewriting
 slug: url-rewriting
 toc: true
+menu:
+    main:
+        parent: Administration
 ---
 
 Kanboard is able to work indifferently with URL rewriting enabled or

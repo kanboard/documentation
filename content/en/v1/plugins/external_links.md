@@ -1,6 +1,9 @@
 ---
 title: External Link Providers
 toc: true
+menu:
+    main:
+        parent: Developing Plugins
 ---
 
 This functionality allows you to link a task to additional items stored on another system.

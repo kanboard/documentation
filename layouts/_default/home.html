@@ -2,11 +2,22 @@
 <html lang="{{ default .Site.Language.Lang .Site.LanguageCode  }}">
     {{ partial "head.html" . }}
     <body>
-        <main>
-            <h1>{{ .Title }}</h1>
-            <section>
-                {{ .Content }}
-            </section>
-        </main>
+        <div class="wrapper">
+            <header class="header">
+                <h1>{{ .Site.Title }}</h1>
+                {{ partial "breadcrumb.html" . }}
+            </header>
+            {{ partial "sidebar.html" .Page }}
+            <main class="content">
+                <article>
+                    <header>
+                        <h1>{{ .Title }}</h1>
+                    </header>
+                    {{ partial "toc.html" . }}
+                    <section>{{ .Content }}</section>
+                </article>
+            </main>
+            {{ partial "footer.html" . }}
+        </div>
     </body>
 </html>

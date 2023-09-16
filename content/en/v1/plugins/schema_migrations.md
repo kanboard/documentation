@@ -1,6 +1,9 @@
 ---
 title: Plugin Schema Migrations
 toc: true
+menu:
+    main:
+        parent: Developing Plugins
 ---
 
 Kanboard executes database migrations automatically for you. Migrations

@@ -1,5 +1,9 @@
 ---
 title: Döviz kuru
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Her kullanıcı, farklı para birimlerinde önceden belirlenmiş bir saat ücreti alabilir.

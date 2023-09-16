@@ -1,5 +1,9 @@
 ---
 title: Swimlanes
+toc: true
+menu:
+    main:
+        parent: Guide utilisateur
 ---
 
 Les *swimlanes* sont des séparations horizontales de votre tableau (pensez à des « couloirs » ou « lignes d'eau » dans une piscine).

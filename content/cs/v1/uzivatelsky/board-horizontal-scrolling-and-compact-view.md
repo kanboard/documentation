@@ -1,5 +1,8 @@
 ---
 title: Horizontální rolování a kompaktní režim
+menu:
+    main:
+        parent: Používání Kanboard
 ---
 
 Pokud se nástěnka nevejde na obrazovku, zobrazí se v dolní části vodorovná posuvná lišta.

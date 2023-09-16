@@ -1,6 +1,9 @@
 ---
 title: Users and Groups
 toc: true
+menu:
+    main:
+        parent: Using Kanboard
 ---
 
 User Types

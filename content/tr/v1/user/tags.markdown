@@ -1,5 +1,9 @@
 ---
 title: Etiketler
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Kanboard ile, bir veya birçok etiketi görevle ilişkilendirebilirsiniz.

@@ -1,5 +1,8 @@
 ---
 title: Nástěnka, kalendář a zobrazení seznamu
+menu:
+    main:
+        parent: Používání Kanboard
 ---
 
 Pro každý projekt je možné úkoly vizualizovat s několika pohledy: **Nástěnka, Kalendář, Seznam a Gantt**.

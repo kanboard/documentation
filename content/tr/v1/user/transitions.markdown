@@ -1,5 +1,9 @@
 ---
 title: Görev Geçişleri
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Bir görevin sütunlar arasındaki her hareketi veritabanına kaydedilir.

@@ -1,6 +1,9 @@
 ---
 title: Installation on RedHat/Centos/Oracle Linux Enterprise
 toc: true
+menu:
+    main:
+        parent: Administration
 ---
 
 {{< hint type="warning" >}}

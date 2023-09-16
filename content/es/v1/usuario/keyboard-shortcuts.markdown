@@ -1,5 +1,8 @@
 ---
 title: Atajos de teclado
+menu:
+    main:
+        parent: Guía del usuario
 ---
 
 La disponibilidad de los Atajos de teclado depende de la página que está actualmente.

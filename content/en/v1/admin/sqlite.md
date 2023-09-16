@@ -1,6 +1,9 @@
 ---
 title: Sqlite
 toc: true
+menu:
+    main:
+        parent: Administration
 ---
 
 Kanboard uses Sqlite by default to store its data.

@@ -1,6 +1,9 @@
 ---
 title: Advanced Search Syntax
 toc: true
+menu:
+    main:
+        parent: Using Kanboard
 ---
 
 Kanboard uses a simple query language for advanced search. 

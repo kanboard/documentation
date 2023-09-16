@@ -1,5 +1,9 @@
 ---
 title: Raccourcis clavier
+toc: true
+menu:
+    main:
+        parent: Guide utilisateur
 ---
 
 La disponibilité des raccourcis clavier dépend de la page sur laquelle vous êtes couramment.

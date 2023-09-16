@@ -1,6 +1,9 @@
 ---
 title: Group Member API Procedures
 toc: true
+menu:
+    main:
+        parent: API Reference
 ---
 
 getMemberGroups

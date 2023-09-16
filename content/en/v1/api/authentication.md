@@ -1,6 +1,9 @@
 ---
 title: API Authentication
 toc: true
+menu:
+    main:
+        parent: API Reference
 ---
 
 {{< hint type="warning" >}}

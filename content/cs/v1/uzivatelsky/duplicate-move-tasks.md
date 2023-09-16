@@ -1,5 +1,8 @@
 ---
 title: Kopírovat a přesunout úkoly
+menu:
+    main:
+        parent: Používání Kanboard
 ---
 
 Kopírovat úkol do stejného projektu

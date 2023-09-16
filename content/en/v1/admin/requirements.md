@@ -1,6 +1,9 @@
 ---
 title: Requirements and Prerequisites
 toc: true
+menu:
+    main:
+        parent: Administration
 aliases:
     - /en/latest/admin_guide/requirements.html
     - /en/1.2.24/admin_guide/requirements.html

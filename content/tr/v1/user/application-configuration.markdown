@@ -1,5 +1,9 @@
 ---
 title: Uygulama ayarları
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Uygulama için bazı parametreler ayarlar sayfasında değiştirilebilir.

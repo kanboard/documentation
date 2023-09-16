@@ -1,6 +1,9 @@
 ---
 title: Plugin Registration
 toc: true
+menu:
+    main:
+        parent: Developing Plugins
 ---
 
 Project skeleton generator

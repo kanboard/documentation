@@ -1,5 +1,9 @@
 ---
 title: Projeleri Düzenleme
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Projeler yeniden adlandırılabilir ve istediğiniz zaman devre dışı bırakılabilir.

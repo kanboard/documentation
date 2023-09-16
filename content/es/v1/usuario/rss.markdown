@@ -1,5 +1,8 @@
 ---
-title: Suscripciones RSS/Atom 
+title: Suscripciones RSS/Atom
+menu:
+    main:
+        parent: Guía del usuario
 ---
 
 Kanboard Soporta feeds RSS para proyectos y usuarios.

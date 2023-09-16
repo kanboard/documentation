@@ -1,5 +1,8 @@
 ---
 title: Configuración del tablero
+menu:
+    main:
+        parent: Guía del usuario
 ---
 
 Ir al menu **Configuraciones**, elije **Ajustes de tablero** a la izquierda.

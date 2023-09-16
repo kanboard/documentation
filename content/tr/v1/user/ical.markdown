@@ -1,5 +1,9 @@
 ---
 title: Takvimlerinizi (eş zamanlı bilgi aktarma) senkronize etme
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Kanboard, projeler ve kullanıcılar için iCal özet akışlarını desteklemektedir.

@@ -4,6 +4,9 @@ linktitle: API
 description: JSON-RPC API Reference
 sectionToc: true
 toc: true
+menu:
+    main:
+        weight: 50
 aliases:
     - /en/latest/api/index.html
 ---

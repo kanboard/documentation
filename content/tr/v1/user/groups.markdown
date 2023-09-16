@@ -1,5 +1,9 @@
 ---
 title: Grup Yönetimi
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Kanboard'da her kullanıcı bir veya daha fazla gruba üye olabilir.

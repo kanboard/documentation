@@ -1,5 +1,8 @@
 ---
 title: Typy projektů
+menu:
+    main:
+        parent: Používání Kanboard
 ---
 
 Existují dva druhy projektů:

@@ -1,5 +1,9 @@
 ---
 title: Configuration
+toc: true
+menu:
+    main:
+        parent: Guide utilisateur
 ---
 
 Paramètres de l'application

@@ -1,6 +1,9 @@
 ---
 title: Installation Instructions
 toc: true
+menu:
+    main:
+        parent: Administration
 aliases:
     - /en/latest/admin_guide/installation.html
     - /en/1.2.24/admin_guide/installation.html

@@ -1,6 +1,9 @@
 ---
 title: Reverse Proxy Authentication
 toc: true
+menu:
+    main:
+        parent: Administration
 ---
 
 This authentication method is often used for

@@ -1,5 +1,8 @@
 ---
 title: Subtareas
+menu:
+    main:
+        parent: Guía del usuario
 ---
 
 Las subtareas son utiles por que dividen el trabajo de las tareas.

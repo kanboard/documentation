@@ -1,5 +1,9 @@
 ---
 title: Görevler Oluşturma
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Panodan, sütun adının yanındaki artı işaretini tıklayın:

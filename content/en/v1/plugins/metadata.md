@@ -1,6 +1,9 @@
 ---
 title: Metadata
 toc: true
+menu:
+    main:
+        parent: Developing Plugins
 ---
 
 You can attach metadata for each project, task, user or for the whole

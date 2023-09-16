@@ -1,5 +1,8 @@
 ---
 title: Coding Standards
+menu:
+    main:
+        parent: Contributing to Kanboard
 aliases:
     - /en/latest/developer_guide/coding_standards.html
     - /v1/dev/coding-standards/

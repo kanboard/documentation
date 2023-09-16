@@ -1,5 +1,9 @@
 ---
 title: Ekran görüntüleri ekleme
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Zaman kazanmak için görüntüleri doğrudan Kanboard'a kopyalayıp yapıştırabilirsiniz.

@@ -1,6 +1,9 @@
 ---
 title: Automatic Actions API Procedures
 toc: true
+menu:
+    main:
+        parent: API Reference
 ---
 
 getAvailableActions

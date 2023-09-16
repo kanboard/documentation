@@ -1,5 +1,8 @@
 ---
 title: Nastavení projektu
+menu:
+    main:
+        parent: Používání Kanboard
 ---
 
 Přejděte do nabídky **Nastavení** a poté vlevo vyberte možnost **Nastavení projektu**.

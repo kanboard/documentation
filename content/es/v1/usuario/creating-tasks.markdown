@@ -1,5 +1,8 @@
 ---
 title: Creación de tarea
+menu:
+    main:
+        parent: Guía del usuario
 ---
 
 Desde el tablero, haga clic en el signo más **plus** al lado del nombre de la columna 

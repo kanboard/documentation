@@ -1,5 +1,9 @@
 ---
 title: Tableaux
+toc: true
+menu:
+    main:
+        parent: Guide utilisateur
 ---
 
 Différentes vues

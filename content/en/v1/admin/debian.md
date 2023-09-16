@@ -1,6 +1,9 @@
 ---
 title: Debian Installation
 toc: true
+menu:
+    main:
+        parent: Administration
 ---
 
 {{< hint type="danger" >}}

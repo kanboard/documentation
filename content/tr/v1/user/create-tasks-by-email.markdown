@@ -1,5 +1,9 @@
 ---
 title: E-posta ile görevler oluşturma
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Bir e-posta göndererek görevleri doğrudan oluşturabilirsiniz.
@@ -17,7 +21,7 @@ Bir e-posta alındığında, Kanboard belirli bir son noktadaki mesajı alır.
 Tüm karmaşık çalışmalar bu hizmetler tarafından zaten gerçekleştirilmektedir.
 
 Gelen e-postaların iş akışı
-------------------------
+---------------------------
 
 1. Belli bir adrese bir e-posta gönderiyorsunuz, örneğin **something+myproject@inbound.mydomain.tld**
 2. E-postanız, üçüncü parti SMTP sunucularına yönlendirilir
@@ -27,7 +31,7 @@ Gelen e-postaların iş akışı
 Not: Yeni görevler otomatik olarak ilk kolonda oluşturulur.
 
 E-posta biçimi
-------------
+--------------
 
 - E-posta adresinin yerel kısmı artı ayırıcıyı kullanmalıdır, örneğin ** kanboard + project123 **
 - Artı işaretinden sonra tanımlanan dize, bir proje tanımlayıcısıyla eşleşmelidir, örneğin **project123** ** projenin tanımlayıcısı **Proje 123**

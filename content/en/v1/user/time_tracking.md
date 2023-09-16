@@ -1,6 +1,9 @@
 ---
 title: Time Tracking
 toc: true
+menu:
+    main:
+        parent: Using Kanboard
 ---
 
 Time tracking information can be defined at the task level or at the subtask level.

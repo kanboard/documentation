@@ -1,6 +1,9 @@
 ---
 title: Add Notification Types with Plugins
 toc: true
+menu:
+    main:
+        parent: Developing Plugins
 ---
 
 You can send notifications to almost any system by adding a new type.

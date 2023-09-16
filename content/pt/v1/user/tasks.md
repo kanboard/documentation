@@ -1,5 +1,8 @@
 ---
 title: Tarefas
+menu:
+    main:
+        parent: Guia do Usuário
 ---
 
 Criando Tarefas

@@ -1,5 +1,8 @@
 ---
 title: Mostrar y ocultar columnas en el tablero
+menu:
+    main:
+        parent: Guía del usuario
 ---
 
 Se puede ocultar o visualizar columnas muy facilmente en el tablero:

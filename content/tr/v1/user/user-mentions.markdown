@@ -1,5 +1,9 @@
 ---
 title: Kullanıcı Mentionları
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Kanboard, birinden bahsedildiğinde bildirim gönderme olanağı sunar.

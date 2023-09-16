@@ -1,6 +1,9 @@
 ---
 title: Tasks
 toc: true
+menu:
+    main:
+        parent: Using Kanboard
 aliases:
     - /en/latest/user_guide/tasks.html
     - /en/1.2.24/user_guide/tasks.html

@@ -1,6 +1,9 @@
 ---
 title: Avatar Providers
 toc: true
+menu:
+    main:
+        parent: Developing Plugins
 ---
 
 Registration

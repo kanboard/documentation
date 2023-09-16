@@ -1,5 +1,8 @@
 ---
 title: Uzavírání úkolů
+menu:
+    main:
+        parent: Používání Kanboard
 ---
 
 Když je úkol uzavřen, je skrytý z nástěnky.

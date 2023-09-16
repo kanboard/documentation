@@ -1,6 +1,9 @@
 ---
 title: Translations
 toc: true
+menu:
+    main:
+        parent: Contributing to Kanboard
 ---
 
 How to translate Kanboard to a new language?

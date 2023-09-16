@@ -1,5 +1,8 @@
 ---
 title: Usuários e Grupos
+menu:
+    main:
+        parent: Guia do Usuário
 ---
 
 Tipos de Usuários

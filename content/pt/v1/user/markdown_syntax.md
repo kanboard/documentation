@@ -1,5 +1,8 @@
 ---
 title: Sintaxe do Markdown
+menu:
+    main:
+        parent: Guia do Usuário
 ---
 
 O Kanboard usa a [Sintaxe Markdown](http://en.wikipedia.org/wiki/Markdown) para comentários ou

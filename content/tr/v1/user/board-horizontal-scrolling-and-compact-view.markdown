@@ -1,5 +1,9 @@
 ---
 title: Yatay kaydırma ve kompakt mod
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 PAno ekranınıza sığmadığı zaman, altta yatay bir kaydırma çubuğu görünür.

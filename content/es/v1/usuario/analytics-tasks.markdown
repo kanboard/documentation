@@ -1,5 +1,8 @@
 ---
 title: Análisis para tareas
+menu:
+    main:
+        parent: Guía del usuario
 ---
 
 Cada tarea tiene una sección de análisis disponible en el menu izquierdo en la vista de tarea.

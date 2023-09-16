@@ -1,5 +1,8 @@
 ---
 title: Vytváření úkolů
+menu:
+    main:
+        parent: Používání Kanboard
 ---
 
 Na nástěnce klikněte na znaménko plus vedle názvu sloupce:

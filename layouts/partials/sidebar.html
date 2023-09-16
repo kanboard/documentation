@@ -1,0 +1,16 @@
+<nav class="sidebar">
+{{ range .Site.Menus.main.ByWeight }}
+    {{- if .HasChildren }}
+    <details open>
+        <summary>{{ .Name }}</summary>
+        <ul>
+            {{- range .Children }}
+            <li>
+                <a href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+            {{- end}}
+        </ul>
+    </details>
+    {{- end}}
+{{- end}}
+</nav>

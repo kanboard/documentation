@@ -1,5 +1,9 @@
 ---
 title: RSS / Atom abonelikleri
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Kanboard, projeler ve kullanıcılar için RSS yayınlarını desteklemektedir.

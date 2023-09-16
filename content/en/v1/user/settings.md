@@ -1,6 +1,9 @@
 ---
 title: Settings
 toc: true
+menu:
+    main:
+        parent: Using Kanboard
 ---
 
 Some parameters for the application can be changed on the settings page.

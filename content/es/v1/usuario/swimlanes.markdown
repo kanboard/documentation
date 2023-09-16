@@ -1,5 +1,8 @@
 ---
 title: Swimlanes
+menu:
+    main:
+        parent: Guía del usuario
 ---
 
 Swimlanes son separaciones horizontales en tu tablero.

@@ -1,5 +1,8 @@
 ---
 title: Úpravy projektů
+menu:
+    main:
+        parent: Používání Kanboard
 ---
 
 Projekty lze kdykoli přejmenovat nebo zakázat.

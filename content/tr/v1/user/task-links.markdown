@@ -1,5 +1,9 @@
 ---
 title: İç Görev Bağlantıları
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Görevler önceden tanımlanmış ilişkilerle birlikte birbirine bağlanabilir:

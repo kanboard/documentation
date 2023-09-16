@@ -1,5 +1,9 @@
 ---
 title: Actions automatiques
+toc: true
+menu:
+    main:
+        parent: Guide utilisateur
 ---
 
 Pour réduire au minimum l'interaction avec les utilisateurs, Kanboard

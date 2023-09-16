@@ -1,6 +1,9 @@
 ---
 title: Authentication Providers
 toc: true
+menu:
+    main:
+        parent: Developing Plugins
 ---
 
 New authentication backends can be written with very few lines of code.

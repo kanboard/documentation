@@ -1,5 +1,9 @@
 ---
 title: Projeleri Oluşturma
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Kanboard birden fazla projeyi idare edebilir. İki tür proje vardır:
@@ -8,7 +12,7 @@ Kanboard birden fazla projeyi idare edebilir. İki tür proje vardır:
 - Tek bir kullanıcı için özel proje
 
 Birden fazla kullanıcı için proje oluşturma
--------------------------------------
+-------------------------------------------
 
 - Yalnızca yöneticiler ve proje yöneticileri bu projeleri oluşturabilir
 - Kullanıcı yönetimi mevcut
@@ -20,7 +24,7 @@ Gösterge tablosundan **Yeni proje** bağlantısını tıklayın:
 Çok kolay, sadece projeniz için bir isim bulmanız gerekiyor!
 
 Özel proje oluşturma
---------------------------
+--------------------
 
 - Herkes özel bir proje yaratabilir
 - Burda kullanıcı yönetimi **YOK**.

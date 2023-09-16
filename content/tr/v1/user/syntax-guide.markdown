@@ -1,5 +1,9 @@
 ---
 title: Sözdizimi Kılavuzu
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Kanboard, yorumlar veya görev açıklamaları için [Markdown Sözdizimi-syntax](http://en.wikipedia.org/wiki/Markdown) kullanır.

@@ -1,6 +1,9 @@
 ---
 title: API Examples
 toc: true
+menu:
+    main:
+        parent: API Reference
 ---
 
 Example with cURL

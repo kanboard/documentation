@@ -1,6 +1,9 @@
 ---
 title: Automatic Actions
 toc: true
+menu:
+    main:
+        parent: Using Kanboard
 ---
 
 To minimize user interaction, Kanboard support automated actions.

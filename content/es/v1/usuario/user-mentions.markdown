@@ -1,5 +1,8 @@
 ---
 title: Menciones de usuarios
+menu:
+    main:
+        parent: Guía del usuario
 ---
 
 Kanboard ofrece la posibilidad de enviar notificaciones cuando alguien es mencionado.

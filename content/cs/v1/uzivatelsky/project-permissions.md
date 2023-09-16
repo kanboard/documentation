@@ -1,5 +1,8 @@
 ---
 title: Oprávnění projektu
+menu:
+    main:
+        parent: Používání Kanboard
 ---
 
 Každý projekt je izolován od jiných projektů.

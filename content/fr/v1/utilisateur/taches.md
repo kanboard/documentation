@@ -1,5 +1,9 @@
 ---
 title: Tâches
+toc: true
+menu:
+    main:
+        parent: Guide utilisateur
 ---
 
 Créer des tâches
@@ -230,14 +234,13 @@ prendre des captures d'écran avec des annotations et un choix de formes.
 navigateurs.** Elle n'existe pas pour Safari en raison de ce bug :
 <https://bugs.webkit.org/show_bug.cgi?id=49141>
 
-Statistiques pour les tâches
-----------------------------
+Statistiques des tâches
+-----------------------
 
 Chaque tâche possède une section analytique accessible à partir du menu
 à gauche dans la page des tâches
 
-Lead et cycle time
-------------------
+### Lead et cycle time
 
 ![Lead et cycle time](/images/v1/fr/task-lead-cycle-time.png)
 

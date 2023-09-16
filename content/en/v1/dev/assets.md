@@ -1,5 +1,8 @@
 ---
 title: Building Javascript and CSS files
+menu:
+    main:
+        parent: Contributing to Kanboard
 aliases:
     - /en/latest/developer_guide/assets.html
 ---

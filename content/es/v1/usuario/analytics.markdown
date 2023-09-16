@@ -1,5 +1,8 @@
 ---
 title: Analisis
+menu:
+    main:
+        parent: Guía del usuario
 --- 
 
 Cada proyecto tiene una sección de análisis . Dependiendo de cómo se está utilizando Kanboard, se puede ver estos informes :

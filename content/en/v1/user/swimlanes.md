@@ -1,6 +1,9 @@
 ---
 title: Swimlanes
 toc: true
+menu:
+    main:
+        parent: Using Kanboard
 ---
 
 Swimlanes are horizontal separations in your board. 

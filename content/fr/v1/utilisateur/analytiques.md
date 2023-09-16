@@ -1,5 +1,9 @@
 ---
 title: Statistiques pour les projets
+toc: true
+menu:
+    main:
+        parent: Guide utilisateur
 ---
 
 Chaque projet dispose d'une section analytique. En fonction de la façon

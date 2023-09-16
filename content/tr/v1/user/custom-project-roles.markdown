@@ -1,5 +1,9 @@
 ---
 title: Özel Proje Rolleri
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Bu role ait kişiler üzerinde belirli kısıtlamalar dizisi uygulamak için özel proje rolleri oluşturabilirsiniz.

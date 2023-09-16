@@ -1,5 +1,8 @@
 ---
-title: Autentificación Two-Factor 
+title: Autentificación Two-Factor
+menu:
+    main:
+        parent: Guía del usuario
 ---
 
 Cada usuario puede habilitar el [two-factor authentication](http://en.wikipedia.org/wiki/Two_factor_authentication).

@@ -1,6 +1,9 @@
 ---
 title: Subtasks
 toc: true
+menu:
+    main:
+        parent: Using Kanboard
 ---
 
 Subtasks are useful to split the work of a task.

@@ -1,6 +1,9 @@
 ---
 title: Frequently Asked Questions
 toc: true
+menu:
+    main:
+        parent: Administration
 ---
 
 Can you recommend a web hosting provider for Kanboard?

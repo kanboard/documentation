@@ -1,5 +1,8 @@
 ---
 title: Etiquetas
+menu:
+    main:
+        parent: Guía del usuario
 ---
 
 Con kanboard, tu puedes asociar una o mas tags a una tarea.

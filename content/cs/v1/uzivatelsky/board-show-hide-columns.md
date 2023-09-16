@@ -1,5 +1,8 @@
 ---
 title: Zobrazit a skrýt sloupce na nástěnce
+menu:
+    main:
+        parent: Používání Kanboard
 ---
 
 Sloupce můžete velmi snadno skrýt nebo zobrazit na nástěnce:

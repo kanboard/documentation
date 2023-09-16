@@ -1,5 +1,9 @@
 ---
 title: Kullanıcı Tipleri
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Kanboard'da iki tür kullanıcı vardır:

@@ -1,6 +1,9 @@
 ---
 title: Administration
 description: Installing and configuring Kanboard on your own server
+menu:
+    main:
+        weight: 30
 ---
 
 Installation, deployment and configuration guides for running Kanboard.

@@ -1,5 +1,8 @@
 ---
 title: Agregar screenshots
+menu:
+    main:
+        parent: Guía del usuario
 ---
 
 Tu puedes copiar y pegar imagenes directamente en Kanboard y salvarlo al mismo tiempo. Estas imágenes se cargan como archivos adjuntos a la tarea .

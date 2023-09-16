@@ -1,6 +1,9 @@
 ---
 title: Installation on Microsoft Windows Server
 toc: true
+menu:
+    main:
+        parent: Administration
 ---
 
 {{< hint type="warning" >}}

@@ -1,5 +1,8 @@
 ---
 title: Modo colapsar y expandir
+menu:
+    main:
+        parent: Guía del usuario
 ---
 
 Las tareas en el tablero pueden visualizarse en modo colapsado o en modo expandido.

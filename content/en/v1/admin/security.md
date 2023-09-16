@@ -1,6 +1,9 @@
 ---
 title: Security
 toc: true
+menu:
+    main:
+        parent: Administration
 ---
 
 General Advices

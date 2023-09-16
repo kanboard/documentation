@@ -1,5 +1,8 @@
 ---
 title: Notificações
+menu:
+    main:
+        parent: Guia do Usuário
 ---
 
 Kanboard é capaz de enviar notificações através de vários canais:

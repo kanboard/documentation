@@ -1,5 +1,9 @@
 ---
 title: Panoda sütunları göster ve gizle
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Sütunları çok pratik bir şekilde gizleyebilir veya görüntüleyebilirsiniz:

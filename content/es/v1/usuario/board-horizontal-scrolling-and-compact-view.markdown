@@ -1,5 +1,8 @@
 ---
 title: Horizontal scrolling y modo compacto
+menu:
+    main:
+        parent: Guía del usuario
 ---
 
 Cuando el tablero no puede caber en su pantalla , una barra de scroll horizontal 

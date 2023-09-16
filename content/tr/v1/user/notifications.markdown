@@ -1,5 +1,9 @@
 ---
 title: Bildirimler
+toc: true
+menu:
+    main:
+        parent: Kullanici rehberi
 ---
 
 Kanboard, çeşitli kanallardan bildirimler gönderebilir:
