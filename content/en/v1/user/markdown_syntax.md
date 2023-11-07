@@ -59,6 +59,12 @@ Links
 <https://kanboard.org>
 ```
 
+Images
+-----
+```markdown
+![](https://kanboard.org/assets/img/favicon.png)
+```
+
 Source code
 -----------
 
