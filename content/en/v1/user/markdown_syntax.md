@@ -62,6 +62,10 @@ Links
 Images
 -----
 ```markdown
+![Kanboard Icon](https://kanboard.org/assets/img/favicon.png)
+
+or without alternative text :
+
 ![](https://kanboard.org/assets/img/favicon.png)
 ```
 
