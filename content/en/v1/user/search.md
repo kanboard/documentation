@@ -78,6 +78,7 @@ Attribute: **due**
 The date must use the ISO 8601 format: **YYYY-MM-DD**.
 
 All string formats supported by the [strtotime() function](https://www.php.net/strtotime) are supported, for example `next Thursday`, `-2 days`, `+2 months`, `tomorrow`, etc.
+If there are spaces, they must be enclosed in double quote.
 
 Operators supported with a date:
 
