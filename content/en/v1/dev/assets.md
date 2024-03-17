@@ -34,6 +34,5 @@ Build stylesheets:
 ```
 
 {{< hint type="info" >}}
-- Building assets is not possible from the Kanboard's archive, you have to clone the repository.
-- Since Kanboard v1.2.11, the dependency on nodejs, Sass, and Gulp has been removed.
+Building assets is not possible from the Kanboard's archive, you have to clone the repository.
 {{</ hint >}}
