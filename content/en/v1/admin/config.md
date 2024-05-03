@@ -379,4 +379,7 @@ define('TOTP_ISSUER', 'Kanboard');
 
 // Comma separated list of fields to not synchronize when using external authentication providers
 define('EXTERNAL_AUTH_EXCLUDE_FIELDS', 'username');
+
+// Dashboard settings
+define('DASHBOARD_MAX_PROJECTS', 10)
 ```
