@@ -11,9 +11,9 @@ createCategory
 
 - Purpose: **Create a new category**
 - Parameters:
-- **project\_id** (integer, required)
-    - **name** (string, required, must be unique for the given
-        project)
+- **project_id** (integer, required)
+    - **name** (string, required, must be unique for the given project)
+    - **color_id** (string, optional)
 - Result on success: **category\_id**
 - Result on failure: **false**
 
@@ -46,7 +46,7 @@ getCategory
 
 - Purpose: **Get category information**
 - Parameters:
-    - **category\_id** (integer, required)
+    - **category_id** (integer, required)
 - Result on success: **category properties**
 - Result on failure: **null**
 
@@ -83,7 +83,7 @@ getAllCategories
 
 - Purpose: **Get all available categories**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
 - Result on success: **List of categories**
 - Result on failure: **false**
 
@@ -123,6 +123,7 @@ updateCategory
 - Parameters:
     - **id** (integer, required)
     - **name** (string, required)
+    - **color_id** (string, optional)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -155,7 +156,7 @@ removeCategory
 
 - Purpose: **Remove a category**
 - Parameters:
-    - **category\_id** (integer)
+    - **category_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
