@@ -12,26 +12,26 @@ createTask
 - Purpose: **Create a new task**
 - Parameters:
     - **title** (string, required)
-    - **project\_id** (integer, required)
-    - **color\_id** (string, optional)
-    - **column\_id** (integer, optional)
-    - **owner\_id** (integer, optional)
-    - **creator\_id** (integer, optional)
-    - **date\_due**: ISO8601 format (string, optional)
+    - **project_id** (integer, required)
+    - **color_id** (string, optional)
+    - **column_id** (integer, optional)
+    - **owner_id** (integer, optional)
+    - **creator_id** (integer, optional)
+    - **date_due**: Use this date format: `YYYY-MM-DD HH:MM`, for example: `2024-07-01 14:25` (string, optional)
     - **description** Markdown content (string, optional)
-    - **category\_id** (integer, optional)
+    - **category_id** (integer, optional)
     - **score** (integer, optional)
-    - **swimlane\_id** (integer, optional)
+    - **swimlane_id** (integer, optional)
     - **priority** (integer, optional)
-    - **recurrence\_status** (integer, optional)
-    - **recurrence\_trigger** (integer, optional)
-    - **recurrence\_factor** (integer, optional)
-    - **recurrence\_timeframe** (integer, optional)
-    - **recurrence\_basedate** (integer, optional)
+    - **recurrence_status** (integer, optional)
+    - **recurrence_trigger** (integer, optional)
+    - **recurrence_factor** (integer, optional)
+    - **recurrence_timeframe** (integer, optional)
+    - **recurrence_basedate** (integer, optional)
     - **reference** (string, optional)
-    - **tags** (\[\]string, optional)
-    - **date\_started**: ISO8601 format (string, optional)
-- Result on success: **task\_id**
+    - **tags** ([]string, optional)
+    - **date_started**: Use this date format: `YYYY-MM-DD HH:MM`, for example: `2024-07-01 14:25` (string, optional)
+- Result on success: **task_id**
 - Result on failure: **false**
 
 Request example:
@@ -76,7 +76,7 @@ getTask
 
 - Purpose: **Get task by the unique id**
 - Parameters:
-    - **task\_id** (integer, required)
+    - **task_id** (integer, required)
 - Result on success: **task properties**
 - Result on failure: **null**
 
@@ -144,7 +144,7 @@ getTaskByReference
 
 - Purpose: **Get task by the external reference**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
     - **reference** (string, required)
 - Result on success: **task properties**
 - Result on failure: **null**
@@ -209,8 +209,8 @@ getAllTasks
 
 - Purpose: **Get all available tasks**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **status\_id**: The value 1 for active tasks and 0 for inactive
+    - **project_id** (integer, required)
+    - **status_id**: The value 1 for active tasks and 0 for inactive
         (integer, required)
 - Result on success: **List of tasks**
 - Result on failure: **false**
@@ -422,25 +422,25 @@ updateTask
 - Parameters:
     - **id** (integer, required)
     - **title** (string, optional)
-    - **color\_id** (string, optional)
-    - **owner\_id** (integer, optional)
-    - **date\_due**: ISO8601 format (string, optional)
+    - **color_id** (string, optional)
+    - **owner_id** (integer, optional)
+    - **date_due**: Use this date format: `YYYY-MM-DD HH:MM`, for example: `2024-07-01 14:25` (string, optional)
     - **description** Markdown content (string, optional)
-    - **category\_id** (integer, optional)
+    - **category_id** (integer, optional)
     - **score** (integer, optional)
     - **priority** (integer, optional)
-    - **recurrence\_status** (integer, optional)
-    - **recurrence\_trigger** (integer, optional)
-    - **recurrence\_factor** (integer, optional)
-    - **recurrence\_timeframe** (integer, optional)
-    - **recurrence\_basedate** (integer, optional)
+    - **recurrence_status** (integer, optional)
+    - **recurrence_trigger** (integer, optional)
+    - **recurrence_factor** (integer, optional)
+    - **recurrence_timeframe** (integer, optional)
+    - **recurrence_basedate** (integer, optional)
     - **reference** (string, optional)
-    - **tags** (\[\]string, optional)
-    - **date\_started**: ISO8601 format (string, optional)
+    - **tags** ([]string, optional)
+    - **date_started**: Use this date format: `YYYY-MM-DD HH:MM`, for example: `2024-07-01 14:25` (string, optional)
 - Result on success: **true**
 - Result on failure: **false**
 
-Request example to change the task color:
+Request example to change the task color and due date:
 
 ```json
 {
@@ -449,7 +449,8 @@ Request example to change the task color:
     "id": 1406803059,
     "params": {
         "id": 1,
-        "color_id": "blue"
+        "color_id": "blue",
+        "date_due": "2024-07-01 14:25"
     }
 }
 ```
@@ -469,7 +470,7 @@ openTask
 
 - Purpose: **Set a task to the status open**
 - Parameters:
-    - **task\_id** (integer, required)
+    - **task_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -501,7 +502,7 @@ closeTask
 
 - Purpose: **Set a task to the status close**
 - Parameters:
-    - **task\_id** (integer, required)
+    - **task_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -533,7 +534,7 @@ removeTask
 
 - Purpose: **Remove a task**
 - Parameters:
-    - **task\_id** (integer, required)
+    - **task_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -566,11 +567,11 @@ moveTaskPosition
 - Purpose: **Move a task to another column, position or swimlane
     inside the same board**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **task\_id** (integer, required)
-    - **column\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **task_id** (integer, required)
+    - **column_id** (integer, required)
     - **position** (integer, required)
-    - **swimlane\_id** (integer, required)
+    - **swimlane_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -606,12 +607,12 @@ moveTaskToProject
 
 - Purpose: **Move a task to another project**
 - Parameters:
-    - **task\_id** (integer, required)
-    - **project\_id** (integer, required)
-    - **swimlane\_id** (integer, optional)
-    - **column\_id** (integer, optional)
-    - **category\_id** (integer, optional)
-    - **owner\_id** (integer, optional)
+    - **task_id** (integer, required)
+    - **project_id** (integer, required)
+    - **swimlane_id** (integer, optional)
+    - **column_id** (integer, optional)
+    - **category_id** (integer, optional)
+    - **owner_id** (integer, optional)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -644,12 +645,12 @@ duplicateTaskToProject
 
 - Purpose: **Move a task to another column or another position**
 - Parameters:
-    - **task\_id** (integer, required)
-    - **project\_id** (integer, required)
-    - **swimlane\_id** (integer, optional)
-    - **column\_id** (integer, optional)
-    - **category\_id** (integer, optional)
-    - **owner\_id** (integer, optional)
+    - **task_id** (integer, required)
+    - **project_id** (integer, required)
+    - **swimlane_id** (integer, optional)
+    - **column_id** (integer, optional)
+    - **category_id** (integer, optional)
+    - **owner_id** (integer, optional)
 - Result on success: **task\_id**
 - Result on failure: **false**
 
@@ -682,7 +683,7 @@ searchTasks
 
 - Purpose: **Find tasks by using the search engine**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
     - **query** (string, required)
 - Result on success: **list of tasks**
 - Result on failure: **false**
