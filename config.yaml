@@ -11,7 +11,8 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    codeFences: false
+    noClasses: false
+    guessSyntax: true
 
 defaultContentLanguage: en
 languages:
