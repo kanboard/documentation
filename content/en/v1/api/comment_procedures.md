@@ -11,10 +11,12 @@ createComment
 
 - Purpose: **Create a new comment**
 - Parameters:
-    - **task\_id** (integer, required)
-    - **user\_id** (integer, required)
+    - **task_id** (integer, required)
+    - **user_id** (integer, required)
     - **content** Markdown content (string, required)
-- Result on success: **comment\_id**
+    - **reference** (string, optional)
+    - **visibility**: Possible values are `app-user` (default), `app-manager`, and `app-admin` (string, optional)
+- Result on success: **comment_id**
 - Result on failure: **false**
 
 Request example:
@@ -47,7 +49,7 @@ getComment
 
 - Purpose: **Get comment information**
 - Parameters:
-    - **comment\_id** (integer, required)
+    - **comment_id** (integer, required)
 - Result on success: **comment properties**
 - Result on failure: **null**
 
@@ -87,7 +89,7 @@ getAllComments
 
 - Purpose: **Get all available comments**
 - Parameters:
-    - **task\_id** (integer, required)
+    - **task_id** (integer, required)
 - Result on success: **List of comments**
 - Result on failure: **false**
 
@@ -163,7 +165,7 @@ removeComment
 
 - Purpose: **Remove a comment**
 - Parameters:
-    - **comment\_id** (integer, required)
+    - **comment_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
