@@ -287,6 +287,9 @@ Hook                                                             |  Description
 `template:project:header:before`                                 | Project filters (before)
 `template:project:header:after`                                  | Project filters (after)
 `template:project:integrations`                                  | Integration page in projects settings
+`template:project:creation:form`                                 | Project creation form
+`template:project:edit:form`                                     | Project modification form
+`template:project:view:form`                                     | Project view form
 `template:project:sidebar`                                       | Sidebar in project settings
 `template:project-user:sidebar`                                  | Sidebar on project user overview page
 `template:project-list:menu:before`                              | Project list: before menu entries
