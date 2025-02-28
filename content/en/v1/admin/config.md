@@ -295,7 +295,7 @@ define('ENABLE_XFRAME', true);
 Logging
 -------
 
-By default, Kanboard do not log anything. If you want to enable the
+By default, Kanboard does not log anything. If you want to enable the
 logging, you have to set a log driver.
 
 ```php
