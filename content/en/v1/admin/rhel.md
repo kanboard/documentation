@@ -1,5 +1,5 @@
 ---
-title: Installation on RedHat/Centos/Oracle Linux Enterprise
+title: Installation on RedHat/CentOS/Oracle Linux Enterprise
 toc: true
 menu:
     main:
@@ -7,18 +7,17 @@ menu:
 ---
 
 {{< hint type="warning" >}}
-This page hasn\'t been updated for a while, and it\'s probably obsolete.
+This page hasn't been updated for a while and may be obsolete.
 {{</ hint >}}
 
 {{< hint type="danger" >}}
-- Do not forget to change the default username/password.
-- Do not allow everybody to access the directory `data` from the URL.
+- Change the default username/password.
+- Prevent public access to the `data` directory via the URL.
 - Enable `.htaccess` if you use Apache (Option `AllowOverride All`).
-- This is your responsability to configure your server correctly.
+- It is your responsibility to configure your server correctly.
 {{</ hint >}}
 
-Centos 7
---------
+## CentOS 7
 
 Install PHP and Apache:
 
@@ -26,7 +25,7 @@ Install PHP and Apache:
 yum install -y php php-xml php-mbstring php-pdo php-gd unzip wget
 ```
 
-By default, Centos 7 use PHP 5.4.16 and Apache 2.4.6.
+By default, CentOS 7 uses PHP 5.4.16 and Apache 2.4.6.
 
 Restart Apache:
 
@@ -47,23 +46,19 @@ chown -R apache:apache kanboard-<version>/data
 rm kanboard-<version>.zip
 ```
 
-SELinux restrictions
---------------------
+## SELinux Restrictions
 
-If SELinux is enabled, be sure that the Apache user can write to the
-directory data:
+If SELinux is enabled, ensure that the Apache user can write to the `data` directory:
 
 ```bash
 semanage fcontext -a -t httpd_sys_rw_content_t "/var/www/html/kanboard/data(/.*)?"
 restorecon -r -v /var/www/html/kanboard/data
 ```
 
-Be sure to configure your server to allow Kanboard to send emails and
-make external network requests, for example with SELinux:
+Ensure your server is configured to allow Kanboard to send emails and make external network requests. For example, with SELinux:
 
 ```bash
 setsebool -P httpd_can_network_connect=1
 ```
 
-Allowing external connections is necessary if you use LDAP, SMTP, Web
-hooks or any third-party integration.
+Allowing external connections is necessary if you use LDAP, SMTP, webhooks, or any third-party integration.

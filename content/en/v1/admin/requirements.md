@@ -15,39 +15,37 @@ aliases:
 
 Prerequisites to install and use Kanboard.
 
-Server Side
------------
+## Server Side
 
 ### Compatible Operating Systems
 
 - Alpine Linux
 - Linux Ubuntu
-- Linux RHEL (RedHat, Centos, Oracle Linux, RockyLinux, etc)
+- Linux RHEL (RedHat, CentOS, Oracle Linux, RockyLinux, etc.)
 - Linux Debian
 - FreeBSD
 - Microsoft Windows
 
 {{< hint type="info" >}}
-The recommended operating system is GNU/Linux (Debian/Ubuntu/RHEL/Alpine
-Linux).
+The recommended operating system is GNU/Linux (Debian/Ubuntu/RHEL/Alpine Linux).
 {{</ hint >}}
 
 ### Compatible Databases
 
-- Sqlite >= 3.7
-- Mysql >= 5.6
+- SQLite >= 3.7
+- MySQL >= 5.6
 - MariaDB >= 10
-- Postgresql >= 9.4
+- PostgreSQL >= 9.4
 - Microsoft SQL Server (experimental - available since v1.2.25)
 
-Which database to choose?
+**Which database to choose?**
 
-- Sqlite: Single user or small team (almost no concurrency)
-- Mysql/Postgres: Larger team, high-availability configuration
+- SQLite: For a single user or small teams (minimal concurrency).
+- MySQL/PostgreSQL: For larger teams or high-availability configurations.
 
 {{< hint type="info" >}}
-- The recommended database is Postgresql.
-- Do not use Sqlite with NFS or with Docker.
+- The recommended database is PostgreSQL.
+- Do not use SQLite with NFS or Docker.
 {{</ hint >}}
 
 ### Compatible Web Servers
@@ -61,7 +59,7 @@ Kanboard is pre-configured to work with Apache (URL rewriting).
 
 {{< hint type="warning" >}}
 - Kanboard is NOT compatible with Apache `mod_security`.
-- If you use Apache, you must have the module `mod_version`.
+- If you use Apache, you must have the `mod_version` module enabled.
 {{</ hint >}}
 
 ### PHP Versions
@@ -70,16 +68,16 @@ Kanboard is pre-configured to work with Apache (URL rewriting).
 - PHP 8.x
 
 {{< hint type="info" >}}
-- Since version 1.2.22, Kanboard requires at least PHP 7.4
-- Since version 1.2.13, Kanboard requires at least PHP 7.2
+- Since version 1.2.22, Kanboard requires at least PHP 7.4.
+- Since version 1.2.13, Kanboard requires at least PHP 7.2.
 - The latest version of PHP is recommended.
 {{</ hint >}}
 
-### PHP Extensions Required
+### Required PHP Extensions
 
-- `pdo_sqlite` (Only if you use Sqlite)
-- `pdo_mysql` (Only if you use Mysql/MariaDB)
-- `pdo_pgsql` (Only if you use Postgres)
+- `pdo_sqlite` (Only if you use SQLite)
+- `pdo_mysql` (Only if you use MySQL/MariaDB)
+- `pdo_pgsql` (Only if you use PostgreSQL)
 - `gd`
 - `mbstring`
 - `openssl`
@@ -92,23 +90,22 @@ Kanboard is pre-configured to work with Apache (URL rewriting).
 - `SimpleXML`
 - `dom`
 
-### Optional PHP extensions
+### Optional PHP Extensions
 
-- `zip`: Used to install plugins from web ui
-- `ldap`: Only for LDAP integration
-- `curl`: Use cURL as HTTP client
+- `zip`: Used to install plugins from the web UI.
+- `ldap`: Only for LDAP integration.
+- `curl`: Used as an HTTP client.
 
 ### Recommendations
 
-- Modern Linux or Unix operating system with the latest version of PHP.
-- Best performances are obtained with the latest version of PHP with OpCode caching activated.
+- A modern Linux or Unix operating system with the latest version of PHP.
+- Best performance is achieved with the latest version of PHP and OpCode caching enabled.
 
-Client Side
------------
+## Client Side
 
 ### Browsers
 
-Always use a modern browser with the latest version if possible:
+Always use a modern browser with the latest version:
 
 - Safari
 - Google Chrome
@@ -125,7 +122,7 @@ Microsoft Internet Explorer is not supported since Kanboard version 1.2.11.
 
 ### Devices
 
-- Laptop or desktop with a screen resolution >= 1366 x 768
-- Tablet with a screen resolution >= 1024 x 768
+- Laptop or desktop with a screen resolution >= 1366 x 768.
+- Tablet with a screen resolution >= 1024 x 768.
 
-Note that using Kanboard with a smartphone should work, but using the board on a small screen is not always pratical.
+Note: Using Kanboard on a smartphone should work, but the board may not be practical to use on small screens.

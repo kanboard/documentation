@@ -6,8 +6,7 @@ menu:
         parent: Administration
 ---
 
-Requirements
-------------
+## Requirements
 
 - PHP LDAP extension enabled
 - LDAP server:
@@ -15,30 +14,25 @@ Requirements
     - Microsoft Active Directory
     - Novell eDirectory
 
-LDAP Authentication
--------------------
+## LDAP Authentication
 
 ### Workflow
 
-When the LDAP authentication is activated, the login process works like
-that:
+When LDAP authentication is activated, the login process works as follows:
 
-1.  Try first to authenticate the user by using the database
-2.  If the user is not found inside the database, a LDAP authentication
-    is performed
-3.  If the LDAP authentication is successful, by default a local user is
-    created automatically with no password and marked as LDAP users.
+1. Kanboard first tries to authenticate the user using the database.
+2. If the user is not found in the database, LDAP authentication is performed.
+3. If LDAP authentication is successful, a local user is created automatically (by default) with no password and marked as an LDAP user.
 
-The full name and the email address are automatically fetched from the
-LDAP server.
+The full name and email address are automatically fetched from the LDAP server.
 
 ### Authentication Types
 
-  Type       | Description
-  -----------| -----------------------------------------------------------
-  Proxy User | A specific user is used to browse LDAP directory
-  User       | The end-user credentials are used for browsing LDAP directory
-  Anonymous  | No authentication is performed for LDAP browsing
+| Type       | Description                                              |
+|------------|----------------------------------------------------------|
+| Proxy User | A specific user is used to browse the LDAP directory.    |
+| User       | The end-user credentials are used for browsing LDAP.     |
+| Anonymous  | No authentication is performed for LDAP browsing.        |
 
 {{< hint type="info" >}}
 The recommended authentication method is `Proxy`.
@@ -52,8 +46,7 @@ define('LDAP_USERNAME', null);
 define('LDAP_PASSWORD', null);
 ```
 
-This is the default value but some LDAP servers don't allow anonymous
-browsing for security reasons.
+This is the default value, but some LDAP servers don't allow anonymous browsing for security reasons.
 
 #### Proxy Mode
 
@@ -69,9 +62,7 @@ define('LDAP_PASSWORD', 'my proxy password');
 
 This method uses the credentials provided by the end-user.
 
-For example, Microsoft Active Directory doesn't allow anonymous browsing
-by default and if you don't want to use a proxy user you can use this
-method.
+For example, Microsoft Active Directory doesn't allow anonymous browsing by default. If you don't want to use a proxy user, you can use this method.
 
 ```php
 define('LDAP_BIND_TYPE', 'user');
@@ -79,37 +70,31 @@ define('LDAP_USERNAME', '%s@kanboard.local');
 define('LDAP_PASSWORD', null);
 ```
 
-In this case, the constant `LDAP_USERNAME` is used as a pattern to the
-ldap username, examples:
+In this case, the constant `LDAP_USERNAME` is used as a pattern for the LDAP username. Examples:
 
-- `%s@kanboard.local` will be replaced by `my_user@kanboard.local`
-- `KANBOARD\\%s` will be replaced by `KANBOARD\my_user`
+- `%s@kanboard.local` will be replaced by `my_user@kanboard.local`.
+- `KANBOARD\\%s` will be replaced by `KANBOARD\my_user`.
 
-### User LDAP filter
+### User LDAP Filter
 
-The configuration parameter `LDAP_USER_FILTER` is used to find users in
-LDAP directory.
+The configuration parameter `LDAP_USER_FILTER` is used to find users in the LDAP directory.
 
 Examples:
 
-- `(&(objectClass=user)(sAMAccountName=%s))` is replaced by
-    `(&(objectClass=user)(sAMAccountName=my_username))`
-- `uid=%s` is replaced by `uid=my_username`
+- `(&(objectClass=user)(sAMAccountName=%s))` is replaced by `(&(objectClass=user)(sAMAccountName=my_username))`.
+- `uid=%s` is replaced by `uid=my_username`.
 
-Other examples of [filters for Active
-Directory](http://social.technet.microsoft.com/wiki/contents/articles/5392.active-directory-ldap-syntax-filters.aspx)
+Other examples of [filters for Active Directory](http://social.technet.microsoft.com/wiki/contents/articles/5392.active-directory-ldap-syntax-filters.aspx).
 
 Example to filter access to Kanboard:
 
 `(&(objectClass=user)(sAMAccountName=%s)(memberOf=CN=Kanboard Users,CN=Users,DC=kanboard,DC=local))`
 
-This example allows only people members of the group "Kanboard Users" to
-connect to Kanboard.
+This example allows only members of the group "Kanboard Users" to connect to Kanboard.
 
 ### Example for Microsoft Active Directory
 
-Let's say we have a domain `KANBOARD` (kanboard.local) and the primary
-controller is `myserver.kanboard.local`.
+Let's say we have a domain `KANBOARD` (kanboard.local) and the primary controller is `myserver.kanboard.local`.
 
 First example with proxy mode:
 
@@ -153,10 +138,9 @@ define('LDAP_USER_FILTER', '(&(objectClass=user)(sAMAccountName=%s))');
 
 ### Example for OpenLDAP
 
-Our LDAP server is `myserver.example.com` and all users are stored under
-`ou=People,dc=example,dc=com`.
+Our LDAP server is `myserver.example.com`, and all users are stored under `ou=People,dc=example,dc=com`.
 
-For this example we use the anonymous binding.
+For this example, we use anonymous binding.
 
 ```php
 <?php
@@ -172,20 +156,15 @@ define('LDAP_USER_BASE_DN', 'ou=People,dc=example,dc=com');
 define('LDAP_USER_FILTER', 'uid=%s');
 ```
 
-### Example for LDAPS (SSL-encryption)
+### Example for LDAPS (SSL Encryption)
 
-Some LDAP servers are configured for "LDAPS" connectivity only (on port
-636). This is different to TLS, which starts off in cleartext (port 389
-by default) and then sets up encryption over the same channel.
+Some LDAP servers are configured for "LDAPS" connectivity only (on port 636). This is different from TLS, which starts in cleartext (port 389 by default) and then sets up encryption over the same channel.
 
-To tell PHP to use LDAPS, you need to prefix the name of your LDAP
-server with "<ldaps://>", as in the example below:
+To tell PHP to use LDAPS, you need to prefix the name of your LDAP server with `<ldaps://>`, as in the example below:
 
-Our LDAP server is `myserver.example.com` and is only accessible via
-LDAPS. Most likely we won't want to validate the server cert, and we
-DON'T want TLS.
+Our LDAP server is `myserver.example.com` and is only accessible via LDAPS. Most likely, we won't want to validate the server certificate, and we DON'T want TLS.
 
-For this example we use the anonymous binding.
+For this example, we use anonymous binding.
 
 ```php
 <?php
@@ -200,16 +179,14 @@ define('LDAP_SERVER', 'ldaps://myserver.example.com');
 define('LDAP_SSL_VERIFY', false);
 
 // Enable LDAP START_TLS
-define('LDAP_START_TLS', false);;
+define('LDAP_START_TLS', false);
 ```
 
 ### Disable Automatic Account Creation
 
-By default, Kanboard will create a user account automatically if nothing
-is found.
+By default, Kanboard will create a user account automatically if nothing is found.
 
-You can disable this behavior if you prefer to create user accounts
-manually to restrict Kanboard to only some people.
+You can disable this behavior if you prefer to create user accounts manually to restrict Kanboard to only some people.
 
 Change the value of `LDAP_USER_CREATION` to `false`:
 
@@ -220,12 +197,11 @@ define('LDAP_USER_CREATION', false);
 
 ### Synchronization
 
-By default, Kanboard will synchronize all fields (role, name, email...)
-except the username.
+By default, Kanboard will synchronize all fields (role, name, email...) except the username.
 
 If you would like to change this behavior, use this config parameter:
 
-```bash
+```php
 // This example will not synchronize the fields "username" and "role" from LDAP to Kanboard.
 define('EXTERNAL_AUTH_EXCLUDE_FIELDS', 'username,role');
 ```
@@ -234,27 +210,22 @@ define('EXTERNAL_AUTH_EXCLUDE_FIELDS', 'username,role');
 
 #### SELinux Restrictions
 
-If SELinux is enabled, you have to allow Apache to reach out your LDAP
-server.
+If SELinux is enabled, you have to allow Apache to reach out to your LDAP server.
 
-- You can switch SELinux to the permissive mode or disable it (not
-    recommended)
-- You can allow all network connections, for example
-    `setsebool -P httpd_can_network_connect=1` or have a more
-    restrictive rule
+- You can switch SELinux to the permissive mode or disable it (not recommended).
+- You can allow all network connections, for example: `setsebool -P httpd_can_network_connect=1`, or have a more restrictive rule.
 
 In any case, refer to the official Redhat/Centos documentation.
 
 #### Debug Mode
 
-If you are not able to setup correctly the LDAP authentication, you can
-enable the debug mode and watch log files.
+If you are not able to set up LDAP authentication correctly, you can enable debug mode and watch log files.
 
 LDAP Group Synchronization
 --------------------------
 
 {{< hint type="info" >}}
-- Nested groups are not implemented.
+Nested groups are not implemented.
 {{</ hint >}}
 
 ### Requirements

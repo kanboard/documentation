@@ -6,74 +6,62 @@ menu:
         parent: Administration
 ---
 
-Can you recommend a web hosting provider for Kanboard?
-------------------------------------------------------
+## Can you recommend a web hosting provider for Kanboard?
 
-Kanboard works well with any great VPS hosting provider such as [Digital
-Ocean](https://www.digitalocean.com/), [Linode](https://www.linode.com/), [Gandi](https://www.gandi.net/), or others.
+Kanboard works well with any reliable VPS hosting provider such as [Digital Ocean](https://www.digitalocean.com/), [Linode](https://www.linode.com/), [Gandi](https://www.gandi.net/), or others.
 
-To have the best performances, choose a provider with fast disk I/O
-because Kanboard use Sqlite by default. Avoid hosting providers that use
-a shared NFS mount point.
+For optimal performance, choose a provider with fast disk I/O because Kanboard uses SQLite by default. Avoid hosting providers that use a shared NFS mount point.
 
 {{< hint type="info" >}}
-Using a shared hosting provider is not recommended. Try to use your own server.
+Using a shared hosting provider is not recommended. Use your own server instead.
 {{</ hint >}}
 
-How to display a link to the task in notifications?
----------------------------------------------------
+## How to display a link to the task in notifications?
 
-To do that, you have to specify the URL of your Kanboard installation in
-your Application Settings. By default, nothing is defined, so no links
-will be displayed.
+To enable this, specify the URL of your Kanboard installation in the Application Settings. By default, no URL is defined, so no links will be displayed.
 
 Examples:
 
 - <http://myserver/kanboard/>
 - <http://kanboard.mydomain.com/>
 
-Don't forget the ending slash `/`.
+Don't forget the trailing slash `/`.
 
-You need to define that manually because Kanboard cannot guess the URL
-from a command line script and some people have a very specific
-configuration.
+This must be defined manually because Kanboard cannot infer the URL from a command-line script, and some configurations are highly specific.
 
-Page not found and the URL seems wrong (&amp;)
-----------------------------------------------
+## Why does the URL seem wrong (&amp;) and result in "Page not found"?
 
-- The URL looks like `/?controller=auth&amp;action=login&amp;redirect_query=` instead of `?controller=auth&action=login&redirect_query=`
-- Kanboard returns a "Page not found" error
+- The URL appears as `/?controller=auth&amp;action=login&amp;redirect_query=` instead of `?controller=auth&action=login&redirect_query=`.
+- Kanboard returns a "Page not found" error.
 
-This issue comes from your PHP configuration, the value of
-`arg_separator.output` is not the PHP's default, there is different ways
-to fix that:
+This issue arises from your PHP configuration. The value of `arg_separator.output` is not set to PHP's default. Here are ways to fix it:
 
-Change the value directly in your `php.ini` if you can:
+1. Change the value directly in your `php.ini`:
 
-    arg_separator.output = "&"
+   ```ini
+   arg_separator.output = "&"
+   ```
 
-Override the value with a `.htaccess`:
+2. Override the value with a `.htaccess` file:
 
-    php_value arg_separator.output "&"
+   ```apache
+   php_value arg_separator.output "&"
+   ```
 
-Otherwise Kanboard will try to override the value directly in PHP.
+If neither is possible, Kanboard will attempt to override the value directly in PHP.
 
-Authentication failure with the API and Apache + PHP-FPM
---------------------------------------------------------
+## Authentication failure with the API and Apache + PHP-FPM
 
-php-cgi under Apache does not pass HTTP Basic user/pass to PHP by
-default. For this workaround to work, add these lines to your
-`.htaccess` file:
+By default, `php-cgi` under Apache does not pass HTTP Basic user/pass to PHP. To fix this, add the following lines to your `.htaccess` file:
 
-    RewriteCond %{HTTP:Authorization} ^(.+)$
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+```apache
+RewriteCond %{HTTP:Authorization} ^(.+)$
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+```
 
-How to test Kanboard with the PHP built-in web server?
-------------------------------------------------------
+## How to test Kanboard with PHP's built-in web server?
 
-If you don't want to install a web server like Apache on localhost. You
-can test with the [embedded web server of
-PHP](http://www.php.net/manual/en/features.commandline.webserver.php):
+If you don't want to install a web server like Apache on localhost, you can test Kanboard using PHP's [built-in web server](http://www.php.net/manual/en/features.commandline.webserver.php):
 
 ```bash
 unzip kanboard-VERSION.zip
@@ -82,69 +70,36 @@ php -S localhost:8000
 open http://localhost:8000/
 ```
 
-I get a blank page after installing or upgrading Kanboard
----------------------------------------------------------
+## I get a blank page after installing or upgrading Kanboard
 
-- Check if you have installed all requirements on your server
-- Check the PHP and Apache error logs
-- Check if the files have the correct permissions
-- If you use an aggressive OPcode caching, reload your web-server or php-fpm
+- Ensure all requirements are installed on your server.
+- Check the PHP and Apache error logs.
+- Verify that the files have the correct permissions.
+- If you use aggressive OPcode caching, reload your web server or PHP-FPM.
 
-Solving Database Migration Issues
----------------------------------
+## How to solve database migration issues?
 
-- SQL migrations are executed automatically when you upgrade Kanboard to a new version
-- For Postgres and Mysql, the current schema version number is stored in the table `schema_version` and for Sqlite this is stored in the variable `user_version`
-- Migrations are defined in the file `app/Schema/<DatabaseType>.php`
-- Each function is a migration
-- Each migration is executed in a transaction
-- If migration generate an error, a rollback is performed
+- SQL migrations are executed automatically when you upgrade Kanboard to a new version.
+- For PostgreSQL and MySQL, the current schema version number is stored in the `schema_version` table. For SQLite, it is stored in the `user_version` variable.
+- Migrations are defined in the file `app/Schema/<DatabaseType>.php`.
+- Each function represents a migration and is executed in a transaction. If a migration fails, a rollback is performed.
 
-When upgrading:
+### Steps to fix migration issues manually:
 
-- Always backup your data
-- Do not run migrations in parallel from multiple processes
+1. Open the file corresponding to your database (`app/Schema/Sqlite.php` or `app/Schema/Mysql.php`).
+2. Locate the failed migration function.
+3. Execute the SQL queries defined in the function manually.
+4. If you encounter an error, report it to the bug tracker with the exact SQL error.
+5. Once all SQL statements are executed, update the schema version number.
+6. Run the remaining migrations.
 
-If you got the error `Unable to run SQL migrations [...]`, here are
-the steps to fix it manually:
+## How to change the attachment size limit?
 
-1.  Open the file corresponding to your database `app/Schema/Sqlite.php` or `app/Schema/Mysql.php`
-2.  Go to the failed migration function
-3.  Execute manually the SQL queries defined in the function
-4.  If you encounter an error, report the issue to the bug tracker with the exact SQL error
-5.  When all SQL statements of the migration are executed, update the schema version number
-6.  Run other migrations
+The file upload size is determined by PHP and your web server, not Kanboard.
 
-I'm not able to login with Internet Explorer and Microsoft IIS
---------------------------------------------------------------
+In your `php.ini`, update the following lines:
 
-If you are not able to login and always get the error **"Username or
-password required"** even if you have entered the right credentials,
-that means there is a problem with the session.
-
-For example, this is a known issue if you meet these criteria:
-
-- You are using a domain name with an underscore: `kanboard_something.mycompany.tld`
-- You are using Microsoft Windows Server and IIS
-- Your browser is Internet Explorer
-
-Solution: **Do not use underscore in the domain name because this is not
-a valid domain name**.
-
-Explanation: Internet Explorer doesn't accept cookies with a domain name
-with underscores because it's not valid.
-
-For reference: <https://support.microsoft.com/en-us/kb/316112>
-
-How to change attachment size limit?
-------------------------------------
-
-The file upload size is not defined by Kanboard itself but by PHP and
-your webserver.
-
-In your `php.ini`, change the following lines:
-
-```
+```ini
 # Set size limit to 20MB
 upload_max_filesize = 20M
 post_max_size = 20M
@@ -152,29 +107,19 @@ post_max_size = 20M
 
 If you use Nginx, define this value:
 
-```
+```nginx
 client_max_body_size 20M;
 ```
 
-See <http://nginx.org/en/docs/http/ngx_http_core_module.html#client_max_body_size>.
+Refer to the [Nginx documentation](http://nginx.org/en/docs/http/ngx_http_core_module.html#client_max_body_size) for more details.
 
-Is it possible to customize table name prefixes?
-------------------------------------------------
+## Why is there no official native mobile application?
 
-Short answer: No.
+The development of a native mobile application is left to the community due to the following reasons:
 
-- Kanboard is designed to use its own database.
-- Changing existing code will require too many changes.
-- Mixing multiple software into the same database is bad practice (shared hosting providers are not recommended).
-
-Why is there no official native mobile application?
----------------------------------------------------
-
-The development of a native mobile application is left to the community.
-
-- Developing a native mobile application for each platform (iOS/Android) for each device type (Smartphone/Tablet) requires a lot of work and money.
-- This requires a different skill-set to developing a web application.
-- To develop a quality application, you have to use the official SDK of each platform. So, you end up developing the same application twice.
-- Publishing a mobile application on a store (App Store/Play Store) is not free, you have to pay, even if your software is free.
-- The web user interface is responsive, this is not perfect but that allows you to quickly check something.
-- It is not really practical to use the board on a tiny screen.
+- Developing a native app for each platform (iOS/Android) and device type (smartphone/tablet) requires significant resources.
+- It requires a different skill set compared to web application development.
+- To ensure quality, you must use the official SDK of each platform, effectively developing the same app twice.
+- Publishing apps on stores (App Store/Play Store) incurs costs, even for free software.
+- The web interface is responsive, allowing quick access on mobile devices.
+- Using the board on a small screen is not always practical.

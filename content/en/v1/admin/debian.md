@@ -8,26 +8,22 @@ menu:
 
 {{< hint type="danger" >}}
 - Do not forget to change the default username/password.
-- Do not allow everybody to access the directory `data` from the URL.
+- Do not allow public access to the `data` directory via the URL.
 - Enable `.htaccess` if you use Apache (Option `AllowOverride All`).
-- This is your responsability to configure your server correctly.
+- It is your responsibility to configure your server correctly.
 {{</ hint >}}
 
-Debian 12 (Bookworm)
-------------------
+## Debian 12 (Bookworm)
 
-Kanboard is now [packaged](https://packages.debian.org/bookworm/kanboard) for Debian and is part
-of the stable release of Debian 12. This means that for a basic installation just run as `root`:
+Kanboard is now [packaged](https://packages.debian.org/bookworm/kanboard) for Debian and is part of the stable release of Debian 12. This means that for a basic installation, simply run the following command as `root`:
 
 ```bash
 apt install kanboard
 ```
 
-You should then be able to go to <http://localhost/kanboard/> and access the application.
+You should then be able to access the application at <http://localhost/kanboard/>.
 
-
-Debian 10 (Buster)
-------------------
+## Debian 10 (Buster)
 
 Install Apache and PHP:
 
@@ -52,5 +48,5 @@ rm v$version.tar.gz
 ```
 
 {{< hint type="info" >}}
-Some features of Kanboard requires that you run a [daily background job]({{< relref "cronjob.md" >}}).
+Some features of Kanboard require that you run a [daily background job]({{< relref "cronjob.md" >}}).
 {{</ hint >}}

@@ -14,54 +14,46 @@ aliases:
 ---
 
 {{< hint type="warning" >}}
-Please, do not update the software blindly without reading the
-[ChangeLog](https://github.com/kanboard/kanboard/blob/master/ChangeLog).
-Always check for breaking changes if any.
+Do not update the software blindly without reading the [ChangeLog](https://github.com/kanboard/kanboard/blob/master/ChangeLog). Always check for breaking changes.
 {{</ hint >}}
 
-Docker Registries
------------------
+## Docker Registries
 
-Registry Name               | Registry URL
-----------------------------| -----------------------------------------
-[Docker Hub](https://hub.docker.com/r/kanboard/kanboard) | `docker.io/kanboard/kanboard`
-[GitHub Container Registry](https://github.com/orgs/kanboard/packages/container/package/kanboard) | `ghcr.io/kanboard/kanboard`
-[Quay.io](https://quay.io/repository/kanboard/kanboard) | `quay.io/kanboard/kanboard`
+| Registry Name               | Registry URL                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------|
+| [Docker Hub](https://hub.docker.com/r/kanboard/kanboard) | `docker.io/kanboard/kanboard`                                                  |
+| [GitHub Container Registry](https://github.com/orgs/kanboard/packages/container/package/kanboard) | `ghcr.io/kanboard/kanboard` |
+| [Quay.io](https://quay.io/repository/kanboard/kanboard) | `quay.io/kanboard/kanboard`                                                   |
 
-Docker Tags
------------
+## Docker Tags
 
-Tag           | Description
---------------| -------------------------------------------------------
-`latest`      | Latest stable release
-`nightly`     | Nightly build (latest development changes)
-`v1.2.x`      | Specific version of Kanboard
+| Tag       | Description                                   |
+|-----------|-----------------------------------------------|
+| `latest`  | Latest stable release                        |
+| `nightly` | Nightly build (latest development changes)   |
+| `v1.2.x`  | Specific version of Kanboard                 |
 
-The recommendation is to always pin a specific version of Kanboard to avoid unexpected upgrade.
+It is recommended to always pin a specific version of Kanboard to avoid unexpected upgrades.
 
-Environment Variables
----------------------
+## Environment Variables
 
-All Kanboard [configuration options]({{< relref "config.md" >}}) can be used as environment variable.
+All Kanboard [configuration options]({{< relref "config.md" >}}) can be set as environment variables.
 
-Volumes
--------
+## Volumes
 
-Path                    | Description
-------------------------|------------------------------------------------
-`/var/www/app/data`     | Application data (Sqlite database, attachments, etc.)
-`/var/www/app/plugins`  | Plugins
-`/etc/nginx/ssl`        | SSL certificates
+| Path                    | Description                                      |
+|-------------------------|--------------------------------------------------|
+| `/var/www/app/data`     | Application data (SQLite database, attachments, etc.) |
+| `/var/www/app/plugins`  | Plugins                                          |
+| `/etc/nginx/ssl`        | SSL certificates                                |
 
-Custom Config File
-------------------
+## Custom Config File
 
-- The container already includes a custom config file located at `/var/www/app/config.php`.
-- You can store your own config file on the data volume: `/var/www/app/data/config.php`.
-- You must restart the container to take into account the new parameters of your custom config file.
+- The container includes a default config file located at `/var/www/app/config.php`.
+- You can store your custom config file in the data volume: `/var/www/app/data/config.php`.
+- Restart the container to apply changes to your custom config file.
 
-Running the Container
----------------------
+## Running the Container
 
 ### Basic Usage
 
@@ -71,8 +63,7 @@ docker run -d --name kanboard -p 80:80 -t kanboard/kanboard:v1.2.8
 
 ### Docker Compose
 
-There is a `docker-compose.yml` file in Kanboard repository. Here an
-example with Sqlite:
+A `docker-compose.yml` file is available in the Kanboard repository. Below is an example using SQLite:
 
 ```yaml
 version: '2'
@@ -92,7 +83,7 @@ volumes:
   kanboard_ssl:
 ```
 
-Another example with MariaDB:
+Another example using MariaDB:
 
 ```yaml
 version: '2'
@@ -117,7 +108,7 @@ services:
       MYSQL_USER: kanboard
       MYSQL_PASSWORD: kanboard-secret
     volumes:
-    - db:/var/lib/mysql
+      - db:/var/lib/mysql
 volumes:
   kanboard_data:
   kanboard_plugins:
@@ -125,14 +116,13 @@ volumes:
   db:
 ```
 
-Starting the container with Docker Compose:
+Start the container with Docker Compose:
 
 ```bash
 docker compose up
 ```
 
-By default, [the installation of plugins is disabled for security reasons]({{< relref "plugins.md" >}}). 
-Here is an example to enable the installation of plugins:
+To enable plugin installation (disabled by default for security reasons), use the following example:
 
 ```bash
 docker run --rm \
@@ -150,12 +140,12 @@ services:
   kanboard:
     image: kanboard/kanboard:latest
     ports:
-     - "8080:80"
-     - "443:443"
+      - "8080:80"
+      - "443:443"
     volumes:
-     - kanboard_data:/var/www/app/data
-     - kanboard_plugins:/var/www/app/plugins
-     - kanboard_ssl:/etc/nginx/ssl
+      - kanboard_data:/var/www/app/data
+      - kanboard_plugins:/var/www/app/plugins
+      - kanboard_ssl:/etc/nginx/ssl
     environment:
       - PLUGIN_INSTALLER=true
 volumes:
@@ -167,8 +157,7 @@ volumes:
     driver: local
 ```
 
-Build Your Own Docker Image
----------------------------
+## Build Your Own Docker Image
 
 Clone the Kanboard repository and run the following command:
 
@@ -176,8 +165,7 @@ Clone the Kanboard repository and run the following command:
 make docker-image
 ```
 
-Notes
------
+## Notes
 
-You must use the SMTP method, or a plugin like Mailgun/Sendgrid/Postmark to send emails.
-The `mail` and `sendmail` transports won't work with the official Docker image.
+- You must use the SMTP method or a plugin like Mailgun/Sendgrid/Postmark to send emails.
+- The `mail` and `sendmail` transports will not work with the official Docker image.

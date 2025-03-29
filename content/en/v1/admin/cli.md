@@ -6,22 +6,17 @@ menu:
         parent: Administration
 ---
 
-Kanboard provides a simple command line interface that can be used from
-any Unix terminal. This tool can be used only on the local machine.
+Kanboard provides a simple command-line interface that can be used from any Unix terminal. This tool can only be used on the local machine.
 
-This feature is useful to run commands outside of the web server
-processes.
+This feature is useful for running commands outside of the web server processes.
 
-Usage
------
+## Usage
 
-- Open a terminal and go to your Kanboard directory (example:
-    `cd /var/www/kanboard`)
-- Run the command `./cli` or `php cli`
+- Open a terminal and navigate to your Kanboard directory (e.g., `cd /var/www/kanboard`).
+- Run the command `./cli` or `php cli`.
 
 ```bash
 Kanboard v1.2.11
-
 
 Usage:
   command [options] [arguments]
@@ -33,14 +28,14 @@ Options:
       --ansi            Force ANSI output
       --no-ansi         Disable ANSI output
   -n, --no-interaction  Do not ask any interactive question
-  -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+  -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output, and 3 for debug
 
 Available commands:
   cronjob                            Execute daily cronjob
   css                                Minify CSS files
   help                               Displays help for a command
   job                                Execute individual job (read payload from stdin)
-  js                                 Minify Javascript files
+  js                                 Minify JavaScript files
   list                               Lists commands
   version                            Display Kanboard version
   worker                             Execute queue worker
@@ -72,10 +67,9 @@ Available commands:
   user:reset-password                Change user password
 ```
 
-Available commands
-------------------
+## Available Commands
 
-### Tasks CSV export
+### Tasks CSV Export
 
 Usage:
 
@@ -89,9 +83,9 @@ Example:
 ./cli export:tasks 1 2014-10-01 2014-11-30 > /tmp/my_custom_export.csv
 ```
 
-CSV data are sent to `stdout`.
+CSV data is sent to `stdout`.
 
-### Subtasks CSV export
+### Subtasks CSV Export
 
 Usage:
 
@@ -105,7 +99,7 @@ Example:
 ./cli export:subtasks 1 2014-10-01 2014-11-30 > /tmp/my_custom_export.csv
 ```
 
-### Task transitions CSV export
+### Task Transitions CSV Export
 
 Usage:
 
@@ -119,9 +113,9 @@ Example:
 ./cli export:transitions 1 2014-10-01 2014-11-30 > /tmp/my_custom_export.csv
 ```
 
-### Export daily summaries data in CSV
+### Export Daily Summaries Data in CSV
 
-The exported data will be printed on the standard output:
+The exported data will be printed to the standard output:
 
 ```bash
 ./cli export:daily-project-column-stats <project_id> <start_date> <end_date>
@@ -133,7 +127,7 @@ Example:
 ./cli export:daily-project-column-stats 1 2014-10-01 2014-11-30 > /tmp/my_custom_export.csv
 ```
 
-### Send notifications for overdue tasks
+### Send Notifications for Overdue Tasks
 
 Emails will be sent to all users with notifications enabled.
 
@@ -143,13 +137,10 @@ Emails will be sent to all users with notifications enabled.
 
 Optional parameters:
 
-- `--show`: Display notifications sent
-- `--group`: Group all overdue tasks for one user (from all projects)
-    in one email
-- `--manager`: Send all overdue tasks to project manager(s) in one
-    email
-- `-p|--project project_id|identifier`: Send notifications only for
-    the given project
+- `--show`: Display notifications sent.
+- `--group`: Group all overdue tasks for one user (from all projects) in one email.
+- `--manager`: Send all overdue tasks to project manager(s) in one email.
+- `-p|--project project_id|identifier`: Send notifications only for the given project.
 
 You can also display the overdue tasks with the flag `--show`:
 
@@ -175,9 +166,9 @@ Or if you have defined a project identifier:
 ./cli notification:overdue-tasks --project MY_PROJECT
 ```
 
-### Run daily project stats calculation
+### Run Daily Project Stats Calculation
 
-This command calculate the statistics of each project:
+This command calculates the statistics of each project:
 
 ```bash
 ./cli projects:daily-stats
@@ -186,46 +177,44 @@ Run calculation for Project #1
 Run calculation for Project #10
 ```
 
-### Trigger for tasks
+### Trigger for Tasks
 
-This command send a "daily cronjob event" to all open tasks of each
-project.
+This command sends a "daily cronjob event" to all open tasks of each project.
 
 ```bash
 ./cli trigger:tasks
 Trigger task event: project_id=2, nb_tasks=1
 ```
 
-### Reset user password
+### Reset User Password
 
 ```bash
 ./cli user:reset-password my_user
 ```
 
-You will be prompted for a password and confirmation. Characters are not
-printed to the screen.
+You will be prompted for a password and confirmation. Characters are not printed to the screen.
 
-### Remove two-factor authentication for a user
+### Remove Two-Factor Authentication for a User
 
 ```bash
 ./cli user:reset-2fa my_user
 ```
 
-### Install a plugin
+### Install a Plugin
 
 ```bash
 ./cli plugin:install https://github.com/kanboard/plugin-github-auth/releases/download/v1.0.1/GithubAuth-1.0.1.zip
 ```
 
-Note: Installed files will have the same permissions as the current user
+Note: Installed files will have the same permissions as the current user.
 
-### Remove a plugin
+### Remove a Plugin
 
 ```bash
 ./cli plugin:uninstall Budget
 ```
 
-### Upgrade all plugins
+### Upgrade All Plugins
 
 ```bash
 ./cli plugin:upgrade
@@ -233,32 +222,31 @@ Note: Installed files will have the same permissions as the current user
 * Plugin up to date: Github Authentication
 ```
 
-### Run Background worker
+### Run Background Worker
 
 ```bash
 ./cli worker
 ```
 
 {{< hint type="warning" >}}
-The background worker is not maintained anymore.
+The background worker is no longer maintained.
 {{</ hint >}}
 
-### Execute individual job (mostly for debugging)
+### Execute Individual Job (Mostly for Debugging)
 
 ```bash
 echo 'RAW_JOB_DATA' | ./cli job
 ```
 
-### Execute database migrations
+### Execute Database Migrations
 
-If the parameter `DB_RUN_MIGRATIONS` is set to `false`, you have run the
-database migrations manually:
+If the parameter `DB_RUN_MIGRATIONS` is set to `false`, you must run the database migrations manually:
 
 ```bash
 ./cli db:migrate
 ```
 
-### Check database schema version
+### Check Database Schema Version
 
 ```bash
 ./cli db:version

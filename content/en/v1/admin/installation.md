@@ -14,45 +14,45 @@ aliases:
 ---
 
 {{< hint type="info" >}}
-Check the list of [requirements]({{< relref "requirements.md" >}})
-before going further.
+Check the list of [requirements]({{< relref "requirements.md" >}}) before proceeding.
 {{</ hint >}}
 
 {{< hint type="danger" >}}
-- Do not forget to change the default username/password.
-- Do not allow everybody to access the directory `data` from the URL.
+- Change the default username/password.
+- Prevent public access to the `data` directory via the URL.
 - Enable `.htaccess` if you use Apache (Option `AllowOverride All`).
-- This is your responsability to configure your server correctly.
+- It is your responsibility to configure your server correctly.
 {{</ hint >}}
 
-From the archive (stable version)
----------------------------------
+## From the Archive (Stable Version)
 
-1.  You must have a web server with PHP installed
-2.  Download the [source
-    code](https://github.com/kanboard/kanboard/releases/latest) and copy
-    the directory `kanboard` where you want
-3.  Check if the directory `data` is writeable by the web server user
-4.  With your browser go to `http://yourpersonalserver/kanboard`
-5.  The default login and password is **admin/admin**
-6.  Start using the software
-7.  Don't forget to change your password!
+1. Ensure you have a web server with PHP installed.
+2. Download the [source code](https://github.com/kanboard/kanboard/releases/latest) and copy the `kanboard` directory to your desired location.
+3. Verify that the `data` directory is writable by the web server user.
+4. Open your browser and navigate to `http://yourpersonalserver/kanboard`.
+5. The default login and password are **admin/admin**.
+6. Start using the software.
+7. Don't forget to change your password!
 
 The `data` folder is used to store:
 
-- Sqlite database: `db.sqlite`
+- SQLite database: `db.sqlite`
 - Debug file: `debug.log` (if debug mode is enabled with the `file` driver)
 - Uploaded files: `files/*`
 - Image thumbnails: `files/thumbnails/*`
 
-People who are using a remote database (Mysql/Postgresql) and object
-storage (AWS S3 or similar) don't necessarily need to have a persistent
-local data folder or to change the permissions for the folder.
+If you are using a remote database (MySQL/PostgreSQL) and object storage (e.g., AWS S3), you may not need a persistent local `data` folder or to change its permissions.
 
-From the git repository (development version)
----------------------------------------------
+## From the Git Repository (Development Version)
 
-1. `git clone https://github.com/kanboard/kanboard.git`
-2. Go to the third step just above
+1. Clone the repository:
 
-Note: This method will install the **current development version**, use at your own risk.
+   ```bash
+   git clone https://github.com/kanboard/kanboard.git
+   ```
+
+2. Follow step 3 from the archive installation instructions above.
+
+{{< hint type="warning" >}}
+This method installs the **current development version**. Use it at your own risk.
+{{</ hint >}}

@@ -6,30 +6,25 @@ menu:
         parent: Administration
 ---
 
-By default Kanboard use Sqlite to stores its data. However it's possible
-to use MySQL or MariaDB instead of Sqlite.
+By default, Kanboard uses SQLite to store its data. However, it's possible to use MySQL or MariaDB instead of SQLite.
 
-Requirements
-------------
+## Requirements
 
 - MySQL >= 5.6 or MariaDB >= 10
 - The PHP extension `pdo_mysql` installed
 
-MySQL configuration
--------------------
+## MySQL Configuration
 
-### Create a database
+### Create a Database
 
-The first step is to create a database on your MySQL server. For
-example, you can do that from MySQL client:
+The first step is to create a database on your MySQL server. For example, you can do this from the MySQL client:
 
 ```sql
 CREATE DATABASE kanboard CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
 {{< hint type="info" >}}
-Since the version 1.2.3, Kanboard uses the utf8mb4 encoding instead of
-utf8.
+Since version 1.2.3, Kanboard uses the utf8mb4 encoding instead of utf8.
 {{</ hint >}}
 
 You can then assign the required permissions on the database:
@@ -38,14 +33,14 @@ You can then assign the required permissions on the database:
 GRANT ALTER, CREATE, DELETE, DROP, INDEX, INSERT, REFERENCES, SELECT, UPDATE, LOCK TABLES ON kanboard.* TO 'USERNAME'@'HOST' IDENTIFIED BY 'PASSWORD';
 ```
 
-### Create a config file
+### Create a Config File
 
-The file `config.php` should contains these values:
+The file `config.php` should contain these values:
 
 ```php
 <?php
 
-// We choose to use MySQL instead of Sqlite
+// Use MySQL instead of SQLite
 define('DB_DRIVER', 'mysql');
 
 // MySQL parameters
@@ -55,34 +50,29 @@ define('DB_HOSTNAME', 'REPLACE_ME');
 define('DB_NAME', 'kanboard');
 ```
 
-Note: You can also rename the template file `config.default.php` to
-`config.php`.
+Note: You can also rename the template file `config.default.php` to `config.php`.
 
-### Importing SQL dump (alternative method)
+### Importing SQL Dump (Alternative Method)
 
-For the first time, Kanboard will run one by one each database migration
-and this process can take some time according to your configuration.
+When Kanboard is run for the first time, it will execute each database migration one by one. This process can take some time depending on your configuration.
 
-To avoid any potential timeout you can initialize the database directly
-by importing the SQL schema:
+To avoid potential timeouts, you can initialize the database directly by importing the SQL schema:
 
 ```bash
-mysql -u root -p my_database < app/Schema/Sql/mysql.sql
+mysql -u root -p kanboard < app/Schema/Sql/mysql.sql
 ```
 
-The file `app/Schema/Sql/mysql.sql` is a SQL dump that represents the
-last version of the database.
+The file `app/Schema/Sql/mysql.sql` is a SQL dump that represents the latest version of the database.
 
-If you would like to use Unix socket connection, try this:
+If you would like to use a Unix socket connection, try this:
 
 ```php
 define('DB_HOSTNAME', '127.0.0.1;unix_socket=/var/run/mysqld/mysqld.sock');
 ```
 
-SSL configuration
------------------
+## SSL Configuration
 
-These parameters have to be defined to enable the MySQL SSL connection:
+These parameters must be defined to enable the MySQL SSL connection:
 
 ```php
 // MySQL SSL key
@@ -94,3 +84,4 @@ define('DB_SSL_CERT', '/path/to/client-cert.pem');
 // MySQL SSL CA
 define('DB_SSL_CA', '/path/to/ca-cert.pem');
 ```
+````

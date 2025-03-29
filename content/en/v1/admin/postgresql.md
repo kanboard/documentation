@@ -1,61 +1,55 @@
 ---
-title: Postgresql
+title: PostgreSQL
 toc: true
 menu:
     main:
         parent: Administration
 ---
 
-By default, Kanboard use Sqlite to store its data but it's also possible
-to use Postgresql.
+By default, Kanboard uses SQLite to store its data, but it's also possible to use PostgreSQL.
 
-Requirements
-------------
+## Requirements
 
-- Postgresql >= 9.3
-- The PHP extension `pdo_pgsql` installed (Debian/Ubuntu:
-    `apt-get install php5-pgsql`)
+- PostgreSQL >= 9.3
+- The PHP extension `pdo_pgsql` installed (Debian/Ubuntu: `apt-get install php-pgsql`)
 
-Configuration
--------------
+## Configuration
 
-### Create an empty database with the command `pgsql`:
+### Create an Empty Database
+
+Run the following command in `psql`:
 
 ```sql
 CREATE DATABASE kanboard;
 ```
 
-### Create a config file
+### Create a Config File
 
-The file `config.php` should contain those values:
+The file `config.php` should contain the following values:
 
 ```php
 <?php
 
-// We choose to use Postgresql instead of Sqlite
+// Use PostgreSQL instead of SQLite
 define('DB_DRIVER', 'postgres');
 
-// Postgresql parameters
+// PostgreSQL parameters
 define('DB_USERNAME', 'REPLACE_ME');
 define('DB_PASSWORD', 'REPLACE_ME');
 define('DB_HOSTNAME', 'REPLACE_ME');
 define('DB_NAME', 'kanboard');
 ```
 
-Note: You can also rename the template file `config.default.php` to
-`config.php`.
+Note: You can also rename the template file `config.default.php` to `config.php`.
 
-### Importing SQL dump (alternative method)
+### Importing SQL Dump (Alternative Method)
 
-For the first time, Kanboard will run one by one each database migration
-and this process can take some time according to your configuration.
+When Kanboard is run for the first time, it will execute each database migration one by one. This process can take some time depending on your configuration.
 
-To avoid any issues or potential timeouts, you can initialize the
-database directly by importing the SQL schema:
+To avoid potential issues or timeouts, you can initialize the database directly by importing the SQL schema:
 
 ```bash
-psql -U postgres my_database < app/Schema/Sql/postgres.sql
+psql -U postgres kanboard < app/Schema/Sql/postgres.sql
 ```
 
-The file `app/Schema/Sql/postgres.sql` is a SQL dump that represents the
-last version of the database.
+The file `app/Schema/Sql/postgres.sql` is a SQL dump that represents the latest version of the database.

@@ -7,58 +7,47 @@ menu:
         parent: Administration
 ---
 
-Kanboard is able to work indifferently with URL rewriting enabled or
-not.
+Kanboard can work with or without URL rewriting enabled.
 
-- Example of URL rewritten: `/board/123`
-- Otherwise: `?controller=board&action=show&project_id=123`
+- Example of a rewritten URL: `/board/123`
+- Without rewriting: `?controller=board&action=show&project_id=123`
 
-If you use Kanboard with Apache and with the mode rewrite enabled, nice
-URLs will be used automatically. In case you get a "404 Not Found", you
-might need to set at least the following overrides for your DocumentRoot
-to get the .htaccess files working:
+If you use Kanboard with Apache and have the `mod_rewrite` module enabled, nice URLs will be used automatically. If you encounter a "404 Not Found" error, you may need to set the following overrides for your `DocumentRoot` to enable `.htaccess` files:
 
-``` {.sh}
+```sh
 <Directory /var/www/kanboard/>
     AllowOverride FileInfo Options=All,MultiViews AuthConfig
 </Directory>
 ```
 
-URL Shortcuts
--------------
+### URL Shortcuts
 
-- Go to the task \#123: **/t/123**
-- Go to the board of the project \#2: **/b/2**
-- Go to the project calendar \#5: **/c/5**
-- Go to the list view of the project \#8: **/l/8**
-- Go to the project settings for the project id \#42: **/p/42**
+- Go to task #123: **/t/123**
+- Go to the board of project #2: **/b/2**
+- Go to the project calendar #5: **/c/5**
+- Go to the list view of project #8: **/l/8**
+- Go to the project settings for project ID #42: **/p/42**
 
-Configuration
--------------
+### Configuration
 
-By default, Kanboard will check if the Apache mode rewrite is enabled.
+By default, Kanboard checks if Apache's `mod_rewrite` is enabled.
 
-To avoid the automatic detection of URL rewriting from the web server,
-you can enable this feature in your config file:
+To disable automatic detection of URL rewriting, you can enable this feature manually in your `config.php` file:
 
 ```php
 define('ENABLE_URL_REWRITE', true);
 ```
 
-When this constant is at `true`:
+When this constant is set to `true`:
 
-- URLs generated from command line tools will be also converted
-- If you use another web server than Apache, for example Nginx or
-    Microsoft IIS, you have to configure yourself the URL rewriting
+- URLs generated from command-line tools will also be rewritten.
+- If you use a web server other than Apache (e.g., Nginx or Microsoft IIS), you must configure URL rewriting yourself.
 
-Note: Kanboard always fallback to old school URLs when it's not
-configured, this configuration is optional.
+Note: Kanboard always falls back to traditional URLs if URL rewriting is not configured. This configuration is optional.
 
-Nginx Configuration Example
----------------------------
+### Nginx Configuration Example
 
-In the section `server` of your Nginx config file you can use this
-example:
+In the `server` section of your Nginx configuration file, you can use the following example:
 
 ```bash
 index index.php;
@@ -79,7 +68,7 @@ location ~ \.php$ {
     include fastcgi_params;
 }
 
-# Deny access to the directory data
+# Deny access to the data directory
 location ~* /data {
     deny all;
     return 404;
@@ -100,85 +89,87 @@ define('ENABLE_URL_REWRITE', true);
 
 Another example with Kanboard in a subfolder:
 
-    server {
-        listen 443 ssl default_server;
-        listen [::]:443 ssl default_server;
+```nginx
+server {
+    listen 443 ssl default_server;
+    listen [::]:443 ssl default_server;
 
-        root /var/www/html;
-        index index.php index.html index.htm;
-        server_name _;
+    root /var/www/html;
+    index index.php index.html index.htm;
+    server_name _;
 
-        location / {
-            try_files $uri $uri/ =404;
-        }
-
-        location ^~ /kanboard {
-
-            location /kanboard {
-                try_files $uri $uri/ /kanboard/index.php$is_args$args;
-            }
-
-            location ~ ^/kanboard/(?:kanboard|config.php|config.default.php) {
-                deny all;
-            }
-
-            location ~* /kanboard/data {
-                deny all;
-            }
-
-            location ~ \.php(?:$|/) {
-                fastcgi_split_path_info ^(.+\.php)(/.+)$;
-                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-                fastcgi_param PATH_INFO $fastcgi_path_info;
-                fastcgi_param HTTPS on; # Use only if HTTPS is configured
-                include fastcgi_params;
-                fastcgi_pass unix:/var/run/php5-fpm.sock;
-            }
-
-            location ~ /kanboard/\.ht {
-                deny all;
-            }
-        }
+    location / {
+        try_files $uri $uri/ =404;
     }
 
-Adapt the example above according to your own configuration.
+    location ^~ /kanboard {
 
-Lighttpd Configuration Example
-------------------------------
+        location /kanboard {
+            try_files $uri $uri/ /kanboard/index.php$is_args$args;
+        }
 
-1. Enable `mod_rewrite` .. code:
+        location ~ ^/kanboard/(?:kanboard|config.php|config.default.php) {
+            deny all;
+        }
 
-    server.modules += (
-        "mod_rewrite",
-        ...
-        ...
-    )
+        location ~* /kanboard/data {
+            deny all;
+        }
 
-1\. Add url rewrites to the relevant sections of your lighttpd.conf (in
-this case, for host example.com). Also keep the assets directory and the
-favicon static: .. code:
+        location ~ \.php(?:$|/) {
+            fastcgi_split_path_info ^(.+\.php)(/.+)$;
+            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+            fastcgi_param PATH_INFO $fastcgi_path_info;
+            fastcgi_param HTTPS on; # Use only if HTTPS is configured
+            include fastcgi_params;
+            fastcgi_pass unix:/var/run/php5-fpm.sock;
+        }
 
-    $HTTP["host"] == "example.com" {
-      server.document-root = "/var/www/kanboard/"
-      url.rewrite-once = (
-        "^(/[^\?]*)(\?.*)?" => "/index.php$2",
-        "^/assets/.+" => "$0",
-        "^/favicon\.png$" => "$0",
-      )
+        location ~ /kanboard/\.ht {
+            deny all;
+        }
     }
+}
+```
 
-1\. Reload the Lighttpd config: .. code:
+Adapt the example above according to your configuration.
 
-    /etc/init.d/lighttpd reload
+### Lighttpd Configuration Example
 
-IIS Configuration Example
--------------------------
+1. Enable `mod_rewrite`:
 
-1.  Download and install the Rewrite module for IIS: [Download
-    link](http://www.iis.net/learn/extensions/url-rewrite-module/using-the-url-rewrite-module)
-2.  Create a web.config in you installation folder:
+```bash
+server.modules += (
+    "mod_rewrite",
+    ...
+)
+```
 
-``` {.xml}
+2. Add URL rewrites to the relevant sections of your `lighttpd.conf` (in this case, for host `example.com`). Keep the assets directory and the favicon static:
+
+```bash
+$HTTP["host"] == "example.com" {
+  server.document-root = "/var/www/kanboard/"
+  url.rewrite-once = (
+    "^(/[^\?]*)(\?.*)?" => "/index.php$2",
+    "^/assets/.+" => "$0",
+    "^/favicon\.png$" => "$0",
+  )
+}
+```
+
+3. Reload the Lighttpd configuration:
+
+```bash
+/etc/init.d/lighttpd reload
+```
+
+### IIS Configuration Example
+
+1. Download and install the Rewrite module for IIS: [Download link](http://www.iis.net/learn/extensions/url-rewrite-module/using-the-url-rewrite-module).
+2. Create a `web.config` file in your installation folder:
+
+```xml
 <?xml version="1.0"?>
 <configuration>
     <system.webServer>
@@ -209,4 +200,4 @@ In your Kanboard `config.php`:
 define('ENABLE_URL_REWRITE', true);
 ```
 
-Adapt the example above according to your own configuration.
+Adapt the example above according to your configuration.
