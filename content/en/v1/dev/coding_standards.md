@@ -8,24 +8,21 @@ aliases:
     - /v1/dev/coding-standards/
 ---
 
-PHP code
---------
+## PHP Code
 
 - Indentation: 4 spaces
-- Line return: Unix => `\n`
+- Line return: Unix (`\n`)
 - Encoding: UTF-8
-- Use only the opening tags `<?php` or `<?=` for templates, but **never** use `<?`
-- Always write PHPdoc comments for methods and class properties
-- Coding style: [PSR-1](http://www.php-fig.org/psr/psr-1/) and [PSR-2](http://www.php-fig.org/psr/psr-2/)
+- Use only the opening tags `<?php` or `<?=` for templates; **never** use `<?`.
+- Always write PHPDoc comments for methods and class properties.
+- Coding style: [PSR-1](http://www.php-fig.org/psr/psr-1/) and [PSR-2](http://www.php-fig.org/psr/psr-2/).
 
-JavaScript code
----------------
-
-- Indentation: 4 spaces
-- Line return: Unix => `\n`
-
-CSS code
---------
+## JavaScript Code
 
 - Indentation: 4 spaces
-- Line return: Unix => `\n`
+- Line return: Unix (`\n`)
+
+## CSS Code
+
+- Indentation: 4 spaces
+- Line return: Unix (`\n`)

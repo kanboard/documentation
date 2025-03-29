@@ -6,23 +6,22 @@ menu:
         parent: Contributing to Kanboard
 ---
 
-Webhooks are useful to perform actions with external applications.
+Webhooks allow you to perform actions with external applications.
 
-- Webhooks can be used to create a task by calling a simple URL (You can also do that with the API)
-- An external URL can be called automatically when an event occurs in Kanboard (task creation, comment updated, etc)
+- Webhooks can create a task by calling a simple URL (this can also be done with the API).
+- An external URL can be called automatically when an event occurs in Kanboard (e.g., task creation, comment update).
 
-How to write a web hook receiver?
----------------------------------
+## How to Write a Webhook Receiver
 
 All internal events of Kanboard can be sent to an external URL.
 
-- The web hook URL has to be defined in **Settings > Webhooks > Webhook URL**.
-- When an event is triggered Kanboard calls the pre-defined URL automatically
-- The data are encoded in JSON format and sent with a POST HTTP request
-- The web hook token is also sent as a query string parameter, so you can check if the request really comes from Kanboard.
-- **Your custom URL must answer in less than 1 second**, those requests are synchronous (PHP limitation) and that can slow down the user interface if your script is too slow!
+- Define the webhook URL in **Settings > Webhooks > Webhook URL**.
+- When an event is triggered, Kanboard automatically calls the pre-defined URL.
+- Data is encoded in JSON format and sent via a POST HTTP request.
+- The webhook token is sent as a query string parameter, allowing you to verify the request's origin.
+- **Your custom URL must respond in less than 1 second.** These requests are synchronous (due to PHP limitations) and can slow down the user interface if your script is too slow.
 
-### List of supported events
+### List of Supported Events
 
 - `comment.create`
 - `comment.update`
@@ -43,7 +42,7 @@ All internal events of Kanboard can be sent to an external URL.
 - `task_internal_link.create_update`
 - `task_internal_link.delete`
 
-### Example of HTTP request
+### Example of HTTP Request
 
 ```
 POST https://your_webhook_url/?token=WEBHOOK_TOKEN_HERE
@@ -114,7 +113,7 @@ Connection: close
 }
 ```
 
-All event payloads are in the following format:
+All event payloads follow this format:
 
 ```json
 {
@@ -126,11 +125,11 @@ All event payloads are in the following format:
 }
 ```
 
-The `event_data` values are not necessary normalized across events.
+The `event_data` values are not necessarily normalized across events.
 
-### Examples of event payloads
+### Examples of Event Payloads
 
-Task creation:
+#### Task Creation
 
 ```json
 {
@@ -182,7 +181,7 @@ Task creation:
 }
 ```
 
-Task modification:
+#### Task Modification
 
 ```json
 {
@@ -239,10 +238,7 @@ Task modification:
 }
 ```
 
-Task update events have a field called `changes` that contains updated
-values.
-
-Comment creation:
+#### Comment Creation
 
 ```json
 {
@@ -305,7 +301,7 @@ Comment creation:
 }
 ```
 
-Subtask creation:
+#### Subtask Creation
 
 ```json
 {
@@ -371,7 +367,7 @@ Subtask creation:
 }
 ```
 
-File upload:
+#### File Upload
 
 ```json
 {
@@ -432,7 +428,7 @@ File upload:
 }
 ```
 
-Task link creation:
+#### Task Link Creation
 
 ```json
 {

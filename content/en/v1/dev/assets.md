@@ -1,5 +1,5 @@
 ---
-title: Building Javascript and CSS files
+title: Building JavaScript and CSS Files
 menu:
     main:
         parent: Contributing to Kanboard
@@ -7,32 +7,30 @@ aliases:
     - /en/latest/developer_guide/assets.html
 ---
 
-Stylesheet and Javascript files are merged together and minified.
+Stylesheet and JavaScript files are merged and minified.
 
-- Original CSS files are stored in the folder `assets/css/src/*.css`
-- Original Javascript code is stored in the folder `assets/js/src/*.js`
+- Original CSS files are stored in `assets/css/src/*.css`.
+- Original JavaScript files are stored in `assets/js/src/*.js`.
 
-Requirements
-------------
+## Requirements
 
 - PHP
 - Local checkout of the Git repository
 
-Instructions
-------------
+## Instructions
 
-Build Javascript:
+### Build JavaScript
 
 ```bash
 ./cli js
 ```
 
-Build stylesheets:
+### Build Stylesheets
 
 ```bash
 ./cli css
 ```
 
 {{< hint type="info" >}}
-Building assets is not possible from the Kanboard's archive, you have to clone the repository.
+Building assets is not possible from Kanboard's archive. You must clone the repository.
 {{</ hint >}}

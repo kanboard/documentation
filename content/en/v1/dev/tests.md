@@ -8,33 +8,32 @@ menu:
 
 [PHPUnit](https://phpunit.de/) is used to run automated tests on Kanboard.
 
-You can run tests across different databases (Sqlite, Mysql and
-Postgresql) to be sure that the result is the same everywhere.
+Tests can be run across different databases (Sqlite, MySQL, and PostgreSQL) to ensure consistent results.
 
-Requirements
-------------
+## Requirements
 
 - Linux/Unix machine
 - PHP
 - PHPUnit installed
-- Mysql and Postgresql (optional)
+- MySQL and PostgreSQL (optional)
 - Selenium (optional)
 - Firefox (optional)
 
-Unit Tests
-----------
+## Unit Tests
 
-### Test with Sqlite
+### Testing with Sqlite
 
-Sqlite tests use a in-memory database, nothing is written on the file system.
+Sqlite tests use an in-memory database, so nothing is written to the file system.
 
-The PHPUnit config file is `tests/units.sqlite.xml`. From your Kanboard directory, run the command `phpunit -c tests/units.sqlite.xml`.
-
-Example:
+The PHPUnit config file is `tests/units.sqlite.xml`. Run the following command from your Kanboard directory:
 
 ```bash
 phpunit -c tests/units.sqlite.xml
+```
 
+Example output:
+
+```bash
 PHPUnit 5.0.0 by Sebastian Bergmann and contributors.
 
 ...............................................................  63 / 649 (  9%)
@@ -54,44 +53,39 @@ Time: 1.22 minutes, Memory: 151.25Mb
 OK (649 tests, 43595 assertions)
 ```
 
-### Test with Mysql
+### Testing with MySQL
 
-You must have Mysql or MariaDb installed on localhost.
-
-By default, those credentials are used:
+Ensure MySQL or MariaDB is installed on localhost. Default credentials:
 
 - Hostname: **localhost**
 - Username: **root**
 - Password: none
-- Database: **kanboard\_unit\_test**
+- Database: **kanboard_unit_test**
 
-For each execution the database is dropped and created again.
+The database is dropped and recreated for each execution. Use the config file `tests/units.mysql.xml`:
 
-The PHPUnit config file is `tests/units.mysql.xml`. From your Kanboard
-directory, run the command `phpunit -c tests/units.mysql.xml`.
+```bash
+phpunit -c tests/units.mysql.xml
+```
 
-### Test with Postgresql
+### Testing with PostgreSQL
 
-You must have Postgresql installed on localhost.
-
-By default, those credentials are used:
+Ensure PostgreSQL is installed on localhost. Default credentials:
 
 - Hostname: **localhost**
 - Username: **postgres**
 - Password: none
 - Database: **kanboard_unit_test**
 
-Be sure to allow the user `postgres` to create and drop databases. The
-database is recreated for each execution.
+The database is recreated for each execution. Use the config file `tests/units.postgres.xml`:
 
-The PHPUnit config file is `tests/units.postgres.xml`. From your
-Kanboard directory, run the command `phpunit -c tests/units.postgres.xml`.
+```bash
+phpunit -c tests/units.postgres.xml
+```
 
-Integration Tests
------------------
+## Integration Tests
 
-Integration tests are mainly used to test the API. The test suites are
-making real HTTP calls to the application that run inside a container.
+Integration tests primarily test the API by making real HTTP calls to the application running inside a container.
 
 ### Requirements
 
@@ -101,42 +95,37 @@ making real HTTP calls to the application that run inside a container.
 - Docker
 - Docker Compose
 
-### Running integration tests
+### Running Integration Tests
 
-Integration tests are using Docker containers. There are 3 different
-environment available to run tests against each supported database.
-
-You can use these commands to run each test suite:
+Integration tests use Docker containers. Commands to run tests:
 
 ```bash
 # Run tests with Sqlite
 make integration-test-sqlite
 
-# Run tests with Mysql
+# Run tests with MySQL
 make integration-test-mysql
 
-# Run tests with Postgres
+# Run tests with PostgreSQL
 make integration-test-postgres
 ```
 
-Acceptance Tests
-----------------
+## Acceptance Tests
 
-Acceptance tests (also sometimes known as end-to-end tests, and
-functional tests) test the actual functionality of the UI in a browser
-using Selenium.
+Acceptance tests (also known as end-to-end or functional tests) test the UI functionality in a browser using Selenium.
 
-In order to run these tests you must have [Selenium Standalone
-Server](http://www.seleniumhq.org/download/) installed, and a compatible
-version of Firefox.
+### Requirements
 
-The PHPUnit config file is `tests/acceptance.xml`. With Selenium and the
-Kanboard app running, from your Kanboard directory, run the command
-`make test-browser`. This will initiate the testing suite and you will
-see Firefox open automatically and perform the actions specified in the
-acceptance tests.
+- [Selenium Standalone Server](http://www.seleniumhq.org/download/)
+- Compatible version of Firefox
 
-Example:
+Run the tests using the config file `tests/acceptance.xml`:
+
+```bash
+make test-browser
+```
+
+Example output:
 
 ```bash
 $ make test-browser
@@ -148,19 +137,3 @@ Time: 5.59 seconds, Memory: 5.25MB
 
 OK (2 tests, 5 assertions)
 ```
-
-Continuous Integration with Travis-CI
--------------------------------------
-
-After each commit pushed on the main repository, unit tests are executed
-across various versions of PHP:
-
-- PHP 7.4
-- PHP 7.3
-- PHP 7.2
-
-Each version of PHP is tested against the 3 supported database: Sqlite,
-Mysql and Postgresql.
-
-The Travis config file `.travis.yml` is located on the root directory of
-Kanboard.
