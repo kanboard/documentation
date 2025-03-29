@@ -6,24 +6,21 @@ menu:
         parent: Guide utilisateur
 ---
 
-Chaque projet dispose d'une section analytique. En fonction de la façon
-dont vous utilisez Kanboard, vous pourrez voir les rapports suivants :
+Chaque projet dispose d'une section analytique. En fonction de la façon dont vous utilisez Kanboard, vous pourrez voir les rapports suivants :
 
 Répartition des utilisateurs
 ----------------------------
 
-![Repartition des utilisateurs](/images/v1/fr/user-repartition.png)
+![Répartition des utilisateurs](/images/v1/fr/user-repartition.png)
 
-Ce graphique circulaire affiche le nombre de tâches assignées par
-utilisateur.
+Ce graphique circulaire affiche le nombre de tâches assignées par utilisateur.
 
 Distribution des tâches
 -----------------------
 
 ![Distribution des tâches](/images/v1/fr/task-distribution.png)
 
-Ce graphique circulaire donne une vue d'ensemble du nombre de tâches
-ouvertes par colonne.
+Ce graphique circulaire donne une vue d'ensemble du nombre de tâches ouvertes par colonne.
 
 Diagramme de flux cumulé
 ------------------------
@@ -53,7 +50,7 @@ Temps moyen passé pour chaque colonne
 
 ![Temps moyen passé pour chaque colonne](/images/v1/fr/average-time-spent-into-each-column.png)
 
-Ce graphique affiche le temps moyen passé pour chaque colonne pour les 1000 dernière tâches.
+Ce graphique affiche le temps moyen passé pour chaque colonne pour les 1000 dernières tâches.
 
 - Kanboard utilise les transitions entre tâches pour calculer les données.
 - Le temps passé est calculé jusqu'à la fin de la tâche.

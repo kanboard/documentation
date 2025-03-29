@@ -9,10 +9,7 @@ menu:
 Différentes vues
 ----------------
 
-Pour chaque projet, les tâches peuvent être visualisées dans différentes
-vues : **Tableau, Agenda, Liste ou Gantt**. Chaque vue affiche le
-résultat filtré par le champ de recherche en haut de page. Le moteur de
-recherche utilise la syntaxe avancée.
+Pour chaque projet, les tâches peuvent être visualisées dans différentes vues : **Tableau, Agenda, Liste ou Gantt**. Chaque vue affiche le résultat filtré par le champ de recherche en haut de page. Le moteur de recherche utilise une syntaxe avancée.
 
 ### Vue Tableau
 
@@ -24,9 +21,7 @@ recherche utilise la syntaxe avancée.
 
 ![Limite de tâches](/images/v1/fr/board-task-limit.png)
 
-Lorsque la limite de tâches est atteinte pour une colonne,
-l'arrière-plan devient rouge. Ce qui signifie qu'il y a trop de tâches
-en cours en même temps.
+Lorsque la limite de tâches est atteinte pour une colonne, l'arrière-plan devient rouge. Cela signifie qu'il y a trop de tâches en cours en même temps.
 
 ### Vue Liste
 
@@ -41,25 +36,22 @@ en cours en même temps.
 
 Ce mode permet d'afficher une vue d'ensemble du projet :
 
-- Vous pouvez voir la description du projet
-- Attacher et visualiser des pièces-jointes au projet
-- Visualiser la liste des membres
-- Voir les dernières activités du projet
+- Vous pouvez voir la description du projet.
+- Attacher et visualiser des pièces jointes au projet.
+- Visualiser la liste des membres.
+- Voir les dernières activités du projet.
 
 Mode replié et déplié
 ---------------------
 
-Les tâches peuvent être affichées sur le tableau en mode replié ou
-déplié. Basculer d'un mode à l'autre peut être fait à l'aide du
-raccourci clavier **« s »** ou en utilisant le menu déroulant sur la
-gauche.
+Les tâches peuvent être affichées sur le tableau en mode replié ou déplié. Basculer d'un mode à l'autre peut être fait à l'aide du raccourci clavier **« s »** ou en utilisant le menu déroulant sur la gauche.
 
 ### Mode replié
 
 ![Mode replié](/images/v1/fr/board-collapsed-mode.png)
 
 - Si la tâche est affectée à quelqu'un, les initiales de la personne sont affichées à côté du numéro de la tâche.
-- Si le titre de la tâche est trop long, mettez le curseur de la souris au-dessus de la tâche pour voir une boite flottante avec le titre entier.
+- Si le titre de la tâche est trop long, mettez le curseur de la souris au-dessus de la tâche pour voir une boîte flottante avec le titre entier.
 
 ### Mode déplié
 
@@ -68,17 +60,13 @@ gauche.
 Défilement horizontal et mode compact
 -------------------------------------
 
-Lorsque le tableau ne loge pas dans votre écran, une barre de défilement
-horizontal appaîtra en bas de l'écran.
+Lorsque le tableau ne tient pas dans votre écran, une barre de défilement horizontal apparaît en bas de l'écran.
 
-Cependant, il est possible de basculer vers la vue compacte pour
-afficher toutes les colonnes dans votre écran.
+Cependant, il est possible de basculer vers la vue compacte pour afficher toutes les colonnes dans votre écran.
 
 ![Défilement horizontal et mode compact](/images/v1/fr/board-compact-mode.png)
 
-Basculer entre le défilement horizontal et la vue compacte s'effectue
-avec le raccourci clavier **« c »** ou en utilisant le menu déroulant
-sur la gauche.
+Basculer entre le défilement horizontal et la vue compacte s'effectue avec le raccourci clavier **« c »** ou en utilisant le menu déroulant sur la gauche.
 
 Afficher ou cacher des colonnes dans le tableau
 -----------------------------------------------
