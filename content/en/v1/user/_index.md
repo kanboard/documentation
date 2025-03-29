@@ -7,4 +7,4 @@ menu:
         weight: 10
 ---
 
-This section explains how to use Kanboard.
+This section provides a comprehensive guide on how to use Kanboard effectively.

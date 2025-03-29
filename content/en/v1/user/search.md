@@ -6,8 +6,8 @@ menu:
         parent: Using Kanboard
 ---
 
-Kanboard uses a simple query language for advanced search. 
-You can search in tasks, comments, subtasks, links but also in the activity stream.
+Kanboard uses a simple query language for advanced search.
+You can search in tasks, comments, subtasks, links, and the activity stream.
 
 Example of Query
 ----------------
@@ -21,20 +21,20 @@ assignee:me due:tomorrow my title
 Project Search
 --------------
 
-### Search by task id or title
+### Search by Task ID or Title
 
-- Search by task id: `#123`
-- Search by task id and task title: `123`
+- Search by task ID: `#123`
+- Search by task ID and task title: `123`
 - Search by task title: anything that doesn't match any search attributes
 
-### Search by status
+### Search by Status
 
 Attribute: **status**
 
 - Query to find open tasks: `status:open`
 - Query to find closed tasks: `status:closed`
 
-### Search by assignee
+### Search by Assignee
 
 Attribute: **assignee**
 
@@ -42,114 +42,118 @@ Attribute: **assignee**
 - Query with the username: `assignee:fguillot`
 - Multiple assignee lookup: `assignee:user1 assignee:"John Doe"`
 - Query for unassigned tasks: `assignee:nobody`
-- Query for my assigned tasks: `assignee:me`
+- Query for tasks assigned to me: `assignee:me`
 
-### Search by task creator
+### Search by Task Creator
 
 Attribute: **creator**
 
-- Tasks created by myself: `creator:me`
+- Tasks created by me: `creator:me`
 - Tasks created by John Doe: `creator:"John Doe"`
-- Tasks created by the user id \#1: `creator:1`
+- Tasks created by the user ID \#1: `creator:1`
 
-### Search by subtask assignee
+### Search by Subtask Assignee
 
 Attribute: **subtask:assignee**
 
 - Example: `subtask:assignee:"John Doe"`
 
-### Search by color
+### Search by Color
 
 Attribute: **color**
 
-- Query to search by color id: `color:blue`
+- Query to search by color ID: `color:blue`
 - Query to search by color name: `color:"Deep Orange"`
 
-### Search by the due date
+### Search by Due Date
 
 Attribute: **due**
 
 - Search tasks due today: `due:today`
 - Search tasks due tomorrow: `due:tomorrow`
 - Search tasks due yesterday: `due:yesterday`
-- Search tasks due with the exact date: `due:2015-06-29`
+- Search tasks due on an exact date: `due:2015-06-29`
 - Search tasks without a due date: `due:none`
 
 The date must use the ISO 8601 format: **YYYY-MM-DD**.
 
 All string formats supported by the [strtotime() function](https://www.php.net/strtotime) are supported, for example `next Thursday`, `-2 days`, `+2 months`, `tomorrow`, etc.
-If there are spaces, they must be enclosed in double quote.
+If there are spaces, they must be enclosed in double quotes.
 
 Operators supported with a date:
 
 - Greater than: **due:>2015-06-29**
-- Lower than: **due:<2015-06-29**
+- Less than: **due:<2015-06-29**
 - Greater than or equal: **due:>=2015-06-29**
-- Lower than or equal: **due:<=2015-06-29**
+- Less than or equal: **due:<=2015-06-29**
 
-### Search by modification date
+### Search by Modification Date
 
-- Attribute: **modified** or **updated**
+Attribute: **modified** or **updated**
 
-The date formats are the same as the due date.
+The date formats are the same as those for the due date.
 
-There is also a filter by recently modified tasks: `modified:recently`.
+There is also a filter for recently modified tasks: `modified:recently`.
 
-This query will use the same value as the board highlight period configured in settings.
+This query uses the same value as the board highlight period configured in settings.
 
-### Search by creation date
+### Search by Creation Date
 
-- Attribute: **created**
+Attribute: **created**
 
-Works in the same way as the modification date queries.
+Works in the same way as modification date queries.
 
-### Search by creation date with range
+### Search by Creation Date with Range
 
-- Attribute: **createdRange**
-- Date separator `..` (two dots)
+Attribute: **createdRange**
+
+- Date separator: `..` (two dots)
 - Example: `createdRange:2018/01/21..2018/01/31` or `createdRange:"2018-01-21..2018-01-31"`
 
-### Search by completion date with range
+### Search by Completion Date with Range
 
-- Attribute: **completedRange**
-- Date separator `..` (two dots)
+Attribute: **completedRange**
+
+- Date separator: `..` (two dots)
 - Example: `completedRange:2018/01/21..2018/01/31` or `completedRange:"2018-01-21..2018-01-31"`
 
-### Search by modification date with range
+### Search by Modification Date with Range
 
-- Attribute: **updatedRange**, **modifiedRange**
-- Date separator `..` (two dots)
+Attribute: **updatedRange**, **modifiedRange**
+
+- Date separator: `..` (two dots)
 - Example: `updatedRange:2018/01/21..2018/01/31` or `updatedRange:"2018-01-21..2018-01-31"`
 
-### Search by moved date with range
+### Search by Moved Date with Range
 
-- Attribute: **movedRange**
-- Date separator `..` (two dots)
+Attribute: **movedRange**
+
+- Date separator: `..` (two dots)
 - Example: `movedRange:2018/01/21..2018/01/31` or `movedRange:"2018-01-21..2018-01-31"`
 
-### Search by start date
+### Search by Start Date
 
-- Attribute: **started**
+Attribute: **started**
 
-### Search by description
+### Search by Description
 
 Attribute: **description** or **desc**
 
 - Example: `description:"text search"`
 
-### Search by completion
+### Search by Completion
 
-- Attribute: **completed**
+Attribute: **completed**
 
-### Search by external reference
+### Search by External Reference
 
-The task reference is an external ID of your task, for example a ticket number from another software.
+The task reference is an external ID of your task, for example, a ticket number from another software.
 
 - Find tasks with a reference: `ref:1234` or `reference:TICKET-1234`
 - Find tasks with no reference: `reference:none`
 - Wildcard search: `ref:TICKET-*`
 
-### Search by category
+### Search by Category
 
 Attribute: **category**
 
@@ -158,77 +162,76 @@ Attribute: **category**
 - Find tasks with no category assigned: `category:none`
 - Find tasks by the category ID or category name: `category:1234`
 
-### Search by project
+### Search by Project
 
 Attribute: **project**
 
 - Find tasks by project name: `project:"My project name"`
-- Find tasks by project id: `project:23`
+- Find tasks by project ID: `project:23`
 - Find tasks for several projects: `project:"My project A" project:"My project B"`
 
-### Search by columns
+### Search by Columns
 
 Attribute: **column**
 
 - Find tasks by column name: `column:"Work in progress"`
 - Find tasks for several columns: `column:"Backlog" column:ready`
 
-### Search by swimlane
+### Search by Swimlane
 
 Attribute: **swimlane**
 
-- Find tasks by swim-lane: `swimlane:"Version 42"`
-- Find tasks into several swim-lanes:
-    `swimlane:"Version 1.2" swimlane:"Version 1.3"`
+- Find tasks by swimlane: `swimlane:"Version 42"`
+- Find tasks in several swimlanes: `swimlane:"Version 1.2" swimlane:"Version 1.3"`
 
-### Search by task link
+### Search by Task Link
 
 Attribute: **link**
 
 - Find tasks by link name: `link:"is a milestone of"`
-- Find tasks into several links: `link:"is a milestone of" link:"relates to"`
+- Find tasks in several links: `link:"is a milestone of" link:"relates to"`
 
-### Search by comment
+### Search by Comment
 
 Attribute: **comment**
 
-- Find comments that contains this title: `comment:"My comment message"`
+- Find comments that contain this text: `comment:"My comment message"`
 
-### Search by tags
+### Search by Tags
 
 Attribute: **tag**
 
 - Example: `tag:"My tag"`
 
-### Search by score/complexity
+### Search by Score/Complexity
 
 Attribute: **score** or **complexity**
 
-- `score:>=21`
-- `complexity:8`
+- Example: `score:>=21`
+- Example: `complexity:8`
 
 Activity Stream Search
 ----------------------
 
-### Search events by task title
+### Search Events by Task Title
 
 Attribute: **title** or none (default)
 
 - Example: `title:"My task"`
-- Search by task id: `#123`
+- Search by task ID: `#123`
 
-### Search events by task status
+### Search Events by Task Status
 
 Attribute: **status**
 
-### Search by event creator
+### Search by Event Creator
 
 Attribute: **creator**
 
-### Search by event creation date
+### Search by Event Creation Date
 
 Attribute: **created**
 
-### Search events by project
+### Search Events by Project
 
 Attribute: **project**

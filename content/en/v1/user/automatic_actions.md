@@ -6,16 +6,16 @@ menu:
         parent: Using Kanboard
 ---
 
-To minimize user interaction, Kanboard support automated actions.
+To minimize user interaction, Kanboard supports automated actions.
 
-Each automatic action is defined with these properties:
+Each automatic action is defined by these properties:
 
-- An event to listen
-- Action linked to the event
+- An event to listen to
+- An action linked to the event
 - Additional parameters
 
-Each project has a different set of automatic actions. 
-The configuration panel is located on the project listing page - just click on the link **Automatic actions**.
+Each project has a different set of automatic actions.
+The configuration panel is located on the project listing page—just click on the link **Automatic actions**.
 
 Add a new action
 ----------------
@@ -24,9 +24,9 @@ Click on the link **Add a new automatic action**.
 
 ![Add new action](/images/v1/automatic-action-creation.png)
 
-1.  Choose an action
-2.  Select an event
-3.  Define the parameters
+1.  Choose an action.
+2.  Select an event.
+3.  Define the parameters.
 
 Available actions
 -----------------
@@ -61,56 +61,56 @@ Examples
 
 Here are some examples used in real life:
 
-### When I move a task to the column "Done", automatically close this task
+### When I move a task to the column "Done," automatically close this task
 
-- Choose action: **Close a task in a specific column**
-- Choose the event: **Move a task to another column**
-- Define action parameter: **Column = Done** (this is the destination column)
+- Choose the action: **Close a task in a specific column**.
+- Choose the event: **Move a task to another column**.
+- Define the action parameter: **Column = Done** (this is the destination column).
 
-### When I move a task to the column "To be validated", assign this task to a specific user
+### When I move a task to the column "To be validated," assign this task to a specific user
 
-- Choose the action: **Assign the task to a specific user**
-- Choose the event: **Move a task to another column**
-- Define the action parameters: **Column = To be validated** and **User = Bob** (Bob is our tester)
+- Choose the action: **Assign the task to a specific user**.
+- Choose the event: **Move a task to another column**.
+- Define the action parameters: **Column = To be validated** and **User = Bob** (Bob is our tester).
 
-### When I move a task to the column "Work in progress", assign this task to the current user
+### When I move a task to the column "Work in progress," assign this task to the current user
 
-- Choose action: **Assign the task to the person who does the action when the column is changed**
-- Choose the event: **Move a task to another column**
-- Define action parameter: **Column = Work in progress**
+- Choose the action: **Assign the task to the person who performs the action when the column is changed**.
+- Choose the event: **Move a task to another column**.
+- Define the action parameter: **Column = Work in progress**.
 
 ### When a task is completed, duplicate this task to another project
 
-Let's say we have two projects: "Customer orders" and "Production". 
-Once the order is validated, swap it to the "Production" project.
+Let's say we have two projects: "Customer orders" and "Production."
+Once the order is validated, move it to the "Production" project.
 
-- Choose action: **Duplicate the task to another project**
-- Choose the event: **Closing a task**
-- Define action parameters: **Column = Validated** and **Project = Production**
+- Choose the action: **Duplicate the task to another project**.
+- Choose the event: **Closing a task**.
+- Define the action parameters: **Column = Validated** and **Project = Production**.
 
 ### When a task is moved to the last column, move the exact same task to another project
 
-Let's say we have two projects: "Ideas" and "Development". 
-Once the idea is validated, swap it to the "Development" project.
+Let's say we have two projects: "Ideas" and "Development."
+Once the idea is validated, move it to the "Development" project.
 
-- Choose action: **Move the task to another project**
-- Choose the event: **Move a task to another column**
-- Define action parameters: **Column = Validated** and **Project = Development**
+- Choose the action: **Move the task to another project**.
+- Choose the event: **Move a task to another column**.
+- Define the action parameters: **Column = Validated** and **Project = Development**.
 
-### I want to assign automatically a color to the user Bob
+### I want to assign a color automatically to the user Bob
 
-- Choose action: **Assign a color to a specific user**
-- Choose the event: **Task assignee change**
-- Define action parameters: **Color = Green** and **Assignee = Bob**
+- Choose the action: **Assign a color to a specific user**.
+- Choose the event: **Task assignee change**.
+- Define the action parameters: **Color = Green** and **Assignee = Bob**.
 
 ### I want to assign a color automatically to the defined category "Feature Request"
 
-- Choose action: **Assign automatically a color based on a category**
-- Choose the event: **Task creation or modification**
-- Define action parameters: **Color = Blue** and **Category = Feature Request**
+- Choose the action: **Automatically assign a color based on a category**.
+- Choose the event: **Task creation or modification**.
+- Define the action parameters: **Color = Blue** and **Category = Feature Request**.
 
 ### I want to set the start date automatically when the task is moved to the column "Work in progress"
 
-- Choose action: **Automatically update the start date**
-- Choose the event: **Move a task to another column**
-- Define action parameters: **Column = Work in progress**
+- Choose the action: **Automatically update the start date**.
+- Choose the event: **Move a task to another column**.
+- Define the action parameter: **Column = Work in progress**.

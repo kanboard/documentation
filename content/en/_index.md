@@ -8,7 +8,7 @@ menu: main
 
 Kanboard is a free and open source Kanban project management software.
 
-- [Official website](https://kanboard.org)
+- [Official Website](https://kanboard.org)
 - [Bug Tracker](https://github.com/kanboard/kanboard/issues)
 - [Discourse Forum](https://kanboard.discourse.group/) - [GitHub Discussions](https://github.com/orgs/kanboard/discussions)
 - [RSS Feed](https://github.com/kanboard/kanboard/releases.atom)
@@ -19,7 +19,7 @@ This documentation is also available in [Czech]({{< relref path="/_index.md" lan
 ## Table of Contents
 
 - [What is Kanban?]({{< relref "introduction.md" >}})
-- [Kanboard version 1.x]({{< relref "v1/_index.md" >}})
+- [Kanboard Version 1.x]({{< relref "v1/_index.md" >}})
     - [Using Kanboard]({{< relref "v1/user/_index.md" >}})
     - [Running Kanboard]({{< relref "v1/admin/_index.md" >}})
     - [Contributing to Kanboard]({{< relref "v1/dev/_index.md" >}})

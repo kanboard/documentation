@@ -7,12 +7,12 @@ menu:
         parent: Using Kanboard
 ---
 
-Keyboard shortcuts availability depends on the current page.
+Keyboard shortcut availability depends on the current page.
 
 ## Project Views (Board, Calendar, List, Gantt)
 
 - Switch to the project overview = **v o**
-- Switch to the board view = **v b** (press on **v** then **b**)
+- Switch to the board view = **v b** (press **v**, then **b**)
 - Switch to the calendar view = **v c**
 - Switch to the list view = **v l**
 - Switch to the Gantt view = **v g**
@@ -32,9 +32,9 @@ Keyboard shortcuts availability depends on the current page.
 
 ## Application
 
-- Display list of keyboard shortcuts = **?**
-- Open board switcher = **b**
+- Display the list of keyboard shortcuts = **?**
+- Open the board switcher = **b**
 - Go to the search box = **f**
 - Reset the search box = **r**
-- Close dialog box = **ESC**
+- Close the dialog box = **ESC**
 - Submit form = **CTRL+ENTER** or **⌘+ENTER**
