@@ -22,22 +22,22 @@ public function initialize()
 
 The object provided to the method `register()` must implement one of the pre-defined authentication interfaces.
 
-Those interfaces are defined in the namepsace `Kanboard\Core\Security`:
+These interfaces are defined in the namespace `Kanboard\Core\Security`:
 
 - `Kanboard\Core\Security\PreAuthenticationProviderInterface`
 - `Kanboard\Core\Security\PostAuthenticationProviderInterface`
 - `Kanboard\Core\Security\PasswordAuthenticationProviderInterface`
 - `Kanboard\Core\Security\OAuthAuthenticationProviderInterface`
 
-The only requirement is to implement the interfaces, you class can be written the way you want and located anywhere on the disk.
+The only requirement is to implement the interfaces. Your class can be written in any way you prefer and located anywhere on the disk.
 
 User Provider
 -------------
 
-When the authentication is successful, your driver must return an object that represents the user. This object must implement the interface `Kanboard\Core\User\UserProviderInterface`.
+When authentication is successful, your driver must return an object that represents the user. This object must implement the interface `Kanboard\Core\User\UserProviderInterface`.
 
-Example of authentication plugins
----------------------------------
+Examples of authentication plugins
+-----------------------------------
 
 - [Authentication providers included in Kanboard](https://github.com/kanboard/kanboard/tree/master/app/Auth)
 - [Reverse-Proxy Authentication with LDAP support](https://github.com/kanboard/plugin-reverse-proxy-ldap)

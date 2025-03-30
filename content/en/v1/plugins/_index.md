@@ -6,4 +6,4 @@ menu:
         weight: 40
 ---
 
-This section describes how to develop plugins for Kanboard.
+This section provides guidance on developing plugins for Kanboard.

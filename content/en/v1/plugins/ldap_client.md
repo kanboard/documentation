@@ -28,7 +28,7 @@ try {
     // ...
 
 } catch (LdapException $e) {
-    // ...
+    // Handle exception
 }
 ```
 
@@ -44,11 +44,11 @@ Classes:
 Example to query the LDAP directory:
 
 ```php
-$query = new Query($client)
+$query = new Query($client);
 $query->execute('ou=People,dc=kanboard,dc=local', 'uid=my_user', array('cn', 'mail'));
 
 if ($query->hasResult()) {
-    $entries = $query->getEntries(); // Return an instance of Entries
+    $entries = $query->getEntries(); // Returns an instance of Entries
 }
 ```
 
@@ -69,7 +69,7 @@ foreach ($query->getEntries()->getAll() as $entry) {
 
     // Check if a value is present for an attribute
     if ($entry->hasValue('mail', 'user2@localhost')) {
-        // ...
+        // Perform some action
     }
 }
 ```
@@ -82,7 +82,7 @@ Class: `Kanboard\Core\Ldap\User`
 Fetch a single user in one line:
 
 ```php
-// Return an instance of LdapUserProvider
+// Returns an instance of LdapUserProvider
 $user = User::getUser($client, 'my_username');
 ```
 
@@ -97,6 +97,6 @@ Fetch groups in one line:
 // Define LDAP filter
 $filter = '(&(objectClass=group)(sAMAccountName=My group*))';
 
-// Return a list of LdapGroupProvider
+// Returns a list of LdapGroupProvider
 $groups = Group::getGroups($client, $filter);
 ```

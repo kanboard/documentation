@@ -9,8 +9,7 @@ menu:
 Override HTTP Content Security Policy
 -------------------------------------
 
-If you would like to replace the default HTTP Content Security Policy
-header, you can use the method `setContentSecurityPolicy()`:
+To replace the default HTTP Content Security Policy header, use the `setContentSecurityPolicy()` method:
 
 ```php
 <?php
@@ -31,19 +30,17 @@ class Plugin extends Base
 Template Overrides
 ------------------
 
-Any templates defined in the core can be overridden. For example, you
-can redefine the default layout or change email notifications.
+Core templates can be overridden. For example, you can redefine the default layout or modify email notifications.
 
-Example of template override:
+Example of a template override:
 
 ```php
 $this->template->setTemplateOverride('header', 'theme:layout/header');
 ```
 
-The first argument is the original template name and the second argument
-the template to use as replacement.
+The first argument is the original template name, and the second argument is the replacement template.
 
-You can still use the original template using the "kanboard:" prefix:
+To use the original template, prefix it with "kanboard:":
 
 ```php
 <?= $this->render('kanboard:header') ?>
@@ -52,7 +49,7 @@ You can still use the original template using the "kanboard:" prefix:
 Formatter Overrides
 -------------------
 
-Here an example to override formatter objects in Kanboard:
+Here is an example of overriding formatter objects in Kanboard:
 
 ```php
 class MyFormatter extends UserAutoCompleteFormatter
@@ -62,7 +59,7 @@ class MyFormatter extends UserAutoCompleteFormatter
         $users = parent::format();
 
         foreach ($users as &$user) {
-            $user['label'] = 'something'; // Do something useful here
+            $user['label'] = 'something'; // Modify the user label as needed
         }
 
         return $users;

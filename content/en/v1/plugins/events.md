@@ -6,7 +6,7 @@ menu:
         parent: Developing Plugins
 ---
 
-Kanboard use internally the [Symfony EventDispatcher component](https://symfony.com/doc/2.3/components/event_dispatcher/index.html) to manage internal events.
+Kanboard uses the [Symfony EventDispatcher component](https://symfony.com/doc/2.3/components/event_dispatcher/index.html) internally to manage events.
 
 Event Listening
 ---------------
@@ -17,16 +17,16 @@ $this->on('app.bootstrap', function($container) {
 });
 ```
 
-- The first argument is the event name (string)
-- The second argument is a PHP callable function (closure or class method)
+- The first argument is the event name (a string).
+- The second argument is a PHP callable function (a closure or class method).
 
-Adding a new event
+Adding a New Event
 ------------------
 
-To add a new event, you have to call the method `register()` of the class `Kanboard\Core\Event\EventManager`:
+To add a new event, call the `register()` method of the `Kanboard\Core\Event\EventManager` class:
 
 ```php
 $this->eventManager->register('my.event.name', 'My new event description');
 ```
 
-These events can be used by other components of Kanboard like automatic actions.
+These events can be used by other components of Kanboard, such as automatic actions.

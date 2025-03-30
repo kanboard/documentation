@@ -16,14 +16,14 @@ $this->avatarManager->register(new CustomAvatarProvider());
 Interface
 ---------
 
-The provider must implements the interface `Kanboard\Core\User\Avatar\AvatarProviderInterface`:
+The provider must implement the interface `Kanboard\Core\User\Avatar\AvatarProviderInterface`:
 
 Method                        | Description
 ------------------------------| ------------------------------------------
-`render(array $user, $size)`  | Render HTML
-`isActive(array $user)`       | Returns a boolean if the provider is able to render something
+`render(array $user, $size)`  | Renders HTML
+`isActive(array $user)`       | Returns a boolean indicating if the provider can render something
 
-The `$user` argument is a dictionary that contains these keys:
+The `$user` argument is an array that contains the following keys:
 
 ```php
 [

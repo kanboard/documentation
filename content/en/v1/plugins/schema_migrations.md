@@ -6,9 +6,7 @@ menu:
         parent: Developing Plugins
 ---
 
-Kanboard executes database migrations automatically for you. Migrations
-must be stored in a folder **Schema** and the filename must be the same
-as the database driver:
+Kanboard executes database migrations automatically for you. Migrations must be stored in a folder named **Schema**, and the filename must match the database driver:
 
 ```bash
 Schema
@@ -17,7 +15,7 @@ Schema
 └── Sqlite.php
 ```
 
-Each file contains all migrations, here an example for Sqlite:
+Each file contains all migrations. Here is an example for Sqlite:
 
 ```php
 <?php
@@ -37,12 +35,9 @@ function version_1($pdo)
 }
 ```
 
-- The constant `VERSION` is the last version of your schema
-- Each function is a migration `version_1()`, `version_2()`, etc.
-- A `PDO` instance is passed as first argument
-- Everything is executed inside a transaction, if something doesn't
-    work a rollback is performed and the error is displayed to the user
+- The constant `VERSION` represents the latest version of your schema.
+- Each function corresponds to a migration, e.g., `version_1()`, `version_2()`, etc.
+- A `PDO` instance is passed as the first argument.
+- All migrations are executed within a transaction. If an error occurs, a rollback is performed, and the error is displayed to the user.
 
-Kanboard will compare the version defined in your schema and the version
-stored in the database. If the versions are different, Kanboard will
-execute one by one each migration until to reach the last version.
+Kanboard compares the version defined in your schema with the version stored in the database. If the versions differ, Kanboard executes each migration sequentially until the latest version is reached.

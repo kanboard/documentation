@@ -1,12 +1,12 @@
 ---
-title: Registering new helpers
+title: Registering New Helpers
 toc: true
 menu:
     main:
         parent: Developing Plugins
 ---
 
-Helper skeleton:
+Helper Skeleton:
 
 ```php
 <?php
@@ -24,13 +24,13 @@ class MyHelper extends Base
 }
 ```
 
-Register your helper class:
+Register Your Helper Class:
 
 ```php
 $this->helper->register('myHelper', '\Kanboard\Plugin\MyPlugin\Helper\MyHelper');
 ```
 
-Using your helper from a template:
+Using Your Helper in a Template:
 
 ```php
 <p>
@@ -38,7 +38,7 @@ Using your helper from a template:
 </p>
 ```
 
-Using your helper from another class:
+Using Your Helper in Another Class:
 
 ```php
 $this->helper->myHelper->doSomething();

@@ -6,19 +6,18 @@ menu:
         parent: Developing Plugins
 ---
 
-Project skeleton generator
+Project Skeleton Generator
 --------------------------
 
-You can use `cookiecutter` to create the project structure of your
-plugin automatically.
+You can use `cookiecutter` to automatically create the project structure for your plugin.
 
-Install Cookiecutter:
+### Install Cookiecutter
 
 ```bash
 pip install -U cookiecutter
 ```
 
-Run Kanboard cookiecutter:
+### Run Kanboard Cookiecutter
 
 ```bash
 cookiecutter gh:kanboard/cookiecutter-plugin
@@ -29,23 +28,22 @@ plugin_description [My plugin is awesome]:
 plugin_homepage [https://github.com/kanboard/plugin-myplugin]:
 ```
 
-Directory structure
+Directory Structure
 -------------------
 
-Plugins are stored in the `plugins` subdirectory. An example of a plugin
-directory structure:
+Plugins are stored in the `plugins` subdirectory. Below is an example of a plugin directory structure:
 
 ```
 plugins
 └── Budget            <= Plugin name
-    ├── Asset         <= Javascript/CSS files
+    ├── Asset         <= JavaScript/CSS files
     ├── Controller
     ├── LICENSE       <= Plugin license
     ├── Locale
     │   ├── fr_FR
-    │   ├── it_IT
-    │   ├── ja_JP
-    │   └── zh_CN
+    │   ├── it_IT
+    │   ├── ja_JP
+    │   └── zh_CN
     ├── Model
     ├── Plugin.php    <= Plugin registration file
     ├── README.md
@@ -54,19 +52,16 @@ plugins
     └── Test          <= Unit tests
 ```
 
-Only the registration file `Plugin.php` is required. Other folders are
-optional.
+Only the registration file `Plugin.php` is required. Other folders are optional.
 
 The first letter of the plugin name must be capitalized.
 
 Plugin Registration File
 ------------------------
 
-Kanboard will scan the directory `plugins` and load automatically
-everything under this directory. The file `Plugin.php` is used to load
-and register the plugin.
+Kanboard scans the `plugins` directory and automatically loads everything under it. The file `Plugin.php` is used to load and register the plugin.
 
-Example of `Plugin.php` file (`plugins/Foobar/Plugin.php`):
+Example of a `Plugin.php` file (`plugins/Foobar/Plugin.php`):
 
 ```php
 <?php
@@ -93,7 +88,7 @@ class Plugin extends Base
 }
 ```
 
-This file should contain a class `Plugin` defined under the namespace `Kanboard\Plugin\Yourplugin` and extends `Kanboard\Core\Plugin\Base`.
+This file must contain a `Plugin` class defined under the namespace `Kanboard\Plugin\Yourplugin` and extend `Kanboard\Core\Plugin\Base`.
 
 The only required method is `initialize()`. This method is called for each request when the plugin is loaded.
 
@@ -102,21 +97,21 @@ Plugin Methods
 
 Available methods from `Kanboard\Core\Plugin\Base`:
 
-- `initialize()`: Executed when the plugin is loaded
-- `getClasses()`: Return all classes that should be stored in the dependency injection container
-- `on($event, $callback)`: Listen on internal events
-- `getPluginName()`: Should return plugin name (must match plugins.json `"title":` entry for "Plugin Directory" version update notifications to work)
-- `getPluginAuthor()`: Should return plugin author
-- `getPluginVersion()`: Should return plugin version
-- `getPluginDescription()`: Should return plugin description
-- `getPluginHomepage()`: Should return plugin Homepage (link)
-- `setContentSecurityPolicy(array $rules)`: Override default HTTP CSP rules
-- `onStartup()`: If present, this method is executed automatically when the event "app.bootstrap" is triggered
-- `getCompatibleVersion()`: You may want to specify the Kanboard version compatible with the plugin
+- `initialize()`: Executed when the plugin is loaded.
+- `getClasses()`: Returns all classes that should be stored in the dependency injection container.
+- `on($event, $callback)`: Listens to internal events.
+- `getPluginName()`: Returns the plugin name (must match the `plugins.json` `"title":` entry for "Plugin Directory" version update notifications to work).
+- `getPluginAuthor()`: Returns the plugin author.
+- `getPluginVersion()`: Returns the plugin version.
+- `getPluginDescription()`: Returns the plugin description.
+- `getPluginHomepage()`: Returns the plugin homepage (link).
+- `setContentSecurityPolicy(array $rules)`: Overrides default HTTP CSP rules.
+- `onStartup()`: If present, this method is executed automatically when the event `app.bootstrap` is triggered.
+- `getCompatibleVersion()`: Specifies the Kanboard version compatible with the plugin.
 
-Your plugin registration class can also inherit from `Kanboard\Core\Base`, that way you can access all classes and methods of Kanboard easily.
+Your plugin registration class can also inherit from `Kanboard\Core\Base`, allowing you to access all classes and methods of Kanboard easily.
 
-This example will fetch the user \#123:
+For example, to fetch user #123:
 
 ```php
 $this->user->getById(123);
@@ -125,7 +120,7 @@ $this->user->getById(123);
 Plugin Translations
 -------------------
 
-Plugin can be translated in the same way as the rest of the application. You must load the translations yourself when the session is created:
+Plugins can be translated in the same way as the rest of the application. You must load the translations yourself when the session is created:
 
 ```php
 public function onStartup()
@@ -134,20 +129,18 @@ public function onStartup()
 }
 ```
 
-The translations must be stored in the file `plugins/Myplugin/Locale/xx_XX/translations.php` (replace `xx_XX` by the language code `fr_FR`, `en_US`...).
+Translations must be stored in the file `plugins/Myplugin/Locale/xx_XX/translations.php` (replace `xx_XX` with the language code, e.g., `fr_FR`, `en_US`).
 
-Translations are stored in a dictionary, if you would like to override an existing string, you just need to use the same key in your translation file.
+Translations are stored in a dictionary. To override an existing string, use the same key in your translation file.
 
 Dependency Injection Container
 ------------------------------
 
-Kanboard uses Pimple, a simple PHP Dependency Injection Container.
-However, Kanboard can register any class in the container easily.
+Kanboard uses Pimple, a simple PHP Dependency Injection Container. However, Kanboard can easily register any class in the container.
 
-Those classes are available everywhere in the application and only one
-instance is created.
+These classes are available throughout the application, and only one instance is created.
 
-Here an example to register your own models in the container:
+Here is an example of registering your own models in the container:
 
 ```php
 public function getClasses()
@@ -161,16 +154,14 @@ public function getClasses()
 }
 ```
 
-Now, if you use a class that extends from `Core\Base`, you can access
-directly to those class instance:
+Now, if you use a class that extends `Core\Base`, you can directly access those class instances:
 
 ```php
 $this->hourlyRateModel->remove(123);
 $this->budgetModel->getDailyBudgetBreakdown(456);
 
-// It's the same thing as using the container:
+// This is equivalent to using the container:
 $this->container['hourlyRateModel']->getAll();
 ```
 
-Keys of the containers are unique across the application. If you
-override an existing class, you will change the default behavior.
+Keys in the container are unique across the application. If you override an existing class, you will change its default behavior.
