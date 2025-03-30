@@ -11,7 +11,7 @@ getProjectMetadata
 
 - Purpose: **Get Project metadata**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
 - Result on success: **dictionary of metadata**
 - Result on failure: **false**
 
@@ -45,7 +45,7 @@ getProjectMetadataByName
 
 - Purpose: **Fetch single metadata value**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
     - **name** (string, required)
 - Result on success: **mixed**
 - Result on failure: **empty string**
@@ -79,7 +79,7 @@ saveProjectMetadata
 
 - Purpose: **Add or update metadata**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
     - **values** (dict, required)
 - Result on success: **true**
 - Result on failure: **false**
@@ -115,7 +115,7 @@ removeProjectMetadata
 
 - Purpose: **Remove a project metadata**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
     - **name** (string, required)
 - Result on success: **true**
 - Result on failure: **false**

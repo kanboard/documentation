@@ -651,7 +651,7 @@ duplicateTaskToProject
     - **column_id** (integer, optional)
     - **category_id** (integer, optional)
     - **owner_id** (integer, optional)
-- Result on success: **task\_id**
+- Result on success: **task_id**
 - Result on failure: **false**
 
 Request example:

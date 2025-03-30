@@ -11,13 +11,13 @@ createSubtask
 
 - Purpose: **Create a new subtask**
 - Parameters:
-    - **task\_id** (integer, required)
+    - **task_id** (integer, required)
     - **title** (integer, required)
-    - **user\_id** (int, optional)
-    - **time\_estimated** (int, optional)
-    - **time\_spent** (int, optional)
+    - **user_id** (int, optional)
+    - **time_estimated** (int, optional)
+    - **time_spent** (int, optional)
     - **status** (int, optional)
-- Result on success: **subtask\_id**
+- Result on success: **subtask_id**
 - Result on failure: **false**
 
 Request example:
@@ -49,7 +49,7 @@ getSubtask
 
 - Purpose: **Get subtask information**
 - Parameters:
-    - **subtask\_id** (integer)
+    - **subtask_id** (integer)
 - Result on success: **subtask properties**
 - Result on failure: **null**
 
@@ -89,7 +89,7 @@ getAllSubtasks
 
 - Purpose: **Get all available subtasks**
 - Parameters:
-    - **task\_id** (integer, required)
+    - **task_id** (integer, required)
 - Result on success: **List of subtasks**
 - Result on failure: **false**
 
@@ -135,11 +135,11 @@ updateSubtask
 - Purpose: **Update a subtask**
 - Parameters:
     - **id** (integer, required)
-    - **task\_id** (integer, required)
+    - **task_id** (integer, required)
     - **title** (integer, optional)
-    - **user\_id** (integer, optional)
-    - **time\_estimated** (integer, optional)
-    - **time\_spent** (integer, optional)
+    - **user_id** (integer, optional)
+    - **time_estimated** (integer, optional)
+    - **time_spent** (integer, optional)
     - **status** (integer, optional)
 - Result on success: **true**
 - Result on failure: **false**
@@ -176,7 +176,7 @@ removeSubtask
 
 - Purpose: **Remove a subtask**
 - Parameters:
-    - **subtask\_id** (integer, required)
+    - **subtask_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 

@@ -11,14 +11,13 @@ createTaskFile
 
 - Purpose: **Create and upload a new task attachment**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **task\_id** (integer, required)
-    - **filename** (integer, required)
+    - **project_id** (integer, required)
+    - **task_id** (integer, required)
+    - **filename** (string, required)
     - **blob** File content encoded in base64 (string, required)
-- Result on success: **file\_id**
+- Result on success: **file_id**
 - Result on failure: **false**
-- Note: **The maximum file size depends of your PHP configuration,
-    this method should not be used to upload large files**
+- Note: **The maximum file size depends on your PHP configuration. This method should not be used to upload large files.**
 
 Request example:
 
@@ -51,7 +50,7 @@ getAllTaskFiles
 
 - Purpose: **Get all files attached to task**
 - Parameters:
-    - **task\_id** (integer, required)
+    - **task_id** (integer, required)
 - Result on success: **list of files**
 - Result on failure: **false**
 
@@ -96,7 +95,7 @@ getTaskFile
 
 - Purpose: **Get file information**
 - Parameters:
-    - **file\_id** (integer, required)
+    - **file_id** (integer, required)
 - Result on success: **file properties**
 - Result on failure: **false**
 
@@ -137,7 +136,7 @@ downloadTaskFile
 
 - Purpose: **Download file contents (encoded in base64)**
 - Parameters:
-    - **file\_id** (integer, required)
+    - **file_id** (integer, required)
 - Result on success: **base64 encoded string**
 - Result on failure: **empty string**
 
@@ -169,7 +168,7 @@ removeTaskFile
 
 - Purpose: **Remove file**
 - Parameters:
-    - **file\_id** (integer, required)
+    - **file_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -201,7 +200,7 @@ removeAllTaskFiles
 
 - Purpose: **Remove all files associated to a task**
 - Parameters:
-    - **task\_id** (integer, required)
+    - **task_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 

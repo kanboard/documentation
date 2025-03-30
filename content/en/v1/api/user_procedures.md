@@ -17,7 +17,7 @@ createUser
     - **email** (string, optional)
     - **role** (string, optional, example: app-admin, app-manager,
         app-user)
-- Result on success: **user\_id**
+- Result on success: **user_id**
 - Result on failure: **false**
 
 Request example:
@@ -47,13 +47,13 @@ Response example:
 createLdapUser
 --------------
 
-- Purpose: **Create a new user authentified by LDAP**
+- Purpose: **Create a new user authenticated by LDAP**
 - Parameters:
     - **username** (string, required)
-- Result on success: **user\_id**
+- Result on success: **user_id**
 - Result on failure: **false**
 
-The user will only be created if he is found on the LDAP server. This
+The user will only be created if they are found on the LDAP server. This
 method works only with LDAP authentication configured in proxy or
 anonymous mode.
 
@@ -85,7 +85,7 @@ getUser
 
 - Purpose: **Get user information**
 - Parameters:
-    - **user\_id** (integer, required)
+    - **user_id** (integer, required)
 - Result on success: **user properties**
 - Result on failure: **null**
 
@@ -250,7 +250,7 @@ removeUser
 
 - Purpose: **Remove a user**
 - Parameters:
-    - **user\_id** (integer, required)
+    - **user_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -282,7 +282,7 @@ disableUser
 
 - Purpose: **Disable a user**
 - Parameters:
-    - **user\_id** (integer, required)
+    - **user_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -314,7 +314,7 @@ enableUser
 
 - Purpose: **Enable a user**
 - Parameters:
-    - **user\_id** (integer, required)
+    - **user_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -346,7 +346,7 @@ isActiveUser
 
 - Purpose: **Check if a user is active**
 - Parameters:
-    - **user\_id** (integer, required)
+    - **user_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 

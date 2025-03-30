@@ -48,14 +48,13 @@ Response from the server:
 Example with Python
 -------------------
 
-There is an [official Python client for
-Kanboard](https://github.com/kanboard/python-api-client):
+There is an [official Python client for Kanboard](https://github.com/kanboard/python-api-client):
 
 ```bash
 pip install kanboard
 ```
 
-Here an example to create a project and a task:
+Here is an example to create a project and a task:
 
 ```python
 import kanboard
@@ -66,6 +65,7 @@ project_id = kb.create_project(name='My project')
 kb.add_project_user(project_id=project_id, user_id=123, role='project-manager')
 
 task_id = kb.create_task(project_id=project_id, title='My task title')
+print(f"Created task with ID: {task_id}")
 ```
 
 Example with Ruby

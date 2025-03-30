@@ -11,10 +11,10 @@ createProjectFile
 
 - Purpose: **Create and upload a new project attachment**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
     - **filename** (integer, required)
     - **blob** File content encoded in base64 (string, required)
-- Result on success: **file\_id**
+- Result on success: **file_id**
 - Result on failure: **false**
 - Note: **The maximum file size depends of your PHP configuration,
     this method should not be used to upload large files**
@@ -49,7 +49,7 @@ getAllProjectFiles
 
 - Purpose: **Get all files attached to a project**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
 - Result on success: **list of files**
 - Result on failure: **false**
 
@@ -94,8 +94,8 @@ getProjectFile
 
 - Purpose: **Get file information**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **file\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **file_id** (integer, required)
 - Result on success: **file properties**
 - Result on failure: **false**
 
@@ -137,8 +137,8 @@ downloadProjectFile
 
 - Purpose: **Download project file contents (encoded in base64)**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **file\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **file_id** (integer, required)
 - Result on success: **base64 encoded string**
 - Result on failure: **empty string**
 
@@ -171,8 +171,8 @@ removeProjectFile
 
 - Purpose: **Remove a file associated to a project**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **file\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **file_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -205,7 +205,7 @@ removeAllProjectFiles
 
 - Purpose: **Remove all files associated to a project**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 

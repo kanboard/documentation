@@ -11,10 +11,10 @@ createTaskLink
 
 - Purpose: **Create a link between two tasks**
 - Parameters:
-    - **task\_id** (integer, required)
-    - **opposite\_task\_id** (integer, required)
-    - **link\_id** (integer, required)
-- Result on success: **task\_link\_id**
+    - **task_id** (integer, required)
+    - **opposite_task_id** (integer, required)
+    - **link_id** (integer, required)
+- Result on success: **task_link_id**
 - Result on failure: **false**
 
 Request example:
@@ -47,10 +47,10 @@ updateTaskLink
 
 - Purpose: **Update task link**
 - Parameters:
-    - **task\_link\_id** (integer, required)
-    - **task\_id** (integer, required)
-    - **opposite\_task\_id** (integer, required)
-    - **link\_id** (integer, required)
+    - **task_link_id** (integer, required)
+    - **task_id** (integer, required)
+    - **opposite_task_id** (integer, required)
+    - **link_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -85,7 +85,7 @@ getTaskLinkById
 
 - Purpose: **Get a task link**
 - Parameters:
-    - **task\_link\_id** (integer, required)
+    - **task_link_id** (integer, required)
 - Result on success: **task link properties**
 - Result on failure: **false**
 
@@ -122,7 +122,7 @@ getAllTaskLinks
 
 - Purpose: **Get all links related to a task**
 - Parameters:
-    - **task\_id** (integer, required)
+    - **task_id** (integer, required)
 - Result on success: **list of task link**
 - Result on failure: **false**
 
@@ -169,7 +169,7 @@ removeTaskLink
 
 - Purpose: **Remove a link between two tasks**
 - Parameters:
-    - **task\_link\_id** (integer, required)
+    - **task_link_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 

@@ -14,7 +14,7 @@ createCategory
 - **project_id** (integer, required)
     - **name** (string, required, must be unique for the given project)
     - **color_id** (string, optional)
-- Result on success: **category\_id**
+- Result on success: **category_id**
 - Result on failure: **false**
 
 Request example:

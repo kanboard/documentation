@@ -12,8 +12,8 @@ createGroup
 - Purpose: **Create a new group**
 - Parameters:
     - **name** (string, required)
-    - **external\_id** (string, optional)
-- Result on success: **link\_id**
+    - **external_id** (string, optional)
+- Result on success: **link_id**
 - Result on failure: **false**
 
 Request example:
@@ -45,9 +45,9 @@ updateGroup
 
 - Purpose: **Update a group**
 - Parameters:
-    - **group\_id** (integer, required)
+    - **group_id** (integer, required)
     - **name** (string, optional)
-    - **external\_id** (string, optional)
+    - **external_id** (string, optional)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -81,7 +81,7 @@ removeGroup
 
 - Purpose: **Remove a group**
 - Parameters:
-    - **group\_id** (integer, required)
+    - **group_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -113,7 +113,7 @@ getGroup
 
 - Purpose: **Get one group**
 - Parameters:
-    - **group\_id** (integer, required)
+    - **group_id** (integer, required)
 - Result on success: **Group dictionary**
 - Result on failure: **false**
 

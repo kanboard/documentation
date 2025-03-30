@@ -11,7 +11,7 @@ getBoard
 
 - Purpose: **Get all necessary information to display a board**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
 - Result on success: **board properties**
 - Result on failure: **empty list**
 

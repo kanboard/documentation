@@ -95,8 +95,8 @@ getOppositeLinkId
 
 - Purpose: **Get the opposite link id of a task link**
 - Parameters:
-    - **link\_id** (integer, required)
-- Result on success: **link\_id**
+    - **link_id** (integer, required)
+- Result on success: **link_id**
 - Result on failure: **false**
 
 Request example:
@@ -163,7 +163,7 @@ getLinkById
 
 - Purpose: **Get a link by id**
 - Parameters:
-    - **link\_id** (integer, required)
+    - **link_id** (integer, required)
 - Result on success: **link properties**
 - Result on failure: **false**
 
@@ -200,8 +200,8 @@ createLink
 - Purpose: **Create a new task relation**
 - Parameters:
     - **label** (integer, required)
-    - **opposite\_label** (integer, optional)
-- Result on success: **link\_id**
+    - **opposite_label** (integer, optional)
+- Result on success: **link_id**
 - Result on failure: **false**
 
 Request example:
@@ -233,8 +233,8 @@ updateLink
 
 - Purpose: **Update a link**
 - Parameters:
-    - **link\_id** (integer, required)
-    - **opposite\_link\_id** (integer, required)
+    - **link_id** (integer, required)
+    - **opposite_link_id** (integer, required)
     - **label** (string, required)
 - Result on success: **true**
 - Result on failure: **false**
@@ -269,7 +269,7 @@ removeLink
 
 - Purpose: **Remove a link**
 - Parameters:
-    - **link\_id** (integer, required)
+    - **link_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 

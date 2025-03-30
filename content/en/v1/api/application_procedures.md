@@ -174,7 +174,7 @@ getDefaultTaskColor
 
 - Purpose: **Get default task color**
 - Parameters: None
-- Result on success: **color\_id**
+- Result on success: **color_id**
 
 Request example:
 
@@ -201,7 +201,7 @@ getColorList
 
 - Purpose: **Get the list of task colors**
 - Parameters: none
-- Result on success: **Dictionary of color\_id => color\_name**
+- Result on success: **Dictionary of color_id => color_name**
 
 Request example:
 
@@ -245,7 +245,7 @@ getApplicationRoles
 
 - Purpose: **Get the application roles**
 - Parameters: none
-- Result: **Dictionary of role => role\_name**
+- Result: **Dictionary of role => role_name**
 
 Request example:
 
@@ -276,7 +276,7 @@ getProjectRoles
 
 - Purpose: **Get the project roles**
 - Parameters: none
-- Result: **Dictionary of role => role\_name**
+- Result: **Dictionary of role => role_name**
 
 Request example:
 

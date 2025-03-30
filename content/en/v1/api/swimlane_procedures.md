@@ -12,7 +12,7 @@ getActiveSwimlanes
 - Purpose: **Get the list of enabled swimlanes of a project (include
     default swimlane if enabled)**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
 - Result on success: **List of swimlanes**
 - Result on failure: **null**
 
@@ -54,7 +54,7 @@ getAllSwimlanes
 - Purpose: **Get the list of all swimlanes of a project (enabled or
     disabled) and sorted by position**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
 - Result on success: **List of swimlanes**
 - Result on failure: **null**
 
@@ -101,7 +101,7 @@ getSwimlane
 
 - Purpose: **Get the a swimlane by id**
 - Parameters:
-    - **swimlane\_id** (integer, required)
+    - **swimlane_id** (integer, required)
 - Result on success: **swimlane properties**
 - Result on failure: **null**
 
@@ -139,7 +139,7 @@ getSwimlaneById
 
 - Purpose: **Get the a swimlane by id**
 - Parameters:
-    - **swimlane\_id** (integer, required)
+    - **swimlane_id** (integer, required)
 - Result on success: **swimlane properties**
 - Result on failure: **null**
 
@@ -177,7 +177,7 @@ getSwimlaneByName
 
 - Purpose: **Get the a swimlane by name**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
     - **name** (string, required)
 - Result on success: **swimlane properties**
 - Result on failure: **null**
@@ -218,8 +218,8 @@ changeSwimlanePosition
 - Purpose: **Move up the swimlane position** (only for active
     swimlanes)
 - Parameters:
-    - **project\_id** (integer, required)
-    - **swimlane\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **swimlane_id** (integer, required)
     - **position** (integer, required, must be >= 1)
 - Result on success: **true**
 - Result on failure: **false**
@@ -254,8 +254,8 @@ updateSwimlane
 
 - Purpose: **Update swimlane properties**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **swimlane\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **swimlane_id** (integer, required)
     - **name** (string, required)
     - **description** (string, optional)
 - Result on success: **true**
@@ -291,10 +291,10 @@ addSwimlane
 
 - Purpose: **Add a new swimlane**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
     - **name** (string, required)
     - **description** (string, optional)
-- Result on success: **swimlane\_id**
+- Result on success: **swimlane_id**
 - Result on failure: **false**
 
 Request example:
@@ -326,8 +326,8 @@ removeSwimlane
 
 - Purpose: **Remove a swimlane**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **swimlane\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **swimlane_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -360,8 +360,8 @@ disableSwimlane
 
 - Purpose: **Disable a swimlane**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **swimlane\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **swimlane_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -394,8 +394,8 @@ enableSwimlane
 
 - Purpose: **Enable a swimlane**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **swimlane\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **swimlane_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 

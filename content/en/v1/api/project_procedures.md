@@ -13,11 +13,11 @@ createProject
 - Parameters:
     - **name** (string, required)
     - **description** (string, optional)
-    - **owner\_id** (integer, optional)
+    - **owner_id** (integer, optional)
     - **identifier** (alphanumeric string, optional)
-    - **start\_date** ISO8601 format (string, optional)
-    - **end\_date** ISO8601 format (string, optional)
-- Result on success: **project\_id**
+    - **start_date** ISO8601 format (string, optional)
+    - **end_date** ISO8601 format (string, optional)
+- Result on success: **project_id**
 - Result on failure: **false**
 
 Request example:
@@ -48,7 +48,7 @@ getProjectById
 
 - Purpose: **Get project information**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
 - Result on success: **project properties**
 - Result on failure: **null**
 
@@ -293,13 +293,13 @@ updateProject
 
 - Purpose: **Update a project**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
     - **name** (string, optional)
     - **description** (string, optional)
-    - **owner\_id** (integer, optional)
+    - **owner_id** (integer, optional)
     - **identifier** (string, optional)
-    - **start\_date** ISO8601 format (string, optional)
-    - **end\_date** ISO8601 format (string, optional)
+    - **start_date** ISO8601 format (string, optional)
+    - **end_date** ISO8601 format (string, optional)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -331,7 +331,7 @@ removeProject
 -------------
 
 - Purpose: **Remove a project**
-- Parameters: **project\_id** (integer, required)
+- Parameters: **project_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -363,7 +363,7 @@ enableProject
 
 - Purpose: **Enable a project**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -395,7 +395,7 @@ disableProject
 
 - Purpose: **Disable a project**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -427,7 +427,7 @@ enableProjectPublicAccess
 
 - Purpose: **Enable public access for a given project**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -459,7 +459,7 @@ disableProjectPublicAccess
 
 - Purpose: **Disable public access for a given project**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -491,7 +491,7 @@ getProjectActivity
 
 - Purpose: **Get activity stream for a project**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
 - Result on success: **List of events**
 - Result on failure: **false**
 
@@ -513,7 +513,7 @@ getProjectActivities
 
 - Purpose: **Get Activityfeed for Project(s)**
 - Parameters:
-    - **project\_ids** (integer array, required)
+    - **project_ids** (integer array, required)
 - Result on success: **List of events**
 - Result on failure: **false**
 

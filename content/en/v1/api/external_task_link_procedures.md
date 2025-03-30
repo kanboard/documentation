@@ -67,12 +67,12 @@ createExternalTaskLink
 
 - Purpose: **Create a new external link**
 - Parameters:
-    - **task\_id** (integer, required)
+    - **task_id** (integer, required)
     - **url** (string, required)
     - **dependency** (string, required)
     - **type** (string, optional)
     - **title** (string, optional)
-- Result on success: **link\_id**
+- Result on success: **link_id**
 - Result on failure: **false**
 
 Request example:
@@ -96,8 +96,8 @@ updateExternalTaskLink
 
 - Purpose: **Update external task link**
 - Parameters:
-    - **task\_id** (integer, required)
-    - **link\_id** (integer, required)
+    - **task_id** (integer, required)
+    - **link_id** (integer, required)
     - **title** (string, required)
     - **url** (string, required)
     - **dependency** (string, optional)
@@ -134,8 +134,8 @@ getExternalTaskLinkById
 
 - Purpose: **Get an external task link**
 - Parameters:
-    - **task\_id** (integer, required)
-    - **link\_id** (integer, required)
+    - **task_id** (integer, required)
+    - **link_id** (integer, required)
 - Result on success: **dict**
 - Result on failure: **false**
 
@@ -170,7 +170,7 @@ getAllExternalTaskLinks
 
 - Purpose: **Get all external links attached to a task**
 - Parameters:
-    - **task\_id** (integer, required)
+    - **task_id** (integer, required)
 - Result on success: **list of external links**
 - Result on failure: **false**
 
@@ -211,8 +211,8 @@ removeExternalTaskLink
 
 - Purpose: **Remove an external link**
 - Parameters:
-    - **task\_id** (integer, required)
-    - **link\_id** (integer, required)
+    - **task_id** (integer, required)
+    - **link_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 

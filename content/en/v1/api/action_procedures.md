@@ -105,7 +105,7 @@ getCompatibleActionEvents
 
 - Purpose: **Get list of events compatible with an action**
 - Parameters:
-    - **action\_name** (string, required)
+    - **action_name** (string, required)
 - Result on success: **list of events**
 - Result on failure: **false**
 
@@ -144,7 +144,7 @@ getActions
 
 - Purpose: **Get list of actions for a project**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
 - Result on success: **list of actions properties**
 - Result on failure: **false**
 
@@ -187,11 +187,11 @@ createAction
 
 - Purpose: **Create an action**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **event\_name** (string, required)
-    - **action\_name** (string, required)
+    - **project_id** (integer, required)
+    - **event_name** (string, required)
+    - **action_name** (string, required)
     - **params** (key/value parameters, required)
-- Result on success: **action\_id**
+- Result on success: **action_id**
 - Result on failure: **false**
 
 Request example:
@@ -228,7 +228,7 @@ removeAction
 
 - Purpose: **Remove an action**
 - Parameters:
-    - **action\_id** (integer, required)
+    - **action_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 

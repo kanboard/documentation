@@ -11,7 +11,7 @@ getMemberGroups
 
 - Purpose: **Get all groups for a given user**
 - Parameters:
-    - **user\_id** (integer, required)
+    - **user_id** (integer, required)
 - Result on success: **List of groups**
 - Result on failure: **false**
 
@@ -48,7 +48,7 @@ getGroupMembers
 
 - Purpose: **Get all members of a group**
 - Parameters:
-    - **group\_id** (integer, required)
+    - **group_id** (integer, required)
 - Result on success: **List of users**
 - Result on failure: **false**
 
@@ -100,8 +100,8 @@ addGroupMember
 
 - Purpose: **Add a user to a group**
 - Parameters:
-    - **group\_id** (integer, required)
-    - **user\_id** (integer, required)
+    - **group_id** (integer, required)
+    - **user_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -134,8 +134,8 @@ removeGroupMember
 
 - Purpose: **Remove a user from a group**
 - Parameters:
-    - **group\_id** (integer, required)
-    - **user\_id** (integer, required)
+    - **group_id** (integer, required)
+    - **user_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -168,8 +168,8 @@ isGroupMember
 
 - Purpose: **Check if a user is member of a group**
 - Parameters:
-    - **group\_id** (integer, required)
-    - **user\_id** (integer, required)
+    - **group_id** (integer, required)
+    - **user_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 

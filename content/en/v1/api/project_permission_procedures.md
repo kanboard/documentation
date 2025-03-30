@@ -11,8 +11,8 @@ getProjectUsers
 
 - Purpose: **Get all members of a project**
 - Parameters:
-    - **project\_id** (integer, required)
-- Result on success: **Dictionary of user\_id => user name**
+    - **project_id** (integer, required)
+- Result on success: **Dictionary of user_id => user name**
 - Result on failure: **false**
 
 Request example:
@@ -23,7 +23,7 @@ Request example:
     "method": "getProjectUsers",
     "id": 1601016721,
     "params": [
-        "1"
+        1
     ]
 }
 ```
@@ -46,9 +46,9 @@ getAssignableUsers
 - Purpose: **Get users that can be assigned to a task for a project**
     (all members except viewers)
 - Parameters:
-    - **project\_id** (integer, required)
-    - **prepend\_unassigned** (boolean, optional, default is false)
-- Result on success: **Dictionary of user\_id => user name**
+    - **project_id** (integer, required)
+    - **prepend_unassigned** (boolean, optional, default is false)
+- Result on success: **Dictionary of user_id => user name**
 - Result on failure: **false**
 
 Request example:
@@ -81,8 +81,8 @@ addProjectUser
 
 - Purpose: **Grant access to a project for a user**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **user\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **user_id** (integer, required)
     - **role** (string, optional)
 - Result on success: **true**
 - Result on failure: **false**
@@ -117,8 +117,8 @@ addProjectGroup
 
 - Purpose: **Grant access to a project for a group**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **group\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **group_id** (integer, required)
     - **role** (string, optional)
 - Result on success: **true**
 - Result on failure: **false**
@@ -152,8 +152,8 @@ removeProjectUser
 
 - Purpose: **Revoke user access to a project**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **user\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **user_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -186,8 +186,8 @@ removeProjectGroup
 
 - Purpose: **Revoke group access to a project**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **group\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **group_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 
@@ -220,8 +220,8 @@ changeProjectUserRole
 
 - Purpose: **Change role of a user for a project**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **user\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **user_id** (integer, required)
     - **role** (string, required)
 - Result on success: **true**
 - Result on failure: **false**
@@ -256,8 +256,8 @@ changeProjectGroupRole
 
 - Purpose: **Change role of a group for a project**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **group\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **group_id** (integer, required)
     - **role** (string, required)
 - Result on success: **true**
 - Result on failure: **false**
@@ -292,8 +292,8 @@ getProjectUserRole
 
 - Purpose: **Get the role of a user for a given project**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **user\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **user_id** (integer, required)
 - Result on success: **role name**
 - Result on failure: **false**
 

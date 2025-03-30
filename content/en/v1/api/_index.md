@@ -13,61 +13,46 @@ aliases:
 
 Introduction
 ------------
-
-### User and application API
-
 There are two types of API access:
 
-#### Application API
+### Application API
 
-- Access to the API with the user "jsonrpc" and the token available on
-    the settings page
-- Access to all procedures
-- No permission checked
-- There is no user session on the server
-- No access to procedures that starts with "My..." (example: "getMe"
-    or "getMyProjects")
-- Example of possible clients: tools to migrate/import data, create
-    tasks from another system, etc...
+- Access the API with the user "jsonrpc" and the token available on the settings page.
+- Access all procedures.
+- No permissions are checked.
+- There is no user session on the server.
+- No access to procedures that start with "My..." (e.g., "getMe" or "getMyProjects").
+- Example of possible clients: tools to migrate/import data, create tasks from another system, etc.
 
-#### User API
+### User API
 
-- Access to the API with the user credentials (username and password)
-- You can also generate a personal access token instead of your
-    password
-- Application role and project permissions are checked for each
-    procedure
-- A user session is created on the server
-- Example of possible clients: native mobile/desktop application,
-    command line utility, etc...
+- Access the API with user credentials (username and password).
+- You can also generate a personal access token instead of your password.
+- Application roles and project permissions are checked for each procedure.
+- A user session is created on the server.
+- Example of possible clients: native mobile/desktop applications, command-line utilities, etc.
 
 Security
 --------
 
-- Always use HTTPS with a valid certificate (avoid clear text
-    communication)
-- If you develop a mobile application, it\'s your responsability to
-    store securely the user credentials on the device
-- After 3 authentication failures on the user API, the end-user have
-    to unlock his account by using the login form
+- Always use HTTPS with a valid certificate (avoid clear-text communication).
+- If you develop a mobile application, it\'s your responsibility to store user credentials securely on the device.
+- After three authentication failures on the user API, the end-user must unlock their account using the login form.
 
 {{< hint type="warning" >}}
-Since Kanboard v1.2.8, people with two-factor authentication enabled must use API keys.
+Since Kanboard v1.2.8, users with two-factor authentication enabled must use API keys.
 {{</ hint >}}
 
 ## Protocol
 
-Kanboard uses the protocol Json-RPC to interact with external programs.
+Kanboard uses the JSON-RPC protocol to interact with external programs.
 
-JSON-RPC is a remote procedure call protocol encoded in JSON. Almost the
-same thing as XML-RPC but with the JSON format.
+JSON-RPC is a remote procedure call protocol encoded in JSON. It is similar to XML-RPC but uses the JSON format.
 
-We use the [version 2 of the
-protocol](http://www.jsonrpc.org/specification). You must call the API
-with a `POST` HTTP request.
+Kanboard use [version 2 of the protocol](http://www.jsonrpc.org/specification).
+You must call the API with a `POST` HTTP request.
 
-Kanboard support batch requests, so you can make multiple API calls in a
-single HTTP request. It's particularly useful for mobile clients with
-higher network latency.
+Kanboard supports batch requests, allowing you to make multiple API calls in a single HTTP request.
+This is particularly useful for mobile clients with higher network latency.
 
 ## API Procedures

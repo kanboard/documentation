@@ -11,7 +11,7 @@ getColumns
 
 - Purpose: **Get all columns information for a given project**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
 - Result on success: **columns properties**
 - Result on failure: **empty list**
 
@@ -65,7 +65,7 @@ getColumn
 
 - Purpose: **Get a single column**
 - Parameters:
-    - **column\_id** (integer, required)
+    - **column_id** (integer, required)
 - Result on success: **column properties**
 - Result on failure: **null**
 
@@ -103,8 +103,8 @@ changeColumnPosition
 
 - Purpose: **Change the column position**
 - Parameters:
-    - **project\_id** (integer, required)
-    - **column\_id** (integer, required)
+    - **project_id** (integer, required)
+    - **column_id** (integer, required)
     - **position** (integer, required, must be >= 1)
 - Result on success: **true**
 - Result on failure: **false**
@@ -139,9 +139,9 @@ updateColumn
 
 - Purpose: **Update column properties**
 - Parameters:
-    - **column\_id** (integer, required)
+    - **column_id** (integer, required)
     - **title** (string, required)
-    - **task\_limit** (integer, optional)
+    - **task_limit** (integer, optional)
     - **description** (string, optional)
 - Result on success: **true**
 - Result on failure: **false**
@@ -176,11 +176,11 @@ addColumn
 
 - Purpose: **Add a new column**
 - Parameters:
-    - **project\_id** (integer, required)
+    - **project_id** (integer, required)
     - **title** (string, required)
-    - **task\_limit** (integer, optional)
+    - **task_limit** (integer, optional)
     - **description** (string, optional)
-- Result on success: **column\_id**
+- Result on success: **column_id**
 - Result on failure: **false**
 
 Request example:
@@ -212,7 +212,7 @@ removeColumn
 
 - Purpose: **Remove a column**
 - Parameters:
-    - **column\_id** (integer, required)
+    - **column_id** (integer, required)
 - Result on success: **true**
 - Result on failure: **false**
 

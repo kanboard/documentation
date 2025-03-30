@@ -1,5 +1,5 @@
 ---
-title: User API Specific Procedures
+title: Current User API Procedures
 toc: true
 menu:
     main:
@@ -244,7 +244,7 @@ createMyPrivateProject
 - Parameters:
     - **name** (string, required)
     - **description** (string, optional)
-- Result on success: **project\_id**
+- Result on success: **project_id**
 - Result on failure: **false**
 
 Request example:
@@ -275,7 +275,7 @@ getMyProjectsList
 
 - Purpose: **Get projects of the connected user**
 - Parameters: None
-- Result on success: **dictionary of project\_id => project\_name**
+- Result on success: **dictionary of project_id => project_name**
 - Result on failure: **false**
 
 Request example:

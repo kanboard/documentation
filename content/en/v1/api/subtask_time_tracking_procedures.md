@@ -1,5 +1,5 @@
 ---
-title: Subtask Time Tracking API procedures
+title: Subtask Time Tracking API Procedures
 toc: true
 menu:
     main:
