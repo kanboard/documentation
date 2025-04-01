@@ -48,10 +48,26 @@ define('MAIL_SMTP_USERNAME', 'username');
 define('MAIL_SMTP_PASSWORD', 'super password');
 ```
 
-You can also use a secure connection (TLS or SSL):
+The `MAIL_SMTP_ENCRYPTION` option accepts only the following values:
+
+- `null`: No encryption.
+- `ssl`: Use TLS encryption (commonly used with port 465).
+- `tls`: Use STARTTLS encryption (commonly used with port 587).
+
+Ensure you select the appropriate value based on your SMTP server's requirements.
+
+Example to use the port 465 and TLS:
 
 ```php
-define('MAIL_SMTP_ENCRYPTION', 'ssl'); // Valid values: null, "ssl", or "tls"
+define('MAIL_SMTP_PORT', 465);
+define('MAIL_SMTP_ENCRYPTION', 'ssl');
+```
+
+Example to use the port 587 and `STARTTLS`:
+
+```php
+define('MAIL_SMTP_PORT', 587);
+define('MAIL_SMTP_ENCRYPTION', 'tls');
 ```
 
 Some servers reject emails based on the hostname transmitted with the HELO (EHLO) command (see RFC 5321). You can explicitly set the hostname used in the HELO command:
@@ -81,6 +97,8 @@ This is the default configuration:
 ```php
 define('MAIL_TRANSPORT', 'mail');
 ```
+
+The PHP built-in mail feature relies on the configuration in the `php.ini` file. For more details, refer to the official PHP documentation: [PHP Mail Configuration](https://www.php.net/manual/en/mail.configuration.php).
 
 ### Sender Email Address
 
