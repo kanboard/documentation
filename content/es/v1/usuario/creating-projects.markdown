@@ -5,22 +5,22 @@ menu:
         parent: Guía del usuario
 ---
 
-Kanboard puede manejar múltiples proyectos. Hay dos tipos de proyectos
+Kanboard puede manejar múltiples proyectos. Hay dos tipos de proyectos:
 
 - Proyectos por equipos
-- Proyectos privados pra una sola persona
+- Proyectos privados para una sola persona
 
-Creando proyectos para multiples usuarios
+Creando proyectos para múltiples usuarios
 ------------------------------------------
 
 - Solamente los administradores y los administradores de proyecto pueden crear los proyectos.
-- La gestión de usuarios está disponible
+- La gestión de usuarios está disponible.
 
 Desde el dashboard, click en el link **Nuevo proyecto**:
 
 ![Formulario para la creación de proyecto](/images/v1/new-project.png)
 
-Es muy facil , solo tienes que buscar un nombre para tu proyecto!
+Es muy fácil, ¡solo tienes que buscar un nombre para tu proyecto!
 
 Crear un proyecto privado
 --------------------------
@@ -35,10 +35,10 @@ Desde el dashboard, haga clic en el enlace **Nuevo proyecto privado**.
 Crear proyectos desde otro proyecto
 --------------------------------------
 
-Cuando tu creas un nuevo proyecto, tu puedes escoger o duplicar las propiedades de otro proyecto :
+Cuando creas un nuevo proyecto, puedes escoger duplicar las propiedades de otro proyecto:
 
-- Permisos 
+- Permisos
 - Acciones
 - Swimlanes
-- Categorias
+- Categorías
 - Tareas

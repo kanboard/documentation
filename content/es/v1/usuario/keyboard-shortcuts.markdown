@@ -11,8 +11,8 @@ Vistas de proyectos (Board, Calendario, Lista, Gantt)
 -----------------------------------------------------
 
 - Cambie a la visión general del proyecto = **v o**
-- Cambie ala vista del tablero = **v b** (presiona **v** y despues **b**)
-- Cambie ala vista del calendario = **v c**
+- Cambie a la vista del tablero = **v b** (presiona **v** y después **b**)
+- Cambie a la vista del calendario = **v c**
 - Cambie a la vista de lista = **v l**
 - Cambie a la vista de Gantt = **v g**
 
@@ -36,7 +36,7 @@ Aplicación
 
 - Visualizar la lista de atajos de teclado = **?**
 - Abrir tablero y cambiarlo = **b**
-- Ir a la caja de busqueda = **f**
-- Eliminar la caja de busqueda = **r**
-- Cerrar dialog box = **ESC**
-- Submit al formulario = **CTRL+ENTER** or **⌘+ENTER**
+- Ir a la caja de búsqueda = **f**
+- Eliminar la caja de búsqueda = **r**
+- Cerrar cuadro de diálogo = **ESC**
+- Enviar formulario = **CTRL+ENTER** o **⌘+ENTER**
