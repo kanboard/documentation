@@ -7,7 +7,7 @@ menu:
 
 Pro každý projekt je možné úkoly vizualizovat s několika pohledy: **Nástěnka, Kalendář, Seznam a Gantt**.
 V každém zobrazení se zobrazí výsledek pole filtru v horní části.
-Vyhledávač používá advanced syntax.
+Vyhledávač používá pokročilou syntaxi.
 
 Zobrazení nástěnky
 ------------------

@@ -18,7 +18,7 @@ Vizualizujte svůj pracovní postup
 Omezte množství své rozdělané práce
 -----------------------------------
 
-- Slepšuje soustředění, tím že se vyhne souběžné práci
+- Zlepšuje soustředění, tím že se vyhýbá souběžné práci
 - Každá fáze může mít limity pro rozdělanou práci
 - Limity pomáhají identifikovat překážky
 - Limity pomáhají vyhnout se práci na příliš mnoha úlohách současně

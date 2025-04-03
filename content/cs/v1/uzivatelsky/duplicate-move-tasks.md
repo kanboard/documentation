@@ -17,7 +17,7 @@ Nový úkol bude vytvořen se stejnými vlastnostmi jako originál.
 Kopírovat úkol do jiného projektu
 ---------------------------------
 
-Přejděte do zobrazení úkolů a vyberte možnost **Vytvořit kopii v jiném projektu **.
+Přejděte do zobrazení úkolů a vyberte možnost **Vytvořit kopii v jiném projektu**.
 
 ![Kopírování úkolů do jiného projektu](/images/v1/task-duplication-another-project.png)
 
@@ -27,7 +27,7 @@ Než provedete kopírování úkolů, Kanboard se vás zeptá na cílové vlastn
 
 V zásadě musíte definovat:
 
-- cílová dráha
+- Cílová dráha
 - Sloupec
 - Kategorie
 - Vlastník
@@ -44,19 +44,19 @@ Seznam kopírovaných polí
 
 Zde je seznam kopírovaných vlastností:
 
-- název
-- popis
-- datum splnění
-- barva
-- projekt
-- sloupec
-- vlastník
-- skóre
-- kategorie
-- strávený čas
-- dráha
-- stav opakování
-- spouštěč opakování
-- faktor pro opakování
-- časové okno pro opakování
-- výchozí datum pro výpočet opakování
+- Název
+- Popis
+- Datum splnění
+- Barva
+- Projekt
+- Sloupec
+- Vlastník
+- Skóre
+- Kategorie
+- Strávený čas
+- Dráha
+- Stav opakování
+- Spouštěč opakování
+- Faktor pro opakování
+- Časové okno pro opakování
+- Výchozí datum pro výpočet opakování

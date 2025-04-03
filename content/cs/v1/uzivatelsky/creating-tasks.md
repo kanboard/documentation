@@ -25,7 +25,7 @@ Popis pole:
 - **Sloupec**: Sloupec, ve kterém bude úloha vytvořena, úkol bude umístěn v dolní části.
 - **Priorita**: Priorita úkolu, rozsah lze definovat v nastavení projektu, výchozí hodnoty jsou P0 až P3.
 - **Složitost**: Používá se v agilním řízení projektů (Scrum), složitost nebo tzv. "story-points", to je číslo, které říká týmu, jak těžký je úkol. Často lidé používají Fibonacciho posloupnost.
-- **Reference**: Externí ID úkolu, např. to může být číslo ticketu, které pochází z jiného systému
+- **Reference**: Externí ID úkolu, např. to může být číslo ticketu, které pochází z jiného systému.
 - **Časový odhad**: Odhad v hodinách pro dokončení úkolu.
 - **Čas strávený**: Doba strávená při práci na úkolu.
 - **Datum zahájení**: Toto je pole pro zadání data a času zahájení.

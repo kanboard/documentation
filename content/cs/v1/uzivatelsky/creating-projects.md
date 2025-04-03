@@ -32,7 +32,7 @@ Vytváření soukromého projektu
 Na nástěnce klikněte na odkaz **Nový soukromý projekt**.
 
 Vytváření projektů z jiného projektu
---------------------------------------
+------------------------------------
 
 Při vytváření nového projektu můžete zvolit duplikování vlastností jiného projektu:
 

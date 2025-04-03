@@ -17,6 +17,6 @@ Sbalený režim
 - Pokud je název úlohy příliš dlouhý, můžete svou myš umístit přes úkol, aby se zobrazil popis s celým názvem.
 
 Rozbalený režim
--------------
+--------------
 
 ![Rozbalené úkoly](/images/v1/board-expanded-mode.png)
