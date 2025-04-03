@@ -9,12 +9,12 @@ As subtarefas são úteis para dividir o trabalho de uma tarefa.
 
 Cada subtarefa:
 
--   Pode ser atribuído a um membro do projeto
+-   Pode ser atribuída a um membro do projeto
 -   Tem três status diferentes: **Todo**, **Em andamento**,
     **Concluído**
--   Tenha informações de rastreamento de tempo: **tempo gasto** e
+-   Tem informações de rastreamento de tempo: **tempo gasto** e
     **tempo estimado**
--   Seja ordenado por posição
+-   Seja ordenada por posição
 
 Criando subtarefas
 ------------------
@@ -51,7 +51,7 @@ Temporizador da Subtarefa
 -   O temporizador registra o tempo gasto na subtarefa automaticamente.
     Você também pode alterar manualmente o valor do campo de tempo gasto
     quando você edita uma subtarefa.
--   O tempo calculado é arredondado para o trimestre mais próximo. este
-    as informações são registradas em uma tabela separada.
+-   O tempo calculado é arredondado para o trimestre mais próximo. Estas
+    informações são registradas em uma tabela separada.
 -   O tempo gasto na tarefa e o tempo estimado são atualizados
     automaticamente de acordo com a soma de todas as subtarefas.

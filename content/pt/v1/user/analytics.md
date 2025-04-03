@@ -30,7 +30,7 @@ Diagrama de Fluxo Cumulativo
 ![diagrama de fluxo cumulativo](/images/v1/cfd.png)
 
 -   Este gráfico mostra o número de tarefas cumulativamente para cada
-    coluna ao longo do tempo.
+    coluna ao longo do tempo.
 -   A ordem das legendas é a mesma que a pilha no gráfico.
 -   A cor de cada coluna é determinada automaticamente.
 -   Todos os dias, o número de tarefas é registrado para cada coluna.
@@ -48,7 +48,7 @@ O [gráfico de burndown](http://en.wikipedia.org/wiki/Burn_down_chart)
 está disponível para cada projeto.
 
 -   Este gráfico é uma representação gráfica do trabalho a ser feito
-    versus o tempo.
+    versus o tempo.
 -   O Kanboard usa a complexidade ou o ponto da história para gerar esse
     diagrama.
 -   Todos os dias, a soma dos pontos da história de cada coluna é

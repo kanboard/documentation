@@ -45,7 +45,7 @@ Listas ordenadas são prefixadas por um número como esse:
 Links
 -----
 
-    [Título do meu link] (https://kanboard.org/)
+    [Título do meu link](https://kanboard.org/)
 
     <https://kanboard.org>
 
@@ -56,7 +56,7 @@ Código fonte
 
 Use uma crase.
 
-    Execute este comando: `tail -f / var / log / messages`.
+    Execute este comando: `tail -f /var/log/messages`.
 
 ### Blocos de Código
 
@@ -75,6 +75,6 @@ Títulos
 
     # Nível de título 1
 
-    ## nível de título 2
+    ## Nível de título 2
 
-    ### nível de título 3
+    ### Nível de título 3

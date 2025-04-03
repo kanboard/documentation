@@ -23,11 +23,11 @@ Adicione uma nova ação
 
 Clique no link **Adicionar uma nova ação automática**.
 
-![ação Automatique](/images/v1/automatic-action-creation.png)
+![ação Automática](/images/v1/automatic-action-creation.png)
 
 1.  Escolha uma ação
 2.  Selecione um evento
-3.  Definir os parâmetros
+3.  Defina os parâmetros
 
 Ações disponíveis
 -----------------
@@ -61,65 +61,65 @@ Ações disponíveis
 Exemplos
 --------
 
-Aqui estão alguns exemplos usados ​​na vida real:
+Aqui estão alguns exemplos usados na vida real:
 
 ### Quando movo uma tarefa para a coluna "Concluído", fecho esta tarefa automaticamente
 
 -   Escolha uma ação: **Feche uma tarefa em uma coluna específica**
 -   Escolha o evento: **Mova uma tarefa para outra coluna**
--   Definir parâmetro de ação: **Coluna = Feito** (esta é a coluna
+-   Defina parâmetro de ação: **Coluna = Feito** (esta é a coluna
     destino)
 
-### Quando movo uma tarefa para a coluna "Para ser validado", atribui essa tarefa a um usuário específico
+### Quando movo uma tarefa para a coluna "Para ser validado", atribua essa tarefa a um usuário específico
 
 -   Escolha a ação: **Atribuir a tarefa a um usuário específico**
 -   Escolha o evento: **Mova uma tarefa para outra coluna**
--   Definir os parâmetros de ação: **Coluna = Para ser validado** e
-    **Usuário = Bob** (Bob é nosso testador)
+-   Defina os parâmetros de ação: **Coluna = Para ser validado** e
+    **Usuário = Bob** (Bob é nosso testador)
 
 ### Quando movo uma tarefa para a coluna "Trabalho em andamento", atribuo essa tarefa ao usuário atual
 
 -   Escolha a ação: **Atribuir a tarefa à pessoa que realiza a ação
     quando a coluna é alterada**
 -   Escolha o evento: **Mova uma tarefa para outra coluna**
--   Definir parâmetro de ação: **Coluna = trabalho em andamento**
+-   Defina parâmetro de ação: **Coluna = Trabalho em andamento**
 
 ### Quando uma tarefa é concluída, duplique essa tarefa para outro projeto
 
 Digamos que temos dois projetos: "Pedidos do cliente" e "Produção".
-Uma vez o pedido é validado, troque-o para o projeto "Produção".
+Uma vez que o pedido é validado, troque-o para o projeto "Produção".
 
 -   Escolha uma ação: **Duplique a tarefa para outro projeto**
 -   Escolha o evento: **Fechando uma tarefa**
--   Definir parâmetros de ação: **Coluna = Validado** e **Projeto =
+-   Defina parâmetros de ação: **Coluna = Validado** e **Projeto =
     Produção**
 
 ### Quando uma tarefa é movida para a última coluna, mova exatamente a mesma tarefa para outro projeto
 
-Digamos que temos dois projetos: "ideias" e "desenvolvimento". Uma
-vez que a ideia é validado, troque-o para o projeto "Desenvolvimento".
+Digamos que temos dois projetos: "Ideias" e "Desenvolvimento". Uma
+vez que a ideia é validada, troque-a para o projeto "Desenvolvimento".
 
 -   Escolha uma ação: **Mova a tarefa para outro projeto**
 -   Escolha o evento: **Mova uma tarefa para outra coluna**
--   Definir parâmetros de ação: **Coluna = Validado** e **Projeto
-    = Desenvolvimento**
+-   Defina parâmetros de ação: **Coluna = Validado** e **Projeto =
+    Desenvolvimento**
 
 ### Eu quero atribuir automaticamente uma cor ao usuário Bob
 
 -   Escolha uma ação: **Atribuir uma cor a um usuário específico**
 -   Escolha o evento: **Alteração do responsável da tarefa**
--   Definir parâmetros de ação: **Cor = Verde** e **Designação = Bob**
+-   Defina parâmetros de ação: **Cor = Verde** e **Designação = Bob**
 
 ### Quero atribuir uma cor automaticamente à categoria definida "Solicitação de recurso"
 
 -   Escolha uma ação: **Atribuir automaticamente uma cor com base em uma
     categoria**
 -   Escolha o evento: **Criação ou modificação de tarefas**
--   Definir parâmetros de ação: **Cor = Azul** e **Categoria =
+-   Defina parâmetros de ação: **Cor = Azul** e **Categoria =
     Solicitação de funcionalidade**
 
 ### Desejo definir a data de início automaticamente quando a tarefa for movida para a coluna "Trabalho em andamento"
 
 -   Escolha uma ação: **Atualizar automaticamente a data de início**
 -   Escolha o evento: **Mova uma tarefa para outra coluna**
--   Definir parâmetros de ação: **Coluna = trabalho em andamento**
+-   Defina parâmetros de ação: **Coluna = Trabalho em andamento**

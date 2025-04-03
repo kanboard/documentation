@@ -20,8 +20,8 @@ caixa de filtro no topo.
     facilmente.
 
 Você também pode usar o atalho de teclado **\"v b\"** para alternar
-para a   visão de quadro. - Tarefas com uma sombra foram modificadas
-recentemente.
+para a visão de quadro.
+- Tarefas com uma sombra foram modificadas recentemente.
 
 ![limite de tarefas da placa](/images/v1/board-task-limit.png)
 
@@ -38,7 +38,7 @@ tempo.
 -   Você também pode usar o atalho de teclado **\"v l\"** para alternar
     para a visão de lista.
 
-Visão Global do Projeto \~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~
+### Visão Global do Projeto
 
 ![visão geral do projeto](/images/v1/project-view.png)
 
@@ -59,8 +59,8 @@ Modo encolhido:
 ![Tarefas recolhidas](/images/v1/board-collapsed-mode.png)
 
 - Se a tarefa é atribuída a alguém, as iniciais da pessoa são
-  mostradas ao lado do número da tarefa.
-- Se o título da tarefa for muito longo, você pode colocar o mouse sobre a tarefa   para mostrar uma
+  mostradas ao lado do número da tarefa.
+- Se o título da tarefa for muito longo, você pode colocar o mouse sobre a tarefa para mostrar uma
 dica da ferramenta com o título completo.
 
 Modo expandido:
@@ -71,7 +71,7 @@ Rolagem Horizontal e Modo Compacto
 ----------------------------------
 
 Quando o quadro não cabe na sua tela, uma barra de rolagem horizontal
-aparecem na parte inferior.
+aparece na parte inferior.
 
 No entanto, é possível mudar a visualização para modo compacto para
 exibir todas colunas na sua tela.

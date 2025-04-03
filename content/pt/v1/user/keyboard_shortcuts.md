@@ -15,7 +15,7 @@ Visões do projeto (Quadro, Calendário, Lista, Gantt)
 -   Mudar para a visão do quadro = **v b** (pressione em **v** depois
     **b**)
 -   Mudar para a visão do calendário = **v c**
--   Mudar para a visão do lista = **v l**
+-   Mudar para a visão de lista = **v l**
 -   Mudar para a visão do Gantt = **v g**
 
 Visão do quadro

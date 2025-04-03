@@ -18,28 +18,28 @@ Em seguida, o formulário de criação de tarefas é exibido:
 
 -   **Título**: O título da sua tarefa, que será exibido no quadro.
 -   **Descrição**: Descrição que usa a sintaxe do Markdown.
--   **Etiquetas**: a lista de etiquetas associadas a tarefas.
+-   **Etiquetas**: A lista de etiquetas associadas a tarefas.
 -   **Criar outra tarefa**: Marque esta caixa se você quiser criar uma
     tarefa similar (alguns campos serão pré-preenchidos).
--   **Cor**: escolha a cor do cartão.
+-   **Cor**: Escolha a cor do cartão.
 -   **Responsável**: A pessoa que irá trabalhar na tarefa.
--   **Categoria**: somente uma categoria pode ser atribuída a uma tarefa
+-   **Categoria**: Somente uma categoria pode ser atribuída a uma tarefa
     (visível somente se os projetos tiverem categorias).
 -   **Coluna**: A coluna onde a tarefa será criada, sua tarefa será
     posicionada na parte inferior.
--   **Prioridade**: prioridade da tarefa, o intervalo pode ser definido
+-   **Prioridade**: Prioridade da tarefa, o intervalo pode ser definido
     nas configurações do projeto, os valores padrão são P0 a P3.
 -   **Complexidade**: Utilizado no gerenciamento ágil de projetos
-    (Scrum), a  complexidade ou pontos de história é um número que diz à
+    (Scrum), a complexidade ou pontos de história é um número que diz à
     equipe o quão difícil a história é. Muitas vezes, as pessoas usam a
     série de Fibonacci.
 -   **Referência**: ID externo para a tarefa, por exemplo, pode ser o
-    número do bilhete que vem de outro sistema
--   **Estimativa original**: estimativa em horas para concluir a tarefa.
+    número do bilhete que vem de outro sistema.
+-   **Estimativa original**: Estimativa em horas para concluir a tarefa.
 -   **Tempo Gasto**: Tempo gasto trabalhando na tarefa.
--   **Data de início**: este é um campo de data e hora.
--   **Data de Vencimento**: as tarefas vencidas terão uma data de
-    vencimento em vermelho e as devidas as datas estarão pretas no
+-   **Data de início**: Este é um campo de data e hora.
+-   **Data de Vencimento**: As tarefas vencidas terão uma data de
+    vencimento em vermelho e as datas que ainda não venceram estarão em preto no
     quadro. Vários formatos de data são aceitos além do selecionador de
     data.
 
@@ -98,7 +98,7 @@ duplicação, você tem que escolher as novas propriedades da tarefa.
 -   `time_estimated`
 -   `swimlane_id`
 -   `recurrence_status`
--   `recorrência_trigger`
+-   `recurrence_trigger`
 -   `recurrence_factor`
 -   `recurrence_timeframe`
 -   `recurrence_basedate`
@@ -139,11 +139,11 @@ Os relacionamentos padrão são:
 
 -   **refere-se à**
 -   **bloqueia** | **está bloqueada por**
--   **está bloqueada por** | **Bloqueia**
+-   **está bloqueada por** | **bloqueia**
 -   **duplicadas** | **é duplicada por**
 -   **é duplicada por** | **duplicadas**
 -   **é filha de** | **é pai de**
--   **é pai de** | **é um filha de**
+-   **é pai de** | **é filha de**
 -   **alvos marco** | **é um marco de**
 -   **é um marco de** | **alvos marco**
 -   **corrige** | **é corrigido por**
@@ -162,9 +162,9 @@ dados.
 Disponível na visualização de tarefas, você pode ver essas informações:
 
 -   Data da ação
--   coluna de origem
+-   Coluna de origem
 -   Coluna de destino
--   Executor (usuários que moveram a tarefa)
+-   Executor (usuário que moveu a tarefa)
 -   Tempo gasto na coluna de origem
 
 Tarefas recorrentes
@@ -195,7 +195,7 @@ Existem três gatilhos que atualmente criam uma nova tarefa recorrente:
 As datas de vencimento, se definidas na tarefa atual, podem ser
 recalculadas por um dado fator de dias, meses ou anos. A data base para
 o cálculo da nova data de vencimento pode ser a data de vencimento
-existente ou a ação encontro.
+existente ou a data da ação.
 
 Adicionando Capturas de Tela
 ----------------------------
@@ -203,7 +203,7 @@ Adicionando Capturas de Tela
 Você pode copiar e colar imagens diretamente no Kanboard para economizar
 tempo. Estas imagens são carregadas como anexos da tarefa.
 
-Isso é especialmente útil para fazer capturas de telas para descrever um
+Isso é especialmente útil para fazer capturas de tela para descrever um
 problema, por exemplo.
 
 Você pode adicionar capturas de tela diretamente do quadro clicando no
@@ -221,12 +221,12 @@ No Mac OS X, você pode usar esses atalhos para fazer capturas de tela:
 -   Command-Control-Shift-3: Faça uma captura de tela da tela e salve-a
     para a área de transferência
 -   Command-Control-Shift-4, em seguida, selecione uma área: faça uma
-    captura de tela da área e salve-o na área de transferência
+    captura de tela da área e salve-a na área de transferência
 -   Command-Control-Shift-4, depois espaço, depois clique em uma janela:
     Captura de tela de uma janela e salve-a na área de transferência
 
 Existem também vários aplicativos de terceiros que podem ser usados
-​​para capturas de tela com anotações e formas.
+para capturas de tela com anotações e formas.
 
 Etiquetas
 ---------
@@ -245,15 +245,15 @@ O formulário de preenchimento automático será exibido para sugerir as
 etiquetas disponíveis.
 
 Você também pode criar etiquetas diretamente no formulário de tarefas.
-Por padrão, quando você cria etiquetas de um formulário de tarefas que
-eles estão associados ao atual projeto:
+Por padrão, quando você cria etiquetas em um formulário de tarefas,
+elas são associadas ao projeto atual:
 
 ![Etiquetas do projeto](/images/v1/tags-projects.png)
 
 Todas as etiquetas podem ser gerenciadas nas configurações do projeto.
 
-Para definir etiquetas globalmente para todos os projetos, vá para o
-aplicativo configurações:
+Para definir etiquetas globalmente para todos os projetos, vá para as
+configurações do aplicativo:
 
 ![Etiquetas globais](/images/v1/tags-global.png)
 
@@ -275,8 +275,8 @@ na exibição de tarefa.
 -   O tempo de execução é o tempo entre a criação da tarefa e a data da
     conclusão (tarefa fechada).
 -   O tempo de ciclo é o tempo entre a data de início e a data
-    de conclusão.
--   Se a tarefa não for fechada, a hora atual é usada em vez da data de
+    de conclusão.
+-   Se a tarefa não for fechada, a hora atual é usada em vez da data de
     conclusão.
 -   Se a data de início não for especificada, o tempo do ciclo não será
     calculado.

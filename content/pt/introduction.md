@@ -38,13 +38,13 @@ Listas do Kanban vs Todo
 
 ### Listas de tarefas:
 
--   fase única (apenas uma lista de itens)
+-   Fase única (apenas uma lista de itens)
 -   Multitarefa possível (não eficiente)
 
 ### Kanban:
 
 -   Múltiplas fases, cada coluna representa um passo
--   Traga o foco e evite a multitarefa definindo um limite de trabalho
+-   Traz o foco e evita a multitarefa definindo um limite de trabalho
     em andamento por coluna
 
 Kanban vs Scrum
@@ -59,7 +59,7 @@ Kanban vs Scrum
 -   Quadro do Scrum é limpo entre as sprints
 -   Scrum tem funções pré-definidas como scrum master, product owners e
     equipe
--   Um monte de reuniões: planejamento, backlogs grooming, stand-up
+-   Um monte de reuniões: planejamento, backlog grooming, stand-ups
     diários, retrospectiva
 
 ### Kanban:
@@ -104,7 +104,7 @@ negócios:
 
 ### Gestão Empresarial Lean
 
--   ideias
+-   Ideias
 -   Desenvolvimento
 -   Mensuração
 -   Análise

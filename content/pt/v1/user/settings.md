@@ -109,7 +109,7 @@ automaticamente.
 ### Permitir apenas uma subtarefa em andamento ao mesmo tempo para um usuário
 
 Quando esta opção está habilitada, um usuário pode trabalhar com apenas
-uma subtarefa em um tempo.
+uma subtarefa por vez.
 
 Se outra subtarefa tiver o status \"em andamento\", o usuário verá a
 caixa de diálogo:
@@ -124,9 +124,9 @@ caixa de diálogo:
 
 ### Incluir tarefas fechadas no diagrama de fluxo cumulativo
 
--   Se habilitado, as tarefas fechadas serão incluídas no fluxo cumulativo diagrama.
+-   Se habilitado, as tarefas fechadas serão incluídas no diagrama de fluxo cumulativo.
 -   Se desativado, apenas as tarefas abertas serão incluídas.
--   Esta opção afeta a coluna `total` da tabela `project_daily_column_stats`
+-   Esta opção afeta a coluna `total` da tabela `project_daily_column_stats`
 
 Configurações do quadro
 -----------------------
@@ -168,7 +168,7 @@ calendário** à esquerda.
 
 Existem dois calendários diferentes no Kanboard:
 
--   calendário do projeto
+-   Calendário do projeto
 -   Calendário do usuário (disponível no painel)
 
 ### Calendário do Projeto
@@ -203,8 +203,8 @@ Mostrar subtarefas com base no rastreamento de tempo:
 
 Mostrar estimativas de subtarefa (previsão de trabalho futuro):
 
--   Exibir a estimativa do trabalho futuro para sub-tarefas no status
-    "A fazer" e com um valor definido de "estimativa".
+-   Exibir a estimativa do trabalho futuro para subtarefas no status
+    "A fazer" e com um valor definido de "estimativa".
 
 Configurações de Link
 ---------------------
@@ -214,7 +214,7 @@ aplicativo (**Configurações > Configurações de link**)
 
 ![Link Labels](/images/v1/link-labels.png)
 
-Cada etiqueta pode ter um rótulo oposto definido. 
-Se não houver oposto, o rótulo é considerado bidirecionnal.
+Cada etiqueta pode ter um rótulo oposto definido.
+Se não houver oposto, o rótulo é considerado bidirecional.
 
 ![Link Label Creation](/images/v1/link-label-creation.png)

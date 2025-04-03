@@ -56,16 +56,16 @@ Menções do usuário
 ------------------
 
 O Kanboard oferece a possibilidade de enviar notificações quando alguém
-mencionado.
+é mencionado.
 
 Se você precisar chamar a atenção de alguém em um comentário ou em uma
-tarefa, use o símbolo @ seguido do nome de usuário. Kanboard será
-automaticamente sugerir uma lista de usuários:
+tarefa, use o símbolo @ seguido do nome de usuário. Kanboard
+automaticamente sugerirá uma lista de usuários:
 
 ![Menção do usuário](/images/v1/user-mentions.png)
 
 -   No momento, apenas a descrição da tarefa e a área de texto do
-    comentário tem esse recurso ativado.
+    comentário têm esse recurso ativado.
 -   O usuário menciona funciona apenas durante a criação de tarefas e
     comentários.
 -   Para ser notificado, os usuários mencionados precisam ser membros do
@@ -74,5 +74,5 @@ automaticamente sugerir uma lista de usuários:
 -   A menção \@username está vinculada ao perfil do usuário público.
 
 A notificação é enviada de acordo com as configurações do usuário, pode
-ser uma e-mail, uma notificação na web ou até mesmo uma mensagem no
+ser um e-mail, uma notificação na web ou até mesmo uma mensagem no
 Slack/Hipchat/Jabber se você instalou os plugins corretos.

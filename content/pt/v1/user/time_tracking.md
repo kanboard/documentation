@@ -29,16 +29,16 @@ Acompanhamento de tempo de subtarefa
 As subtarefas também têm os campos "tempo gasto" e "tempo estimado".
 
 Quando você altera o valor desses campos, **o rastreamento do tempo da
-tarefa os valores são atualizados automaticamente e se tornam a soma de
-todas as subtarefas valores**.
+tarefa e os valores são atualizados automaticamente e se tornam a soma de
+todas as subtarefas e valores**.
 
 Kanboard registra o tempo entre cada mudança de status de subtarefa em
-um tabela separada.
+uma tabela separada.
 
--   Alterar o status da subtarefa de **A fazer** para **em pogresso**
-    registra hora de início
--   Alterar o status da subtarefa de **em andamento** para **concluído**
-    registra o final tempo, mas também atualizar o tempo gasto da
+-   Alterar o status da subtarefa de **A fazer** para **em progresso**
+    registra a hora de início
+-   Alterar o status da subtarefa de **em progresso** para **concluído**
+    registra o tempo final, mas também atualiza o tempo gasto da
     subtarefa e da tarefa
 
 A divisão de todos os registros é visível na página de visualização de
@@ -53,8 +53,8 @@ qualquer momento:
 
 -   O cronômetro não depende do status da subtarefa
 -   Cada vez que você inicia o temporizador, um novo registro é criado
-    no tempo tabela de rastreamento
--   Cada vez que você parar o relógio, a data final é gravada no tempo
-    tabela de rastreamento
+    na tabela de rastreamento de tempo
+-   Cada vez que você para o relógio, a data final é gravada na tabela
+    de rastreamento de tempo
 -   O tempo gasto é arredondado para o trimestre mais próximo (somente
     para Kanboard < 1.0.32)

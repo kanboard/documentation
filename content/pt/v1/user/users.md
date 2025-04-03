@@ -26,7 +26,7 @@ Funções do usuário
 
 ### Papéis na Aplicação
 
-Cada usuário da Kanboard possui uma dessas funções:
+Cada usuário do Kanboard possui uma dessas funções:
 
 Papel                              | Descrição
 -----------------------------------| -----------------------------------
@@ -44,7 +44,7 @@ Papel                   | Descrição
 Gerente de Projeto      | Pode alterar as configurações do projeto, o acesso ao gráfico de Gantt e relatórios
 Membro de Projeto       | Pode criar tarefas e usar o quadro
 Visualizador do Projeto | Acesso somente leitura ao quadro e às tarefas
-     
+
 As funções de projeto personalizadas podem ser criadas para aplicar um
 conjunto de restrições aos usuários.
 

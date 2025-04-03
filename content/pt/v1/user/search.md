@@ -6,7 +6,7 @@ menu:
 ---
 
 O Kanboard usa uma linguagem de consulta simples para pesquisa avançada.
-Você pode pesquisa em tarefas, comentários, subtarefas, links, mas
+Você pode pesquisar em tarefas, comentários, subtarefas, links, mas
 também na atividade corrente.
 
 Exemplo de consulta
@@ -15,7 +15,7 @@ Exemplo de consulta
 Este exemplo retornará todas as tarefas atribuídas a mim com uma data de
 vencimento de amanhã e um título que contenha "meu título":
 
-    assigne:me due:tomorrow meu título
+    assignee:me due:tomorrow meu título
 
 Pesquisa de Projetos
 --------------------
@@ -95,7 +95,7 @@ Atributo: **modified** ou **updated**
 
 Os formatos de data são os mesmos que a data de vencimento.
 
-Há também um filtro por tarefas modificadas recentemente: `due:recently`.
+Há também um filtro por tarefas modificadas recentemente: `modified:recently`.
 
 Esta consulta usará o mesmo valor que o período de destaque do quadro configurado nas configurações.
 
@@ -135,24 +135,24 @@ Atributo: **category**
 -   Encontre todas as tarefas que possuem essas categorias: `category:"Bug" category:"Melhorias"`
 -   Encontre tarefas sem categoria atribuída: `category:none`
 
-### Pesquisa por projeto
+### Pesquisar por projeto
 
 Atributo: **project**
 
 -   Localizar tarefas por nome de projeto: `project:"nome do meu projeto"`
 -   Localizar tarefas por id do projeto: `project:23`
--   Encontre tarefas para vários projetos: `project:"Meu projeto Um" projeto:"Meu projeto B"`
+-   Encontre tarefas para vários projetos: `project:"Meu projeto Um" project:"Meu projeto B"`
 
 ### Pesquisar por colunas
 
 Atributo: **column**
 
 -   Localizar tarefas por nome de coluna: `column:"Em progresso"`
--   Localizar tarefas para várias colunas: `column:"Backlog" column: "A Fazer"`
+-   Localizar tarefas para várias colunas: `column:"Backlog" column:"A Fazer"`
 
 ### Pesquisar por raia
 
-Atributo: **swinlane**
+Atributo: **swimlane**
 
 -   Encontre tarefas por raia: `swimlane:"Version 42"`
 -   Encontre tarefas em várias raias: `swimlane:"Versão 1.2" swimlane:"Versão 1.3"`
@@ -169,7 +169,7 @@ Atributo: **link**
 Atributo: **comment**
 
 -   Encontre comentários que contenham este
-    título: `comment:"Minha mensagem de comentário"`
+    título: `comment:"Minha mensagem de comentário"`
 
 ### Pesquisar por etiquetas
 

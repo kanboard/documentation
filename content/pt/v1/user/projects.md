@@ -32,8 +32,6 @@ No painel, clique no link **Novo projeto**:
 
 ![formulário de criação do projeto](/images/v1/new-project.png)
 
-   Formulário de criação de projeto
-
 É muito fácil: basta encontrar um nome para o seu projeto!
 
 ### Criando um projeto privado
@@ -70,7 +68,7 @@ projeto"** à esquerda.
 -   A descrição é visível como uma dica no quadro e na página de
     listagem de projetos.
 -   Administradores e administradores de projetos podem converter um
-    projeto para um projeto de múltiplos usuários, alterando a caixa de
+    projeto privado em um projeto de múltiplos usuários, alterando a caixa de
     seleção "Projeto privado".
 -   Você também pode converter um projeto de vários usuários em um
     projeto privado.
@@ -125,7 +123,7 @@ papel. Esses papéis personalizados são definidos para cada projeto.
 Um papel personalizado herda do papel membro do projeto. Por exemplo,
 você pode querer criar um papel personalizado para forçar alguém a
 seguir um processo. Você pode ter um grupo de pessoas com permissão para
-transferir tarefas apenas de a coluna "Trabalho em progresso" para a
+transferir tarefas apenas da coluna "Trabalho em progresso" para a
 coluna "Concluído".
 
 ### Restrições Disponíveis
@@ -176,12 +174,12 @@ restrição:
 
 Por exemplo, esse papel é capaz de criar tarefas apenas na coluna
 "Backlog" e para mover tarefas entre a coluna "A fazer" e "Em
-andamento\".
+andamento".
 
 #### 4) Atribuir um papel a alguém
 
-Vá para a seção \"permissões\" no menu à esquerda e atribua o nome
-desejado papel para o usuário.
+Vá para a seção \"permissões\" no menu à esquerda e atribua o papel
+desejado ao usuário.
 
 ![função de projeto personalizada](/images/v1/custom_roles.png)
 
@@ -192,7 +190,7 @@ desejado papel para o usuário.
 ![Exemplo de criação de tarefas de restrição](/images/v1/example-restriction-task-creation.png)
 
 -   Usuários que pertencem a essa função só poderão criar novas
-    tarefas na coluna "Backlog".
+    tarefas na coluna "Backlog".
 -   A combinação das duas regras é importante, caso contrário, isso não
     funciona.
 
@@ -201,9 +199,9 @@ desejado papel para o usuário.
 ![Exemplo de status da tarefa de restrição](/images/v1/example-restriction-task-status.png)
 
 -   Usuários que pertencem a essa função poderão alterar o status da
-    tarefa  na coluna "Backlog".
--   Tarefas com o status aberto são visíveis no quadro e tarefas com o
-    status fechado está oculto por padrão no quadro.
+    tarefa na coluna "Backlog".
+-   Tarefas com o status aberto são visíveis no quadro e tarefas com o
+    status fechado estão ocultas por padrão no quadro.
 
 #### Não permitir que pessoas alterem o status da tarefa em uma coluna específica
 
@@ -223,20 +221,20 @@ entre coluna "Pronto" e "Trabalho em andamento".
 Compartilhando Painéis e Tarefas
 --------------------------------
 
-Por padrão, as placas são privadas, mas é possível tornar uma placa
-pública.
+Por padrão, os quadros são privados, mas é possível tornar um quadro
+público.
 
-Um conselho público **não pode ser modificado: ele tem acesso somente
+Um quadro público **não pode ser modificado: ele tem acesso somente
 leitura**. O acesso é protegido por um token aleatório. Somente pessoas
-que têm o URL correto podem ver o fórum.
+que têm o URL correto podem ver o quadro.
 
-Placas públicas são atualizadas automaticamente a cada 60 segundos. Os
+Quadros públicos são atualizados automaticamente a cada 60 segundos. Os
 detalhes da tarefa também estão disponíveis no modo somente leitura.
 
 Exemplos de uso:
 
--   Compartilhe sua prancha com alguém de fora da sua organização
--   Exibir a placa em uma tela grande em seu escritório
+-   Compartilhe seu quadro com alguém de fora da sua organização
+-   Exibir o quadro em uma tela grande em seu escritório
 
 ### Ativar acesso público
 
@@ -247,7 +245,7 @@ clique no botão **"Ativar acesso público"**.
 
 Quando o acesso público está ativado, alguns links são gerados:
 
--   Vista da placa pública
+-   Vista do quadro público
 -   link de subscrição de feeds RSS
 -   link de assinatura do iCalendar
 
@@ -262,7 +260,7 @@ Filtros Personalizados
 ----------------------
 
 Filtros personalizados permitem que você salve qualquer consulta de
-pesquisa. Desta forma, você pode estenda os filtros padrão facilmente e
+pesquisa. Desta forma, você pode estender os filtros padrão facilmente e
 salve as consultas de pesquisa mais usadas.
 
 -   Filtros personalizados são armazenados por projeto e associados ao
@@ -277,7 +275,7 @@ escolha **filtros personalizados**:
 
 ![criação de filtro personalizado](/images/v1/custom-filter-creation.png)
 
-Depois de criar seu filtro, ele aparecerá no quadro ao lado do filtros
+Depois de criar seu filtro, ele aparecerá no quadro ao lado dos filtros
 padrão:
 
 ![lista suspensa do filtro personalizado](/images/v1/custom-filter-dropdown.png)

@@ -40,10 +40,10 @@ raias.
 Dicas
 -----
 
-Ao utilizar Raias, pode-se usar do recurso ( atalho expandir tarefas),
+Ao utilizar Raias, pode-se usar o recurso (atalho expandir tarefas),
 simplesmente pressionando a tecla **S**, na visualização do quadro de
 tarefas e raias. Desta forma poderá ter melhor visualização da
 distribuição de todas as tarefas e raias em seu quadro.
 
-**Nota:** Lembrando que esse recurso, é uma melhoria do kanboard e pode ser
-utilizado, independente de utilizar Raias ou não.
+**Nota:** Lembrando que esse recurso é uma melhoria do Kanboard e pode ser
+utilizado independentemente de utilizar Raias ou não.
