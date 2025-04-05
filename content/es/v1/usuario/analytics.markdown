@@ -10,21 +10,21 @@ Cada proyecto tiene una sección de análisis. Dependiendo de cómo se está uti
 Repartición de usuarios
 -----------------------
 
-![User repartition](/images/v1/user-repartition.png)
+![Repartición de usuarios](/images/v1/user-repartition.png)
 
 Este gráfico de sectores muestra el número de tareas abiertas asignadas por usuario.
 
 Distribución de tareas
 ----------------------
 
-![Task distribution](/images/v1/task-distribution.png)
+![Distribución de tareas](/images/v1/task-distribution.png)
 
 Este gráfico de sectores da una visión general del número de tareas abiertas por columnas.
 
 Diagrama de flujo acumulado
 ---------------------------
 
-![Cumulative flow diagram](/images/v1/cfd.png)
+![Diagrama de flujo acumulado](/images/v1/cfd.png)
 
 - Este gráfico muestra el número de tareas acumuladas por cada columna a través del tiempo.
 - Cada día, el número total de tareas se registra para cada columna.
@@ -38,8 +38,8 @@ Gráfico Burn down
 
 El gráfico burn down está disponible para cada proyecto.
 
-- Este gráfico es una representación gráfica del trabajo laborado contra el tiempo.
-- Kanboard usa la complejidad o historia de puntos para generar este diagrama.
+- Este gráfico es una representación gráfica del trabajo realizado contra el tiempo.
+- Kanboard usa la complejidad o puntos de historia para generar este diagrama.
 - Todos los días, se calcula la suma de los puntos de la historia de cada columna.
 
 Tiempo promedio en cada columna
@@ -62,4 +62,4 @@ Este gráfico muestra el promedio de avances y ciclo de tiempos para las última
 
 Esos indicadores se calculan y registran todos los días durante todo el proyecto.
 
-Nota: No olvidar ejecutar todos los días el cronjob para tener estadísticas precisas.
+Nota: No olvidar ejecutar todos los días la tarea programada para tener estadísticas precisas.

@@ -13,7 +13,7 @@ Kanboard es un software de gestión de proyectos Kanban gratuito y de código ab
 - [RSS Feed](https://github.com/kanboard/kanboard/releases.atom)
 - [Mastodon](https://mastodon.social/@kanboard)
 
-Esta documentación también está disponible en [checo]({{< relref path="/_index.md" lang="cs" >}}), [francés]({{< relref path="/_index.md" lang="fr" >}}), [inglés]({{< relref path="/_index.md" lang="en" >}}), [portugués]({{< relref path="/_index.md" lang="pt" >}}), [russe]({{< relref path="/_index.md" lang="ru" >}}), y [Idioma turco]({{< relref path="/_index.md" lang="tr" >}}).
+Esta documentación también está disponible en [checo]({{< relref path="/_index.md" lang="cs" >}}), [francés]({{< relref path="/_index.md" lang="fr" >}}), [inglés]({{< relref path="/_index.md" lang="en" >}}), [portugués]({{< relref path="/_index.md" lang="pt" >}}), [ruso]({{< relref path="/_index.md" lang="ru" >}}), y [turco]({{< relref path="/_index.md" lang="tr" >}}).
 
 ## Indice
 

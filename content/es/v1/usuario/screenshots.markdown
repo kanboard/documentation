@@ -11,7 +11,7 @@ Esto es especialmente útil para tomar capturas de pantalla para describir un pr
 
 Puede agregar imágenes directamente desde el tablero haciendo clic en el menú desplegable o en la página de vista de tareas.
 
-![Drop-down screenshot menu](/images/v1/dropdown-screenshot.png)
+![Menú desplegable de capturas de pantalla](/images/v1/dropdown-screenshot.png)
 
 Para añadir una nueva imagen, tome su captura de pantalla y pegue con CTRL+V o Command+V:
 

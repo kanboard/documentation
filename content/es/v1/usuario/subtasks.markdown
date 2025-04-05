@@ -10,7 +10,7 @@ Las subtareas son útiles porque dividen el trabajo de las tareas.
 Cada subtarea:
 
 - Se puede asignar a un miembro del proyecto
-- Tiene 3 diferentes estados: **Todo**, **En progreso**, **Realizado**
+- Tiene 3 diferentes estados: **Por hacer**, **En progreso**, **Hecho**
 - Tienen información de seguimiento: **tiempo gastado** y **tiempo estimado**
 - Se ordenan por posición
 

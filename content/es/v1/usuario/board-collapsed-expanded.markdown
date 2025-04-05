@@ -6,7 +6,7 @@ menu:
 ---
 
 Las tareas en el tablero pueden visualizarse en modo colapsado o en modo expandido.
-El cambio entre el desplazamiento horizontal y la vista compacta se puede hacer con la combinación de teclas **"s"** o usar el menú drop-down que está en la parte superior izquierda.
+El cambio entre el desplazamiento horizontal y la vista compacta se puede hacer con la combinación de teclas **"s"** o usar el menú desplegable que está en la parte superior izquierda.
 
 Modo colapsado
 --------------
@@ -19,4 +19,4 @@ Modo colapsado
 Modo expandido
 --------------
 
-![Tasks expanded](/images/v1/es/board-expanded-mode.png)
+![Tareas expandidas](/images/v1/es/board-expanded-mode.png)

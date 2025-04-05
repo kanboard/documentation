@@ -12,7 +12,7 @@ Puedes definir etiquetas globalmente para todos los proyectos o solo para unos p
 
 Desde el formulario de tarea, puedes capturar las etiquetas deseadas:
 
-![Tags form](/images/v1/tags-task.png)
+![Formulario de etiquetas](/images/v1/tags-task.png)
 
 La auto-completación se forma para mostrar o sugerir etiquetas disponibles.
 
@@ -25,8 +25,8 @@ Todas las etiquetas pueden ser manejadas en configuración del proyecto.
 
 Para definir etiquetas globalmente para todos los proyectos, ve a la configuración de la aplicación:
 
-![Global Tags](/images/v1/tags-global.png)
+![Etiquetas globales](/images/v1/tags-global.png)
 
 Para buscar tareas basadas en etiquetas, solo usa el atributo "tag":
 
-![Search Tags](/images/v1/tags-search.png)
+![Buscar etiquetas](/images/v1/tags-search.png)

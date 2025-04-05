@@ -1,11 +1,11 @@
 ---
-title: Kanban vs Todo lists and Scrum
+title: Kanban vs Listas de tareas y Scrum
 ---
 
-Kanban vs Todo lists
---------------------
+Kanban vs Listas de tareas
+--------------------------
 
-### Todo lists (lista de tareas):
+### Listas de tareas (lista de tareas):
 
 - Fase única (es solo una lista de tareas)
 - Multitareas posibles (no eficiente)
@@ -21,13 +21,13 @@ Kanban vs Scrum
 
 ### Scrum:
 
-- Los sprints son time-boxed, usualmente 2 o 4 semanas
+- Los sprints son limitados en el tiempo, usualmente 2 o 4 semanas
 - No permitir cambios durante la iteración
 - La estimación es requerida
 - Utiliza la velocidad como métrica predeterminada
 - El tablero de Scrum se borra entre cada sprint
 - Scrum tiene funciones predefinidas como Scrum Master, los dueños del producto y el equipo
-- Una gran cantidad de reuniones: planeaciones, refinamiento del backlog, daily stand-up, retrospectiva
+- Una gran cantidad de reuniones: planeaciones, refinamiento de la pila de producto, reunión diaria, retrospectiva
 
 ### Kanban:
 

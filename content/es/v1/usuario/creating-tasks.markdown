@@ -18,14 +18,14 @@ Descripción de campos:
 - **Título**: El título de su tarea, que se podrá ver en el tablero.
 - **Descripción**: Descripción que usa el formato Markdown.
 - **Tags**: Lista de etiquetas asociadas a las tareas.
-- **Crear otra tarea**: Marque esta casilla si desea crear una tarea similar (serán pre-llenados algunos campos).
+- **Crear otra tarea**: Marque esta casilla si desea crear una tarea similar (serán prellenados algunos campos).
 - **Color**: Escoger el color de la tarjeta.
 - **Asignado**: Persona que trabajará en la tarea.
 - **Categoría**: Sólo una categoría puede ser asignada a una tarea (visible sólo si los proyectos tienen categorías).
 - **Columna**: La columna en la que se creará la tarea, su tarea se colocará en la parte inferior.
 - **Prioridad**: Prioridad de la tarea, el intervalo se puede definir en la configuración del proyecto, los valores por defecto son P0 a P3.
 - **Complejidad**: Se utiliza en la gestión de proyectos ágiles (Scrum), los puntos de complejidad o de historia es un número que le dice al equipo lo difícil es la historia. A menudo, las personas utilizan la serie de Fibonacci.
-- **Referencia**: ID externo para la tarea, por ejemplo, puede ser el número de entradas que provienen de otro sistema.
+- **Referencia**: Identificador externo para la tarea, por ejemplo, puede ser el número de entradas que provienen de otro sistema.
 - **Estimación original**: Estimación de horas para completar la tarea.
 - **Tiempo transcurrido**: El tiempo dedicado a trabajar en la tarea.
 - **Fecha de Inicio**: Se trata de un campo de fecha y hora.

@@ -11,7 +11,7 @@ Por ejemplo, es útil para separar las versiones de software, dividir las tareas
 Tablero con swimlanes
 ----------------------
 
-![Swimlanes](/images/v1/swimlanes.png)
+![Carriles](/images/v1/swimlanes.png)
 
 - Puedes colapsar los swimlanes haciendo click en el icono de la izquierda
 - El swimlane por defecto se muestra siempre en la parte superior
@@ -25,7 +25,7 @@ La gestión de swimlanes
 
 Para configurar swimlanes ir a la página de **configuración del proyecto** y elija la sección **Swimlanes**.
 
-![Configuración Swimlanes](/images/v1/swimlane-configuration.png)
+![Configuración Carriles](/images/v1/swimlane-configuration.png)
 
 A partir de ahí, se puede añadir un nuevo swimlane o cambiar el nombre por defecto.
 También puede desactivar y cambiar la posición de los diferentes swimlanes.
