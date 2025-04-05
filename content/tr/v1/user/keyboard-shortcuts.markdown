@@ -1,5 +1,5 @@
 ---
-title: Klavye kısayolları
+title: Klavye Kısayolları
 toc: true
 menu:
     main:
@@ -8,29 +8,29 @@ menu:
 
 Klavye kısayollarının kullanılabilirliği, bulunduğunuz sayfaya bağlıdır.
 
-Proje görünümleri (Pano, Takvim, Liste, Gantt)
+Proje Görünümleri (Pano, Takvim, Liste, Gantt)
 ----------------------------------------------
 
 - Projeye genel bakışa geçiş = **v o**
-- Pano görünümüne geçin = **v b** (**v** sonra **b** üzerine basın)
+- Pano görünümüne geçin = **v b** (**v** ardından **b** tuşuna basın)
 - Takvim görünümüne geçin = **v c**
 - Liste görünümüne geçin = **v l**
 - Gantt görünümüne geçin = **v g**
 
-Pano görünümü
+Pano Görünümü
 -------------
 
 - Yeni görev = **n**
-- Görevleri genişlet/daralt **s**
-- Panoda Kompakt/geniş görünüm = **c**
+- Görevleri genişlet/daralt = **s**
+- Panoda kompakt/geniş görünüm = **c**
 
-Görev görünümü
+Görev Görünümü
 --------------
 
 - Görevi düzenle = **e**
-- Yeni alt görev ** = **s**
+- Yeni alt görev = **s**
 - Yeni yorum = **c**
-- Yeni iç bağlantı-link = **l**
+- Yeni iç bağlantı = **l**
 
 Uygulama
 --------

@@ -7,16 +7,16 @@ menu:
 ---
 
 Kanboard'da her kullanıcı bir veya daha fazla gruba üye olabilir.
-Bir grup bir takım ya da bir organizasyon gibidir.
+Bir grup, bir takım ya da bir organizasyon gibi düşünülebilir.
 
 Yalnızca yöneticiler yeni gruplar oluşturabilir ve kullanıcıları atayabilir.
 
-Gruplar **Kullanıcı yönetimi>Tüm Grupları Görüntüle** 'den yönetilebilir.
-Buradan, gruplar oluşturabilir ve kullanıcıları atayabilirsiniz.
+Gruplar **Kullanıcı Yönetimi > Tüm Grupları Görüntüle** bölümünden yönetilebilir.
+Buradan gruplar oluşturabilir ve kullanıcıları atayabilirsiniz.
 
 ![Group Management](/images/v1/groups-management.png)
 
-Her proje yöneticisi, proje izinleri sayfası 'dan bir grup gruba erişimi yetkilendirir.
+Her proje yöneticisi, proje izinleri sayfasından bir gruba erişim yetkisi verebilir.
 
 Dış kimlik, çoğunlukla harici grup sağlayıcıları için kullanılır.
-Kanboard otomatik olarak grupları LDAP sunucularından senkronize et için bir LDAP grup sağlayıcısı sağlar.
+Kanboard, grupları LDAP sunucularından otomatik olarak senkronize etmek için bir LDAP grup sağlayıcısı sunar.

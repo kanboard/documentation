@@ -8,15 +8,15 @@ menu:
 
 Kanboard, birinden bahsedildiğinde bildirim gönderme olanağı sunar.
 
-Bir yorumda veya bir görevde birinin dikkatini çekmeniz gerekiyorsa, @ simgesini ve ardından kullanıcı adını kullanın.
-Kanboard otomatik olarak bir kullanıcı listesi önerecektir:
+Bir yorumda veya bir görevde birinin dikkatini çekmek istiyorsanız, @ simgesini ve ardından kullanıcı adını kullanın.
+Kanboard otomatik olarak bir kullanıcı listesi önerir:
 
 ![User Mention](/images/v1/user-mentions.png)
 
-- Şu anda yalnızca görev açıklaması ve açıklama metin alanı bu özelliği etkinleştirmiştir.
-- Kullanıcı, yalnızca görevler ve yorumlar oluşturma sırasında bahsediyor.
-- Bildirilmek üzere bahsedilen kullanıcıların projenin bir üyesi olması gerekiyor.
-- Birisi belirtildiğinde, bu kullanıcı bir bildirim alacaktır.
+- Şu anda yalnızca görev açıklaması ve açıklama metin alanı bu özelliği desteklemektedir.
+- Kullanıcılar yalnızca görevler ve yorumlar oluştururken bahsedilebilir.
+- Bildirilmek üzere bahsedilen kullanıcıların projenin bir üyesi olması gerekir.
+- Birisi bahsedildiğinde, bu kullanıcı bir bildirim alır.
 - @ kullanıcı adı yazısı genel kullanıcı profiliyle bağlantılıdır.
 
-Bildirim, kullanıcı ayarlarına göre gönderilir; doğru eklentileri yüklediyseniz, Slack / Hipchat / Jabber'de bir e-posta, web bildirimi veya bir mesaj olabilir.
+Bildirim, kullanıcı ayarlarına göre gönderilir. Doğru eklentileri yüklediyseniz, Slack / Hipchat / Jabber'de bir e-posta, web bildirimi veya bir mesaj olabilir.

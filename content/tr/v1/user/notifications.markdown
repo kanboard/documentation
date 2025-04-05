@@ -16,7 +16,7 @@ Harici eklentiler Slack, Hipchat, Jabber veya herhangi bir sohbet sistemine bild
 Yapılandırma
 ------------
 
-Her kullanıcının profilindeki bildirimleri etkinleştirmesi gerekir: **Kullanıcı Profili>Bildirimler**. Varsayılan olarak devre dışı bırakılmıştır.
+Her kullanıcının profilindeki bildirimleri etkinleştirmesi gerekir: **Kullanıcı Profili > Bildirimler**. Varsayılan olarak devre dışıdır.
 
 E-posta bildirimlerini almak için profilinizde geçerli bir e-posta adresine ihtiyacınız vardır ve uygulama, e-posta göndermek üzere yapılandırılmalıdır.
 
@@ -30,22 +30,22 @@ Favori bildirim yönteminizi seçebilirsiniz:
 Üye olduğunuz her proje için aşağıdakilerle ilgili bildirim almayı seçebilirsiniz:
 
 - Tüm görevler
-- Sadece size verilen görevler için
-- Sadece sizin tarafınızdan yaratılan görevler için
-- Sadece sizin tarafınızdan yaratılan ve size verilen görevler için
+- Sadece size atanan görevler
+- Sadece sizin tarafınızdan oluşturulan görevler
+- Sadece sizin tarafınızdan oluşturulan ve size atanan görevler
 
-Ayrıca yalnızca bazı projeleri seçebilirsiniz, varsayılan olarak tüm üyelerinizin tamamı bu projelerdir.
+Ayrıca yalnızca bazı projeleri seçebilirsiniz. Varsayılan olarak, üye olduğunuz tüm projeler seçilidir.
 
-Web bildirimleri
+Web Bildirimleri
 ----------------
 
-Web bildirimleri, gösterge tablosundan veya üstteki simgeden edinilebilir:
+Web bildirimleri, gösterge tablosundan veya üstteki simgeden erişilebilir:
 
 ![Web Notifications Icon](/images/v1/web-notifications-icon.png)
 
-Bildirimler bir listede gösterilir, böylece tek tek bildirimi okundu olarak veya her şey olarak işaretleyebilirsiniz.
+Bildirimler bir listede gösterilir. Tek tek bildirimleri okundu olarak işaretleyebilir veya tümünü işaretleyebilirsiniz.
 
 ![Web Notifications](/images/v1/web-notifications.png)
 
-Bu şekilde e-postalar almadan bildirim alabilirsiniz.
+Bu şekilde, e-postalar almadan bildirim alabilirsiniz.
 

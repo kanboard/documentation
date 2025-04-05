@@ -6,78 +6,78 @@ menu:
         parent: Kullanici rehberi
 ---
 
-Kanboard, projeler ve kullanıcılar için iCal özet akışlarını desteklemektedir.
+Kanboard, projeler ve kullanıcılar için iCal özet akışlarını destekler.
 Bu özellik, neredeyse tüm takvim programlarında (örneğin Microsoft Outlook, Apple Takvim, Mozilla Thunderbird ve Google Takvim) Kanboard görevlerini almanıza olanak tanır.
 
-Takvim abonelikleri **yalnızca okunur** erişimindendir, sizin dışarıdan kullandığınız takvim yazılımından görevler oluşturamazsınız.
-Takvim beslemesi(feed'i)'ni dışa aktarma, iCal standardını takip eder.
+Takvim abonelikleri **yalnızca okunur** erişimindedir; dışarıdan kullandığınız takvim yazılımından görevler oluşturamazsınız.
+Takvim beslemesi (feed) dışa aktarma, iCal standardını takip eder.
 
-Not: Yalnızca -2 ay (önceki) ila +6 aylık (sonraki) tarih aralıklarındaki görevler iCalendar beslemesi(feed'e)'ne aktarılır.
+Not: Yalnızca -2 ay (önceki) ila +6 aylık (sonraki) tarih aralıklarındaki görevler iCalendar beslemesine aktarılır.
 
-Proje takvimleri
+Proje Takvimleri
 -----------------
 
 - Her projenin kendi takvimi vardır.
-- Proje başına abonelik bağlantısı benzersizdir, projenizin herkese açık erişimini etkinleştirdiğinizde bu bağlantı etkinleştirilir: **Proje ayarları>Herkese açık erişim**.
+- Proje başına abonelik bağlantısı benzersizdir. Projenizin herkese açık erişimini etkinleştirdiğinizde bu bağlantı etkinleştirilir: **Proje Ayarları > Herkese Açık Erişim**.
 - Bu takvim, seçilen proje için yalnızca görevleri gösterir.
 
-Kullanıcı takvimleri
+Kullanıcı Takvimleri
 --------------------
 
 - Her kullanıcının kendi takvimi vardır.
-- Kullanıcı başına abonelik bağlantısı benzersizdir; kullanıcının herkese açık erişimini etkinleştirdiğinizde bağlantı etkindir: **Kullanıcı profili>Herkese açık erişim**.
+- Kullanıcı başına abonelik bağlantısı benzersizdir. Kullanıcının herkese açık erişimini etkinleştirdiğinizde bağlantı etkinleştirilir: **Kullanıcı Profili > Herkese Açık Erişim**.
 - Bu takvim, kullanıcılara tüm projeler için atanan görevleri gösterir.
 
-Kanboard takviminizi Apple Takvim(Calendar)'e ekleme
-----------------------------------------------------
+Kanboard Takviminizi Apple Takvim'e Eklemek
+-------------------------------------------
 
-- Takvim'i aç
-- **Dosya>Yeni Takvim Aboneliği** seçeneğini seçin.
-- Kanboard'dan iCal özet akışı (besleme-feed) URL'sini kopyalayıp yapıştırın
+- Takvim'i açın.
+- **Dosya > Yeni Takvim Aboneliği** seçeneğini seçin.
+- Kanboard'dan iCal özet akışı (feed) URL'sini kopyalayıp yapıştırın.
 
-! [iCal aboneliğini ekleyin] (../screenshots / apple-calendar-add-subscription.png)
+![iCal aboneliğini ekleyin](../screenshots/apple-calendar-add-subscription.png)
 
-- Takvimi iCloud ile senkronize etmeyi tüm cihazlarınızda mevcut olacak şekilde seçebilirsiniz
-- Yenileme sıklığını seçmeyi unutmayın
+- Takvimi iCloud ile senkronize etmeyi seçerek tüm cihazlarınızda mevcut hale getirebilirsiniz.
+- Yenileme sıklığını seçmeyi unutmayın.
 
 ![Edit iCal subscription](/images/v1/apple-calendar-edit-subscription.png)
 
-Kanboard takviminizi Microsoft Outlook'a ekleme
------------------------------------------------
+Kanboard Takviminizi Microsoft Outlook'a Eklemek
+------------------------------------------------
 
 ![Outlook Add Internet Calendar](/images/v1/outlook-add-subscription.png)
 
-- Outlook'u açın
-- ** Takvimi aç>İnternet'ten** i seçin
-- Kanboard'dan iCal özet akışı (besleme-feed) URL'sini kopyalayıp yapıştırın
+- Outlook'u açın.
+- **Takvimi Aç > İnternet'ten** seçeneğini seçin.
+- Kanboard'dan iCal özet akışı (feed) URL'sini kopyalayıp yapıştırın.
 
 ![Outlook Edit Internet Calendar](/images/v1/outlook-edit-subscription.png)
 
-Mozilla Thunderbird'e Kanboard takviminizi ekleme
--------------------------------------------------
+Kanboard Takviminizi Mozilla Thunderbird'e Eklemek
+--------------------------------------------------
 
-- Thunderbird'e takvim desteği eklemek için ** Lightning ** Eklenti yazılımını yükleyin
-- **Dosya>Yeni Takvim** 'i tıklayın
-- İletişim kutusunda **Ağda** seçeneğini belirleyin
+- Thunderbird'e takvim desteği eklemek için **Lightning** eklentisini yükleyin.
+- **Dosya > Yeni Takvim** seçeneğine tıklayın.
+- İletişim kutusunda **Ağda** seçeneğini belirleyin.
 
 ![Thunderbird Step 1](/images/v1/thunderbird-new-calendar-step1.png)
 
-- iCalendar biçimini seçin
-- Kanboard'dan iCal özet akışı (besleme-feed) URL'sini kopyalayıp yapıştırın
+- iCalendar biçimini seçin.
+- Kanboard'dan iCal özet akışı (feed) URL'sini kopyalayıp yapıştırın.
 
 ![Thunderbird Step 2](/images/v1/thunderbird-new-calendar-step2.png)
 
-- Renkleri ve diğer ayarları seçin ve sonunda kaydedin
+- Renkleri ve diğer ayarları seçin ve sonunda kaydedin.
 
-Kanboard takviminizi Google Takvim'e ekleme
--------------------------------------------
+Kanboard Takviminizi Google Takvim'e Eklemek
+--------------------------------------------
 
-- **Diğer takvimler** 'in yanındaki aşağı-oku tıklayın.
-- Menüden **Link ekle-Add URL** seçeneğini seçin.
-- Kanboard'dan iCal özet akışı (besleme-feed) URL'sini kopyalayıp yapıştırın
+- **Diğer Takvimler** yanındaki aşağı oku tıklayın.
+- Menüden **URL Ekle** seçeneğini seçin.
+- Kanboard'dan iCal özet akışı (feed) URL'sini kopyalayıp yapıştırın.
 
 ![Google Calendar](/images/v1/google-calendar-add-subscription.png)
 
-Senkronizasyonunu etkinleştirirseniz, Kanboard takviminiz Android cihazınızdan da kullanılabilir.
+Senkronizasyonu etkinleştirirseniz, Kanboard takviminiz Android cihazınızdan da kullanılabilir.
 
-Not: Google Destek'e göre, harici takvimler çok sık yenilenmiyor, [belgeleri okuyun](https://support.google.com/calendar/answer/37100?hl=en&ref_topic=1672445).
+Not: Google Destek'e göre, harici takvimler çok sık yenilenmez. [Belgeleri okuyun](https://support.google.com/calendar/answer/37100?hl=en&ref_topic=1672445).

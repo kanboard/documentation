@@ -6,21 +6,21 @@ menu:
         parent: Kullanici rehberi
 ---
 
-Kulvarlar tahtada yatay ayrımlardır.
-Örneğin, yazılım sürümlerini ayırmak, görevlerinizi farklı ürünlerde, ekiplerde ya da istediğiniz her yerde bölmek yararlıdır.
+Kulvarlar, tahtada yatay ayrımlardır.
+Örneğin, yazılım sürümlerini ayırmak veya görevlerinizi farklı ürünlerde, ekiplerde ya da istediğiniz herhangi bir şekilde bölmek için yararlıdır.
 
-Kulvarlar ile pano
+Kulvarlar ile Pano
 ------------------
 
 ![Swimlanes](/images/v1/swimlanes.png)
 
-- Soldaki ikonuna tıklayarak kulvar(swimlanes) daraltabilirsiniz
-- Varsayılan kulvar her zaman üst kısmında gösterilir
+- Soldaki ikona tıklayarak kulvarları daraltabilirsiniz.
+- Varsayılan kulvar her zaman üst kısımda gösterilir.
 
-Kulvarları yönetmek
+Kulvarları Yönetmek
 -------------------
 
-- Bütün projeler varsayılan bir kulvardadır.
+- Tüm projeler varsayılan bir kulvar içerir.
 - Birden fazla kulvar varsa, pano tüm kulvarları gösterecektir.
 - Görevleri kulvarlar arasında sürükleyip bırakabilirsiniz.
 
@@ -28,9 +28,9 @@ Kulvarları yapılandırmak için **proje yapılandırma sayfasına** gidin ve *
 
 ![Swimlanes Configuration](/images/v1/swimlane-configuration.png)
 
-Oradan, yeni bir kulvar ekleyebilir veya varsayılan bir yeniden adlandırabilirsiniz.
-Farklı yüzücülerin yerlerini de devre dışı bırakabilir ve değiştirebilirsiniz.
+Buradan, yeni bir kulvar ekleyebilir veya varsayılan bir kulvarı yeniden adlandırabilirsiniz.
+Farklı kulvarları devre dışı bırakabilir ve sıralarını değiştirebilirsiniz.
 
-- Varsayılan kulvar her zaman en üsttedir fakat bunu gizleyebilirsiniz.
-- Aktif olmayan kulvarlar panoda gösterilmiyor.
-- ** Bir kulvarın kaldırılması kendisine verilen görevleri kaldırmaz**, bu görevler varsayılan kulvara taşınacaktır.
+- Varsayılan kulvar her zaman en üsttedir, ancak bunu gizleyebilirsiniz.
+- Aktif olmayan kulvarlar panoda gösterilmez.
+- **Bir kulvarın kaldırılması, kendisine atanmış görevleri kaldırmaz**; bu görevler varsayılan kulvara taşınır.

@@ -6,9 +6,9 @@ menu:
         parent: Kullanici rehberi
 ---
 
-Her bir proje için, görevler birkaç görünümle görselleştirilebilir: **Pano, Takvim ve Liste ve Gantt**.
-Her görünüm en üstteki filtre kutusunun sonucunu gösterir.
-Arama motoru[gelişmiş sözdizimini-syntax](search.markdown) kullanır.
+Her bir proje için, görevler birkaç görünümle görselleştirilebilir: **Pano, Takvim, Liste ve Gantt**.
+Her görünüm, en üstteki filtre kutusunun sonucunu gösterir.
+Arama motoru [gelişmiş sözdizimini](search.markdown) kullanır.
 
 Pano Görünümü
 -------------
@@ -17,28 +17,28 @@ Pano Görünümü
 
 - Bu görünümle, sütunlar arasında görevleri sürükleyip bırakabilirsiniz.
 - Pano görünümüne geçmek için klavye kısayolunu da kullanabilirsiniz: **"v b"**.
-- Bir gölge Görevler son anlarda değiştirilir.
+- Yakın zamanda değiştirilen görevlerin çevresinde bir gölge görünür.
 
 ![Pano Görev Sınırı](/images/v1/board-task-limit.png)
 
-Bir sütun için görev sınırına ulaşıldığında arka plan kırmızı olur. Yani, aynı anda çok fazla görev devam ediyor demektir.
+Bir sütun için görev sınırına ulaşıldığında arka plan kırmızı olur. Bu, aynı anda çok fazla görev devam ediyor demektir.
 
-[Pano yapılandırması hakkında daha fazla bilgi edinin](board-configuration.markdown)
+[Pano yapılandırması hakkında daha fazla bilgi edinin](board-configuration.markdown).
 
 Liste Görünümü
 --------------
 
-![Liste görünümü](/images/v1/list-view.png)
+![Liste Görünümü](/images/v1/list-view.png)
 
 - Bu görünümde, aramanızın tüm sonuçları bir tabloda gösterilir.
-- Liste görünümüne geçmek için klavye kısayolunu da kullanabilirsiniz:  **"v l"**.
+- Liste görünümüne geçmek için klavye kısayolunu da kullanabilirsiniz: **"v l"**.
 
 Proje Görünümü
 --------------
 
-![Proje görünümü](/images/v1/project-view.png)
+![Proje Görünümü](/images/v1/project-view.png)
 
-- Projenin açıklamasını görüntüleyin
-- Belgelerin projeye eklenmesi ve yüklenmesi
-- Proje üyelerinin listesini görüntülenmesi
-- Projenin son faaliyetlerini görüntüleyin
+- Projenin açıklamasını görüntüleyin.
+- Belgeleri projeye ekleyin ve yükleyin.
+- Proje üyelerinin listesini görüntüleyin.
+- Projenin son faaliyetlerini görüntüleyin.

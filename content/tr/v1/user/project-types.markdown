@@ -11,7 +11,7 @@ menu:
 | Tip               | Açıklama                                                              |
 |-------------------|-----------------------------------------------------------------------|
 | Takım Projesi     | Kullanıcı ve grup yönetimi ile proje                                  |
-| Özel proje        | Yalnızca bir kişiye ait olan projede, kullanıcı yönetimi yoktur       |
+| Özel Proje        | Yalnızca bir kişiye ait olan projede, kullanıcı yönetimi yoktur       |
 
-- Yalnızca Yöneticiler ve Uygulama Yöneticileri ekip projeleri oluşturabilir.
+- Yalnızca yöneticiler ve uygulama yöneticileri ekip projeleri oluşturabilir.
 - Özel projeler herkes tarafından oluşturulabilir.

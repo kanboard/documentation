@@ -1,12 +1,12 @@
 ---
-title: Görevleri çoğaltmak ve taşımak
+title: Görevleri Çoğaltmak ve Taşımak
 toc: true
 menu:
     main:
         parent: Kullanici rehberi
 ---
 
-Bir görevi aynı projeye çoğalt
+Bir Görevi Aynı Projeye Çoğalt
 ------------------------------
 
 Görev görünümüne gidin ve soldaki **Çoğalt** seçeneğini belirleyin.
@@ -15,7 +15,7 @@ Görev görünümüne gidin ve soldaki **Çoğalt** seçeneğini belirleyin.
 
 Orijinalle aynı özelliklere sahip yeni bir görev oluşturulur.
 
-Görevi başka bir projeye çoğalt
+Görevi Başka Bir Projeye Çoğalt
 -------------------------------
 
 Görev görünümüne gidin ve **Başka bir projeye çoğalt** seçeneğini seçin.
@@ -24,7 +24,7 @@ Görev görünümüne gidin ve **Başka bir projeye çoğalt** seçeneğini seç
 
 Açılır menüde yalnızca üye olduğunuz projeler gösterilecektir.
 
-Görevleri kopyalamadan önce, Kanboard kaynak ve hedef proje arasında ortak olmayan hedef özellikleri soracaktır.
+Görevleri kopyalamadan önce, Kanboard kaynak ve hedef proje arasında ortak olmayan özellikleri soracaktır.
 
 Temelde şunları tanımlamanız gerekir:
 
@@ -33,17 +33,17 @@ Temelde şunları tanımlamanız gerekir:
 - Kategori
 - Atanan kişi
 
-Görevi başka bir projeye taşıma
+Görevi Başka Bir Projeye Taşıma
 -------------------------------
 
-Görev görünümüne gidin ve **Başka bir projeye taşı** öğesini seçin.
+Görev görünümüne gidin ve **Başka bir projeye taşı** seçeneğini seçin.
 
-Bir görevi başka bir proje çalışmasına çoğaltma ile aynı şekilde taşıdığınızda, görevin yeni özelliklerini seçmeniz gerekir.
+Bir görevi başka bir projeye çoğaltma ile aynı şekilde taşıdığınızda, görevin yeni özelliklerini seçmeniz gerekir.
 
-Çoğaltılan alanların listesi
+Çoğaltılan Alanların Listesi
 ----------------------------
 
-Çoğaltılmış özelliklerin listesi aşağıda:
+Çoğaltılmış özelliklerin listesi aşağıda verilmiştir:
 
 - `title`
 - `description`

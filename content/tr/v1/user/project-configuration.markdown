@@ -6,42 +6,41 @@ menu:
         parent: Kullanici rehberi
 ---
 
-Sağ üstte bulunan **Ayarlar** menüsüne gidin, ardından soldaki **Proje ayarları** seçeneğini seçin.
+Sağ üstte bulunan **Ayarlar** menüsüne gidin ve ardından soldaki **Proje ayarları** seçeneğini seçin.
 
 ![Project settings](/images/v1/project-settings.png)
 
-### Yeni projeler için varsayılan sütunlar
+### Yeni Projeler İçin Varsayılan Sütunlar
 
 Varsayılan sütun adlarını buradan değiştirebilirsiniz.
-Her zaman aynı sütunlara sahip projeler oluşturmanız yararlıdır.
+Her zaman aynı sütunlara sahip projeler oluşturmanız faydalı olabilir.
 
-Her sütun adı virgül ile ayrılmalıdır.
+Her sütun adı virgülle ayrılmalıdır.
 
-Varsayılan olarak, Kanboard şu sütun adlarını kullanır: Bekleme Listesi(Backlog), Hazır, İşlemde ve Tamamlandı.
+Varsayılan olarak, Kanboard şu sütun adlarını kullanır: Bekleme Listesi (Backlog), Hazır, İşlemde ve Tamamlandı.
 
-### Yeni projeler için varsayılan kategoriler
+### Yeni Projeler İçin Varsayılan Kategoriler
 
-Kategoriler uygulama için genel değildir, ancak bir projeye bağlıdır.
+Kategoriler uygulama genelinde değil, projelere özeldir.
 Her proje farklı kategorilere sahip olabilir.
 
-Bununla birlikte, her zaman tüm projeleriniz için aynı kategorileri oluşturursanız, burada otomatik olarak oluşturulacak kategorilerin listesini tanımlayabilirsiniz.
+Ancak, tüm projeleriniz için aynı kategorileri oluşturmayı tercih ediyorsanız, burada otomatik olarak oluşturulacak kategorilerin listesini tanımlayabilirsiniz.
 
-### Bir kullanıcı için aynı anda yalnızca bir alt görev almasına izin ver
+### Bir Kullanıcının Aynı Anda Yalnızca Bir Alt Görev Almasına İzin Ver
 
-Bu seçenek etkinleştirildiğinde, bir kullanıcı o anda yalnızca bir alt görevle çalışabilir.
+Bu seçenek etkinleştirildiğinde, bir kullanıcı aynı anda yalnızca bir alt görev üzerinde çalışabilir.
 
-Başka bir alt görev "devam ediyor" durumuna sahipse, kullanıcı bu iletişim kutusunu görür:
+Başka bir alt görev "devam ediyor" durumundaysa, kullanıcı şu iletişim kutusunu görür:
 
 ![Subtask user restriction](/images/v1/subtask-user-restriction.png)
 
-### Tetikleme otomatik olarak alt görev zamanı izleme
+### Alt Görev Zaman İzlemeyi Otomatik Olarak Tetikleme
 
-- Bu seçenek etkinleştirilirse, bir alt görev durumu "devam ediyor" olarak değiştirildiğinde, zamanlayıcı otomatik olarak başlayacaktır.
-- Zaman izlemeyi kullanmıyorsanız bu seçeneği devre dışı bırakın.
+- Bu seçenek etkinleştirilirse, bir alt görevin durumu "devam ediyor" olarak değiştirildiğinde zamanlayıcı otomatik olarak başlar.
+- Zaman izlemeyi kullanmıyorsanız, bu seçeneği devre dışı bırakabilirsiniz.
 
-### Kümülatif akış diyagramında kapalı görevleri dahil et
+### Kümülatif Akış Diyagramında Kapalı Görevleri Dahil Et
 
 - Bu seçenek etkinleştirilirse, kapalı görevler kümülatif akış şemasına dahil edilir.
 - Bu seçenek devre dışı bırakılırsa, yalnızca açık görevler dahil edilir.
-- Bu seçenek tablonun "toplam" sütununu etkiler "project_daily_column_stats"
-
+- Bu seçenek, tablonun "toplam" sütununu etkiler: "project_daily_column_stats".

@@ -1,194 +1,194 @@
 ---
-title: Gelişmiş Arama Sözdizimi(Kodları)
+title: Gelişmiş Arama Sözdizimi
 toc: true
 menu:
     main:
         parent: Kullanici rehberi
 ---
 
-Kanboard, gelişmiş arama için basit bir sorgu dili kullanıyor.
-Görevler, yorumlar, alt görevler, bağlantılar ile aynı zamanda etkinlik akışında da arama yapabilirsiniz.
+Kanboard, gelişmiş arama için basit bir sorgu dili kullanır.
+Görevler, yorumlar, alt görevler, bağlantılar ve etkinlik akışında arama yapabilirsiniz.
 
-Sorgu örneği
+Sorgu Örneği
 ------------
 
-Bu örnek, yarın için bir bitiş tarihi ve "başlığım" ı içeren bir başlık ile bana atanan tüm görevleri geri alacaktır:
+Bu örnek, yarın için bir bitiş tarihi ve "başlığım" kelimesini içeren bir başlık ile bana atanan tüm görevleri döndürür:
 
 ```
-assigne:me due:tomorrow başlığım
+assignee:me due:tomorrow başlığım
 ```
 
-Genel arama
+Genel Arama
 -----------
 
-### Görev kimliği veya başlığa göre arama
+### Görev Kimliği veya Başlığa Göre Arama
 
 - Görev kimliği ile ara: `#123`
-- Görev kimliği ve görev başlığına göre ara: `123`
-- Görev başlığına göre ara: herhangi bir arama nitelikleriyle eşleşmeyen herhangi bir şey
+- Görev kimliği ve başlığa göre ara: `123`
+- Görev başlığına göre ara: Arama nitelikleriyle eşleşmeyen herhangi bir şey.
 
-### Duruma göre ara
+### Duruma Göre Ara
 
 Özellik: **status**
 
-- Açık görevleri bulmak için sorgu: `status:open`
-- Kapatılan görevleri bulmak için sorgu: `status:closed`
+- Açık görevler: `status:open`
+- Kapatılan görevler: `status:closed`
 
-### Devralan göre ara
+### Atanan Kişiye Göre Ara
 
 Özellik: **assignee**
 
-- Tam adıyla sorgu: `assignee:"Frederic Guillot"`
-- Kullanıcı adı ile sorgu: `assignee:fguillot`
-- Birden fazla atanan arama: 'assignee:user1 assignee:"John Doe"
-- Atanmamış görevler için sorgu: 'assignee:nobody'
-- Görevlerimin sorgulanması: 'assignee:me`
+- Tam adıyla: `assignee:"Frederic Guillot"`
+- Kullanıcı adıyla: `assignee:fguillot`
+- Birden fazla atanan: `assignee:user1 assignee:"John Doe"`
+- Atanmamış görevler: `assignee:nobody`
+- Kendi görevleriniz: `assignee:me`
 
-### Görev yaratıcısına göre ara
+### Görev Yaratıcısına Göre Ara
 
 Özellik: **creator**
 
-- Benim tarafından oluşturulan görevler: `creator:me`
+- Kendi oluşturduğunuz görevler: `creator:me`
 - John Doe tarafından oluşturulan görevler: `creator:"John Doe"`
 - Kullanıcı no #1 tarafından oluşturulan görevler: `creator:1`
 
-### Alt görev atayan tarafından arama yapın
+### Alt Görev Atayanına Göre Ara
 
 Özellik: **subtask:assignee**
 
 - Örnek: `subtask:assignee:"John Doe"`
 
-### Renk ile ara
+### Renge Göre Ara
 
 Özellik: **color**
 
-- Renk kimliği ile arama yapmak için sorgu: `color:mavi`
-- Renk adına göre arama yapmak için sorgu: `color:"Oranj"`
+- Renk kimliğiyle: `color:mavi`
+- Renk adına göre: `color:"Oranj"`
 
-### Vadesine göre ara
+### Vadesine Göre Ara
 
 Özellik: **due**
 
-- Bugünkü görevler için arama yapın: `due:today`
-- Yarınki görevler için arama yapın: `due:tomorrow`
-- Dünkü görevler için arama yapın: `due:yesterday`
-- Tam tarihi olan görevlerde arama yapın: `due:2015-06-29`
+- Bugünkü görevler: `due:today`
+- Yarınki görevler: `due:tomorrow`
+- Dünkü görevler: `due:yesterday`
+- Tam tarihli görevler: `due:2015-06-29`
 
-Tarihin ISO 8601 biçimi ile kullanması gerekir: **YYYY-MM-DD**.
+Tarih ISO 8601 biçiminde olmalıdır: **YYYY-MM-DD**.
 
-`strtotime ()` işlevi tarafından desteklenen tüm dize formatları desteklenmektedir, örneğin `next Thursday`,` -2 days`, `+2 months`, `tomorrow`, vb.
+`strtotime()` işlevi tarafından desteklenen tüm dize formatları kullanılabilir, örneğin `next Thursday`, `-2 days`, `+2 months`, `tomorrow`, vb.
 
-Tarih ile desteklenen operatörler:
+Desteklenen tarih operatörleri:
 
 - Bundan büyük: **due:>2015-06-29**
 - Bundan küçük: **due:<2015-06-29**
-- Bundan büyük veya eşit: **due:>=2015-06-29**
-- Bundan küçük veya eşit: **due:<=2015-06-29**
+- Büyük veya eşit: **due:>=2015-06-29**
+- Küçük veya eşit: **due:<=2015-06-29**
 
-### Değiştirilme tarihine göre ara
+### Değiştirilme Tarihine Göre Ara
 
-Özellik: **modified** or **updated**
+Özellik: **modified** veya **updated**
 
-Tarih biçimleri son tarihle aynıdır.
+Tarih biçimleri vade tarihiyle aynıdır.
 
-Yakın zamanda değiştirilmiş görevlerde aynı zamanda bir filtre var:: `modified:recently`.
+Yakın zamanda değiştirilmiş görevler için bir filtre vardır: `modified:recently`.
 
-Bu sorgu, ayarlarda yapılandırılan pano vurgulama dönemiyle aynı değeri kullanacaktır.
+Bu sorgu, ayarlarda yapılandırılan pano vurgulama dönemiyle aynı değeri kullanır.
 
-### Oluşturma tarihine göre ara
+### Oluşturma Tarihine Göre Ara
 
 Özellik: **created**
 
-Değiştirme tarihi sorguları aynı şekilde çalışır.
+Değiştirme tarihi sorguları ile aynı şekilde çalışır.
 
-### Başlangıç tarihine göre ara
+### Başlangıç Tarihine Göre Ara
 
 Özellik: **started**
 
-### Açıklamaya göre ara
+### Açıklamaya Göre Ara
 
 Özellik: **description** veya **desc**
 
 Örnek: `description:"metin arama"`
 
-### Dış referansa göre ara
+### Dış Referansa Göre Ara
 
 Görev referansı, görevinizin harici bir kimliği, örneğin başka bir yazılımdan gelen bir bilet numarasıdır.
 
 - Görevleri referans ile bulun: `ref:1234` veya `reference:TICKET-1234`
-- Wildcard search: `ref:TICKET-*`
+- Joker arama: `ref:TICKET-*`
 
-### Kategoriye göre ara
+### Kategoriye Göre Ara
 
 Özellik: **category**
 
-- Görevleri belirli bir kategori ile bulun: `category:"Feature Request"`
-- Bu kategorilere sahip tüm görevleri bulun: `category:"Bug" category:"İyileştirmeler"`
-- Hiçbir kategori atanmamış görevler bulun: `category:none`
+- Belirli bir kategoriyle görevler: `category:"Feature Request"`
+- Birden fazla kategoriyle görevler: `category:"Bug" category:"İyileştirmeler"`
+- Kategorisi olmayan görevler: `category:none`
 
-### Projeye göre ara
+### Projeye Göre Ara
 
 Özellik: **project**
 
-- Görevleri proje adına göre bulun: `project:"Benim proje adım"`
-- Görevleri proje idine göre bulun: `project:23`
-- Çeşitli projeler için görevler bulun: `project:"Benim projem A" project:"Benim projem B"`
+- Proje adına göre görevler: `project:"Benim proje adım"`
+- Proje kimliğine göre görevler: `project:23`
+- Birden fazla projede görevler: `project:"Proje A" project:"Proje B"`
 
-### Sütunlara göre ara
+### Sütunlara Göre Ara
 
 Özellik: **column**
 
-- Görevleri sütun adına göre bul: `column:" Devam eden işler"`
-- Birkaç sütun için görevler bulun: `column:"Backlog" column:hazır`
+- Sütun adına göre görevler: `column:"Devam eden işler"`
+- Birden fazla sütunda görevler: `column:"Backlog" column:hazır`
 
-### Kulvar (Swim-lane) lara göre ara
+### Kulvarlara Göre Ara
 
 Özellik: **swimlane**
 
-- Görevleri kulvarlara(swim-lane) göre ara: `swimlane:"Version 42"`
-- Çeşitli kulvarlar (swim-lanes) için görev ara: `swimlane:"Version 1.2" swimlane:"Version 1.3"`
+- Kulvarlara göre görevler: `swimlane:"Version 42"`
+- Birden fazla kulvarda görevler: `swimlane:"Version 1.2" swimlane:"Version 1.3"`
 
-### Görev bağlantısı ile arama
+### Görev Bağlantısına Göre Ara
 
 Özellik: **link**
 
-- Görevleri bağlantı adına göre bulma: `link:"is a milestone of"`
-- Görevleri birkaç bağlantıya bul: `link:"is a milestone of" link:"relates to"`
+- Bağlantı adına göre görevler: `link:"is a milestone of"`
+- Birden fazla bağlantıya göre görevler: `link:"is a milestone of" link:"relates to"`
 
-### Yorumlara göre ara
+### Yorumlara Göre Ara
 
 Özellik: **comment**
 
-- Bu başlık içeren yorumları bulun: `comment:"Yorum mesajım"`
+- Belirli bir başlık içeren yorumlar: `comment:"Yorum mesajım"`
 
-### Etiketlere göre ara
+### Etiketlere Göre Ara
 
 Özellik: **tag**
 
 - Örnek: `tag:"Etiketim"`
 
-Etkinlik akışı arama
+Etkinlik Akışı Arama
 --------------------
 
-### Görev başlıklarına göre etkinlik arama
+### Görev Başlıklarına Göre Etkinlik Arama
 
 Özellik: **title** veya yok (varsayılan)
 
 - Örnek: `title:"Benim Görevim"`
-- Görev no ile ara: `#123`
+- Görev kimliğiyle: `#123`
 
-### Görev durumuna göre olayları arama
+### Görev Durumuna Göre Olayları Arama
 
 Özellik: **status**
 
-### Olay yaratıcısı tarafından arayın
+### Olay Yaratıcısına Göre Arama
 
 Özellik: **creator**
 
-### Olay oluşturma tarihine göre ara
+### Olay Oluşturma Tarihine Göre Ara
 
 Özellik: **created**
 
-### Etkinlikleri projeye göre ara
+### Etkinlikleri Projeye Göre Ara
 
 Özellik: **project**

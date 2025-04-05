@@ -11,11 +11,11 @@ Kanboard birden fazla projeyi idare edebilir. İki tür proje vardır:
 - Takım projeleri
 - Tek bir kullanıcı için özel proje
 
-Birden fazla kullanıcı için proje oluşturma
+Birden Fazla Kullanıcı için Proje Oluşturma
 -------------------------------------------
 
-- Yalnızca yöneticiler ve proje yöneticileri bu projeleri oluşturabilir
-- Kullanıcı yönetimi mevcut
+- Yalnızca yöneticiler ve proje yöneticileri bu projeleri oluşturabilir.
+- Kullanıcı yönetimi mevcuttur.
 
 Gösterge tablosundan **Yeni proje** bağlantısını tıklayın:
 
@@ -23,22 +23,22 @@ Gösterge tablosundan **Yeni proje** bağlantısını tıklayın:
 
 Çok kolay, sadece projeniz için bir isim bulmanız gerekiyor!
 
-Özel proje oluşturma
+Özel Proje Oluşturma
 --------------------
 
-- Herkes özel bir proje yaratabilir
-- Burda kullanıcı yönetimi **YOK**.
-- Projeye yalnızca sahibi ve yöneticiler erişebilir
+- Herkes özel bir proje yaratabilir.
+- Burada kullanıcı yönetimi **YOKTUR**.
+- Projeye yalnızca sahibi ve yöneticiler erişebilir.
 
 Gösterge tablosundan **Yeni özel proje** bağlantısını tıklayın.
 
-Başka bir projeden projeler oluşturma
---------------------------------------
+Başka Bir Projeden Projeler Oluşturma
+-------------------------------------
 
 Yeni bir proje oluşturduğunuzda, başka bir projenin özelliklerini çoğaltmayı seçebilirsiniz:
 
 - İzinler
 - Eylemler
-- Swimlanes
-- Katagori
+- Kulvarlar
+- Kategoriler
 - Görevler

@@ -1,5 +1,5 @@
 ---
-title: Görevleri kapatma
+title: Görevleri Kapatma
 toc: true
 menu:
     main:
@@ -8,7 +8,7 @@ menu:
 
 Bir görev kapatıldığında, panodan gizlenir.
 
-Bununla birlikte, her zaman arama durumundaki **status:closed** sorgusunu kullanarak kapalı görev listesine her zaman erişebilir veya filtre açılır menüsünden **Kapalı görev** seçeneğini belirleyin.
+Bununla birlikte, her zaman arama durumundaki **status:closed** sorgusunu kullanarak kapalı görev listesine erişebilir veya filtre açılır menüsünden **Kapalı Görevler** seçeneğini belirleyebilirsiniz.
 
 Bir görevi kapatmak için panodaki görev açılır menüsünden iki farklı yol vardır:
 

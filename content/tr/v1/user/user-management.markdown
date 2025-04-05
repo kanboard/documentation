@@ -11,31 +11,31 @@ Yeni kullanıcı ekle
 
 Yeni bir kullanıcı eklemek için bir yönetici olmalısınız.
 
-1. Sağ üst köşedeki açılır menüden **Kullanıcı Yönetimi** seçeneğine gidin
-2. Üst kısımda bir bağlantı var **Yeni yerel kullanıcı** veya **Yeni uzak kullanıcı**
+1. Sağ üst köşedeki açılır menüden **Kullanıcı Yönetimi** seçeneğine gidin.
+2. Üst kısımda **Yeni yerel kullanıcı** veya **Yeni uzak kullanıcı** bağlantısını seçin.
 3. Formu doldurun ve kaydedin.
 
 ![New user](/images/v1/new-user.png)
 
-Bir **yerel kullanıcı** oluşturduğunuzda, en azından bu değerleri belirtmeniz gerekir:
+Bir **yerel kullanıcı** oluşturduğunuzda, en azından şu değerleri belirtmeniz gerekir:
 
-- **kullanıcı adı**: Bu, kullanıcının benzersiz tanımlayıcısıdır (giriş)
-- **şifre**: Kullanıcınızın şifresi en az 6 karakter olmalıdır
+- **Kullanıcı adı**: Bu, kullanıcının benzersiz tanımlayıcısıdır (giriş).
+- **Şifre**: Kullanıcının şifresi en az 6 karakter olmalıdır.
 
-**uzak kullanıcı** için yalnızca kullanıcı adı zorunludur.
+**Uzak kullanıcı** için yalnızca kullanıcı adı zorunludur.
 
 Kullanıcıları düzenle
 ---------------------
 
-**kullanıcılar** menüsüne gittiğinizde, kullanıcıların listesine sahipsiniz. Bir kullanıcıyı değiştirmek için **bağlantıyı-link düzenle** ye tıklayınız.
+**Kullanıcılar** menüsüne gittiğinizde, kullanıcıların listesine erişebilirsiniz. Bir kullanıcıyı değiştirmek için **düzenle** bağlantısına tıklayın.
 
-- Normal bir kullanıcısanız, yalnızca kendi profilinizi değiştirebilirsiniz
-- Herhangi bir kullanıcıyı düzenleyebilmek için bir yönetici olmak zorundasınız.
+- Normal bir kullanıcısanız, yalnızca kendi profilinizi değiştirebilirsiniz.
+- Herhangi bir kullanıcıyı düzenleyebilmek için bir yönetici olmanız gerekir.
 
 Kullanıcıları kaldır
 --------------------
 
-**kullanıcılar** menüsünden **kaldır** bağlantısını tıklayın. Bu bağlantı, yalnızca siz yönetici iseniz görünür.
+**Kullanıcılar** menüsünden **kaldır** bağlantısını tıklayın. Bu bağlantı yalnızca yöneticiyseniz görünür.
 
 Belirli bir kullanıcıyı kaldırırsanız, **bu kişiye atanan görevler işlemden sonra atanmamış olacaktır**.
 

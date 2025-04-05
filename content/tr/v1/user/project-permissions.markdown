@@ -6,11 +6,11 @@ menu:
         parent: Kullanici rehberi
 ---
 
-Her proje birbirinden izole edilmiş ve birbirinden ayrılmıştır.
-Proje erişimine proje sahibi tarafından izin verilmelidir.
+Her proje birbirinden izole edilmiş ve ayrılmıştır.
+Proje erişimine, proje sahibi tarafından izin verilmelidir.
 
-Her kullanıcı ve her gruba ayrı bir rol atanabilir.
-[Projeler için roller]3 tür var(roles.markdown):
+Her kullanıcıya ve her gruba ayrı bir rol atanabilir.
+[Projeler için roller](roles.markdown) 3 türdür:
 
 - Proje Müdürü
 - Proje Üyesi
@@ -18,8 +18,8 @@ Her kullanıcı ve her gruba ayrı bir rol atanabilir.
 
 Yalnızca yöneticilerin her şeye erişimi vardır.
 
-Rol atamaları ** Proje Ayarları> İzinler ** 'den ulaşılabilir:
+Rol atamaları **Proje Ayarları > İzinler** bölümünden yapılabilir:
 
 ![Project Permissions](/images/v1/project-permissions.png)
 
-Özel projeler izin tanımlayamaz.
+Özel projeler için izin tanımlanamaz.

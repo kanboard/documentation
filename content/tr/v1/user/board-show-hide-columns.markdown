@@ -1,5 +1,5 @@
 ---
-title: Panoda sütunları göster ve gizle
+title: Panoda Sütunları Göster ve Gizle
 toc: true
 menu:
     main:
@@ -10,7 +10,7 @@ Sütunları çok pratik bir şekilde gizleyebilir veya görüntüleyebilirsiniz:
 
 ![Hide a column](/images/v1/hide-column.png)
 
-Bir sütunu gizlemek için sütun açılır menüsünü tıklayın ve "Bu sütunu gizle" yi seçin:
+Bir sütunu gizlemek için sütun açılır menüsünü tıklayın ve "Bu sütunu gizle" seçeneğini seçin:
 
 ![Show a column](/images/v1/show-column.png)
 

@@ -6,7 +6,7 @@ menu:
         parent: Kullanici rehberi
 ---
 
-Kanboard ile, bir veya birçok etiketi görevle ilişkilendirebilirsiniz.
+Kanboard ile bir veya birden fazla etiketi görevle ilişkilendirebilirsiniz.
 Etiketleri genel olarak tüm projeler için veya yalnızca belirli bir proje için tanımlayabilirsiniz.
 
 ![Tags on the board](/images/v1/tags-board.png)
