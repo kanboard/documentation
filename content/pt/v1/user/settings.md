@@ -5,7 +5,7 @@ menu:
         parent: Guia do Usuário
 ---
 
-Alguns parâmetros para o aplicativo podem ser alterados na página de
+Alguns parâmetros do aplicativo podem ser alterados na página de
 configurações. Somente administradores podem alterar essas
 configurações.
 
@@ -19,7 +19,7 @@ aplicativo** à esquerda.
 
 ### URL do aplicativo
 
-Este parâmetro é usado para notificações por email. O rodapé do email
+Este parâmetro é usado para notificações por e-mail. O rodapé do e-mail
 conterá um link para a tarefa do Kanboard.
 
 ### Idioma
@@ -31,7 +31,7 @@ será definido para todos os usuários.
 
 Por padrão, o Kanboard usa o UTC como fuso horário, mas você pode
 definir o seu próprio fuso horário. A lista contém todos os fusos
-horários aceitos pelo seu servidor Web.
+horários aceitos pelo seu servidor web.
 
 ### Formato de data
 
@@ -53,7 +53,7 @@ aceito (`AAAA-MM-DD` ou `AAAA_MM_DD`).
 Escreva seu próprio CSS para substituir ou melhorar o estilo padrão do
 Kanboard.
 
-Aqui um exemplo para mudar a cor dos rótulos das categorias:
+Aqui está um exemplo para mudar a cor dos rótulos das categorias:
 
 Para o contêiner da categoria:
 
@@ -64,7 +64,7 @@ Para o contêiner da categoria:
 }
 ```
 
-Valores css personalizados para uma categoria - este é um exemplo para
+Valores CSS personalizados para uma categoria - este é um exemplo para
 exibir o texto:
 
 ```css
@@ -75,7 +75,7 @@ exibir o texto:
   font-style: italic;
   box-shadow: 0 1px 1px rgba(186, 186, 186, 0.55);
   color: white!important;
-  font-size:11px;
+  font-size: 11px;
 }
 ```
 
@@ -87,7 +87,7 @@ esquerda.
 
 ![configurações do projeto](/images/v1/project-settings.png)
 
-### Colunas Padrão para Novos Projetos
+### Colunas padrão para novos projetos
 
 Você pode alterar os nomes das colunas padrão aqui. É útil se você
 sempre cria projetos com as mesmas colunas.
@@ -111,14 +111,14 @@ automaticamente.
 Quando esta opção está habilitada, um usuário pode trabalhar com apenas
 uma subtarefa por vez.
 
-Se outra subtarefa tiver o status \"em andamento\", o usuário verá a
+Se outra subtarefa tiver o status "em andamento", o usuário verá a
 caixa de diálogo:
 
 ![restrição do usuário de subtarefa](/images/v1/subtask-user-restriction.png)
 
 ### Acionar o rastreamento de tempo de subtarefa automaticamente
 
--   Se ativado, quando um status de subtarefa for alterado para "em
+-   Se ativado, quando o status de uma subtarefa for alterado para "em
     andamento", o temporizador será iniciado automaticamente.
 -   Desative esta opção se você não usar o rastreamento de tempo.
 
@@ -126,7 +126,7 @@ caixa de diálogo:
 
 -   Se habilitado, as tarefas fechadas serão incluídas no diagrama de fluxo cumulativo.
 -   Se desativado, apenas as tarefas abertas serão incluídas.
--   Esta opção afeta a coluna `total` da tabela `project_daily_column_stats`
+-   Esta opção afeta a coluna `total` da tabela `project_daily_column_stats`.
 
 Configurações do quadro
 -----------------------
@@ -141,14 +141,14 @@ esquerda.
 Esse recurso exibe uma sombra ao redor da tarefa quando uma tarefa foi
 movida recentemente.
 
-Defina o valor 0 para desativar esse recurso, 2 dias por padrão (172800
+Defina o valor 0 para desativar esse recurso. O padrão é 2 dias (172800
 segundos).
 
-Tudo mudou desde 2 dias terá sombra em torno da tarefa.
+Tudo que mudou nos últimos 2 dias terá uma sombra ao redor da tarefa.
 
 ### Intervalo de atualização para quadro público
 
-Quando você compartilha uma placa, a página será atualizada a cada 60
+Quando você compartilha um quadro, a página será atualizada a cada 60
 segundos automaticamente por padrão.
 
 ### Intervalo de atualização para o quadro privado
@@ -174,7 +174,7 @@ Existem dois calendários diferentes no Kanboard:
 ### Calendário do Projeto
 
 Este calendário mostra tarefas com data de vencimento definida e tarefas
-baseadas na data de criação ou a data de início.
+baseadas na data de criação ou na data de início.
 
 Mostrar tarefas com base na data de criação:
 
@@ -210,7 +210,7 @@ Configurações de Link
 ---------------------
 
 As relações de tarefas podem ser alteradas a partir das configurações do
-aplicativo (**Configurações > Configurações de link**)
+aplicativo (**Configurações > Configurações de link**).
 
 ![Link Labels](/images/v1/link-labels.png)
 

@@ -6,24 +6,24 @@ menu:
 ---
 
 O Kanboard usa uma linguagem de consulta simples para pesquisa avançada.
-Você pode pesquisar em tarefas, comentários, subtarefas, links, mas
+Você pode pesquisar em tarefas, comentários, subtarefas, links e
 também na atividade corrente.
 
 Exemplo de consulta
 -------------------
 
 Este exemplo retornará todas as tarefas atribuídas a mim com uma data de
-vencimento de amanhã e um título que contenha "meu título":
+vencimento para amanhã e um título que contenha "meu título":
 
     assignee:me due:tomorrow meu título
 
 Pesquisa de Projetos
 --------------------
 
-### Pesquisar por id ou título da tarefa
+### Pesquisar por ID ou título da tarefa
 
--   Pesquisa por id de tarefa: `# 123`
--   Pesquisa por id de tarefa e título da tarefa: `123`
+-   Pesquisa por ID de tarefa: `#123`
+-   Pesquisa por ID de tarefa e título da tarefa: `123`
 -   Pesquisar por título da tarefa: qualquer coisa que não corresponda a
     nenhuma pesquisa de atributos
 
@@ -31,27 +31,27 @@ Pesquisa de Projetos
 
 Atributo: **status**
 
--   Consulta para encontrar tarefas abertas: `status: open`
--   Consulta para encontrar tarefas fechadas: `status: closed`
+-   Consulta para encontrar tarefas abertas: `status:open`
+-   Consulta para encontrar tarefas fechadas: `status:closed`
 
 ### Pesquisar por designação
 
 Atributo: **assignee**
 
--   Consulta com o nome completo: `assignee: "Frederic Guillot"`
--   Consulta com o nome de usuário: `assignee: fguillot`
--   Consulta de múltiplos usuários:
-    `assignee: user1 assignee: "John Doe"`
--   Consulta para tarefas não atribuídas: `assignee: nobody`
--   Consulta para minhas tarefas atribuídas: `assignee: me`
+-   Consulta com o nome completo: `assignee:"Frederic Guillot"`
+-   Consulta com o nome de usuário: `assignee:fguillot`
+-   Consulta para múltiplos usuários:
+    `assignee:user1 assignee:"John Doe"`
+-   Consulta para tarefas não atribuídas: `assignee:nobody`
+-   Consulta para minhas tarefas atribuídas: `assignee:me`
 
 ### Pesquisar pelo criador da tarefa
 
 Atributo: **creator**
 
--   Tarefas criadas por mim: `creator: me`
--   Tarefas criadas por John Doe: `creator: "John Doe"`
--   Tarefas criadas pelo usuário id \# 1: `creator: 1`
+-   Tarefas criadas por mim: `creator:me`
+-   Tarefas criadas por John Doe: `creator:"John Doe"`
+-   Tarefas criadas pelo usuário ID \#1: `creator:1`
 
 ### Pesquisar por responsável por subtarefa
 
@@ -63,7 +63,7 @@ Atributo: **subtask:assignee**
 
 Atributo: **color**
 
--   Consulta para pesquisar por id de cor: `color:blue`
+-   Consulta para pesquisar por ID de cor: `color:blue`
 -   Consulta para pesquisar pelo nome da cor: `color:"Deep Orange"`
 
 ### Pesquisa por data de vencimento
@@ -121,7 +121,7 @@ Atributo: **completed**
 
 ### Pesquisa por referência externa
 
-A referência da tarefa é um id externo da sua tarefa, por exemplo, um
+A referência da tarefa é um ID externo da sua tarefa, por exemplo, um
 número de bilhete de outro software.
 
 -   Encontre tarefas com uma referência: `ref:1234` ou `reference:TICKET-1234`
@@ -140,7 +140,7 @@ Atributo: **category**
 Atributo: **project**
 
 -   Localizar tarefas por nome de projeto: `project:"nome do meu projeto"`
--   Localizar tarefas por id do projeto: `project:23`
+-   Localizar tarefas por ID do projeto: `project:23`
 -   Encontre tarefas para vários projetos: `project:"Meu projeto Um" project:"Meu projeto B"`
 
 ### Pesquisar por colunas
@@ -192,7 +192,7 @@ Pesquisa de fluxo de atividade
 Atributo: **title** ou nenhum (padrão)
 
 -   Exemplo: `title:"Minha tarefa"`
--   Pesquisa por id de tarefa: `#123`
+-   Pesquisa por ID de tarefa: `#123`
 
 ### Pesquisar eventos por status da tarefa
 

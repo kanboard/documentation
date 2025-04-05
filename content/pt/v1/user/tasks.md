@@ -12,36 +12,36 @@ No quadro, clique no sinal de mais ao lado do nome da coluna:
 
 ![criação de tarefas a partir do quadro](/images/v1/task-creation-board.png)
 
-Em seguida, o formulário de criação de tarefas é exibido:
+Em seguida, o formulário de criação de tarefas será exibido:
 
 ![formulário de criação de tarefas](/images/v1/task-creation-form.png)
 
 -   **Título**: O título da sua tarefa, que será exibido no quadro.
 -   **Descrição**: Descrição que usa a sintaxe do Markdown.
--   **Etiquetas**: A lista de etiquetas associadas a tarefas.
+-   **Etiquetas**: Lista de etiquetas associadas à tarefa.
 -   **Criar outra tarefa**: Marque esta caixa se você quiser criar uma
-    tarefa similar (alguns campos serão pré-preenchidos).
+    tarefa semelhante (alguns campos serão pré-preenchidos).
 -   **Cor**: Escolha a cor do cartão.
 -   **Responsável**: A pessoa que irá trabalhar na tarefa.
--   **Categoria**: Somente uma categoria pode ser atribuída a uma tarefa
+-   **Categoria**: Apenas uma categoria pode ser atribuída a uma tarefa
     (visível somente se os projetos tiverem categorias).
--   **Coluna**: A coluna onde a tarefa será criada, sua tarefa será
+-   **Coluna**: A coluna onde a tarefa será criada. Sua tarefa será
     posicionada na parte inferior.
--   **Prioridade**: Prioridade da tarefa, o intervalo pode ser definido
-    nas configurações do projeto, os valores padrão são P0 a P3.
+-   **Prioridade**: Prioridade da tarefa. O intervalo pode ser definido
+    nas configurações do projeto. Os valores padrão são P0 a P3.
 -   **Complexidade**: Utilizado no gerenciamento ágil de projetos
-    (Scrum), a complexidade ou pontos de história é um número que diz à
-    equipe o quão difícil a história é. Muitas vezes, as pessoas usam a
-    série de Fibonacci.
+    (Scrum). A complexidade ou pontos de história é um número que indica
+    à equipe o quão difícil a história é. Muitas vezes, as pessoas usam
+    a série de Fibonacci.
 -   **Referência**: ID externo para a tarefa, por exemplo, pode ser o
     número do bilhete que vem de outro sistema.
 -   **Estimativa original**: Estimativa em horas para concluir a tarefa.
 -   **Tempo Gasto**: Tempo gasto trabalhando na tarefa.
 -   **Data de início**: Este é um campo de data e hora.
 -   **Data de Vencimento**: As tarefas vencidas terão uma data de
-    vencimento em vermelho e as datas que ainda não venceram estarão em preto no
-    quadro. Vários formatos de data são aceitos além do selecionador de
-    data.
+    vencimento em vermelho, enquanto as datas que ainda não venceram
+    estarão em preto no quadro. Vários formatos de data são aceitos
+    além do selecionador de data.
 
 Com o link de visualização, você pode ver a descrição da tarefa
 convertida da sintaxe do Markdown.
@@ -51,7 +51,7 @@ Duplicando e Movendo Tarefas
 
 ### Duplicar uma tarefa no mesmo projeto
 
-Vá em visualização de tarefas e escolha **Duplicar** à esquerda.
+Vá para a visualização de tarefas e escolha **Duplicar** à esquerda.
 
 ![duplicação de tarefas](/images/v1/task-duplication.png)
 
@@ -59,7 +59,7 @@ Uma nova tarefa será criada com as mesmas propriedades do original.
 
 ### Duplicar uma tarefa para outro projeto
 
-Vá em visualização da tarefa e escolha **Duplicar para outro projeto**.
+Vá para a visualização da tarefa e escolha **Duplicar para outro projeto**.
 
 ![Duplicação de Tarefas Outro Projeto](/images/v1/task-duplication-another-project.png)
 
@@ -67,14 +67,14 @@ Somente projetos nos quais você é membro serão exibidos na lista
 suspensa.
 
 Antes de copiar as tarefas, o Kanboard perguntará as propriedades
-destino que não são comuns entre o projeto origem e o projeto destino.
+destino que não são comuns entre o projeto de origem e o projeto de destino.
 
 Basicamente, você precisa definir:
 
--   A raia destino
+-   A raia de destino
 -   A coluna
 -   A categoria
--   O designado
+-   O responsável
 
 ### Mover uma tarefa para outro projeto
 
@@ -82,7 +82,7 @@ Vá para a visualização de tarefas e escolha **Mover para outro
 projeto**.
 
 Mover uma tarefa para outro projeto funciona da mesma maneira que a
-duplicação, você tem que escolher as novas propriedades da tarefa.
+duplicação. Você terá que escolher as novas propriedades da tarefa.
 
 ### Lista de propriedades duplicadas
 
@@ -113,7 +113,7 @@ a consulta **status:closed** em qualquer formulário de pesquisa ou
 simplesmente selecionando **Tarefas fechadas** no menu suspenso do
 filtro.
 
-Existem duas maneiras diferentes de fechar uma tarefa, do menu suspenso
+Existem duas maneiras diferentes de fechar uma tarefa, pelo menu suspenso
 de tarefas no quadro:
 
 ![fecha uma tarefa no menu suspenso](/images/v1/menu-close-task.png)
@@ -124,7 +124,7 @@ tarefa:
 ![fechar tarefa](/images/v1/closing-tasks.png)
 
 Nota: Quando você fechar uma tarefa, todas as subtarefas não concluídas
-serão alteradas para o status \"Finalizada\".
+serão alteradas para o status **Finalizada**.
 
 Links de tarefas internas
 -------------------------
@@ -139,15 +139,10 @@ Os relacionamentos padrão são:
 
 -   **refere-se à**
 -   **bloqueia** | **está bloqueada por**
--   **está bloqueada por** | **bloqueia**
 -   **duplicadas** | **é duplicada por**
--   **é duplicada por** | **duplicadas**
 -   **é filha de** | **é pai de**
--   **é pai de** | **é filha de**
 -   **alvos marco** | **é um marco de**
--   **é um marco de** | **alvos marco**
 -   **corrige** | **é corrigido por**
--   **é corrigido por** | **corrige**
 
 Esses rótulos podem ser alterados nas configurações do aplicativo.
 
@@ -174,10 +169,10 @@ Para se encaixar na metodologia Kanban, as tarefas recorrentes não são
 baseadas em uma data, mas em eventos do quadro.
 
 -   As tarefas recorrentes são duplicadas para a primeira coluna do
-    quadro quando os eventos selecionados ocorrem
--   A data de vencimento pode ser recalculada automaticamente
--   Cada tarefa registra o ID da tarefa pai que a criou e a tarefa filho
-    criada
+    quadro quando os eventos selecionados ocorrem.
+-   A data de vencimento pode ser recalculada automaticamente.
+-   Cada tarefa registra o ID da tarefa pai que a criou e a tarefa filha
+    criada.
 
 ### Configuração
 
@@ -216,14 +211,14 @@ CTRL+V ou Comando+V:
 
 ![Página de captura de tela](/images/v1/task-screenshot.png)
 
-No Mac OS X, você pode usar esses atalhos para fazer capturas de tela:
+No macOS, você pode usar esses atalhos para fazer capturas de tela:
 
 -   Command-Control-Shift-3: Faça uma captura de tela da tela e salve-a
-    para a área de transferência
--   Command-Control-Shift-4, em seguida, selecione uma área: faça uma
-    captura de tela da área e salve-a na área de transferência
+    na área de transferência.
+-   Command-Control-Shift-4, em seguida, selecione uma área: Faça uma
+    captura de tela da área e salve-a na área de transferência.
 -   Command-Control-Shift-4, depois espaço, depois clique em uma janela:
-    Captura de tela de uma janela e salve-a na área de transferência
+    Captura de tela de uma janela e salve-a na área de transferência.
 
 Existem também vários aplicativos de terceiros que podem ser usados
 para capturas de tela com anotações e formas.

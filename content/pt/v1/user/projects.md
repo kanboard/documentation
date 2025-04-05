@@ -12,8 +12,8 @@ Existem dois tipos de projetos:
 
 Tipo              | Descrição
 ------------------| ----------------------------------------------------
-Projeto de equipe | Projeto com gerenciamento de usuários e grupos
-Projeto Privado   | Projeto que pertence a apenas uma pessoa, não existe gerenciamento de usuários
+Projeto de equipe | Projeto com gerenciamento de usuários e grupos.
+Projeto Privado   | Projeto que pertence a apenas uma pessoa, sem gerenciamento de usuários.
 
 -   Somente administradores e gerentes do aplicativo podem criar projetos de equipe.
 -   Projetos privados podem ser criados por qualquer pessoa.
@@ -25,20 +25,20 @@ Kanboard pode lidar com vários projetos.
 
 ### Criando projetos para vários usuários
 
--   Somente administradores e gerentes podem criar esses projetos
--   Gerenciamento de usuários está disponível
+-   Somente administradores e gerentes podem criar esses projetos.
+-   Gerenciamento de usuários está disponível.
 
 No painel, clique no link **Novo projeto**:
 
-![formulário de criação do projeto](/images/v1/new-project.png)
+![Formulário de criação do projeto](/images/v1/new-project.png)
 
 É muito fácil: basta encontrar um nome para o seu projeto!
 
 ### Criando um projeto privado
 
--   Qualquer um pode criar um projeto privado
--   **NÃO** há gerenciamento de usuários
--   Somente o proprietário e administradores podem acessar o projeto
+-   Qualquer pessoa pode criar um projeto privado.
+-   **NÃO** há gerenciamento de usuários.
+-   Somente o proprietário e administradores podem acessar o projeto.
 
 No painel, clique no link **Novo projeto privado**.
 

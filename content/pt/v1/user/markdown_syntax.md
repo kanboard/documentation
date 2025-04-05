@@ -5,23 +5,23 @@ menu:
         parent: Guia do Usuário
 ---
 
-O Kanboard usa a [Sintaxe Markdown](http://en.wikipedia.org/wiki/Markdown) para comentários ou
+O Kanboard utiliza a [Sintaxe Markdown](http://en.wikipedia.org/wiki/Markdown) para comentários ou
 descrições de tarefas. Aqui estão alguns exemplos:
 
-Negrito e itálico
+Negrito e Itálico
 -----------------
 
--   Texto em negrito: use 2 asteriscos ou 2 sublinhados
--   Texto em itálico: use 1 asterisco ou 1 sublinhado
+-   Texto em negrito: use 2 asteriscos ou 2 sublinhados.
+-   Texto em itálico: use 1 asterisco ou 1 sublinhado.
 
-    Essa **palavra** é muito __importante__ .
+    Esta **palavra** é muito __importante__.
 
     E aqui, uma palavra em *itálico* com _sublinhado_.
 
-Listas não ordenadas
+Listas Não Ordenadas
 --------------------
 
-Lista não ordenada pode usar asteriscos, menos ou mais.
+Listas não ordenadas podem usar asteriscos, hífens ou sinais de mais.
 
     - Item 1
     - Item 2
@@ -33,14 +33,14 @@ Lista não ordenada pode usar asteriscos, menos ou mais.
     * Item 2
     * Item 3
 
-Listas ordenadas
+Listas Ordenadas
 ----------------
 
-Listas ordenadas são prefixadas por um número como esse:
+Listas ordenadas são prefixadas por números, como neste exemplo:
 
-    1. Faça isso primeiro
-    2. Faça isso
-    3. E isso
+    1. Faça isso primeiro.
+    2. Faça isso.
+    3. E isso.
 
 Links
 -----
@@ -49,10 +49,10 @@ Links
 
     <https://kanboard.org>
 
-Código fonte
+Código Fonte
 ------------
 
-### Código embutido
+### Código Embutido
 
 Use uma crase.
 
@@ -60,7 +60,7 @@ Use uma crase.
 
 ### Blocos de Código
 
-Use 3 crases com eventualmente o nome da linguagem.
+Use 3 crases, opcionalmente com o nome da linguagem.
 
     ```php
     <?php

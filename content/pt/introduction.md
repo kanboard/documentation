@@ -2,81 +2,73 @@
 title: O que é Kanban?
 ---
 
-Kanban é uma metodologia originalmente desenvolvida pela Toyota para ser
-mais eficiente.
+Kanban é uma metodologia originalmente desenvolvida pela Toyota para aumentar a eficiência.
 
 Existem apenas duas restrições impostas pelo Kanban:
 
--   Visualize seu fluxo de trabalho
--   Limite seu trabalho em andamento
+-   Visualize seu fluxo de trabalho.
+-   Limite seu trabalho em andamento.
 
 ### Visualize seu fluxo de trabalho
 
--   Seu trabalho é exibido em um quadro para que você tenha uma visão
-    clara do seu projeto
--   Cada coluna representa uma etapa no seu fluxo de trabalho
+-   Seu trabalho é exibido em um quadro, proporcionando uma visão clara do seu projeto.
+-   Cada coluna representa uma etapa no seu fluxo de trabalho.
 
 ### Limite seu trabalho em andamento
 
--   Incentiva o foco evitando a multitarefa
--   Cada fase pode ter limites de trabalho em andamento
--   Limites ajudam a identificar gargalos
--   Limites evitam trabalhar em muitas tarefas ao mesmo tempo
+-   Incentiva o foco, evitando a multitarefa.
+-   Cada fase pode ter limites de trabalho em andamento.
+-   Limites ajudam a identificar gargalos.
+-   Limites evitam trabalhar em muitas tarefas simultaneamente.
 
 ### Medição de desempenho
 
-O Kanban usa tempos de ciclo e execução para medir o desempenho:
+O Kanban utiliza tempos de ciclo e execução para medir o desempenho:
 
--   **Tempo de execução**: tempo entre a criação e a conclusão da tarefa
--   **Tempo de ciclo**: tempo entre o início e a conclusão da tarefa
+-   **Tempo de execução**: tempo entre a criação e a conclusão da tarefa.
+-   **Tempo de ciclo**: tempo entre o início e a conclusão da tarefa.
 
-Por exemplo, você pode ter um tempo de execução de 100 dias, mas só
-precisa trabalhar 1 hora para concluir a tarefa.
+Por exemplo, você pode ter um tempo de execução de 100 dias, mas só precisar trabalhar 1 hora para concluir a tarefa.
 
 Listas do Kanban vs Todo
 ------------------------
 
 ### Listas de tarefas:
 
--   Fase única (apenas uma lista de itens)
--   Multitarefa possível (não eficiente)
+-   Fase única (apenas uma lista de itens).
+-   Multitarefa possível (não eficiente).
 
 ### Kanban:
 
--   Múltiplas fases, cada coluna representa um passo
--   Traz o foco e evita a multitarefa definindo um limite de trabalho
-    em andamento por coluna
+-   Múltiplas fases, cada coluna representa um passo.
+-   Traz foco e evita a multitarefa, definindo um limite de trabalho em andamento por coluna.
 
 Kanban vs Scrum
 ---------------
 
 ### Scrum:
 
--   Sprints são quadros de tempo, geralmente 2 ou 4 semanas
--   Não permite alterações durante a iteração
--   Estimativa é necessária
--   Usa velocidade como métrica padrão
--   Quadro do Scrum é limpo entre as sprints
--   Scrum tem funções pré-definidas como scrum master, product owners e
-    equipe
--   Um monte de reuniões: planejamento, backlog grooming, stand-ups
-    diários, retrospectiva
+-   Sprints são períodos de tempo, geralmente de 2 ou 4 semanas.
+-   Não permite alterações durante a iteração.
+-   Estimativa é necessária.
+-   Usa velocidade como métrica padrão.
+-   O quadro do Scrum é limpo entre as sprints.
+-   Scrum possui funções pré-definidas, como scrum master, product owner e equipe.
+-   Muitas reuniões: planejamento, backlog grooming, stand-ups diários, retrospectiva.
 
 ### Kanban:
 
--   Fluxo contínuo
--   Alterações podem ser feitas a qualquer momento
--   Estimativa é opcional
--   Use tempo de execução e de ciclo para medir o desempenho
--   O quadro Kanban é persistente
--   O Kanban não impõe restrições ou reuniões estritas; o processo é
-    mais flexível
+-   Fluxo contínuo.
+-   Alterações podem ser feitas a qualquer momento.
+-   Estimativa é opcional.
+-   Usa tempo de execução e de ciclo para medir o desempenho.
+-   O quadro Kanban é persistente.
+-   O Kanban não impõe restrições ou reuniões rígidas; o processo é mais flexível.
 
 Exemplos de uso
 ---------------
 
-Você pode personalizar seus quadros de acordo com suas atividades de
-negócios:
+Você pode personalizar seus quadros de acordo com suas atividades de negócios:
 
 ### Desenvolvimento de software
 
@@ -93,12 +85,12 @@ negócios:
 -   Confirmado
 -   Trabalho em progresso
 -   Testado
--   Fixado
+-   Corrigido
 
 ### Vendas
 
--   Condução
--   Encontro
+-   Prospecção
+-   Reunião
 -   Proposta
 -   Compra
 
@@ -108,13 +100,13 @@ negócios:
 -   Desenvolvimento
 -   Mensuração
 -   Análise
--   Feito
+-   Concluído
 
 ### Processo de Recrutamento
 
 -   Ofertas de trabalho
 -   Candidatos
--   Telas do telefone
+-   Triagem telefônica
 -   Entrevistas
 -   Contratação
 
