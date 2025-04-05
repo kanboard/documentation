@@ -10,7 +10,7 @@ Kanboard — это бесплатное программное обеспече
 - [Официальный сайт](https://kanboard.org)
 - [Баг трекер](https://github.com/kanboard/kanboard/issues)
 - [Discourse Forum](https://kanboard.discourse.group/) - [GitHub Discussions](https://github.com/orgs/kanboard/discussions)
-- [Новостная лента](https://github.com/kanboard/kanboard/releases.atom)
+- [Новостная лента](https://kanboard.org/releases.xml)
 - [Mastodon](https://mastodon.social/@kanboard)
 
 Эта документация также доступна в [чешский]({{< relref path="/_index.md" lang="cs" >}}), [французский]({{< relref path="/_index.md" lang="fr" >}}), [испанский]({{< relref path="/_index.md" lang="es" >}}), [английский]({{< relref path="/_index.md" lang="en" >}}), [португальский]({{< relref path="/_index.md" lang="pt" >}}), и [турецкий]({{< relref path="/_index.md" lang="tr" >}}).
