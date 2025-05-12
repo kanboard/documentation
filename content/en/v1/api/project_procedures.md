@@ -17,6 +17,10 @@ createProject
     - **identifier** (alphanumeric string, optional)
     - **start_date** ISO8601 format (string, optional)
     - **end_date** ISO8601 format (string, optional)
+    - **priority_default** (integer, optional)
+    - **priority_start** (integer, optional)
+    - **priority_end** (integer, optional)
+    - **email** (string, optional)
 - Result on success: **project_id**
 - Result on failure: **false**
 
@@ -300,6 +304,10 @@ updateProject
     - **identifier** (string, optional)
     - **start_date** ISO8601 format (string, optional)
     - **end_date** ISO8601 format (string, optional)
+    - **priority_default** (integer, optional)
+    - **priority_start** (integer, optional)
+    - **priority_end** (integer, optional)
+    - **email** (string, optional)
 - Result on success: **true**
 - Result on failure: **false**
 
