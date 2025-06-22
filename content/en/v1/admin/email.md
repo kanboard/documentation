@@ -112,6 +112,10 @@ define('MAIL_FROM', 'kanboard@mydomain.tld');
 
 This is useful if your SMTP server does not accept the default address.
 
+### Kanboard URL
+
+You must define explicitly the application URL to generate correct links in the emails otherwise the links will default to `http://localhost/` domain.
+
 ## Troubleshooting
 
 If no emails are sent and you are confident that everything is configured correctly:

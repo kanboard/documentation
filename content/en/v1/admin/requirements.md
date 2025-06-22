@@ -64,13 +64,12 @@ Kanboard is pre-configured to work with Apache (URL rewriting).
 
 ### PHP Versions
 
-- PHP >= 7.4
-- PHP 8.x
+- PHP >= 8.1
 
 {{< hint type="info" >}}
 - Since version 1.2.22, Kanboard requires at least PHP 7.4.
 - Since version 1.2.13, Kanboard requires at least PHP 7.2.
-- The latest version of PHP is recommended.
+- Since version 1.2.46, Kanboard requires at least PHP 8.1. PHP 7.x is end-of-life and no longer supported.
 {{</ hint >}}
 
 ### Required PHP Extensions

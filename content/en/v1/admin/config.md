@@ -227,4 +227,7 @@ define('API_AUTHENTICATION_TOKEN', 'My unique API Token');
 
 // TOTP (2FA) issuer name
 define('TOTP_ISSUER', 'Kanboard');
+
+// Comma separated list of trusted proxy headers, for example: "HTTP_X_REAL_IP,HTTP_X_FORWARDED_FOR"
+define('TRUSTED_PROXY_HEADERS', '');
 ```
