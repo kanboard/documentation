@@ -74,7 +74,7 @@ createTag
 - Parameters:
     - **project_id** (integer)
     - **tag** (string)
-    - **color_id** (integer, optional)
+    - **color_id** (string, optional)
 - Result on success: **tag_id**
 - Result on failure: **false**
 
@@ -101,7 +101,7 @@ updateTag
 - Parameters:
     - **tag_id** (integer)
     - **tag** (string)
-    - **color_id** (integer, optional)
+    - **color_id** (string, optional)
 - Result on success: **true**
 - Result on failure: **false**
 
