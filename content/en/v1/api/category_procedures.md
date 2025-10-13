@@ -11,7 +11,7 @@ createCategory
 
 - Purpose: **Create a new category**
 - Parameters:
-- **project_id** (integer, required)
+    - **project_id** (integer, required)
     - **name** (string, required, must be unique for the given project)
     - **color_id** (string, optional)
 - Result on success: **category_id**
