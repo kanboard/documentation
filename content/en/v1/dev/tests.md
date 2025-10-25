@@ -55,12 +55,7 @@ OK (649 tests, 43595 assertions)
 
 ### Testing with MySQL
 
-Ensure MySQL or MariaDB is installed on localhost. Default credentials:
-
-- Hostname: **localhost**
-- Username: **root**
-- Password: none
-- Database: **kanboard_unit_test**
+Ensure MySQL or MariaDB is installed on localhost.
 
 The database is dropped and recreated for each execution. Use the config file `tests/units.mysql.xml`:
 
@@ -70,12 +65,7 @@ phpunit -c tests/units.mysql.xml
 
 ### Testing with PostgreSQL
 
-Ensure PostgreSQL is installed on localhost. Default credentials:
-
-- Hostname: **localhost**
-- Username: **postgres**
-- Password: none
-- Database: **kanboard_unit_test**
+Ensure PostgreSQL is installed on localhost.
 
 The database is recreated for each execution. Use the config file `tests/units.postgres.xml`:
 
@@ -108,32 +98,4 @@ make integration-test-mysql
 
 # Run tests with PostgreSQL
 make integration-test-postgres
-```
-
-## Acceptance Tests
-
-Acceptance tests (also known as end-to-end or functional tests) test the UI functionality in a browser using Selenium.
-
-### Requirements
-
-- [Selenium Standalone Server](http://www.seleniumhq.org/download/)
-- Compatible version of Firefox
-
-Run the tests using the config file `tests/acceptance.xml`:
-
-```bash
-make test-browser
-```
-
-Example output:
-
-```bash
-$ make test-browser
-PHPUnit 4.8.26 by Sebastian Bergmann and contributors.
-
-..
-
-Time: 5.59 seconds, Memory: 5.25MB
-
-OK (2 tests, 5 assertions)
 ```
