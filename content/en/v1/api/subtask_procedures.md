@@ -12,7 +12,7 @@ createSubtask
 - Purpose: **Create a new subtask**
 - Parameters:
     - **task_id** (integer, required)
-    - **title** (integer, required)
+    - **title** (string, required)
     - **user_id** (int, optional)
     - **time_estimated** (int, optional)
     - **time_spent** (int, optional)
