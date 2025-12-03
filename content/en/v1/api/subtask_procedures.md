@@ -136,7 +136,7 @@ updateSubtask
 - Parameters:
     - **id** (integer, required)
     - **task_id** (integer, required)
-    - **title** (integer, optional)
+    - **title** (string, optional)
     - **user_id** (integer, optional)
     - **time_estimated** (integer, optional)
     - **time_spent** (integer, optional)
