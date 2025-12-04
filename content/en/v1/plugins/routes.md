@@ -74,15 +74,17 @@ HTML output when URL rewriting is not enabled:
 ?controller=mycontroller&amp;action=myaction&amp;plugin=myplugin
 ```
 
-### Generate a redirect link:
+### Generate a HTTP redirection
 
 From a controller, if you need to perform a redirection:
 
 ```php
-$this->url->to('mycontroller', 'myaction', array('plugin' => 'myplugin'));
+$this->response->redirect(
+    $this->url->to('mycontroller', 'myaction', array('plugin' => 'myplugin'))
+);
 ```
 
-This generates:
+This generates a redirection to:
 
 ```
 ?controller=mycontroller&action=myaction&plugin=myplugin
