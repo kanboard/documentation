@@ -105,6 +105,8 @@ services:
      - data:/var/www/app/data
      - plugins:/var/www/app/plugins
      - certs:/etc/nginx/ssl
+    environment:
+     - PLUGIN_INSTALLER=false # Swap to true to enable web based plugin installation
 volumes:
   data:
     driver: local
