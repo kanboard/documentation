@@ -6,17 +6,21 @@ menu:
         parent: Administration
 ---
 
+General Advice
+--------------
+
+- Change the default username and password immediately after installation.
+- **Do not expose Kanboard directly to untrusted networks** (e.g., the public Internet); restrict access with a firewall or VPN and/or place it behind a properly configured reverse proxy.
+- Prevent public access to the `data` directory via the URL. A `.htaccess` file for Apache and a `web.config` file for IIS are included; configure other web servers accordingly.
+- When using a reverse proxy, ensure it strips or overwrites incoming `X-Forwarded-*` headers to avoid HTTP header spoofing, and **only forwards trusted values to Kanboard**.
+- **Add rate limiting / throttling** (for example at the reverse proxy or web server) to reduce brute-force attempts.
+- Be cautious with webhooks, integrations, and plugin features that fetch remote URLs: **untrusted URL configuration can lead to SSRF** (Server-Side Request Forgery). **Restrict who can configure those URLs and limit outbound network access from the Kanboard server** (e.g., block access to internal networks and metadata services).
+
 {{< hint type="info" >}}
 - Plugin installation from the web user interface is disabled by default.
 - There is no code review or approval process for submitting plugins.
 - It is the responsibility of the Kanboard instance owner to verify the legitimacy of a plugin.
 {{</ hint >}}
-
-General Advice
---------------
-
-- Change the default username/password.
-- Prevent public access to the `data` directory via the URL. A `.htaccess` file for Apache and a `web.config` file for IIS are included, but other web servers must be configured manually.
 
 Installation Outside Document Root
 ----------------------------------
