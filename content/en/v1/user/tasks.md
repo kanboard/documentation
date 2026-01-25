@@ -42,6 +42,14 @@ Then the task creation form appears:
 
 With the preview link, you can see the task description converted from Markdown syntax.
 
+Importing Tasks via CSV file
+----------------------------
+
+### Bulk load tasks into swimlanes
+
+Kanboard supports importing tasks from CSV files.  
+See [Importing Tasks via CSV](import_tasks.md) for details on the CSV format, field semantics, and templates.
+
 Duplicating and Moving Tasks
 ----------------------------
 
