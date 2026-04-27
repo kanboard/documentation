@@ -124,7 +124,7 @@ Response example:
 removeTag
 ---------
 
-- Purpose: **removeTag**
+- Purpose: **Remove a tag**
 - Parameters:
     - **tag_id** (integer)
 - Result on success: **true**

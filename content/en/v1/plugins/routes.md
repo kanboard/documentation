@@ -42,7 +42,7 @@ $this->request->getStringParam('my_variable'); // Returns foobar
 Generate links based on the routing table
 -----------------------------------------
 
-From templates, you have to use the helper `Kanboard\Helper\Url`.
+From templates, you have to use the helper `Kanboard\Helper\UrlHelper`.
 
 ### Generate an HTML link
 

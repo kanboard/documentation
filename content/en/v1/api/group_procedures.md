@@ -13,7 +13,7 @@ createGroup
 - Parameters:
     - **name** (string, required)
     - **external_id** (string, optional)
-- Result on success: **link_id**
+- Result on success: **group_id**
 - Result on failure: **false**
 
 Request example:

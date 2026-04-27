@@ -28,7 +28,7 @@ Default method (HTTP Basic)
 - Username: username
 - Password: user password or personal access token
 
-The API use the [HTTP Basic Authentication Scheme described in the
+The API uses the [HTTP Basic Authentication Scheme described in the
 RFC2617](http://www.ietf.org/rfc/rfc2617.txt).
 
 Custom HTTP header

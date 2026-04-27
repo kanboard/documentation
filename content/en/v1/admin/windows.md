@@ -97,7 +97,7 @@ Load the PHP module for Apache:
 
 Add the following configuration to `C:\Apache24\conf\httpd.conf`:
 
-    LoadModule php5_module "c:/php/php5apache2_4.dll"
+    LoadModule php_module "c:/php/php8apache2_4.dll"
     AddHandler application/x-httpd-php .php
 
     # Configure the path to php.ini

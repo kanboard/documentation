@@ -12,7 +12,7 @@ createProjectFile
 - Purpose: **Create and upload a new project attachment**
 - Parameters:
     - **project_id** (integer, required)
-    - **filename** (integer, required)
+    - **filename** (string, required)
     - **blob** File content encoded in base64 (string, required)
 - Result on success: **file_id**
 - Result on failure: **false**

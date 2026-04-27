@@ -26,7 +26,7 @@ All internal events of Kanboard can be sent to an external URL.
 - `comment.create`
 - `comment.update`
 - `comment.delete`
-- `file.create`
+- `task.file.create`
 - `task.move.project`
 - `task.move.column`
 - `task.move.position`

@@ -36,7 +36,7 @@ Security
 --------
 
 - Always use HTTPS with a valid certificate (avoid clear-text communication).
-- If you develop a mobile application, it\'s your responsibility to store user credentials securely on the device.
+- If you develop a mobile application, it's your responsibility to store user credentials securely on the device.
 - After three authentication failures on the user API, the end-user must unlock their account using the login form.
 
 {{< hint type="warning" >}}
@@ -49,7 +49,7 @@ Kanboard uses the JSON-RPC protocol to interact with external programs.
 
 JSON-RPC is a remote procedure call protocol encoded in JSON. It is similar to XML-RPC but uses the JSON format.
 
-Kanboard use [version 2 of the protocol](http://www.jsonrpc.org/specification).
+Kanboard uses [version 2 of the protocol](http://www.jsonrpc.org/specification).
 You must call the API with a `POST` HTTP request.
 
 Kanboard supports batch requests, allowing you to make multiple API calls in a single HTTP request.

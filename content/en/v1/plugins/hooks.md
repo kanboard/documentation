@@ -174,7 +174,7 @@ Example:
 
 ```php
 $this->hook->on('formatter:board:query', function (\PicoDb\Table &$query) {
-    $query->eq(TaskModel::TABLE.'color_id', 'red');
+    $query->eq(TaskModel::TABLE.'.color_id', 'red');
 });
 ```
 

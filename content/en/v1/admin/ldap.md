@@ -160,7 +160,7 @@ define('LDAP_USER_FILTER', 'uid=%s');
 
 Some LDAP servers are configured for "LDAPS" connectivity only (on port 636). This is different from TLS, which starts in cleartext (port 389 by default) and then sets up encryption over the same channel.
 
-To tell PHP to use LDAPS, you need to prefix the name of your LDAP server with `<ldaps://>`, as in the example below:
+To tell PHP to use LDAPS, you need to prefix the name of your LDAP server with `ldaps://`, as in the example below:
 
 Our LDAP server is `myserver.example.com` and is only accessible via LDAPS. Most likely, we won't want to validate the server certificate, and we DON'T want TLS.
 
@@ -249,8 +249,8 @@ define('LDAP_GROUP_ADMIN_DN', 'CN=Kanboard Admins,CN=Users,DC=kanboard,DC=local'
 define('LDAP_GROUP_MANAGER_DN', 'CN=Kanboard Managers,CN=Users,DC=kanboard,DC=local');
 ```
 
-- People member of "Kanboard Admins" will have the role "Administrator"
-- People member of "Kanboard Managers" will have the role "Managers"
+- Members of "Kanboard Admins" will have the role "Administrator"
+- Members of "Kanboard Managers" will have the role "Manager"
 - Everybody else will have the role "User"
 
 #### Example for OpenLDAP with Posix Groups:
@@ -262,7 +262,7 @@ define('LDAP_GROUP_ADMIN_DN', 'cn=Kanboard Admins,ou=Groups,dc=kanboard,dc=local
 define('LDAP_GROUP_MANAGER_DN', 'cn=Kanboard Managers,ou=Groups,dc=kanboard,dc=local');
 ```
 
-You **must define the parameter** `LDAP_GROUP_USER_FILTER` if your LDAP server use `memberUid` instead of `memberOf`. All parameters of this example are mandatory.
+You **must define the parameter** `LDAP_GROUP_USER_FILTER` if your LDAP server uses `memberUid` instead of `memberOf`. All parameters of this example are mandatory.
 
 ### Automatically load LDAP groups for project permissions
 
@@ -289,9 +289,9 @@ define('LDAP_GROUP_BASE_DN', 'CN=Groups,DC=kanboard,DC=local');
 define('LDAP_GROUP_FILTER', '(&(objectClass=group)(sAMAccountName=%s*))');
 ```
 
-With the filter given as example above, Kanboard will search for groups that match the query. If the end-user enter the text "My group" in the auto-complete box, Kanboard will return all groups that match the pattern: `(&(objectClass=group)(sAMAccountName=My group*))`.
+With the filter given as example above, Kanboard will search for groups that match the query. If the end-user enters the text "My group" in the auto-complete box, Kanboard will return all groups that match the pattern: `(&(objectClass=group)(sAMAccountName=My group*))`.
 
-- Note 1: The special characters `*` is important here, **otherwise an exact match will be done**.
+- Note 1: The special character `*` is important here, **otherwise an exact match will be done**.
 - Note 2: This feature is only compatible with LDAP authentication configured in "proxy" or "anonymous" mode
 
 [More examples of LDAP filters for Active Directory](http://social.technet.microsoft.com/wiki/contents/articles/5392.active-directory-ldap-syntax-filters.aspx)
@@ -324,9 +324,9 @@ To upload the image in the user profile, Active Directory administrators may use
 Edit](http://www.cjwdev.co.uk/Software/ADPhotoEdit/Info.html).
 
 {{< hint type="info" >}}
-The profile image is **downloaded at login time only if the user do not already have uploaded an image previously**.
+The profile image is **downloaded at login time only if the user has not already uploaded an image previously**.
 
-To change the user photo, the previous one have to be removed manually in the user profile.
+To change the user photo, the previous one has to be removed manually in the user profile.
 {{</ hint >}}
 
 LDAP Configuration Parameters
@@ -344,12 +344,12 @@ Parameter                       | Default value | Description
 `LDAP_PORT`                     | `389`           | LDAP server port
 `LDAP_SSL_VERIFY`               | `true`           | Validate certificate for `ldaps://` style URL
 `LDAP_START_TLS`                | `false`         | Enable LDAP start TLS
-`LDAP_USERNAME_CASE_SENSITIVE`  | `false`         | Kanboard lowercase the ldap username to avoid duplicate users (the database is case sensitive)
+`LDAP_USERNAME_CASE_SENSITIVE`  | `false`         | Kanboard lowercases the ldap username to avoid duplicate users (the database is case sensitive)
 `LDAP_BIND_TYPE`                | `anonymous`     | Bind type: `anonymous`, `user` or `proxy`
 `LDAP_USERNAME`                 | `null`          | LDAP username to use with proxy mode or username pattern to use with user mode
 `LDAP_PASSWORD`                 | `null`          | LDAP password to use for proxy mode
 `LDAP_USER_BASE_DN`             | Empty         | LDAP DN for users (Example: `CN=Users,DC=kanboard,DC=local`)
-`LDAP_USER_FILTER`              | Empty         | LDAP pattern to use when searching for a user account (Example: `(&(objectClass=user)(sAMAccount Name=%s))`)
+`LDAP_USER_FILTER`              | Empty         | LDAP pattern to use when searching for a user account (Example: `(&(objectClass=user)(sAMAccountName=%s))`)
 `LDAP_USER_ATTRIBUTE_USERNAME`  | `uid`           | LDAP attribute for username (Example: `samaccountname`)
 `LDAP_USER_ATTRIBUTE_FULLNAME`  | `cn`            | LDAP attribute for user full name (Example: `displayname`)
 `LDAP_USER_ATTRIBUTE_EMAIL`     | `mail`          | LDAP attribute for user email
@@ -358,11 +358,11 @@ Parameter                       | Default value | Description
 `LDAP_USER_ATTRIBUTE_LANGUAGE`  | Empty         | LDAP attribute for user language (`preferredlanguage`), the accepted language format is `fr-FR`
 `LDAP_USER_CREATION`            | `true`          | Enable automatic LDAP user creation
 `LDAP_GROUP_ADMIN_DN`           | Empty         | LDAP DN for administrators (Example: `CN=Kanboard-Admins,CN=Users,DC=kanboard,DC=local`)
-`LDAP_GROUP_MANAGER_DN`         | Empty         | LDAP DN for managers (Example: `CN=Kanboard Managers,CN=Users,DC=kanboard,DC =local`)
+`LDAP_GROUP_MANAGER_DN`         | Empty         | LDAP DN for managers (Example: `CN=Kanboard Managers,CN=Users,DC=kanboard,DC=local`)
 `LDAP_GROUP_PROVIDER`           | `false`         | Enable LDAP group provider for project permissions
 `LDAP_GROUP_BASE_DN`            | Empty         | LDAP Base DN for groups
-`LDAP_GROUP_FILTER`             | Empty         | LDAP group filter (Example: `(&(objectClass=group)(sAMAccoun tName=%s\*))`)
-`LDAP_GROUP_USER_FILTER`        | Empty         | If defined, Kanboard will search user groups in `LDAP_GROUP_BASE_DN` with this filter, it's useful only for posixGroups (Example: `(&(objectClass=posixGroup)(mem berUid=%s))`)
+`LDAP_GROUP_FILTER`             | Empty         | LDAP group filter (Example: `(&(objectClass=group)(sAMAccountName=%s\*))`)
+`LDAP_GROUP_USER_FILTER`        | Empty         | If defined, Kanboard will search user groups in `LDAP_GROUP_BASE_DN` with this filter, it's useful only for posixGroups (Example: `(&(objectClass=posixGroup)(memberUid=%s))`)
 `LDAP_GROUP_ATTRIBUTE_NAME`     | `cn`            | LDAP attribute for the group name
 `LDAP_GROUP_USER_ATTRIBUTE`     | `username`      | LDAP attribute for the user in the group filter
 
@@ -375,7 +375,7 @@ LDAP Configuration Examples
 - Download the user profile picture from Active Directory
 - Set user language from LDAP attribute
 - Kanboard roles are mapped to Active Directory groups
-- LDAP group providers is enabled
+- LDAP group provider is enabled
 
 ```php
 define('LDAP_AUTH', true);
@@ -438,7 +438,7 @@ Kanboard Configuration:
 
 - User authentication
 - Kanboard roles are mapped to LDAP groups
-- LDAP group providers is enabled
+- LDAP group provider is enabled
 
 ```php
 define('LDAP_AUTH', true);
@@ -497,7 +497,7 @@ Kanboard Configuration:
 
 - User authentication
 - Kanboard roles are mapped to LDAP groups
-- LDAP group providers is enabled
+- LDAP group provider is enabled
 
 ```php
 define('LDAP_AUTH', true);
@@ -557,7 +557,7 @@ Kanboard Configuration:
 
 - User authentication
 - Kanboard roles are mapped to LDAP groups
-- LDAP group providers is enabled
+- LDAP group provider is enabled
 
 ```php
 define('LDAP_AUTH', true);

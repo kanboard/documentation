@@ -360,7 +360,7 @@ Request example:
 ```json
 {
     "jsonrpc": "2.0",
-    "method": "getmyProjects",
+    "method": "getMyProjects",
     "id": 2134420212
 }
 ```

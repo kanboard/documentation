@@ -500,7 +500,7 @@ Response example:
 closeTask
 ---------
 
-- Purpose: **Set a task to the status close**
+- Purpose: **Set a task to the status closed**
 - Parameters:
     - **task_id** (integer, required)
 - Result on success: **true**
@@ -643,7 +643,7 @@ Response example:
 duplicateTaskToProject
 ----------------------
 
-- Purpose: **Move a task to another column or another position**
+- Purpose: **Duplicate a task to another project**
 - Parameters:
     - **task_id** (integer, required)
     - **project_id** (integer, required)

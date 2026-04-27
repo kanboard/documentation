@@ -84,4 +84,3 @@ define('DB_SSL_CERT', '/path/to/client-cert.pem');
 // MySQL SSL CA
 define('DB_SSL_CA', '/path/to/ca-cert.pem');
 ```
-````

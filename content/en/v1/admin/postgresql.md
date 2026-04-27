@@ -10,7 +10,7 @@ By default, Kanboard uses SQLite to store its data, but it's also possible to us
 
 ## Requirements
 
-- PostgreSQL >= 9.3
+- PostgreSQL >= 9.4
 - The PHP extension `pdo_pgsql` installed (Debian/Ubuntu: `apt-get install php-pgsql`)
 
 ## Configuration

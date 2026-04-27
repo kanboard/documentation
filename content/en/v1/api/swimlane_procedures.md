@@ -99,7 +99,7 @@ Response example:
 getSwimlane
 -----------
 
-- Purpose: **Get the a swimlane by id**
+- Purpose: **Get a swimlane by id**
 - Parameters:
     - **swimlane_id** (integer, required)
 - Result on success: **swimlane properties**
@@ -137,7 +137,7 @@ Response example:
 getSwimlaneById
 ---------------
 
-- Purpose: **Get the a swimlane by id**
+- Purpose: **Get a swimlane by id**
 - Parameters:
     - **swimlane_id** (integer, required)
 - Result on success: **swimlane properties**
@@ -175,7 +175,7 @@ Response example:
 getSwimlaneByName
 -----------------
 
-- Purpose: **Get the a swimlane by name**
+- Purpose: **Get a swimlane by name**
 - Parameters:
     - **project_id** (integer, required)
     - **name** (string, required)

@@ -11,13 +11,13 @@ Adding modal forms in your plugin
 
 ### Opening a modal form from a template
 
-Using the `Kanboard\Helper\ModalHelper` class, you can open contextual menus (modals) to perform additional actions then redirect to a specific. For example from your template, for a `myform` action in your plugin's controller:
+Using the `Kanboard\Helper\ModalHelper` class, you can open contextual menus (modals) to perform additional actions and then redirect to a specific page. For example, to trigger a `myform` action in your plugin's controller, add this to your template:
 
 ```phtml
 <?= $this->modal->small('font-awesome-icon', 'My Form text', 'MyController', 'myform', array('plugin' => 'myplugin')) ?>
 ```
 
-If you'd like your modal to redirect to the current page after submission, don't forget to give it additional params to generate the redirection. For example, adding the task's ID to redirect to the task view:
+If you'd like your modal to redirect to the current page after submission, don't forget to give it additional params to build the redirect URL. For example, adding the task's ID to redirect to the task view:
 
 ```phtml
 <?= $this->modal->small('font-awesome-icon', 'My Form text', 'MyController', 'myform', array('plugin' => 'myplugin', 'task_id' => $task['id'])) ?>
@@ -48,15 +48,15 @@ Do not add a second form in the same modal. Only [one form per modal is supporte
     <?= $this->form->select('project_id', $projects, $values, $errors) ?>
     <?= $this->modal->submitButtons() ?>
 </form>
-Or alternatively, create a new one:
-<?= $this->modal->small('plus', 'Create project', 'MyController', 'createproject', array('plugin' => 'myplugin', 'task_id' => $task_id)) ?></b>
+Alternatively, create a new one:
+<?= $this->modal->small('plus', 'Create project', 'MyController', 'createproject', array('plugin' => 'myplugin', 'task_id' => $task_id)) ?>
 ```
 
 Clicking the `Create project` link will close the current modal and open a new one with the `createproject` action, avoiding confusion between forms.
 
 ### Validating the form
 
-To check if the request is a fresh form, or contains submitted values, you can use `$this->request->isPost()`. After validating the submitted values in `$this->request->getValues()`, you should indicate success and redirect somewhere:
+To check if the request is a fresh form, or contains submitted values, you can use `$this->request->isPost()`. After validating the submitted values returned by `$this->request->getValues()`, you should indicate success and redirect somewhere:
 
 ```php
 $this->flash->success('My form was successful');
@@ -74,7 +74,7 @@ $this->response->html($this->template->render('myplugin:myform', array(
 )));
 ```
 
-Whether you're performing manual form validation, or using custom validators, the form helpers will display the errors alongside the erroneous submitted fields. For this purpose, make sure `errors` has one entry for each errored field, containing an array of error messages. For example:
+Whether you're performing manual form validation, or using custom validators, the form helpers will display the errors alongside the fields that failed validation. For this purpose, make sure `$errors` has one entry for each errored field, containing an array of error messages. For example:
 
 ```php
 $errors = [ "age" => [ "Age cannot be a negative number" ] ];
