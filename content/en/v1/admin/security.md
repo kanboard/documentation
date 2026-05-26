@@ -59,6 +59,32 @@ However, **after three failed authentication attempts via the user API**, the ac
 
 Kanboard does not block IP addresses since bots can use multiple anonymous proxies. However, you can use external tools like [fail2ban](http://www.fail2ban.org) to prevent massive scans.
 
+One can set up a fail2ban filter for kanboard with the following (edit for your needs; check documenation on fail2ban for setting this up):
+
+```
+# /etc/fail2ban/filter.d/kanboard.local
+
+[INCLUDES]
+before = common.conf
+
+[Definition]
+failregex = ^.*Kanboard: user.*authentication failure with IP address: <HOST>$
+journalmatch = _COMM=php-fpm
+```
+
+```
+# /etc/fail2ban/jail.local
+
+...
+
+[kanboard]
+enabled = true
+ignoreip = 127.0.0.1 ::1
+```
+
+Make sure that your php server has set `error_log` to a valid value and that your fail2ban config is reading from the correct logs or no logs will be output on authentication error.  
+Note that fail2ban depends on log outputs to work properly.
+
 Default settings can be changed using these configuration variables:
 
 ```php
