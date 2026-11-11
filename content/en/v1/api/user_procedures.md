@@ -102,23 +102,34 @@ Request example:
 }
 ```
 
-Response example:
+Response example (Kanboard 1.2.54, PostgreSQL 17, PHP 8.4):
 
 ```json
 {
     "jsonrpc": "2.0",
     "id": 1769674781,
     "result": {
-        "id": "1",
-        "username": "biloute",
-        "password": "$2y$10$dRs6pPoBu935RpmsrhmbjevJH5MgZ7Kr9QrnVINwwyZ3.MOwqg.0m",
-        "role": "app-user",
-        "is_ldap_user": "0",
-        "name": "",
-        "email": "",
+        "id": 1,
+        "username": "admin",
+        "is_ldap_user": false,
+        "name": null,
+        "email": null,
         "google_id": null,
         "github_id": null,
-        "notifications_enabled": "0"
+        "notifications_enabled": false,
+        "timezone": null,
+        "language": null,
+        "disable_login_form": false,
+        "twofactor_activated": false,
+        "notifications_filter": 4,
+        "nb_failed_login": 0,
+        "lock_expiration_date": 0,
+        "gitlab_id": null,
+        "role": "app-admin",
+        "is_active": true,
+        "avatar_path": null,
+        "filter": null,
+        "theme": "light"
     }
 }
 ```

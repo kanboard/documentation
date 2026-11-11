@@ -180,26 +180,26 @@ Request example:
 {"jsonrpc":"2.0","method":"getAllExternalTaskLinks","id":2069307223,"params":[9]}
 ```
 
-Response example:
+Response example (Kanboard 1.2.54, PostgreSQL 17, PHP 8.4):
 
 ```json
 {
     "jsonrpc": "2.0",
     "result": [
         {
-            "id": "1",
-            "link_type": "attachment",
+            "id": 1,
+            "link_type": "weblink",
             "dependency": "related",
-            "title": "New title",
-            "url": "http:\/\/localhost\/document.pdf",
-            "date_creation": "1466965256",
-            "date_modification": "1466965256",
-            "task_id": "9",
-            "creator_id": "0",
+            "title": "Example",
+            "url": "https://example.com/",
+            "date_creation": 1700000000,
+            "date_modification": 1700000000,
+            "task_id": 1,
+            "creator_id": 1,
             "creator_name": null,
-            "creator_username": null,
+            "creator_username": "admin",
             "dependency_label": "Related",
-            "type": "Attachment"
+            "type": "Web Link"
         }
     ],
     "id": 2069307223

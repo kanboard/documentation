@@ -52,7 +52,7 @@ getAllTaskFiles
 - Parameters:
     - **task_id** (integer, required)
 - Result on success: **list of files**
-- Result on failure: **false**
+- When no files are found, the result is an **empty array** (`[]`).
 
 Request example:
 
@@ -67,7 +67,7 @@ Request example:
 }
 ```
 
-Response example:
+Response example (Kanboard 1.2.54, PostgreSQL 17, PHP 8.4):
 
 ```json
 {
@@ -75,16 +75,17 @@ Response example:
     "id": 1880662820,
     "result": [
         {
-            "id": "1",
-            "name": "My file",
-            "path": "1\/1\/0db4d0a897a4c852f6e12f0239d4805f7b4ab596",
-            "is_image": "0",
-            "task_id": "1",
-            "date": "1432509941",
-            "user_id": "0",
-            "size": "15",
-            "username": null,
-            "user_name": null
+            "id": 1,
+            "name": "example.txt",
+            "path": "tasks/1/37429b6c2e7b3a8cfce5fc5d081c0bf672d86583",
+            "is_image": false,
+            "task_id": 1,
+            "date": 1794435903,
+            "user_id": 1,
+            "size": 12,
+            "username": "admin",
+            "user_name": null,
+            "etag": "90d01f392ecef0bc5045164b8d8f12de"
         }
     ]
 }
