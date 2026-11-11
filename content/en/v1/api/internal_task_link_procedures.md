@@ -139,7 +139,7 @@ Request example:
 }
 ```
 
-Response example:
+Response example (Kanboard 1.2.54, PostgreSQL 17, PHP 8.4):
 
 ```json
 {
@@ -147,18 +147,24 @@ Response example:
     "id": 810848359,
     "result": [
         {
-            "id": "1",
-            "task_id": "3",
+            "id": 1,
+            "task_id": 2,
             "label": "relates to",
-            "title": "B",
-            "is_active": "1",
-            "project_id": "1",
-            "task_time_spent": "0",
-            "task_time_estimated": "0",
-            "task_assignee_id": "0",
+            "title": "Related task",
+            "is_active": true,
+            "project_id": 1,
+            "column_id": 1,
+            "color_id": "yellow",
+            "date_completed": null,
+            "date_started": 0,
+            "date_due": 0,
+            "task_time_spent": null,
+            "task_time_estimated": null,
+            "task_assignee_id": 0,
             "task_assignee_username": null,
             "task_assignee_name": null,
-            "column_title": "Backlog"
+            "column_title": "Backlog",
+            "project_name": "API check"
         }
     ]
 }

@@ -28,7 +28,7 @@ Request example:
 }
 ```
 
-Response example:
+Response example (Kanboard 1.2.54, PostgreSQL 17, PHP 8.4):
 
 ```json
 {
@@ -36,25 +36,40 @@ Response example:
     "id": 887036325,
     "result": [
         {
-            "id": "1",
+            "id": 1,
             "title": "Backlog",
-            "position": "1",
-            "project_id": "1",
-            "task_limit": "0"
+            "position": 1,
+            "project_id": 1,
+            "task_limit": 0,
+            "description": "",
+            "hide_in_dashboard": false
         },
         {
-            "id": "2",
+            "id": 2,
             "title": "Ready",
-            "position": "2",
-            "project_id": "1",
-            "task_limit": "0"
+            "position": 2,
+            "project_id": 1,
+            "task_limit": 0,
+            "description": "",
+            "hide_in_dashboard": false
         },
         {
-            "id": "3",
+            "id": 3,
             "title": "Work in progress",
-            "position": "3",
-            "project_id": "1",
-            "task_limit": "0"
+            "position": 3,
+            "project_id": 1,
+            "task_limit": 0,
+            "description": "",
+            "hide_in_dashboard": false
+        },
+        {
+            "id": 4,
+            "title": "Done",
+            "position": 4,
+            "project_id": 1,
+            "task_limit": 0,
+            "description": "",
+            "hide_in_dashboard": false
         }
     ]
 }
@@ -82,18 +97,20 @@ Request example:
 }
 ```
 
-Response example:
+Response example (Kanboard 1.2.54, PostgreSQL 17, PHP 8.4):
 
 ```json
 {
     "jsonrpc": "2.0",
     "id": 1242049935,
     "result": {
-        "id": "2",
-        "title": "Youpi",
-        "position": "2",
-        "project_id": "1",
-        "task_limit": "5"
+        "id": 1,
+        "title": "Backlog",
+        "position": 1,
+        "project_id": 1,
+        "task_limit": 0,
+        "description": "",
+        "hide_in_dashboard": false
     }
 }
 ```

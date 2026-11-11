@@ -12,8 +12,8 @@ getTaskMetadata
 - Purpose: **Get all metadata related to a task by task unique id**
 - Parameters:
     - **task_id** (integer, required)
-- Result on success: **list of metadata**
-- Result on failure: **empty array**
+- Result on success: **object mapping metadata names to values**
+- If the task has no metadata, the result is an **empty object** (`{}`).
 
 Request example to fetch all the metadata of a task:
 
@@ -34,12 +34,10 @@ Response example:
 {
     "jsonrpc": "2.0",
     "id": 133280317,
-    "result": [
-        {
-            "metaKey1": "metaValue1",
-            "metaKey2": "metaValue2"
-        }
-    ]
+    "result": {
+        "metaKey1": "metaValue1",
+        "metaKey2": "metaValue2"
+    }
 }
 ```
 

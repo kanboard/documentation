@@ -91,7 +91,7 @@ getAllComments
 - Parameters:
     - **task_id** (integer, required)
 - Result on success: **List of comments**
-- Result on failure: **false**
+- When no comments are found, the result is an **empty array** (`[]`).
 
 Request example:
 
@@ -106,7 +106,7 @@ Request example:
 }
 ```
 
-Response example:
+Response example (Kanboard 1.2.54, PostgreSQL 17, PHP 8.4):
 
 ```json
 {
@@ -114,13 +114,17 @@ Response example:
     "id": 148484683,
     "result": [
         {
-            "id": "1",
-            "date_creation": "1410882272",
-            "task_id": "1",
-            "user_id": "1",
-            "comment": "Comment #1",
+            "id": 1,
+            "date_creation": 1794435903,
+            "date_modification": 1794435903,
+            "task_id": 1,
+            "user_id": 1,
+            "comment": "Example comment",
+            "visibility": "app-user",
             "username": "admin",
-            "name": null
+            "name": null,
+            "email": null,
+            "avatar_path": null
         }
     ]
 }

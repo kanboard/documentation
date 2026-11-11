@@ -55,4 +55,10 @@ You must call the API with a `POST` HTTP request.
 Kanboard supports batch requests, allowing you to make multiple API calls in a single HTTP request.
 This is particularly useful for mobile clients with higher network latency.
 
+Response examples illustrate the structure of the returned data. Some examples show database values
+as JSON strings, while an actual response can contain numbers or booleans instead. Responses can also
+include fields not shown in an example. Check the response from your Kanboard installation when
+building clients that require fixed JSON types. For example, a task's `is_active` field may be a
+boolean with PostgreSQL or an integer with SQLite.
+
 ## API Procedures

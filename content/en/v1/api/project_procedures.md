@@ -69,28 +69,36 @@ Request example:
 }
 ```
 
-Response example:
+Response example (Kanboard 1.2.54, PostgreSQL 17, PHP 8.4):
 
 ```json
 {
     "jsonrpc": "2.0",
     "id": 226760253,
     "result": {
-        "id": "1",
-        "name": "API test",
-        "is_active": "1",
+        "id": 1,
+        "name": "API check",
+        "is_active": true,
         "token": "",
-        "last_modified": "1436119135",
-        "is_public": "0",
-        "is_private": "0",
-        "default_swimlane": "Default swimlane",
-        "show_default_swimlane": "1",
-        "description": "test",
+        "last_modified": 1794435881,
+        "is_public": false,
+        "is_private": false,
+        "description": null,
         "identifier": "",
+        "start_date": "",
+        "end_date": "",
+        "owner_id": 1,
+        "priority_default": 0,
+        "priority_start": 0,
+        "priority_end": 3,
+        "email": null,
+        "predefined_email_subjects": null,
+        "per_swimlane_task_limits": false,
+        "task_limit": 0,
+        "enable_global_tags": true,
         "url": {
-            "board": "http:\/\/127.0.0.1:8000\/?controller=board&action=show&project_id=1",
-            "calendar": "http:\/\/127.0.0.1:8000\/?controller=calendar&action=show&project_id=1",
-            "list": "http:\/\/127.0.0.1:8000\/?controller=listing&action=show&project_id=1"
+            "board": "http://localhost/?controller=BoardViewController&action=show&project_id=1",
+            "list": "http://localhost/?controller=TaskListController&action=show&project_id=1"
         }
     }
 }
@@ -138,7 +146,6 @@ Response example:
         "identifier": "",
         "url": {
             "board": "http:\/\/127.0.0.1:8000\/?controller=board&action=show&project_id=1",
-            "calendar": "http:\/\/127.0.0.1:8000\/?controller=calendar&action=show&project_id=1",
             "list": "http:\/\/127.0.0.1:8000\/?controller=listing&action=show&project_id=1"
         }
     }
@@ -187,7 +194,6 @@ Response example:
         "identifier": "TEST",
         "url": {
             "board": "http:\/\/127.0.0.1:8000\/?controller=board&action=show&project_id=1",
-            "calendar": "http:\/\/127.0.0.1:8000\/?controller=calendar&action=show&project_id=1",
             "list": "http:\/\/127.0.0.1:8000\/?controller=listing&action=show&project_id=1"
         }
     }
@@ -237,7 +243,6 @@ Response example:
         "email": "my_project@my_domain.tld",
         "url": {
             "board": "http:\/\/127.0.0.1:8000\/?controller=board&action=show&project_id=1",
-            "calendar": "http:\/\/127.0.0.1:8000\/?controller=calendar&action=show&project_id=1",
             "list": "http:\/\/127.0.0.1:8000\/?controller=listing&action=show&project_id=1"
         }
     }
@@ -263,7 +268,7 @@ Request example:
 }
 ```
 
-Response example:
+Response example (Kanboard 1.2.54, PostgreSQL 17, PHP 8.4):
 
 ```json
 {
@@ -271,21 +276,29 @@ Response example:
     "id": 2134420212,
     "result": [
         {
-            "id": "1",
-            "name": "API test",
-            "is_active": "1",
+            "id": 1,
+            "name": "API check",
+            "is_active": true,
             "token": "",
-            "last_modified": "1436119570",
-            "is_public": "0",
-            "is_private": "0",
-            "default_swimlane": "Default swimlane",
-            "show_default_swimlane": "1",
+            "last_modified": 1794435881,
+            "is_public": false,
+            "is_private": false,
             "description": null,
             "identifier": "",
+            "start_date": "",
+            "end_date": "",
+            "owner_id": 1,
+            "priority_default": 0,
+            "priority_start": 0,
+            "priority_end": 3,
+            "email": null,
+            "predefined_email_subjects": null,
+            "per_swimlane_task_limits": false,
+            "task_limit": 0,
+            "enable_global_tags": true,
             "url": {
-                "board": "http:\/\/127.0.0.1:8000\/?controller=board&action=show&project_id=1",
-                "calendar": "http:\/\/127.0.0.1:8000\/?controller=calendar&action=show&project_id=1",
-                "list": "http:\/\/127.0.0.1:8000\/?controller=listing&action=show&project_id=1"
+                "board": "http://localhost/?controller=BoardViewController&action=show&project_id=1",
+                "list": "http://localhost/?controller=TaskListController&action=show&project_id=1"
             }
         }
     ]

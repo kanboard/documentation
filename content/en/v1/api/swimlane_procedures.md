@@ -118,18 +118,20 @@ Request example:
 }
 ```
 
-Response example:
+Response example (Kanboard 1.2.54, PostgreSQL 17, PHP 8.4):
 
 ```json
 {
     "jsonrpc": "2.0",
     "id": 131071870,
     "result": {
-        "id": "1",
-        "name": "Swimlane 1",
-        "position": "1",
-        "is_active": "1",
-        "project_id": "1"
+        "id": 1,
+        "name": "Default swimlane",
+        "position": 1,
+        "is_active": true,
+        "project_id": 1,
+        "description": "",
+        "task_limit": 0
     }
 }
 ```
