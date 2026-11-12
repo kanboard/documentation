@@ -134,7 +134,7 @@ Request example:
     "method": "getAllTaskLinks",
     "id": 810848359,
     "params": [
-        2
+        1
     ]
 }
 ```

@@ -92,7 +92,7 @@ Request example:
     "method": "getColumn",
     "id": 1242049935,
     "params": [
-        2
+        1
     ]
 }
 ```

@@ -91,7 +91,7 @@ getAllComments
 - Parameters:
     - **task_id** (integer, required)
 - Result on success: **List of comments**
-- When no comments are found, the result is an **empty array** (`[]`).
+- When the task has no comments visible to the caller, the result is an **empty array** (`[]`).
 
 Request example:
 

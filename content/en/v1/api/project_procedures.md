@@ -121,7 +121,7 @@ Request example:
     "method": "getProjectByName",
     "id": 1620253806,
     "params": {
-        "name": "Test"
+        "name": "API check"
     }
 }
 ```
@@ -133,20 +133,29 @@ Response example:
     "jsonrpc": "2.0",
     "id": 1620253806,
     "result": {
-        "id": "1",
-        "name": "Test",
-        "is_active": "1",
+        "id": 1,
+        "name": "API check",
+        "is_active": true,
         "token": "",
-        "last_modified": "1436119135",
-        "is_public": "0",
-        "is_private": "0",
-        "default_swimlane": "Default swimlane",
-        "show_default_swimlane": "1",
-        "description": "test",
+        "last_modified": 1794435881,
+        "is_public": false,
+        "is_private": false,
+        "description": null,
         "identifier": "",
+        "start_date": "",
+        "end_date": "",
+        "owner_id": 1,
+        "priority_default": 0,
+        "priority_start": 0,
+        "priority_end": 3,
+        "email": null,
+        "predefined_email_subjects": null,
+        "per_swimlane_task_limits": false,
+        "task_limit": 0,
+        "enable_global_tags": true,
         "url": {
-            "board": "http:\/\/127.0.0.1:8000\/?controller=board&action=show&project_id=1",
-            "list": "http:\/\/127.0.0.1:8000\/?controller=listing&action=show&project_id=1"
+            "board": "http://localhost/?controller=BoardViewController&action=show&project_id=1",
+            "list": "http://localhost/?controller=TaskListController&action=show&project_id=1"
         }
     }
 }
@@ -181,20 +190,29 @@ Response example:
     "jsonrpc": "2.0",
     "id": 1620253806,
     "result": {
-        "id": "1",
-        "name": "Test",
-        "is_active": "1",
+        "id": 1,
+        "name": "API check",
+        "is_active": true,
         "token": "",
-        "last_modified": "1436119135",
-        "is_public": "0",
-        "is_private": "0",
-        "default_swimlane": "Default swimlane",
-        "show_default_swimlane": "1",
-        "description": "test",
+        "last_modified": 1794435881,
+        "is_public": false,
+        "is_private": false,
+        "description": null,
         "identifier": "TEST",
+        "start_date": "",
+        "end_date": "",
+        "owner_id": 1,
+        "priority_default": 0,
+        "priority_start": 0,
+        "priority_end": 3,
+        "email": null,
+        "predefined_email_subjects": null,
+        "per_swimlane_task_limits": false,
+        "task_limit": 0,
+        "enable_global_tags": true,
         "url": {
-            "board": "http:\/\/127.0.0.1:8000\/?controller=board&action=show&project_id=1",
-            "list": "http:\/\/127.0.0.1:8000\/?controller=listing&action=show&project_id=1"
+            "board": "http://localhost/?controller=BoardViewController&action=show&project_id=1",
+            "list": "http://localhost/?controller=TaskListController&action=show&project_id=1"
         }
     }
 }
@@ -229,21 +247,29 @@ Response example:
     "jsonrpc": "2.0",
     "id": 1620253806,
     "result": {
-        "id": "1",
-        "name": "Test",
-        "is_active": "1",
+        "id": 1,
+        "name": "API check",
+        "is_active": true,
         "token": "",
-        "last_modified": "1436119135",
-        "is_public": "0",
-        "is_private": "0",
-        "default_swimlane": "Default swimlane",
-        "show_default_swimlane": "1",
-        "description": "test",
+        "last_modified": 1794435881,
+        "is_public": false,
+        "is_private": false,
+        "description": null,
         "identifier": "",
+        "start_date": "",
+        "end_date": "",
+        "owner_id": 1,
+        "priority_default": 0,
+        "priority_start": 0,
+        "priority_end": 3,
         "email": "my_project@my_domain.tld",
+        "predefined_email_subjects": null,
+        "per_swimlane_task_limits": false,
+        "task_limit": 0,
+        "enable_global_tags": true,
         "url": {
-            "board": "http:\/\/127.0.0.1:8000\/?controller=board&action=show&project_id=1",
-            "list": "http:\/\/127.0.0.1:8000\/?controller=listing&action=show&project_id=1"
+            "board": "http://localhost/?controller=BoardViewController&action=show&project_id=1",
+            "list": "http://localhost/?controller=TaskListController&action=show&project_id=1"
         }
     }
 }

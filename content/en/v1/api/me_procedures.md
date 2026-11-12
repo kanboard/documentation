@@ -129,7 +129,6 @@ Response example:
                 ],
                 "url": {
                     "board": "http:\/\/127.0.0.1:8000\/?controller=board&action=show&project_id=2",
-                    "calendar": "http:\/\/127.0.0.1:8000\/?controller=calendar&action=show&project_id=2",
                     "list": "http:\/\/127.0.0.1:8000\/?controller=listing&action=show&project_id=2"
                 }
             }
@@ -386,7 +385,6 @@ Response example:
             "identifier": "",
             "url": {
                 "board": "http:\/\/127.0.0.1:8000\/?controller=board&action=show&project_id=1",
-                "calendar": "http:\/\/127.0.0.1:8000\/?controller=calendar&action=show&project_id=1",
                 "list": "http:\/\/127.0.0.1:8000\/?controller=listing&action=show&project_id=1"
             }
         }

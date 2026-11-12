@@ -177,7 +177,7 @@ getAllExternalTaskLinks
 Request example:
 
 ```json
-{"jsonrpc":"2.0","method":"getAllExternalTaskLinks","id":2069307223,"params":[9]}
+{"jsonrpc":"2.0","method":"getAllExternalTaskLinks","id":2069307223,"params":[1]}
 ```
 
 Response example (Kanboard 1.2.54, PostgreSQL 17, PHP 8.4):
@@ -192,8 +192,8 @@ Response example (Kanboard 1.2.54, PostgreSQL 17, PHP 8.4):
             "dependency": "related",
             "title": "Example",
             "url": "https://example.com/",
-            "date_creation": 1700000000,
-            "date_modification": 1700000000,
+            "date_creation": 1794435881,
+            "date_modification": 1794435881,
             "task_id": 1,
             "creator_id": 1,
             "creator_name": null,
