@@ -18,6 +18,8 @@ Yapılandırma
 
 Her kullanıcının profilindeki bildirimleri etkinleştirmesi gerekir: **Kullanıcı Profili > Bildirimler**. Varsayılan olarak devre dışıdır.
 
+Kanboard, varsayılan olarak kendi gerçekleştirdiğiniz işlemler hakkında size bildirim göndermez.
+
 E-posta bildirimlerini almak için profilinizde geçerli bir e-posta adresine ihtiyacınız vardır ve uygulama, e-posta göndermek üzere yapılandırılmalıdır.
 
 ![Notifications](/images/v1/notifications.png)

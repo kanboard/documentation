@@ -18,6 +18,8 @@ Configuration
 
 Chaque utilisateur doit autoriser les notifications dans son profil : **Profil Utilisateur > Notifications**. Cette option est désactivée par défaut.
 
+Par défaut, Kanboard ne vous envoie pas de notification pour les actions que vous effectuez vous-même.
+
 Vous devez, bien sûr, avoir renseigné une adresse email valide dans votre profil et l'application doit être configurée pour envoyer des emails.
 
 ![Notifications](/images/v1/fr/notifications.png)

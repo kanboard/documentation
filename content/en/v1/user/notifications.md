@@ -18,6 +18,8 @@ Configuration
 
 Each user must enable notifications in their profile: **User Profile > Notifications**. Notifications are disabled by default.
 
+By default, Kanboard does not notify you about actions you perform yourself.
+
 To receive email notifications, you need a valid email address in your profile, and the application must be configured to send emails.
 
 ![Notifications](/images/v1/notifications.png)

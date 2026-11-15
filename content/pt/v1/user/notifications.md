@@ -18,6 +18,8 @@ Configuração
 
 Cada usuário deve ativar as notificações em seu perfil: **Perfil do usuário > Notificações**. Elas estão desativadas por padrão.
 
+Por padrão, o Kanboard não envia notificações sobre as ações realizadas por você.
+
 Para receber notificações por e-mail, você precisa de um endereço de e-mail válido em seu perfil, e o aplicativo deve estar configurado para enviar emails.
 
 ![Notificações](/images/v1/notifications.png)
